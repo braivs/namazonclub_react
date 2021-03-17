@@ -1,28 +1,25 @@
-build site:
-  image: node:6
+stages:
+  - build
+  - deploy
+
+build:
+  image: node:latest    # Run the job in a `node` docker image
   stage: build
+  PUBLIC_URL: https://briws.gitlab.io/namazonclub_react/
   script:
-    - npm install --progress=false
-    - npm run build
+    - yarn install      # Run `yarn install` and `yarn build`
+    - yarn build
   artifacts:
-    expire_in: 1 week
     paths:
-      - dist
-
-unit test:
-  image: node:6
-  stage: test
-  script:
-    - npm install --progress=false
-    - npm run unit
-
-deploy:
-  image: alpine
-  stage: deploy
-  script:
-    - apk add --no-cache rsync openssh
-    - mkdir -p ~/.ssh
-    - echo "$SSH_PRIVATE_KEY" >> ~/.ssh/id_dsa
-    - chmod 600 ~/.ssh/id_dsa
-    - echo -e "Host *\n\tStrictHostKeyChecking no\n\n" > ~/.ssh/config
-    - rsync -rav --delete dist/ user@server.com:/your/project/path/
+      - build/          # Save the build result as an artfact
+  pages:
+    image: alpine:latest
+    stage: deploy
+    variables:
+      GIT_STRATEGY: none        # Do not clone git repo
+    script:
+      # Rename the CRA `build` folder to `public`
+      - mv build public
+    artifacts:
+      paths:
+        - public
