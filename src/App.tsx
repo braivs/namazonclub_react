@@ -1,15 +1,10 @@
 import React from 'react';
-import './App.css';
+import './App.scss';
+import {Welcome} from "./components/Welcome/Welcome";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <p>
-          NamazonClub
-        </p>
-      </header>
-    </div>
+    <Welcome />
   );
 }
 
