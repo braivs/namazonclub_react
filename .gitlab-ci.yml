@@ -5,7 +5,8 @@ stages:
 build:
   image: node:latest    # Run the job in a `node` docker image
   stage: build
-  PUBLIC_URL: https://briws.gitlab.io/namazonclub_react/
+  variables:
+    PUBLIC_URL: https://briws.gitlab.io/namazonclub_react/
   script:
     - yarn install      # Run `yarn install` and `yarn build`
     - yarn build
