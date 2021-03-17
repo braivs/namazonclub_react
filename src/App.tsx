@@ -1,10 +1,14 @@
 import React from 'react';
 import './App.scss';
 import {Welcome} from "./components/Welcome/Welcome";
+import {MainEng} from "./components/MainEng/MainEng";
 
 function App() {
   return (
-    <Welcome />
+    <div>
+      {/*<Welcome/>*/}
+      <MainEng/>
+    </div>
   );
 }
 

@@ -18,7 +18,7 @@ export function Welcome() {
             <div className="carousel-item"><img className="d-block" src="img/sliderIndex/03.jpg" alt="..."/></div>
           </div>
         </div>
-        <div className="buttonsContainer row text-center">
+        <div className="row text-center">
           <div className="col-12">
             <button className="btn btn-primary btn-lg" type="button">Вход</button>
             <button className="btn btn-primary btn-lg" type="button">Enter</button>
