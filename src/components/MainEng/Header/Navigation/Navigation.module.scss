@@ -1,31 +1,43 @@
-.navigation {
+.navbar {
   background-color: black;
-    img {
-      width: 100px;
-    }
+  color: white;
+  .fa {
+    color: #e6e6ff;
+  }
+  img {
+    width: 100px;
+  }
+
   ul {
     padding: 5px 0;
+
     a {
       color: white;
       padding-top: 0;
       padding-bottom: 0;
+
       &:hover {
         color: orange;
       }
     }
+
     li {
       padding-right: 25px;
     }
+
     li:not(:last-of-type) {
       border-right: 1px solid #13729A;
     }
+
     li:not(:first-of-type) {
       padding-left: 20px;
     }
   }
-  .dropdownMenu{
+
+  .dropdownMenu {
     background-color: grey;
-    .dropdown-item:hover {
+
+    .dropdownItem:hover {
       background-color: #555555
     }
   }
