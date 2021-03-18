@@ -1,13 +1,13 @@
 import React from 'react';
 import './App.scss';
 // import {Welcome} from "./components/Welcome/Welcome";
-import {MainEng} from "./components/MainEng/MainEng";
+import {UniverseEng} from "./components/UniverseEng/UniverseEng";
 
 function App() {
   return (
     <div>
       {/*<Welcome/>*/}
-      <MainEng/>
+      <UniverseEng/>
     </div>
   );
 }
