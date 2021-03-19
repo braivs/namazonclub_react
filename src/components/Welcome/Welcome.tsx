@@ -1,4 +1,5 @@
 import React from "react";
+import {NavLink} from "react-router-dom";
 import s from "./Welcome.module.scss"
 
 export function Welcome() {
@@ -21,7 +22,9 @@ export function Welcome() {
         <div className="row text-center">
           <div className="col-12">
             <button className="btn btn-primary btn-lg" type="button">Вход</button>
-            <button className="btn btn-primary btn-lg" type="button">Enter</button>
+            <NavLink to="/universeeng" activeClassName={s.activeLink} className={s.myBtn}>
+              <button className="btn btn-primary btn-lg" type="button">Enter</button>
+            </NavLink>
           </div>
         </div>
       </div>

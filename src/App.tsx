@@ -1,13 +1,17 @@
 import React from 'react';
+import {Route} from "react-router-dom";
 import './App.scss';
-// import {Welcome} from "./components/Welcome/Welcome";
+import {Welcome} from "./components/Welcome/Welcome";
 import {UniverseEng} from "./components/UniverseEng/UniverseEng";
 
 function App() {
   return (
     <div>
-      {/*<Welcome/>*/}
-      <UniverseEng/>
+      <Route exact path='/'
+             render={() => <Welcome/>}/>
+      <Route path='/universeeng'
+             render={() => <UniverseEng/>}/>
+
     </div>
   );
 }
