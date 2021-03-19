@@ -1,0 +1,45 @@
+.footer {
+  padding: 50px 0 0 0;
+  background-color: black;
+  padding-bottom: 25px;
+
+  .socialBox {
+    margin-left: 10px;
+    img {
+      width: 45px;
+      height: 45px;
+      margin-right: 10px;
+      margin-bottom: 30px;
+    }
+
+  }
+
+  p {
+    color: grey;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 0;
+  }
+
+  .socialMy {
+    display: flex;
+    justify-content: center;
+  }
+
+  span {
+    margin-right: 5px;
+  }
+
+  span {
+    img {
+      width: 25px;
+      height: 25px;
+      opacity: 0.5;
+      margin-right: -1px;
+    }
+  }
+}
+
+
+
+
