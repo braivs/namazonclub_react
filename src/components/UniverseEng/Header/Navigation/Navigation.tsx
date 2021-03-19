@@ -1,5 +1,6 @@
 import s from "./Navigation.module.scss";
 import React from "react";
+import {NavLink} from "react-router-dom";
 
 export function Navigation() {
   return (
@@ -15,7 +16,7 @@ export function Navigation() {
       <div className="collapse navbar-collapse" id="navbarSupportedContent">
         <ul className="navbar-nav mr-auto">
           <li className="nav-item">
-            <a className="nav-link" href="http://">HOME</a>
+            <NavLink to="/universeeng/home" activeClassName={s.activeLink}>HOME</NavLink>
           </li>
           <li className="nav-item">
             <a className="nav-link" href="https://gumroad.com/namazonclub">SHOP</a>
@@ -59,7 +60,7 @@ export function Navigation() {
             </div>
           </li>
           <li className="nav-item">
-            <a className="nav-link" href="http://">CONTACT US</a>
+            <NavLink to="/universeeng/contactus" activeClassName={s.activeLink}>CONTACT US</NavLink>
           </li>
         </ul>
       </div>

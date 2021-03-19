@@ -9,7 +9,9 @@ function App() {
     <div>
       <Route exact path='/'
              render={() => <Welcome/>}/>
-      <Route path='/universeeng'
+      <Route path='/universeeng/home'
+             render={() => <UniverseEng/>}/>
+      <Route path='/universeeng/contactus'
              render={() => <UniverseEng/>}/>
 
     </div>

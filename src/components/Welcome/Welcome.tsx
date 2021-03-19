@@ -22,7 +22,7 @@ export function Welcome() {
         <div className="row text-center">
           <div className="col-12">
             <button className="btn btn-primary btn-lg" type="button">Вход</button>
-            <NavLink to="/universeeng" activeClassName={s.activeLink} className={s.myBtn}>
+            <NavLink to="/universeeng/home" activeClassName={s.activeLink} className={s.myBtn}>
               <button className="btn btn-primary btn-lg" type="button">Enter</button>
             </NavLink>
           </div>
