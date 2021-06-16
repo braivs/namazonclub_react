@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/namazonclub_react/static/css/main.1394dfe9.chunk.css",
+    "main.js": "/namazonclub_react/static/js/main.e0680693.chunk.js",
+    "main.js.map": "/namazonclub_react/static/js/main.e0680693.chunk.js.map",
+    "runtime-main.js": "/namazonclub_react/static/js/runtime-main.4228cada.js",
+    "runtime-main.js.map": "/namazonclub_react/static/js/runtime-main.4228cada.js.map",
+    "static/css/2.150d169a.chunk.css": "/namazonclub_react/static/css/2.150d169a.chunk.css",
+    "static/js/2.69bee004.chunk.js": "/namazonclub_react/static/js/2.69bee004.chunk.js",
+    "static/js/2.69bee004.chunk.js.map": "/namazonclub_react/static/js/2.69bee004.chunk.js.map",
+    "static/js/3.934e7e25.chunk.js": "/namazonclub_react/static/js/3.934e7e25.chunk.js",
+    "static/js/3.934e7e25.chunk.js.map": "/namazonclub_react/static/js/3.934e7e25.chunk.js.map",
+    "index.html": "/namazonclub_react/index.html",
+    "static/css/2.150d169a.chunk.css.map": "/namazonclub_react/static/css/2.150d169a.chunk.css.map",
+    "static/css/main.1394dfe9.chunk.css.map": "/namazonclub_react/static/css/main.1394dfe9.chunk.css.map",
+    "static/js/2.69bee004.chunk.js.LICENSE.txt": "/namazonclub_react/static/js/2.69bee004.chunk.js.LICENSE.txt",
+    "static/media/UniverseEng.module.scss": "/namazonclub_react/static/media/background.83d287b1.jpg",
+    "static/media/Welcome.module.scss": "/namazonclub_react/static/media/backgroundIndex.66b4cac7.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.4228cada.js",
+    "static/css/2.150d169a.chunk.css",
+    "static/js/2.69bee004.chunk.js",
+    "static/css/main.1394dfe9.chunk.css",
+    "static/js/main.e0680693.chunk.js"
+  ]
+}
