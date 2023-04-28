@@ -2,12 +2,12 @@ import React from "react"
 import {NavLink} from "react-router-dom"
 import s from "./Welcome.module.scss"
 import {Carousel, Col, Container, Row} from "react-bootstrap"
-import slide01 from '../../img/sliderIndex/01.jpg'
-import slide02 from '../../img/sliderIndex/02.jpg'
-import slide03 from '../../img/sliderIndex/03.jpg'
-import slide04 from '../../img/sliderIndex/04.jpg'
-import slide05 from '../../img/sliderIndex/05.jpg'
-import slide06 from '../../img/sliderIndex/06.jpg'
+import slide01 from 'src/img/sliderIndex/01.jpg'
+import slide02 from 'src/img/sliderIndex/02.jpg'
+import slide03 from 'src/img/sliderIndex/03.jpg'
+import slide04 from 'src/img/sliderIndex/04.jpg'
+import slide05 from 'src/img/sliderIndex/05.jpg'
+import slide06 from 'src/img/sliderIndex/06.jpg'
 import cn from 'classnames'
 
 export function Welcome() {
