@@ -1,40 +1,24 @@
-import s from "./Slider.module.scss";
-import React from "react";
+import React from "react"
+import slide1 from 'src/img/sliderEng/slide1.jpg'
+import slide2 from 'src/img/sliderEng/slide2.jpg'
+import slide3 from 'src/img/sliderEng/slide3.jpg'
+import slide4 from 'src/img/sliderEng/slide4.jpg'
+import slide5 from 'src/img/sliderEng/slide5.jpg'
+import slide6 from 'src/img/sliderEng/slide6.jpg'
+import {Carousel} from "react-bootstrap"
 
 export function Slider() {
-  return (
-    <div className={s.slider}>
-      <div className="carousel slide carousel-fade" id="carouselExampleIndicators" data-ride="carousel"
-           data-interval="8000">
-        <ol className="carousel-indicators">
-          <li className="active" data-target="#carouselExampleIndicators" data-slide-to="0"></li>
-          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-          <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
-          <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
-          <li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
-        </ol>
-        <div className="carousel-inner">
-          <div className="carousel-item active"><img className="d-block w-100" src="img/sliderEng/slide1.jpg"
-                                                     alt="..."/></div>
-          <div className="carousel-item"><img className="d-block w-100" src="img/sliderEng/slide2.jpg" alt="..."/>
-          </div>
-          <div className="carousel-item"><img className="d-block w-100" src="img/sliderEng/slide3.jpg" alt="..."/>
-          </div>
-          <div className="carousel-item"><img className="d-block w-100" src="img/sliderEng/slide4.jpg" alt="..."/>
-          </div>
-          <div className="carousel-item"><img className="d-block w-100" src="img/sliderEng/slide5.jpg" alt="..."/>
-          </div>
-          <div className="carousel-item"><img className="d-block w-100" src="img/sliderEng/slide6.jpg" alt="..."/>
-          </div>
+    return (
+        <div>
+            <Carousel fade interval={5000} className={'text-center'}>
+                <Carousel.Item><img src={slide1} alt="Slide 1" className="d-block w-100"/></Carousel.Item>
+                <Carousel.Item><img src={slide2} alt="Slide 2" className="d-block w-100"/></Carousel.Item>
+                <Carousel.Item><img src={slide3} alt="Slide 3" className="d-block w-100"/></Carousel.Item>
+                <Carousel.Item><img src={slide4} alt="Slide 4" className="d-block w-100"/></Carousel.Item>
+                <Carousel.Item><img src={slide5} alt="Slide 5" className="d-block w-100"/></Carousel.Item>
+                <Carousel.Item><img src={slide6} alt="Slide 6" className="d-block w-100"/></Carousel.Item>
+            </Carousel>
         </div>
-        <a className="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev"><span
-          className="carousel-control-prev-icon" aria-hidden="true"></span><span className="sr-only">Previous</span></a><a
-        className="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next"><span
-        className="carousel-control-next-icon" aria-hidden="true"></span><span className="sr-only">Next</span></a>
-      </div>
-    </div>
 
-
-  )
+    )
 }
