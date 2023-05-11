@@ -2,7 +2,8 @@ import s from "./Navigation.module.scss"
 import React from "react"
 import {NavLink} from "react-router-dom"
 import logo from 'src/img/logo.jpg'
-import {Container} from "react-bootstrap"
+import {Container, Dropdown} from "react-bootstrap"
+import {CustomToggle} from "./DropdownCustom"
 
 export function Navigation() {
     return (
@@ -25,48 +26,40 @@ export function Navigation() {
                         <li className="nav-item">
                             <a className="nav-link" href="https://gumroad.com/namazonclub">SHOP</a>
                         </li>
-                        <li className="nav-item dropdown">
-                            <a className="nav-link dropdown-toggle" href="http://" id="navbarDropdown" role="button"
-                               data-toggle="dropdown"
-                               aria-haspopup="true" aria-expanded="false">
+                        <Dropdown>
+                            <Dropdown.Toggle id="dropdown-basic" as={CustomToggle}>
                                 VIDEO
-                            </a>
-                            <div className={s.dropdownMenu + " dropdown-menu"} aria-labelledby="navbarDropdown">
-                                <a className={s.dropdownItem + " dropdown-item"} href="http://">All categories</a>
-                                <a className={s.dropdownItem + " dropdown-item"} href="http://">Wrestling</a>
-                                <a className={s.dropdownItem + " dropdown-item"} href="http://">MMA</a>
-                                <a className={s.dropdownItem + " dropdown-item"} href="http://">Kickboxing, Myay
-                                    Thai</a>
-                                <a className={s.dropdownItem + " dropdown-item"} href="http://">Mixed wrestling</a>
-                            </div>
-                        </li>
-                        <li className="nav-item dropdown">
-                            <a className="nav-link dropdown-toggle" href="http://" id="navbarDropdown" role="button"
-                               data-toggle="dropdown"
-                               aria-haspopup="true" aria-expanded="false">
+                            </Dropdown.Toggle>
+                            <Dropdown.Menu variant="dark" className={s.dropdownMenuSuper}>
+                                <Dropdown.Item href="#/action-1">All categories</Dropdown.Item>
+                                <Dropdown.Item href="#/action-2">Wrestling</Dropdown.Item>
+                                <Dropdown.Item href="#/action-3">MMA</Dropdown.Item>
+                                <Dropdown.Item href="#/action-3">Kickboxing, Myay Thai</Dropdown.Item>
+                            </Dropdown.Menu>
+                        </Dropdown>
+                        <Dropdown>
+                            <Dropdown.Toggle id="dropdown-basic2" as={CustomToggle}>
                                 GIRLS
-                            </a>
-                            <div className={s.dropdownMenu + " dropdown-menu"} aria-labelledby="navbarDropdown">
-                                <a className={s.dropdownItem + " dropdown-item"} href="http://">All girls</a>
-                                <a className={s.dropdownItem + " dropdown-item"} href="http://">2010 - 2011</a>
-                                <a className={s.dropdownItem + " dropdown-item"} href="http://">2012 - 2013</a>
-                            </div>
-                        </li>
-                        <li className="nav-item dropdown">
-                            <a className="nav-link dropdown-toggle" href="http://" id="navbarDropdown" role="button"
-                               data-toggle="dropdown"
-                               aria-haspopup="true" aria-expanded="false">
+                            </Dropdown.Toggle>
+                            <Dropdown.Menu variant="dark" className={s.dropdownMenuSuper}>
+                                <Dropdown.Item href="#/action-1">All girls</Dropdown.Item>
+                                <Dropdown.Item href="#/action-2">2010 - 2011</Dropdown.Item>
+                                <Dropdown.Item href="#/action-3">2012 - 2013</Dropdown.Item>
+                            </Dropdown.Menu>
+                        </Dropdown>
+                        <Dropdown>
+                            <Dropdown.Toggle variant="dark" id="dropdown-basic3" as={CustomToggle}>
                                 COMPETITIONS
-                            </a>
-                            <div className={s.dropdownMenu + " dropdown-menu"} aria-labelledby="navbarDropdown">
-                                <a className={s.dropdownItem + " dropdown-item"} href="http://">All competitions</a>
-                                <a className={s.dropdownItem + " dropdown-item"} href="http://">2015 - 2017</a>
-                                <a className={s.dropdownItem + " dropdown-item"} href="http://">2013 - 2014</a>
-                                <a className={s.dropdownItem + " dropdown-item"} href="http://">2012</a>
-                                <a className={s.dropdownItem + " dropdown-item"} href="http://">2011</a>
-                                <a className={s.dropdownItem + " dropdown-item"} href="http://">Archive</a>
-                            </div>
-                        </li>
+                            </Dropdown.Toggle>
+                            <Dropdown.Menu variant="dark" className={s.dropdownMenuSuper}>
+                                <Dropdown.Item href="#/action-1">All competitions</Dropdown.Item>
+                                <Dropdown.Item href="#/action-2">2015 - 2017</Dropdown.Item>
+                                <Dropdown.Item href="#/action-3">2013 - 2014</Dropdown.Item>
+                                <Dropdown.Item href="#/action-3">2012</Dropdown.Item>
+                                <Dropdown.Item href="#/action-3">2011</Dropdown.Item>
+                                <Dropdown.Item href="#/action-3">Archive</Dropdown.Item>
+                            </Dropdown.Menu>
+                        </Dropdown>
                         <li className="nav-item">
                             <NavLink to="/universeeng/contactus">CONTACT US</NavLink>
                         </li>
