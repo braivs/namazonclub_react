@@ -3,7 +3,7 @@ import React from "react"
 import {NavLink} from "react-router-dom"
 import logo from 'src/img/logo.jpg'
 import {Container, Dropdown} from "react-bootstrap"
-import {CustomToggle} from "./DropdownCustom"
+import {CustomToggle} from "../../../../common/DropdownCustom/DropdownCustom"
 
 export function Navigation() {
     return (
@@ -24,17 +24,18 @@ export function Navigation() {
                             <NavLink to="/universeeng/home">HOME</NavLink>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link" href="https://gumroad.com/namazonclub">SHOP</a>
+                            <NavLink to="/shop">SHOP</NavLink>
                         </li>
                         <Dropdown>
                             <Dropdown.Toggle id="dropdown-basic" as={CustomToggle}>
                                 VIDEO
                             </Dropdown.Toggle>
                             <Dropdown.Menu variant="dark" className={s.dropdownMenuSuper}>
-                                <Dropdown.Item href="#/action-1">All categories</Dropdown.Item>
-                                <Dropdown.Item href="#/action-2">Wrestling</Dropdown.Item>
-                                <Dropdown.Item href="#/action-3">MMA</Dropdown.Item>
-                                <Dropdown.Item href="#/action-3">Kickboxing, Myay Thai</Dropdown.Item>
+                                <Dropdown.Item><NavLink to="/video/all">All categories</NavLink></Dropdown.Item>
+                                <Dropdown.Item><NavLink to="/video/wrestling">Wrestling</NavLink></Dropdown.Item>
+                                <Dropdown.Item><NavLink to="/video/mma">MMA</NavLink></Dropdown.Item>
+                                <Dropdown.Item><NavLink to="/video/boxing">Kickboxing</NavLink></Dropdown.Item>
+                                <Dropdown.Item><NavLink to="/video/mix">Mixed wrestling</NavLink></Dropdown.Item>
                             </Dropdown.Menu>
                         </Dropdown>
                         <Dropdown>
@@ -42,9 +43,9 @@ export function Navigation() {
                                 GIRLS
                             </Dropdown.Toggle>
                             <Dropdown.Menu variant="dark" className={s.dropdownMenuSuper}>
-                                <Dropdown.Item href="#/action-1">All girls</Dropdown.Item>
-                                <Dropdown.Item href="#/action-2">2010 - 2011</Dropdown.Item>
-                                <Dropdown.Item href="#/action-3">2012 - 2013</Dropdown.Item>
+                                <Dropdown.Item><NavLink to="/girls/all">All girls</NavLink></Dropdown.Item>
+                                <Dropdown.Item><NavLink to="/girls/2010-2011">2010 - 2011</NavLink></Dropdown.Item>
+                                <Dropdown.Item><NavLink to="/girls/2012-2013">2012 - 2013</NavLink></Dropdown.Item>
                             </Dropdown.Menu>
                         </Dropdown>
                         <Dropdown>
@@ -52,16 +53,16 @@ export function Navigation() {
                                 COMPETITIONS
                             </Dropdown.Toggle>
                             <Dropdown.Menu variant="dark" className={s.dropdownMenuSuper}>
-                                <Dropdown.Item href="#/action-1">All competitions</Dropdown.Item>
-                                <Dropdown.Item href="#/action-2">2015 - 2017</Dropdown.Item>
-                                <Dropdown.Item href="#/action-3">2013 - 2014</Dropdown.Item>
-                                <Dropdown.Item href="#/action-3">2012</Dropdown.Item>
-                                <Dropdown.Item href="#/action-3">2011</Dropdown.Item>
-                                <Dropdown.Item href="#/action-3">Archive</Dropdown.Item>
+                                <Dropdown.Item><NavLink to="/competitions/all">All competitions</NavLink></Dropdown.Item>
+                                <Dropdown.Item><NavLink to="/competitions/2015-2017">2015 - 2017</NavLink></Dropdown.Item>
+                                <Dropdown.Item><NavLink to="/competitions/2013-2014">2013 - 2014</NavLink></Dropdown.Item>
+                                <Dropdown.Item><NavLink to="/competitions/2012">2012</NavLink></Dropdown.Item>
+                                <Dropdown.Item><NavLink to="/competitions/2011">2011</NavLink></Dropdown.Item>
+                                <Dropdown.Item><NavLink to="/competitions/Archive">Archive</NavLink></Dropdown.Item>
                             </Dropdown.Menu>
                         </Dropdown>
                         <li className="nav-item">
-                            <NavLink to="/universeeng/contactus">CONTACT US</NavLink>
+                            <NavLink to="/contactus">CONTACT US</NavLink>
                         </li>
                     </ul>
                 </div>
