@@ -38,5 +38,11 @@
 
     .dropdownMenuSuper {
         background-color: grey;
+
+        a {
+            &:hover {
+                background-color: #555555;
+            }
+        }
     }
 }
