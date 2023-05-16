@@ -2,22 +2,19 @@ import s from "./Navigation.module.scss"
 import React from "react"
 import {NavLink} from "react-router-dom"
 import logo from 'src/img/logo.jpg'
-import {Container, Dropdown} from "react-bootstrap"
+import {Container, Dropdown, Navbar} from "react-bootstrap"
 import {CustomToggle} from "../../../../common/DropdownCustom/DropdownCustom"
 
 export function Navigation() {
     return (
         <nav className={s.navigation + " navbar navbar-expand-lg"}>
             <Container>
-                <a className="navbar-brand" href="http://">
-                    <img src={logo} alt=""/>
-                </a>
+                <Navbar.Brand><NavLink to="/universeeng/home"><img src={logo} alt=""/></NavLink></Navbar.Brand>
                 <button className="navbar-toggler" type="button" data-toggle="collapse"
                         data-target="#navbarSupportedContent"
                         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span className={s.togglerIcon}>&#9776;</span>
                 </button>
-
                 <div className="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul className="navbar-nav mr-auto">
                         <li className="nav-item">
