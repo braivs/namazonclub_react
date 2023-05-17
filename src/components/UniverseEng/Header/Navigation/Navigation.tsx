@@ -18,7 +18,7 @@ export function Navigation() {
                 <div className="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul className="navbar-nav mr-auto">
                         <li className="nav-item">
-                            <NavLink to="/universeeng/home">HOME</NavLink>
+                            <NavLink to="home">HOME</NavLink>
                         </li>
                         <li className="nav-item">
                             <NavLink to="/shop">SHOP</NavLink>
@@ -59,7 +59,7 @@ export function Navigation() {
                             </Dropdown.Menu>
                         </Dropdown>
                         <li className="nav-item">
-                            <NavLink to="/contactus">CONTACT US</NavLink>
+                            <NavLink to="contactus">CONTACT US</NavLink>
                         </li>
                     </ul>
                 </div>
