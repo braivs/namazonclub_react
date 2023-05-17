@@ -7,8 +7,6 @@ export function Header() {
     <header>
       <Logo/>
       <Navigation />
-
-      {/*<NavigationRBS />*/}
     </header>
   )
 }
