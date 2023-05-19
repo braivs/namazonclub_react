@@ -21,18 +21,18 @@ export function Navigation() {
                             <NavLink to="home">HOME</NavLink>
                         </li>
                         <li className="nav-item">
-                            <NavLink to="/shop">SHOP</NavLink>
+                            <NavLink to="/universeeng/shop">SHOP</NavLink>
                         </li>
                         <Dropdown>
                             <Dropdown.Toggle id="dropdown-basic" as={CustomToggle}>
                                 VIDEO
                             </Dropdown.Toggle>
                             <Dropdown.Menu variant="dark" className={s.dropdownMenuSuper}>
-                                <Dropdown.Item><NavLink to="/video/all">All categories</NavLink></Dropdown.Item>
-                                <Dropdown.Item><NavLink to="/video/wrestling">Wrestling</NavLink></Dropdown.Item>
-                                <Dropdown.Item><NavLink to="/video/mma">MMA</NavLink></Dropdown.Item>
-                                <Dropdown.Item><NavLink to="/video/boxing">Kickboxing</NavLink></Dropdown.Item>
-                                <Dropdown.Item><NavLink to="/video/mix">Mixed wrestling</NavLink></Dropdown.Item>
+                                <Dropdown.Item><NavLink to="/universeeng/video/all">All categories</NavLink></Dropdown.Item>
+                                <Dropdown.Item><NavLink to="/universeeng/video/wrestling">Wrestling</NavLink></Dropdown.Item>
+                                <Dropdown.Item><NavLink to="/universeeng/video/mma">MMA</NavLink></Dropdown.Item>
+                                <Dropdown.Item><NavLink to="/universeeng/video/boxing">Kickboxing</NavLink></Dropdown.Item>
+                                <Dropdown.Item><NavLink to="/universeeng/video/mix">Mixed wrestling</NavLink></Dropdown.Item>
                             </Dropdown.Menu>
                         </Dropdown>
                         <Dropdown>
@@ -40,9 +40,9 @@ export function Navigation() {
                                 GIRLS
                             </Dropdown.Toggle>
                             <Dropdown.Menu variant="dark" className={s.dropdownMenuSuper}>
-                                <Dropdown.Item><NavLink to="/girls/all">All girls</NavLink></Dropdown.Item>
-                                <Dropdown.Item><NavLink to="/girls/2010-2011">2010 - 2011</NavLink></Dropdown.Item>
-                                <Dropdown.Item><NavLink to="/girls/2012-2013">2012 - 2013</NavLink></Dropdown.Item>
+                                <Dropdown.Item><NavLink to="/universeeng/girls/all">All girls</NavLink></Dropdown.Item>
+                                <Dropdown.Item><NavLink to="/universeeng/girls/2010-2011">2010 - 2011</NavLink></Dropdown.Item>
+                                <Dropdown.Item><NavLink to="/universeeng/girls/2012-2013">2012 - 2013</NavLink></Dropdown.Item>
                             </Dropdown.Menu>
                         </Dropdown>
                         <Dropdown>
@@ -50,12 +50,12 @@ export function Navigation() {
                                 COMPETITIONS
                             </Dropdown.Toggle>
                             <Dropdown.Menu variant="dark" className={s.dropdownMenuSuper}>
-                                <Dropdown.Item><NavLink to="/competitions/all">All competitions</NavLink></Dropdown.Item>
-                                <Dropdown.Item><NavLink to="/competitions/2015-2017">2015 - 2017</NavLink></Dropdown.Item>
-                                <Dropdown.Item><NavLink to="/competitions/2013-2014">2013 - 2014</NavLink></Dropdown.Item>
-                                <Dropdown.Item><NavLink to="/competitions/2012">2012</NavLink></Dropdown.Item>
-                                <Dropdown.Item><NavLink to="/competitions/2011">2011</NavLink></Dropdown.Item>
-                                <Dropdown.Item><NavLink to="/competitions/Archive">Archive</NavLink></Dropdown.Item>
+                                <Dropdown.Item><NavLink to="/universeeng/competitions/all">All competitions</NavLink></Dropdown.Item>
+                                <Dropdown.Item><NavLink to="/universeeng/competitions/2015-2017">2015 - 2017</NavLink></Dropdown.Item>
+                                <Dropdown.Item><NavLink to="/universeeng/competitions/2013-2014">2013 - 2014</NavLink></Dropdown.Item>
+                                <Dropdown.Item><NavLink to="/universeeng/competitions/2012">2012</NavLink></Dropdown.Item>
+                                <Dropdown.Item><NavLink to="/universeeng/competitions/2011">2011</NavLink></Dropdown.Item>
+                                <Dropdown.Item><NavLink to="/universeeng/competitions/Archive">Archive</NavLink></Dropdown.Item>
                             </Dropdown.Menu>
                         </Dropdown>
                         <li className="nav-item">
