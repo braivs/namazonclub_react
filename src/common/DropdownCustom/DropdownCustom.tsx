@@ -5,7 +5,7 @@ export const CustomToggle = React.forwardRef(
     (props: CustomToggleProps, ref: React.Ref<HTMLAnchorElement>) => (
         <div className={s.customToggle}>
             <a
-                href=""
+                href="/a"
                 ref={ref}
                 onClick={e => {
                     e.preventDefault();

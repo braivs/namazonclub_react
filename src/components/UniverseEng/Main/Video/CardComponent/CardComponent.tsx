@@ -1,17 +1,18 @@
-import React from 'react'
-import Card from 'react-bootstrap/Card';
+import React, {ReactNode} from 'react'
+import Card from 'react-bootstrap/Card'
 import {NavLink} from "react-router-dom"
-import power2016 from 'src/img/video/wrestThumb/2016-power competition on Shrove Tuesday.jpg'
 import s from './CardComponent.module.scss'
 
-export const CardComponent = () => {
+export const CardComponent = (props: PropsType) => {
     return (
         <Card className={s.card}>
-            <NavLink to={'/universeeng/videos/44Eng'}>
-                <Card.Img src={power2016} alt={'video-44'} className={s.cardImgTop}/>
+            <NavLink to={props.linkRef}>
+                <Card.Img src={props.imgRef} alt={props.alt} className={s.cardImgTop}/>
             </NavLink>
-            <NavLink to={'/universeeng/videos/44Eng'}>
-                <Card.Body>VIDEO 44</Card.Body>
+            <NavLink to={props.linkRef}>
+                <Card.Body className={s.cardBody}>
+                    {props.title}
+                </Card.Body>
             </NavLink>
         </Card>
     )
@@ -28,8 +29,8 @@ export const CardComponent = () => {
 * */
 
 type PropsType = {
-    title: string
-    ref: string
+    title: ReactNode
+    linkRef: string
     imgRef: string
     alt: string
 }
