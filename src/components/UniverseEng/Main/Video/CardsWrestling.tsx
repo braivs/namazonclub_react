@@ -2,7 +2,7 @@ import React from 'react'
 import {CardComponent} from "./CardComponent/CardComponent"
 import {Row} from "react-bootstrap"
 import s from './CardsWrestling.module.scss'
-import {cardsWrestling} from "../../../../localdata/cardsWrestling"
+import {cardsWrestling} from "../../../../localdata/cardsVideo"
 
 export const CardsWrestling = () => {
     return (

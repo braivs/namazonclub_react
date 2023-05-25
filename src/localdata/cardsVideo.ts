@@ -20,6 +20,11 @@ import video4 from 'src/img/video/wrestThumb/video-4.jpg'
 import video3 from 'src/img/video/wrestThumb/video-3-ww.jpg'
 import video2 from 'src/img/video/wrestThumb/video-2.jpg'
 import video1 from 'src/img/video/wrestThumb/video-1.jpg'
+import video9 from 'src/img/video/mmaThumb/video-9.jpg'
+import video17 from 'src/img/video/mmaThumb/video-17.jpg'
+import video18 from 'src/img/video/mmaThumb/video-18.jpg'
+import video20 from 'src/img/video/mmaThumb/video-20.jpg'
+import video21 from 'src/img/video/mmaThumb/video-21.jpg'
 
 export const cardsWrestling: Array<CardType> = [
     {
@@ -126,5 +131,33 @@ export const cardsWrestling: Array<CardType> = [
         id: 1,
         title: 'Submission Grappling\nPart 1.  June,  2010',
         imgRef: video1,
+    },
+]
+
+export const cardsMMA: Array<CardType> = [
+    {
+        id: 9,
+        title: 'MMA tournament<br>“Christmas Cup 2012”',
+        imgRef: video9,
+    },
+    {
+        id: 17,
+        title: 'MMA and Submission<br>Grappling. February, 2012',
+        imgRef: video17,
+    },
+    {
+        id: 18,
+        title: 'MMA. Kara Teller vs Darya<br>Balina and Tais.  May, 2012',
+        imgRef: video18,
+    },
+    {
+        id: 20,
+        title: 'MMA. Kara Teller vs Darya<br>Balina and Tais.  May, 2012',
+        imgRef: video20,
+    },
+    {
+        id: 21,
+        title: 'MMA. Darya Balina vs<br>Olga. July, 2012',
+        imgRef: video21,
     },
 ]
