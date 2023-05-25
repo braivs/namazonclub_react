@@ -25,6 +25,7 @@ import video17 from 'src/img/video/mmaThumb/video-17.jpg'
 import video18 from 'src/img/video/mmaThumb/video-18.jpg'
 import video20 from 'src/img/video/mmaThumb/video-20.jpg'
 import video21 from 'src/img/video/mmaThumb/video-21.jpg'
+import video13 from 'src/img/video/boksThumb/video-13.jpg'
 
 export const cardsWrestling: Array<CardType> = [
     {
@@ -137,27 +138,35 @@ export const cardsWrestling: Array<CardType> = [
 export const cardsMMA: Array<CardType> = [
     {
         id: 9,
-        title: 'MMA tournament<br>“Christmas Cup 2012”',
+        title: 'MMA tournament\n“Christmas Cup 2012”',
         imgRef: video9,
     },
     {
         id: 17,
-        title: 'MMA and Submission<br>Grappling. February, 2012',
+        title: 'MMA and Submission\nGrappling. February, 2012',
         imgRef: video17,
     },
     {
         id: 18,
-        title: 'MMA. Kara Teller vs Darya<br>Balina and Tais.  May, 2012',
+        title: 'MMA. Kara Teller vs Darya\nBalina and Tais.  May, 2012',
         imgRef: video18,
     },
     {
         id: 20,
-        title: 'MMA. Kara Teller vs Darya<br>Balina and Tais.  May, 2012',
+        title: 'MMA. Kara Teller vs Darya\nBalina and Tais.  May, 2012',
         imgRef: video20,
     },
     {
         id: 21,
-        title: 'MMA. Darya Balina vs<br>Olga. July, 2012',
+        title: 'MMA. Darya Balina vs\nOlga. July, 2012',
         imgRef: video21,
+    },
+]
+
+export const cardsBoxing: Array<CardType> = [
+    {
+        id: 13,
+        title: 'V.Perfilyeva  vs  N.Ahmerova\nKickboxing. 2011',
+        imgRef: video13,
     },
 ]
