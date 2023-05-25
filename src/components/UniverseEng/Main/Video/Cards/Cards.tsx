@@ -1,15 +1,15 @@
 import React from 'react'
 import {CardComponent} from "./CardComponent/CardComponent"
 import {Row} from "react-bootstrap"
-import s from './CardsWrestling.module.scss'
-import {cardsWrestling} from "../../../../localdata/cardsVideo"
+import s from './Cards.module.scss'
+import {CardType} from "../../../../../common/types"
 
-export const CardsWrestling = () => {
+export const Cards = (props: PropsType) => {
     return (
         <div>
             <Row className={s.cardRow}>
                 {
-                    cardsWrestling.map(e => {
+                    props.cardsArray.map(e => {
                         return <CardComponent
                             key={e.id}
                             id={e.id}
@@ -18,8 +18,11 @@ export const CardsWrestling = () => {
                         />
                     })
                 }
-
             </Row>
         </div>
     )
+}
+
+type PropsType = {
+    cardsArray: Array<CardType>
 }
