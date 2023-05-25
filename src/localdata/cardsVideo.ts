@@ -26,6 +26,24 @@ import video18 from 'src/img/video/mmaThumb/video-18.jpg'
 import video20 from 'src/img/video/mmaThumb/video-20.jpg'
 import video21 from 'src/img/video/mmaThumb/video-21.jpg'
 import video13 from 'src/img/video/boksThumb/video-13.jpg'
+import alexElena from 'src/img/video/mixWrestThumb/2011-alex-elena.jpg'
+import video3wm from 'src/img/video/mixWrestThumb/video-3-wm.jpg'
+import video5 from 'src/img/video/mixWrestThumb/video-5.jpg'
+import video7 from 'src/img/video/mixWrestThumb/video-7.jpg'
+import video10 from 'src/img/video/mixWrestThumb/video-10.jpg'
+import video14 from 'src/img/video/mixWrestThumb/video-14.jpg'
+import video15 from 'src/img/video/mixWrestThumb/video-15.jpg'
+import video22 from 'src/img/video/mixWrestThumb/video-22.jpg'
+import video25 from 'src/img/video/mixWrestThumb/video-25.jpg'
+import video28 from 'src/img/video/mixWrestThumb/video-28.jpg'
+import video30 from 'src/img/video/mixWrestThumb/video-30.jpg'
+import video31_1 from 'src/img/video/mixWrestThumb/video-31-1.jpg'
+import video31_2 from 'src/img/video/mixWrestThumb/video-31-2.jpg'
+import video32 from 'src/img/video/mixWrestThumb/video-32.jpg'
+import video34 from 'src/img/video/mixWrestThumb/video-34.jpg'
+import video38 from 'src/img/video/mixWrestThumb/video-38.jpg'
+import video39 from 'src/img/video/mixWrestThumb/video-39.jpg'
+import video40 from 'src/img/video/mixWrestThumb/video-40.jpg'
 
 export const cardsWrestling: Array<CardType> = [
     {
@@ -168,5 +186,98 @@ export const cardsBoxing: Array<CardType> = [
         id: 13,
         title: 'V.Perfilyeva  vs  N.Ahmerova\nKickboxing. 2011',
         imgRef: video13,
+    }
+]
+
+export const cardsMix: Array<CardType> = [
+    {
+        id: '3wm',
+        title: 'Beach Wrestling<br>Mixed Tournament. 2010',
+        imgRef: video3wm,
+    },
+    {
+        id: 5,
+        title: 'Villian  vs  Tais<br>Mixed Wrestling. 2011',
+        imgRef: video5,
+    },
+    {
+        id: 7,
+        title: 'Alex  vs  Tais<br>Extreme fight. 2011',
+        imgRef: video7,
+    },
+    {
+        id: 10,
+        title: 'Mixed Wrestling<br>Best Fights. Part 1. 2011',
+        imgRef: video10,
+    },
+    {
+        id: 11,
+        title: 'Alex  vs  Elena<br>Beach Wrestling. 2011',
+        imgRef: alexElena,
+    },
+    {
+        id: 14,
+        title: 'Two men against one<br>woman. Part 1. 2011',
+        imgRef: video14,
+    },
+    {
+        id: 15,
+        title: 'Two men against one<br>woman. Part 2. 2011',
+        imgRef: video15,
+    },
+    {
+        id: 22,
+        title: 'Irina and Elena vs Villian<br>Mixed Wrestling. 2011',
+        imgRef: video22,
+    },
+    {
+        id: 25,
+        title: 'Mixed Wrestling<br>Best Fights. Part 2. 2011',
+        imgRef: video25,
+    },
+    {
+        id: 28,
+        title: 'Mixed Wrestling<br>Best Fights. Part 2. 2011',
+        imgRef: video28,
+    },
+    {
+        id: 30,
+        title: 'Mixed Wrestling<br>Best Fights. Part 4. 2013',
+        imgRef: video30,
+    },
+    {
+        id: 31_1,
+        title: 'Mixed Wrestling<br>Best Fights. Part 5.1. 2013',
+        imgRef: video31_1,
+    },
+    {
+        id: 31_2,
+        title: 'Mixed Wrestling<br>Best Fights. Part 5.2. 2013',
+        imgRef: video31_2,
+    },
+    {
+        id: 32,
+        title: 'Mixed Wrestling<br>Artem vs Tais. 2013',
+        imgRef: video32,
+    },
+    {
+        id: 34,
+        title: 'Mixed Wrestling<br>Artem vs Tais. 2013',
+        imgRef: video34,
+    },
+    {
+        id: 38,
+        title: 'Mixed Wrestling<br>Alexander vs Tais. 2014',
+        imgRef: video38,
+    },
+    {
+        id: 39,
+        title: 'Mixed Wrestling<br>Villian vs Tais. Part 1. 2014',
+        imgRef: video39,
+    },
+    {
+        id: 40,
+        title: 'Mixed Wrestling<br>Villian vs Tais. Part 2. 2014',
+        imgRef: video40,
     },
 ]

@@ -1,5 +1,5 @@
 export type CardType = {
-    id: number
+    id: number | string
     title: string
     imgRef: string
 }
