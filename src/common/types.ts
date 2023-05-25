@@ -1,6 +1,5 @@
 export type CardType = {
+    id: number
     title: string
-    linkRef: string
     imgRef: string
-    alt: string
 }

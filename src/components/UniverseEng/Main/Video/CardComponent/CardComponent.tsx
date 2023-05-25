@@ -7,12 +7,12 @@ import {CardType} from "src/common/types"
 export const CardComponent = (props: CardType) => {
     return (
         <Card className={s.card}>
-            <NavLink to={props.linkRef}>
-                <Card.Img src={props.imgRef} alt={props.alt} className={s.cardImgTop}/>
+            <NavLink to={'/videos/'+ props.id}>
+                <Card.Img src={props.imgRef} alt={'video-' + props.id} className={s.cardImgTop}/>
             </NavLink>
-            <NavLink to={props.linkRef}>
+            <NavLink to={'/videos/'+ props.id}>
                 <Card.Body className={s.cardBody}>
-                    {props.title}
+                    {'VIDEO ' + props.id + '\n' + props.title}
                 </Card.Body>
             </NavLink>
         </Card>

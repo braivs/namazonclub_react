@@ -11,10 +11,10 @@ export const CardsWrestling = () => {
                 {
                     cardsWrestling.map(e => {
                         return <CardComponent
+                            key={e.id}
+                            id={e.id}
                             title={e.title}
-                            linkRef={e.linkRef}
                             imgRef={e.imgRef}
-                            alt={e.alt}
                         />
                     })
                 }
