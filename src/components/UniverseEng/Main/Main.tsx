@@ -13,7 +13,7 @@ export function Main() {
         <Routes>
             <Route path="home" element={<Home/>}/>
             <Route path="contactus" element={<ContactUs/>}/>
-            <Route path="video/*" element={<Video/>}/>
+            <Route path="video/:cardsVariant" element={<Video/>}/>
             <Route path="*" element={<NotFound/>}/>
         </Routes>
 
