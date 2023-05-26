@@ -17,22 +17,22 @@ export const Video = () => {
                 <p>Wrestling</p>
                 <p>This subcategory includes only videos of woman-on-woman wrestling matches that are mostly carried out
                     according to the rules of SUBMISSION GRAPPLING</p>
-                <Cards cardsArray={cardsWrestling}/>
+                <Cards cardsArray={cardsWrestling} variant={'video'}/>
             </div> }
             {(cardsVariant === 'all' || cardsVariant === 'mma') && <div>
                 <p>MMA</p>
                 <p>This subcategory is exclusive for the videos of FEMALE MMA FIGHTS, both in a gym and outdoors.</p>
-                <Cards cardsArray={cardsMMA}/>
+                <Cards cardsArray={cardsMMA} variant={'video'}/>
             </div>}
             {(cardsVariant === 'all' || cardsVariant === 'boxing') && <div>
                 <p>Kickboxing, Muay Thai</p>
                 <p>This subcategory is for the videos containing female <b>MUAY THAI</b> and <b>KICKBOXING</b> fights, both in a gym and outdoors.</p>
-                <Cards cardsArray={cardsBoxing}/>
+                <Cards cardsArray={cardsBoxing} variant={'video'}/>
             </div>}
             {(cardsVariant === 'all' || cardsVariant === 'mix') && <div>
                 <p>Mixed Wrestling</p>
                 <p>Namazon’s man-on-woman wrestling matches are all highly competitive and carried out according to the rules of SUBMISSION GRAPPLING, with no time limit in any individual fight.</p>
-                <Cards cardsArray={cardsMix}/>
+                <Cards cardsArray={cardsMix} variant={'video'}/>
             </div>}
         </>
 

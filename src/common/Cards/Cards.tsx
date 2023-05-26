@@ -15,6 +15,7 @@ export const Cards = (props: PropsType) => {
                             id={e.id}
                             title={e.title}
                             imgRef={e.imgRef}
+                            variant={props.variant}
                         />
                     })
                 }
@@ -25,4 +26,5 @@ export const Cards = (props: PropsType) => {
 
 type PropsType = {
     cardsArray: Array<CardType>
+    variant: 'video' | 'girls'
 }
