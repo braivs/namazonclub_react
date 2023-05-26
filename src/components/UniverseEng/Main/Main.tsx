@@ -4,7 +4,8 @@ import {ContactUs} from "./ContactUs/ContactUs"
 import s from "./Main.module.scss"
 import {Route, Routes} from "react-router-dom"
 import {NotFound} from "./notFound"
-import {Video} from "./Video/Video"
+import {Video} from "./Video"
+import {Girls} from "./Girls"
 
 
 export function Main() {
@@ -14,6 +15,7 @@ export function Main() {
             <Route path="home" element={<Home/>}/>
             <Route path="contactus" element={<ContactUs/>}/>
             <Route path="video/:cardsVariant" element={<Video/>}/>
+            <Route path="girls/:cardsVariant" element={<Girls/>}/>
             <Route path="*" element={<NotFound/>}/>
         </Routes>
 

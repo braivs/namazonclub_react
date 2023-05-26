@@ -33,7 +33,7 @@ export function Navigation() {
                                 <Dropdown.Item as={NavLink} to={"/universeeng/video/boxing"}>Kickboxing</Dropdown.Item>
                                 <Dropdown.Item as={NavLink} to={"/universeeng/video/mix"}>Mixed wrestling</Dropdown.Item>
                                 <Dropdown.Divider />
-                                <Dropdown.Item as={NavLink} to={"/universeeng/video/mix"}>All categories</Dropdown.Item>
+                                <Dropdown.Item as={NavLink} to={"/universeeng/video/all"}>All categories</Dropdown.Item>
                             </Dropdown.Menu>
                         </Dropdown>
                         <Dropdown>
