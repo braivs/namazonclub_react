@@ -2,16 +2,28 @@ import React from 'react'
 import Card from 'react-bootstrap/Card'
 import {NavLink} from "react-router-dom"
 import s from './CardComponent.module.scss'
-import {CardType} from "src/common/types"
+import {CardType, VariantType} from "src/common/types"
 import cn from 'classnames'
 
 export const CardComponent = (props: PropsType) => {
+    const classSwitch = (variant: VariantType) => {
+        switch (variant) {
+            case "girls":
+                return s.girls
+            case "video":
+            case "competitions":
+                return s.videoCompetitions
+        }
+    }
+
+    const toLink = () => `/${props.variant}/${props.id}`
+
     return (
-        <Card className={cn(s.card, props.variant === 'girls' ? s.girls : s.video)}>
-            <NavLink to={'/videos/'+ props.id}>
-                <Card.Img src={props.imgRef} alt={'video-' + props.id} className={s.cardImgTop}/>
+        <Card className={cn(s.card, classSwitch(props.variant))}>
+            <NavLink to={toLink()}>
+                <Card.Img src={props.imgRef} alt={`${props.variant}-${props.id}`} className={s.cardImgTop}/>
             </NavLink>
-            <NavLink to={'/videos/'+ props.id}>
+            <NavLink to={toLink()}>
                 <Card.Body className={s.cardBody}>
                     {(props.variant === 'video'
                         ? 'VIDEO ' + props.id + '\n' : '')
@@ -23,5 +35,5 @@ export const CardComponent = (props: PropsType) => {
 }
 
 type PropsType = CardType & {
-    variant: 'video' | 'girls'
+    variant: VariantType
 }

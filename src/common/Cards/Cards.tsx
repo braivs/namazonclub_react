@@ -2,7 +2,7 @@ import React from 'react'
 import {CardComponent} from "./CardComponent/CardComponent"
 import {Row} from "react-bootstrap"
 import s from './Cards.module.scss'
-import {CardType} from "../types"
+import {CardType, VariantType} from "../types"
 
 export const Cards = (props: PropsType) => {
     return (
@@ -26,5 +26,5 @@ export const Cards = (props: PropsType) => {
 
 type PropsType = {
     cardsArray: Array<CardType>
-    variant: 'video' | 'girls'
+    variant: VariantType
 }

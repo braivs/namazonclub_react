@@ -3,3 +3,5 @@ export type CardType = {
     title: string
     imgRef: string
 }
+
+export type VariantType = 'video' | 'girls' | 'competitions'

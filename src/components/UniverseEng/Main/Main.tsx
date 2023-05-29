@@ -6,6 +6,7 @@ import {Route, Routes} from "react-router-dom"
 import {NotFound} from "./notFound"
 import {Video} from "./Video"
 import {Girls} from "./Girls"
+import {Competitions} from "./Competitions"
 
 
 export function Main() {
@@ -16,6 +17,7 @@ export function Main() {
             <Route path="contactus" element={<ContactUs/>}/>
             <Route path="video/:cardsVariant" element={<Video/>}/>
             <Route path="girls/:cardsVariant" element={<Girls/>}/>
+            <Route path="competitions/:cardsVariant" element={<Competitions/>}/>
             <Route path="*" element={<NotFound/>}/>
         </Routes>
 
