@@ -16,7 +16,10 @@ code {
 
 a {
   &:link { text-decoration: none; }
-  &:visited { text-decoration: none; }
+  &:visited {
+    text-decoration: none;
+    color: black;
+  }
   &:hover { text-decoration: none; }
   &:active { text-decoration: none; }
 }

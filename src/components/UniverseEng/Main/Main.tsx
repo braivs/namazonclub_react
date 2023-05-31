@@ -7,6 +7,7 @@ import {NotFound} from "./notFound"
 import {Video} from "./Video"
 import {Girls} from "./Girls"
 import {Competitions} from "./Competitions"
+import {Articles} from "./Articles"
 
 
 export function Main() {
@@ -18,6 +19,7 @@ export function Main() {
             <Route path="video/:cardsVariant" element={<Video/>}/>
             <Route path="girls/:cardsVariant" element={<Girls/>}/>
             <Route path="competitions/:cardsVariant" element={<Competitions/>}/>
+            <Route path='articles/:article' element={<Articles/>}/>
             <Route path="*" element={<NotFound/>}/>
         </Routes>
 
