@@ -1,20 +1,20 @@
 import {CardType} from "../common/types"
-import maslenitsa_2016 from "../img/competitions/maslenitsa-2016.jpg"
-import tournament_2013 from "../img/competitions/tournament-2013.jpg"
-import tournament_2014 from "../img/competitions/tournament-2014.jpg"
-import grappling_2014 from "../img/competitions/grappling-2014.jpg"
-import Elena_Vasilyeva_vs_Kara_Teller from '../img/competitions/Elena_Vasilyeva_vs_Kara_Teller.jpg'
-import Kara_Teller_vs_Svetlana_Solovyova from '../img/competitions/Kara_Teller_vs_Svetlana_Solovyova.jpg'
-import KaraTellervsDariaBalina from '../img/competitions/KaraTellervsDariaBalina.jpg'
-import VarvaravsTais from '../img/competitions/VarvaravsTais.jpg'
-import video_20 from '../img/competitions/video-20.jpg'
-import video_4 from '../img/competitions/video-4.jpg'
-import video_8 from '../img/competitions/video-8.jpg'
-import alex_elena_2011 from '../img/competitions/2011-alex-elena.jpg'
-import izida_tais_2008 from '../img/competitions/2008-izida-tais.jpg'
-import izida_irina_2008 from '../img/competitions/2008-izida-irina.jpg'
-import irina_tais_2009 from '../img/competitions/2009-irina-tais.jpg'
-import natalia_alex_2010 from '../img/competitions/2010-natalia-alex.jpg'
+import maslenitsa_2016 from "../img/competitions/thumb/maslenitsa-2016.jpg"
+import tournament_2013 from "../img/competitions/thumb/tournament-2013.jpg"
+import tournament_2014 from "../img/competitions/thumb/tournament-2014.jpg"
+import grappling_2014 from "../img/competitions/thumb/grappling-2014.jpg"
+import Elena_Vasilyeva_vs_Kara_Teller from '../img/competitions/thumb/Elena_Vasilyeva_vs_Kara_Teller.jpg'
+import Kara_Teller_vs_Svetlana_Solovyova from '../img/competitions/thumb/Kara_Teller_vs_Svetlana_Solovyova.jpg'
+import KaraTellervsDariaBalina from '../img/competitions/thumb/KaraTellervsDariaBalina.jpg'
+import VarvaravsTais from '../img/competitions/thumb/VarvaravsTais.jpg'
+import video_20 from '../img/competitions/thumb/video-20.jpg'
+import video_4 from '../img/competitions/thumb/video-4.jpg'
+import video_8 from '../img/competitions/thumb/video-8.jpg'
+import alex_elena_2011 from '../img/competitions/thumb/2011-alex-elena.jpg'
+import izida_tais_2008 from '../img/competitions/thumb/2008-izida-tais.jpg'
+import izida_irina_2008 from '../img/competitions/thumb/2008-izida-irina.jpg'
+import irina_tais_2009 from '../img/competitions/thumb/2009-irina-tais.jpg'
+import natalia_alex_2010 from '../img/competitions/thumb/2010-natalia-alex.jpg'
 
 
 
