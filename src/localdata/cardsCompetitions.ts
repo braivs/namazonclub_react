@@ -20,8 +20,8 @@ import natalia_alex_2010 from '../img/competitions/thumb/2010-natalia-alex.jpg'
 
 export const cardsCompetitions2015_2017: Array<CardType> = [
     {
-        id: 'maslenitsa-2016',
-        title: 'Female power competitions for\nthe Maslenitsa week, 2016',
+        id: 'maslenitsa-2015-2017',
+        title: 'Female power compArticles for\nthe Maslenitsa week, 2015-2017',
         imgRef: maslenitsa_2016,
     },
 ]

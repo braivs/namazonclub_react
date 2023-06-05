@@ -12,7 +12,7 @@ export function MMA() {
                 judo,
                 boxing, kickboxing, Muay Thai, karate and other styles. The roots of mo-dern mixed martial arts can be
                 traced
-                back to the ancient Olympic combat sport of Pankration. </p>
+                back to the ancient Olympic combat sport of Pankration.</p>
             <NavLink to={'/universeeng/articles/mma'}>
                 <button type="button">Read more...</button>
             </NavLink>

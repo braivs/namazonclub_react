@@ -48,7 +48,7 @@ import video40 from 'src/img/video/mixWrestThumb/video-40.jpg'
 export const cardsWrestling: Array<CardType> = [
     {
         id: 44,
-        title: 'The Maslenitsa Festival, 2016\nPins-and-Submissions Wrestling',
+        title: 'The Maslenitsa Festival, 2015-2017\nPins-and-Submissions Wrestling',
         imgRef: power2016,
     },
     {
