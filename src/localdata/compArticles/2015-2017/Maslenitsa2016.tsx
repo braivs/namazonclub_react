@@ -1,7 +1,8 @@
 import React, {useState} from 'react'
 import img1 from 'src/img/competitions/2016/Shrove_Tuesday/armwrestling/1.jpg'
 import sC from 'src/common/styles.module.scss'
-import {Button, Collapse} from "react-bootstrap"
+import {Button} from "react-bootstrap"
+import {Collapse} from "@mui/material"
 import {Gallery} from "react-grid-gallery"
 import {photos} from "./photosTemp"
 
@@ -26,16 +27,10 @@ export const Maslenitsa2016 = () => {
             </ul>
             <p>The winner in the "armwrestling" nomination became Viktoria Vardugina who confidently defeated her both
                 opponents in both left and right hand fights.</p>
-            <Button variant="primary" onClick={() => setOpen(!open)}
-                    aria-controls="example-collapse-text"
-                    aria-expanded={open}>Armwrestling photos</Button>
+            <Button variant="primary" onClick={() => setOpen(!open)}>Armwrestling photos</Button>
             <Collapse in={open}>
-                <div id="example-collapse-text">
-                    <Gallery images={photos} />
-                </div>
+                <Gallery images={photos}/>
             </Collapse>
-
-
         </>
     )
 }
