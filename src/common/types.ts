@@ -1,3 +1,5 @@
+import {Image} from "react-grid-gallery"
+
 export type CardType = {
     id: number | string
     title: string
@@ -5,3 +7,7 @@ export type CardType = {
 }
 
 export type VariantType = 'video' | 'girls' | 'competitions'
+
+export interface CustomImage extends Image {
+    original: string;
+}

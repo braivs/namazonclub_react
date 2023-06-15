@@ -4,8 +4,9 @@ import sC from 'src/common/styles.module.scss'
 import {Button} from "react-bootstrap"
 import {Collapse} from "@mui/material"
 import {Gallery} from "react-grid-gallery"
-import {CustomImage, photos} from "./photosTemp"
+import {photos} from "./photosTemp"
 import Lightbox from "yet-another-react-lightbox"
+import {CustomImage} from "../../../common/types"
 
 export const Maslenitsa2016 = () => {
     const [open, setOpen] = useState(false)
@@ -44,7 +45,12 @@ export const Maslenitsa2016 = () => {
                     close={() => setIndex(-1)}
                 />
             </Collapse>
-
+            <p>In the leg-wrestling contest, Viktoria Vardugina and Oxana Grigorenko divided 1st and 2nd places.</p>
+            <p>The pins-and-submission fights were the most thrilling part of the competition. The three ladies wrestled
+                each against each other. The fights were won by holding the opponent in a pin for a count of 7, or forcing her
+                into submission. The time limit of the fights was 5 minutes from start to end. Oxana Grigorenko was the
+                absolute winner of the competition. Viktoria Smorodina who proved to be a fairly even match for Oxana won the
+                2nd place.</p>
         </>
     )
 }
