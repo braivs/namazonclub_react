@@ -11,10 +11,8 @@ export const Maslenitsa2016 = () => {
     const [open, setOpen] = useState(false)
     const [index, setIndex] = useState(-1);
     const handleClick = (index: number, item: CustomImage) => setIndex(index);
-    const slides = photos.map(({ original, width, height }) => ({
-        src: original,
-        width,
-        height,
+    const slides = photos.map(({ original}) => ({
+        src: original
     }));
 
 
