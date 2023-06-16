@@ -1,4 +1,4 @@
-const images = require.context('../../../img/competitions/2016/Shrove_Tuesday/armwrestling/', false)
+const images = require.context('src/img/competitions/2016/Shrove_Tuesday/armwrestling/', false)
 
 const imageList = images.keys().map(image => images(image));
 
