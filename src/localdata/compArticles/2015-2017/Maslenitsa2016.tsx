@@ -4,18 +4,16 @@ import sC from 'src/common/styles.module.scss'
 import {Button} from "react-bootstrap"
 import {Collapse} from "@mui/material"
 import {Gallery} from "react-grid-gallery"
-import {photos} from "./photosTemp"
+import {photosForGallery} from "./photosTemp"
 import Lightbox from "yet-another-react-lightbox"
-import {CustomImage} from "../../../common/types"
 
 export const Maslenitsa2016 = () => {
     const [open, setOpen] = useState(false)
     const [index, setIndex] = useState(-1);
-    const handleClick = (index: number, item: CustomImage) => setIndex(index);
-    const slides = photos.map(({ original}) => ({
+    const handleClick = (index: number) => setIndex(index);
+    const slides = photosForGallery.map(({ original}) => ({
         src: original
     }));
-
 
     return (
         <>
@@ -37,7 +35,7 @@ export const Maslenitsa2016 = () => {
                 opponents in both left and right hand fights.</p>
             <Button variant="primary" onClick={() => setOpen(!open)}>Armwrestling photos</Button>
             <Collapse in={open}>
-                <Gallery images={photos} enableImageSelection={false} onClick={handleClick}/>
+                <Gallery images={photosForGallery} enableImageSelection={false} onClick={handleClick}/>
                 <Lightbox
                     slides={slides}
                     open={index >= 0}
