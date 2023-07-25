@@ -1,23 +1,11 @@
 {
   "files": {
     "main.css": "/namazonclub_react/static/css/main.53f2f18e.css",
-    "main.js": "/namazonclub_react/static/js/main.a40d1dc4.js",
+    "main.js": "/namazonclub_react/static/js/main.0f4e3d18.js",
     "static/js/787.66a41b5d.chunk.js": "/namazonclub_react/static/js/787.66a41b5d.chunk.js",
-    "static/media/8.jpg": "/namazonclub_react/static/media/8.671fd1ad24b8f5ff2906.jpg",
-    "static/media/12.jpg": "/namazonclub_react/static/media/12.a08aa7154e8894d49770.jpg",
-    "static/media/13.jpg": "/namazonclub_react/static/media/13.1141adb60327299f51c6.jpg",
     "static/media/backgroundIndex.jpg": "/namazonclub_react/static/media/backgroundIndex.66b4cac77f86b163710c.jpg",
-    "static/media/10.jpg": "/namazonclub_react/static/media/10.fa256e38c80450872a89.jpg",
-    "static/media/5.jpg": "/namazonclub_react/static/media/5.65643159b8dcd852eaf1.jpg",
-    "static/media/11.jpg": "/namazonclub_react/static/media/11.13f979ccb1c9e815b08c.jpg",
-    "static/media/7.jpg": "/namazonclub_react/static/media/7.7b516294c856b981a9b8.jpg",
-    "static/media/3.jpg": "/namazonclub_react/static/media/3.33b8c306268c08c309a5.jpg",
     "static/media/background.jpg": "/namazonclub_react/static/media/background.83d287b16124b94e5a2b.jpg",
-    "static/media/9.jpg": "/namazonclub_react/static/media/9.65080cbff14826e4b721.jpg",
-    "static/media/4.jpg": "/namazonclub_react/static/media/4.df05788702f8159a45f4.jpg",
     "static/media/1.jpg": "/namazonclub_react/static/media/1.c0383efefd8094b86ba7.jpg",
-    "static/media/6.jpg": "/namazonclub_react/static/media/6.d409b5a2ef59f2b7ebdc.jpg",
-    "static/media/2.jpg": "/namazonclub_react/static/media/2.c8ef82a17390713bbf19.jpg",
     "static/media/Kara_Teller_vs_Svetlana_Solovyova.jpg": "/namazonclub_react/static/media/Kara_Teller_vs_Svetlana_Solovyova.a6ae4fc34f84c03e9572.jpg",
     "static/media/tournament-2014.jpg": "/namazonclub_react/static/media/tournament-2014.bcdd7db54427830d9e84.jpg",
     "static/media/slide2.jpg": "/namazonclub_react/static/media/slide2.805821423f75e2184c91.jpg",
@@ -101,11 +89,11 @@
     "static/media/darya-balina.jpg": "/namazonclub_react/static/media/darya-balina.d6b03a83e99bf8befe46.jpg",
     "index.html": "/namazonclub_react/index.html",
     "main.53f2f18e.css.map": "/namazonclub_react/static/css/main.53f2f18e.css.map",
-    "main.a40d1dc4.js.map": "/namazonclub_react/static/js/main.a40d1dc4.js.map",
+    "main.0f4e3d18.js.map": "/namazonclub_react/static/js/main.0f4e3d18.js.map",
     "787.66a41b5d.chunk.js.map": "/namazonclub_react/static/js/787.66a41b5d.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.53f2f18e.css",
-    "static/js/main.a40d1dc4.js"
+    "static/js/main.0f4e3d18.js"
   ]
 }
