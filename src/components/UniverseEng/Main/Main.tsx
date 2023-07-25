@@ -9,6 +9,7 @@ import {Girls} from "./Girls"
 import {Competitions} from "./Competitions"
 import {Articles} from "./Articles"
 import {CompArticles} from "./CompArticles"
+import {Temp} from "../../Temp"
 
 
 export function Main() {
@@ -22,6 +23,7 @@ export function Main() {
             <Route path="competitions/:cardsVariant" element={<Competitions/>}/>
             <Route path='articles/:article' element={<Articles/>}/>
             <Route path='compArticles/:years/:compArticle' element={<CompArticles/>}/>
+            <Route path="temp" element={<Temp/>}/>
             <Route path="*" element={<NotFound/>}/>
         </Routes>
 
