@@ -21,7 +21,7 @@ export function Navigation() {
                             <NavLink to="home">HOME</NavLink>
                         </li>
                         <li className="nav-item">
-                            <NavLink to="/universeeng/shop">SHOP</NavLink>
+                            <NavLink to="https://gumroad.com/namazonclub">SHOP</NavLink>
                         </li>
                         <Dropdown>
                             <Dropdown.Toggle id="dropdown-basic" as={CustomToggle}>

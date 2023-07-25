@@ -6,14 +6,19 @@ import {Collapse} from "@mui/material"
 import {Gallery} from "react-grid-gallery"
 import {photosForGallery} from "./photosTemp"
 import Lightbox from "yet-another-react-lightbox"
+import {getGalleryPhotoes} from "../../../common/helpers"
 
 export const Maslenitsa2016 = () => {
     const [open, setOpen] = useState(false)
+    const [open2, setOpen2] = useState(false)
     const [index, setIndex] = useState(-1);
     const handleClick = (index: number) => setIndex(index);
+    const photosForGallery = getGalleryPhotoes('src/img/competitions/2016/Shrove_Tuesday/armwrestling/')
+
     const slides = photosForGallery.map(({ original}) => ({
         src: original
     }));
+
 
     return (
         <>
@@ -49,6 +54,10 @@ export const Maslenitsa2016 = () => {
                 into submission. The time limit of the fights was 5 minutes from start to end. Oxana Grigorenko was the
                 absolute winner of the competition. Viktoria Smorodina who proved to be a fairly even match for Oxana won the
                 2nd place.</p>
+            <Button variant="primary" onClick={() => setOpen2(!open2)}>Wrestling photos</Button>
+            <Collapse in={open2}>
+                Wrestling photos here
+            </Collapse>
         </>
     )
 }
