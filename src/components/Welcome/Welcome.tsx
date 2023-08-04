@@ -29,7 +29,7 @@ export function Welcome() {
                 <Row className={cn('text-center', s.buttonContainer)}>
                     <Col>
                         <button className="btn btn-primary btn-lg" type="button" onClick={onClick}>Вход</button>
-                        <NavLink to="/universeeng/home" className={s.myBtn}>
+                        <NavLink to="/universe/home" className={s.myBtn}>
                             <button className="btn btn-primary btn-lg" type="button">Enter</button>
                         </NavLink>
                     </Col>

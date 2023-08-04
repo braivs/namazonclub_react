@@ -1,5 +1,5 @@
 import React from "react"
-import s from "./UniverseEng.module.scss"
+import s from "./Universe.module.scss"
 import {Header} from "./Header/Header"
 import {Slider} from "./Slider/Slider"
 import {Main} from "./Main/Main"
