@@ -5,8 +5,8 @@ export const getGalleryPhotoes = (requreData: __WebpackModuleApi.RequireContext)
         return {
             src: e,
             original: e,
-            width: 320,
-            height: 212
+            width: 270,
+            height: 152
         }
     })
 }
