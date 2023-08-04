@@ -5,7 +5,7 @@ import {Button} from "react-bootstrap"
 import {Collapse} from "@mui/material"
 import {Gallery} from "react-grid-gallery"
 import Lightbox from "yet-another-react-lightbox"
-import {getGalleryPhotoes} from "../../../common/helpers"
+import {getGalleryPhotoesFromRequire} from "../../../common/helpers"
 const images = require.context('src/img/competitions/2016/Shrove_Tuesday/armwrestling/', false)
 const images2 = require.context('src/img/competitions/2016/Shrove_Tuesday/wrestling/', false)
 
@@ -17,12 +17,12 @@ export const Maslenitsa2016 = () => {
     const handleClick = (index: number) => setIndex(index);
     const handleClick2 = (index: number) => setIndex2(index);
 
-    const photos = getGalleryPhotoes(images)
+    const photos = getGalleryPhotoesFromRequire(images)
     const slides = photos.map(({ original}) => ({
         src: original
     }));
 
-    const photos2 = getGalleryPhotoes(images2)
+    const photos2 = getGalleryPhotoesFromRequire(images2)
     const slides2 = photos2.map(({ original}) => ({
         src: original
     }));

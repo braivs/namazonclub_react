@@ -2,13 +2,13 @@ import React from 'react'
 import {useParams} from "react-router-dom"
 import {Maslenitsa2016} from "../../../localdata/compArticles/2015-2017/Maslenitsa2016"
 import {Col, Container, Row} from "react-bootstrap"
-import s from './CompArticles.module.scss'
+import sC from 'src/common/styles.module.scss'
 
 export const CompArticles = () => {
     const {compArticle, years} = useParams()
 
     return (
-        <div className={s.compArticles}>
+        <div className={sC.compArticlesVideos}>
             <Container>
                 <Row>
                     <Col>
