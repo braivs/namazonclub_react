@@ -6,7 +6,7 @@ import {Main} from "./Main/Main"
 import {Footer} from "./Footer/Footer"
 import {Container} from "react-bootstrap"
 
-export function UniverseEng() {
+export function Universe() {
     return (
         <div className={s.MainEngWrapper}>
             <Container>
