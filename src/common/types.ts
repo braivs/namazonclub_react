@@ -6,7 +6,7 @@ export type CardType = {
     imgRef: string
 }
 
-export type VariantType = 'video' | 'girls' | 'competitions'
+export type VariantType = 'videos' | 'girls' | 'competitions'
 
 export interface CustomImage extends Image {
     original: string;

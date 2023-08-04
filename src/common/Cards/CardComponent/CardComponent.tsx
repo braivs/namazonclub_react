@@ -10,13 +10,13 @@ export const CardComponent = (props: PropsType) => {
         switch (variant) {
             case "girls":
                 return s.girls
-            case "video":
+            case "videos":
             case "competitions":
                 return s.videoCompetitions
         }
     }
 
-    const toLink = () => `/${props.variant}/${props.id}`
+    const toLink = () => `/universe/${props.variant}/${props.id}`
 
     return (
         <Card className={cn(s.card, classSwitch(props.variant))}>
@@ -25,7 +25,7 @@ export const CardComponent = (props: PropsType) => {
             </NavLink>
             <NavLink to={toLink()}>
                 <Card.Body className={s.cardBody}>
-                    {(props.variant === 'video'
+                    {(props.variant === 'videos'
                         ? 'VIDEO ' + props.id + '\n' : '')
                         + props.title}
                 </Card.Body>
