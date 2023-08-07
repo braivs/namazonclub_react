@@ -21,3 +21,13 @@ export const getGalleryPhotosFromArray = (photos: Array<string>) => {
         }
     })
 }
+
+export const photosForReactPhotoAlbumFromArray = (photos: Array<string>) => {
+    return photos.map(e => {
+        return {
+            src: e,
+            width: 270,
+            height: 152
+        }
+    })
+}
