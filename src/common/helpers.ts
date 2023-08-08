@@ -11,11 +11,11 @@ export const getGalleryPhotoesFromRequire = (requreData: __WebpackModuleApi.Requ
     })
 }
 
-export const getGalleryPhotosFromArray = (photos: Array<string>) => {
-    return photos.map(e => {
+export const getGalleryForReactPhotoAlbumPhotoesFromRequire = (requreData: __WebpackModuleApi.RequireContext) => {
+    const images: Array<string> = requreData.keys().map(image => requreData(image));
+    return images.map(e => {
         return {
             src: e,
-            original: e,
             width: 270,
             height: 152
         }

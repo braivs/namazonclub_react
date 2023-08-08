@@ -6,26 +6,27 @@ import {Collapse} from "@mui/material"
 import {Gallery} from "react-grid-gallery"
 import Lightbox from "yet-another-react-lightbox"
 import {getGalleryPhotoesFromRequire} from "../../../common/helpers"
+
 const images = require.context('src/img/competitions/2016/Shrove_Tuesday/armwrestling/', false)
 const images2 = require.context('src/img/competitions/2016/Shrove_Tuesday/wrestling/', false)
 
 export const Maslenitsa2016 = () => {
     const [open, setOpen] = useState(false)
     const [open2, setOpen2] = useState(false)
-    const [index, setIndex] = useState(-1);
-    const [index2, setIndex2] = useState(-1);
-    const handleClick = (index: number) => setIndex(index);
-    const handleClick2 = (index: number) => setIndex2(index);
+    const [index, setIndex] = useState(-1)
+    const [index2, setIndex2] = useState(-1)
+    const handleClick = (index: number) => setIndex(index)
+    const handleClick2 = (index: number) => setIndex2(index)
 
     const photos = getGalleryPhotoesFromRequire(images)
-    const slides = photos.map(({ original}) => ({
+    const slides = photos.map(({original}) => ({
         src: original
-    }));
+    }))
 
     const photos2 = getGalleryPhotoesFromRequire(images2)
-    const slides2 = photos2.map(({ original}) => ({
+    const slides2 = photos2.map(({original}) => ({
         src: original
-    }));
+    }))
 
     return (
         <>
@@ -57,9 +58,11 @@ export const Maslenitsa2016 = () => {
             </Collapse>
             <p>In the leg-wrestling contest, Viktoria Vardugina and Oxana Grigorenko divided 1st and 2nd places.</p>
             <p>The pins-and-submission fights were the most thrilling part of the competition. The three ladies wrestled
-                each against each other. The fights were won by holding the opponent in a pin for a count of 7, or forcing her
+                each against each other. The fights were won by holding the opponent in a pin for a count of 7, or
+                forcing her
                 into submission. The time limit of the fights was 5 minutes from start to end. Oxana Grigorenko was the
-                absolute winner of the competition. Viktoria Smorodina who proved to be a fairly even match for Oxana won the
+                absolute winner of the competition. Viktoria Smorodina who proved to be a fairly even match for Oxana
+                won the
                 2nd place.</p>
             <Button variant="primary" onClick={() => setOpen2(!open2)}>Wrestling photos</Button>
             <Collapse in={open2}>
@@ -71,7 +74,8 @@ export const Maslenitsa2016 = () => {
                     close={() => setIndex2(-1)}
                 />
             </Collapse>
-            <p>Anyway it was an interesting sporting event. Even though there were only few participants, it was well compensated with their high fitness and wrestling level.</p>
+            <p>Anyway it was an interesting sporting event. Even though there were only few participants, it was well
+                compensated with their high fitness and wrestling level.</p>
         </>
     )
 }

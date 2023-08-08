@@ -2,7 +2,6 @@ import React, {useState} from 'react'
 import {Col, Row} from "react-bootstrap"
 import sC from 'src/common/styles.module.scss'
 import cn from 'classnames'
-import s from './video44.module.scss'
 import VSmorodina_vs_VVardugina1 from 'src/img/videos/44/1_V.Smorodina_vs_V.Vardugina.jpg'
 import VSmorodina_vs_VVardugina2 from 'src/img/videos/44/2_V.Smorodina_vs_V.Vardugina.jpg'
 import p1_OGrigorenko_vs_VVardugina from 'src/img/videos/44/1_O.Grigorenko_vs_V.Vardugina.jpg'
@@ -33,7 +32,7 @@ export const Video44 = () => {
     }))
 
     return (
-        <div className={cn(sC.compArticlesVideos, s.video44)}>
+        <div className={sC.compArticlesVideos}>
             <h3>VIDEO 44</h3>
             <h4>The female power competition for the Maslenitsa Festival, 2016. Wrestling</h4>
             <p>You can read the report on the competitions, the main part of which was these fights, <NavLink
