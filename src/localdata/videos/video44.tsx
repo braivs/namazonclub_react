@@ -9,10 +9,10 @@ import p1_OGrigorenko_vs_VVardugina from 'src/img/videos/44/1_O.Grigorenko_vs_V.
 import p2_OGrigorenko_vs_VVardugina from 'src/img/videos/44/2_O.Grigorenko_vs_V.Vardugina.jpg'
 import p1_OGrigorenko_vs_VSmorodina from 'src/img/videos/44/1_O.Grigorenko_vs_V.Smorodina.jpg'
 import p2_OGrigorenko_vs_VSmorodina from 'src/img/videos/44/2_O.Grigorenko_vs_V.Smorodina.jpg'
-import Lightbox from "yet-another-react-lightbox"
 import {photosForReactPhotoAlbumFromArray} from "../../common/helpers"
 import PhotoAlbum from "react-photo-album"
 import {NavLink} from "react-router-dom"
+import {LightboxMy} from "../../common/ModdedComponents"
 
 export const Video44 = () => {
     const [index, setIndex] = useState(-1)
@@ -46,39 +46,21 @@ export const Video44 = () => {
             </Row>
             <Row>
                 <PhotoAlbum layout="rows" photos={photos1} onClick={({index}) => setIndex(index)}/>
-                <Lightbox
-                    styles={{container: {backgroundColor: "rgba(0, 0, 0, .5)"}}}
-                    slides={slides1}
-                    open={index >= 0}
-                    index={index}
-                    close={() => setIndex(-1)}
-                />
+                <LightboxMy slides={slides1} index={index} close={() => setIndex(-1)}/>
             </Row>
             <Row>
                 <Col className={cn('d-flex', 'justify-content-center')}>Oksana Grigorenko vs Viktoria Vardugina</Col>
             </Row>
             <Row>
                 <PhotoAlbum layout="rows" photos={photos2} onClick={({index}) => setIndex2(index)}/>
-                <Lightbox
-                    styles={{container: {backgroundColor: "rgba(0, 0, 0, .5)"}}}
-                    slides={slides2}
-                    open={index2 >= 0}
-                    index={index2}
-                    close={() => setIndex2(-1)}
-                />
+                <LightboxMy slides={slides2} index={index2} close={() => setIndex2(-1)}/>
             </Row>
             <Row>
                 <Col className={cn('d-flex', 'justify-content-center')}>Oksana Grigorenko vs Viktoria Smorodina</Col>
             </Row>
             <Row>
                 <PhotoAlbum layout="rows" photos={photos3} onClick={({index}) => setIndex3(index)}/>
-                <Lightbox
-                    styles={{container: {backgroundColor: "rgba(0, 0, 0, .5)"}}}
-                    slides={slides3}
-                    open={index3 >= 0}
-                    index={index3}
-                    close={() => setIndex3(-1)}
-                />
+                <LightboxMy slides={slides3} index={index3} close={() => setIndex3(-1)}/>
             </Row>
             <Row>
                 <hr/>
