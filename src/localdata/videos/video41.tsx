@@ -34,7 +34,7 @@ export const Video41 = () => {
             <p>Our HD video featuring the submission grappling mini-tournament that was held in 13 Oct 2014, has been
                 divided into two parts : <b>VIDEO 41</b> and <b>VIDEO 42</b>. The first part includes four fights of <b>Zoya
                     Dorofeeva</b> (56 kg / 123.5 lb), who is a newcomer of our competitions.</p>
-            <img className={sC.mainImg} src={imgMain} alt="imgMain"/>
+            <img className={sC.videosMainImg} src={imgMain} alt="imgMain"/>
             <p>Previous to that, Zoya was involved in Russian hand-to-hand fighting. Now, here, her opponents were two
                 girls who had competed with each other in the May 2014 Grappling tournament for beginners – <b>Christina
                     Shvets</b> (68.9 kg / 151.9 lb) and <b>Victoria Vardugina</b> (65.3 kg / 144.0 lb). The rules now

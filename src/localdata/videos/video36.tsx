@@ -30,7 +30,7 @@ export const Video36 = () => {
                 lb), Irina (70.7 kg / 155.9 lb), Nina (66.1 kg / 145.7 lb) and Victoria (70.7 kg / 155.9 lb). Rules:
                 fights with submissions or pins counted to 10.
             </p>
-            <img className={sC.mainImg} src={mainImg} alt="imgMain"/>
+            <img className={sC.videosMainImg} src={mainImg} alt="imgMain"/>
             <p>
                 All the girls except Victoria Vardugina, who has already wrestled once before in the Namazon Club, are
                 beginners in submission grappling and participate for the first time here in the competition with

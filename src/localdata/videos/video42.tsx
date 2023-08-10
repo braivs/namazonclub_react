@@ -30,7 +30,7 @@ export const Video42 = () => {
                 (see <b>VIDEO 41</b>), decided between them who would be the winner of this small wrestling event.
             </p>
             <Col className={cn('d-flex', 'justify-content-center')}>
-                <img className={sC.mainImg} src={imgMain} alt="imgMain"/>
+                <img className={sC.videosMainImg} src={imgMain} alt="imgMain"/>
             </Col>
             <p>This was the second time these rivals wrestled each other. The first one was at the
                 <b>!!!add link!!</b> tournament that was held for beginners on May
