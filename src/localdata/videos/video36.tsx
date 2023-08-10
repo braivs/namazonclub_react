@@ -13,12 +13,9 @@ const images = require.context('src/img/videos/36', false)
 
 export const Video36 = () => {
     const [open, setOpen] = useState(false)
-    const [open2, setOpen2] = useState(false)
-
     const [index, setIndex] = useState(-1)
-    const [index2, setIndex2] = useState(-1)
-    const photos = getGalleryForReactPhotoAlbumPhotoesFromRequire(images)
 
+    const photos = getGalleryForReactPhotoAlbumPhotoesFromRequire(images)
     const slides = photos.map(({src}) => ({
         src
     }))

@@ -9,11 +9,7 @@ import {Girls} from "./Girls"
 import {Competitions} from "./Competitions"
 import {Articles} from "./Articles"
 import {CompArticles} from "./CompArticles"
-import {Video44} from "../../../localdata/videos/video44"
-import {Video42} from "../../../localdata/videos/video42"
-import {Video41} from "../../../localdata/videos/video41"
-import {Video37} from "../../../localdata/videos/video37"
-import {Video36} from "../../../localdata/videos/video36"
+import {Videos} from "../../../localdata/Videos"
 
 
 export function Main() {
@@ -27,11 +23,7 @@ export function Main() {
             <Route path="competitions/:cardsVariant" element={<Competitions/>}/>
             <Route path='articles/:article' element={<Articles/>}/>
             <Route path='compArticles/:years/:compArticle' element={<CompArticles/>}/>
-            <Route path='videos/44' element={<Video44/>}></Route>
-            <Route path='videos/42' element={<Video42/>}></Route>
-            <Route path='videos/41' element={<Video41/>}></Route>
-            <Route path='videos/37' element={<Video37/>}></Route>
-            <Route path='videos/36' element={<Video36/>}></Route>
+            <Route path={'videos/*'} element={<Videos/>}/>
             <Route path="*" element={<NotFound/>}/>
         </Routes>
 
