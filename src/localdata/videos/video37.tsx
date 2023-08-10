@@ -1,8 +1,6 @@
 import React, {useState} from 'react'
-import {Button, Col, Row} from "react-bootstrap"
+import {Button} from "react-bootstrap"
 import sC from 'src/common/styles.module.scss'
-import cn from 'classnames'
-import imgMain from 'src/img/videos/41main.jpg'
 import {getGalleryForReactPhotoAlbumPhotoesFromRequire} from "../../common/helpers"
 import {Collapse} from "@mui/material"
 import PhotoAlbum from "react-photo-album"

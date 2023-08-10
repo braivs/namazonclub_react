@@ -13,6 +13,7 @@ import {Video44} from "../../../localdata/videos/video44"
 import {Video42} from "../../../localdata/videos/video42"
 import {Video41} from "../../../localdata/videos/video41"
 import {Video37} from "../../../localdata/videos/video37"
+import {Video36} from "../../../localdata/videos/video36"
 
 
 export function Main() {
@@ -30,6 +31,7 @@ export function Main() {
             <Route path='videos/42' element={<Video42/>}></Route>
             <Route path='videos/41' element={<Video41/>}></Route>
             <Route path='videos/37' element={<Video37/>}></Route>
+            <Route path='videos/36' element={<Video36/>}></Route>
             <Route path="*" element={<NotFound/>}/>
         </Routes>
 
