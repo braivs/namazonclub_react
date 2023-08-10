@@ -12,6 +12,7 @@ import {CompArticles} from "./CompArticles"
 import {Video44} from "../../../localdata/videos/video44"
 import {Video42} from "../../../localdata/videos/video42"
 import {Video41} from "../../../localdata/videos/video41"
+import {Video37} from "../../../localdata/videos/video37"
 
 
 export function Main() {
@@ -28,6 +29,7 @@ export function Main() {
             <Route path='videos/44' element={<Video44/>}></Route>
             <Route path='videos/42' element={<Video42/>}></Route>
             <Route path='videos/41' element={<Video41/>}></Route>
+            <Route path='videos/37' element={<Video37/>}></Route>
             <Route path="*" element={<NotFound/>}/>
         </Routes>
 
