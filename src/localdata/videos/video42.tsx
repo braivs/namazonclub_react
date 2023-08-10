@@ -21,7 +21,7 @@ export const Video42 = () => {
     }))
 
     return (
-        <div className={sC.compArticlesVideos}>
+        <>
             <h3>VIDEO 42</h3>
             <h4>Submission Grappling tournament. Part 2. October, 2014</h4>
             <p><b>VIDEO 42</b> is the second part of our HD video featuring the submission grappling mini- tournament
@@ -63,7 +63,7 @@ export const Video42 = () => {
                 <hr/>
                 <p>You can buy <b>VIDEO 42</b> at <a href="https://gumroad.com/namazonclub"> Gumroad </a></p>
             </Row>
-        </div>
+        </>
     )
 }
 

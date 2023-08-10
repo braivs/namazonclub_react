@@ -11,7 +11,6 @@ import {Articles} from "./Articles"
 import {CompArticles} from "./CompArticles"
 import {Videos} from "../../../localdata/Videos"
 
-
 export function Main() {
   return (
     <main className={s.main}>

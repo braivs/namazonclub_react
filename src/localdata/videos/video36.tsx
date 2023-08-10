@@ -21,7 +21,7 @@ export const Video36 = () => {
     }))
 
     return (
-        <div className={sC.compArticlesVideos}>
+        <>
             <h3>VIDEO 36</h3>
             <h4>Female submission grappling tournament between beginners. <u>Preliminary fights</u>.<br/>
                 Weight class: 145 to 160 lb. May, 2014</h4>
@@ -56,7 +56,7 @@ export const Video36 = () => {
                 choking, pinning and submission holds.</p>
             <hr/>
             <p>You can buy <b>VIDEO 36</b> on <a href='https://gumroad.com/namazonclub'>Gumroad</a>. </p>
-        </div>
+        </>
     )
 }
 

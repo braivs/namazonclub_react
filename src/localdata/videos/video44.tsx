@@ -32,7 +32,7 @@ export const Video44 = () => {
     }))
 
     return (
-        <div className={sC.compArticlesVideos}>
+        <>
             <h3>VIDEO 44</h3>
             <h4>The female power competition for the Maslenitsa Festival, 2016. Wrestling</h4>
             <p>You can read the report on the competitions, the main part of which was these fights, <NavLink
@@ -65,6 +65,6 @@ export const Video44 = () => {
                 <hr/>
                 <p>You can buy VIDEO 44 at <a href="https://gumroad.com/namazonclub"> Gumroad </a></p>
             </Row>
-        </div>
+        </>
     )
 }
