@@ -1,10 +1,10 @@
 import React from 'react'
 import {Route, Routes} from "react-router-dom"
-import {Video44} from "./videos/video44"
-import {Video42} from "./videos/video42"
-import {Video41} from "./videos/video41"
-import {Video37} from "./videos/video37"
-import {Video36} from "./videos/video36"
+import {Video44} from "../../../../localdata/videos/video44"
+import {Video42} from "../../../../localdata/videos/video42"
+import {Video41} from "../../../../localdata/videos/video41"
+import {Video37} from "../../../../localdata/videos/video37"
+import {Video36} from "../../../../localdata/videos/video36"
 import sC from 'src/common/styles.module.scss'
 import s from './Videos.module.scss'
 import cn from 'classnames'

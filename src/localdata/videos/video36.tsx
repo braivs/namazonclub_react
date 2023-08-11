@@ -1,12 +1,10 @@
 import React, {useState} from 'react'
-import {Button, Col, Row} from "react-bootstrap"
+import {Button} from "react-bootstrap"
 import sC from 'src/common/styles.module.scss'
-import cn from 'classnames'
-import imgMain from 'src/img/videos/41main.jpg'
 import {getGalleryForReactPhotoAlbumPhotoesFromRequire} from "../../common/helpers"
 import {Collapse} from "@mui/material"
 import PhotoAlbum from "react-photo-album"
-import {LightboxMy} from "../../common/ModdedComponents"
+import {LightboxMy, PhotoAlbumMy} from "../../common/ModdedComponents/ModdedComponents"
 import mainImg from 'src/img/videos/36main.jpg'
 
 const images = require.context('src/img/videos/36', false)
@@ -48,9 +46,9 @@ export const Video36 = () => {
             </p>
             <Button variant="primary" onClick={() => setOpen(!open)}>SCREENSHOTS</Button>
             <Collapse in={open}>
-                <PhotoAlbum layout="masonry" photos={photos} onClick={({index}) => setIndex(index)}/>
+                <PhotoAlbumMy layout="masonry" photos={photos} openSetState={setIndex}/>
             </Collapse>
-            <LightboxMy slides={slides} index={index} close={() => setIndex(-1)}/>
+            <LightboxMy slides={slides} index={index} closeSetState={setIndex}/>
             <p>We recommend you to watch this movie (Video 36) if you like to see some ambitious, athletic girls with
                 beautiful bodies competing with each other in a hard-fought contest where everything is allowed:
                 choking, pinning and submission holds.</p>

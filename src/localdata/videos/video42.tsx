@@ -3,12 +3,11 @@ import {Button, Col, Row} from "react-bootstrap"
 import sC from 'src/common/styles.module.scss'
 import cn from 'classnames'
 import imgMain from 'src/img/videos/42main.jpg'
-import {getGalleryForReactPhotoAlbumPhotoesFromRequire, getGalleryPhotoesFromRequire} from "../../common/helpers"
+import {getGalleryForReactPhotoAlbumPhotoesFromRequire} from "../../common/helpers"
 import {Collapse} from "@mui/material"
-import {Gallery} from "react-grid-gallery"
-import Lightbox from "yet-another-react-lightbox"
 import PhotoAlbum from "react-photo-album"
-import {LightboxMy} from "../../common/ModdedComponents"
+import {LightboxMy, PhotoAlbumMy} from "../../common/ModdedComponents/ModdedComponents"
+
 const images = require.context('src/img/videos/42/', false)
 
 export const Video42 = () => {
@@ -56,9 +55,9 @@ export const Video42 = () => {
             </p>
             <Button variant="primary" onClick={() => setOpen(!open)}>SCREENSHOTS</Button>
             <Collapse in={open}>
-                <PhotoAlbum layout="masonry" photos={photos} onClick={({index}) => setIndex(index)}/>
+                <PhotoAlbumMy photos={photos} openSetState={setIndex}/>
             </Collapse>
-            <LightboxMy slides={slides} index={index} close={() => setIndex(-1)}/>
+            <LightboxMy slides={slides} index={index} closeSetState={setIndex}/>
             <Row>
                 <hr/>
                 <p>You can buy <b>VIDEO 42</b> at <a href="https://gumroad.com/namazonclub"> Gumroad </a></p>

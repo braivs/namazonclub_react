@@ -1,12 +1,11 @@
 import React, {useState} from 'react'
-import {Button, Col, Row} from "react-bootstrap"
+import {Button, Row} from "react-bootstrap"
 import sC from 'src/common/styles.module.scss'
-import cn from 'classnames'
 import imgMain from 'src/img/videos/41main.jpg'
 import {getGalleryForReactPhotoAlbumPhotoesFromRequire} from "../../common/helpers"
 import {Collapse} from "@mui/material"
 import PhotoAlbum from "react-photo-album"
-import {LightboxMy} from "../../common/ModdedComponents"
+import {LightboxMy, PhotoAlbumMy} from "../../common/ModdedComponents/ModdedComponents"
 
 const images = require.context('src/img/videos/41/kz', false)
 const images2 = require.context('src/img/videos/41/vz', false)
@@ -48,8 +47,8 @@ export const Video41 = () => {
             <h5>Christina Shvets vs Zoya Dorofeeva</h5>
             <Button variant="primary" onClick={() => setOpen(!open)}>SCREENSHOTS</Button>
             <Collapse in={open}>
-                <PhotoAlbum layout="masonry" photos={photos} onClick={({index}) => setIndex(index)}/>
-                <LightboxMy slides={slides} index={index} close={() => setIndex(-1)}/>
+                <PhotoAlbumMy photos={photos} openSetState={setIndex}/>
+                <LightboxMy slides={slides} index={index} closeSetState={setIndex}/>
             </Collapse>
             <p>As for Victoria, she appeared to be an even more difficult opponent for Zoya. She defeated her twice in
                 their fights, both times with a choke hold. However, Zoya had a few good chances to defeat Vika not only
@@ -57,8 +56,8 @@ export const Video41 = () => {
                 such competitions, she wasn’t able to materialize any of those chances.</p>
             <Button variant="primary" onClick={() => setOpen2(!open2)}>SCREENSHOTS</Button>
             <Collapse in={open2}>
-                <PhotoAlbum layout="masonry" photos={photos2} onClick={({index}) => setIndex2(index)}/>
-                <LightboxMy slides={slides2} index={index2} close={() => setIndex2(-1)}/>
+                <PhotoAlbumMy photos={photos2} openSetState={setIndex2}/>
+                <LightboxMy slides={slides2} index={index2} closeSetState={setIndex2}/>
             </Collapse>
             <Row>
                 <hr/>

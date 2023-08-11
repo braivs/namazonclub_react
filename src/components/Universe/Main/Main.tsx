@@ -9,7 +9,7 @@ import {Girls} from "./Girls"
 import {Competitions} from "./Competitions"
 import {Articles} from "./Articles"
 import {CompArticles} from "./CompArticles"
-import {Videos} from "../../../localdata/Videos"
+import {Videos} from "./Videos/Videos"
 
 export function Main() {
   return (

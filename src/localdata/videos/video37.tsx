@@ -4,7 +4,7 @@ import sC from 'src/common/styles.module.scss'
 import {getGalleryForReactPhotoAlbumPhotoesFromRequire} from "../../common/helpers"
 import {Collapse} from "@mui/material"
 import PhotoAlbum from "react-photo-album"
-import {LightboxMy} from "../../common/ModdedComponents"
+import {LightboxMy, PhotoAlbumMy} from "../../common/ModdedComponents/ModdedComponents"
 import mainImg from 'src/img/videos/37/22.jpg'
 
 const images = require.context('src/img/videos/37', false)
@@ -36,11 +36,11 @@ export const Video37 = () => {
                 other twice by applying submission holds.</p>
             <p>The final fight was much longer and more strenuous. Suffice it to say that in the first round neither
                 wrestler was able to gain a victory within the 4 min of time limit.</p>
-            <Button variant="primary" onClick={() => setOpen(!open)}>Nina and Irina SCREENSHOTS</Button>
+            <Button variant="primary" onClick={() => setOpen(!open)}>SCREENSHOTS</Button>
             <Collapse in={open}>
-                <PhotoAlbum layout="masonry" photos={photos} onClick={({index}) => setIndex(index)}/>
+                <PhotoAlbumMy photos={photos} openSetState={setIndex}/>
             </Collapse>
-            <LightboxMy slides={slides} index={index} close={() => setIndex(-1)}/>
+            <LightboxMy slides={slides} index={index} closeSetState={setIndex}/>
             <p>We recommend this video for those of you who like real female wrestling and young sexy-looking girls with
                 competitive spirit. You will find it especially entertaining if you are interested to see a fight in
                 which one of the two girls grappling on the mat continuously struggles to pin her opponent down and
