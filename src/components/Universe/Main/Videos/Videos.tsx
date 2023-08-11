@@ -11,6 +11,7 @@ import cn from 'classnames'
 import {NotFound} from "../notFound"
 import {Video35} from "../../../../localdata/videos/video35"
 import {Video33} from "../../../../localdata/videos/video33"
+import {Video29} from "../../../../localdata/videos/video29"
 
 export const Videos = () => {
     return (
@@ -24,6 +25,7 @@ export const Videos = () => {
                 <Route path="36" element={<Video36/>}></Route>
                 <Route path="35" element={<Video35/>}></Route>
                 <Route path="33" element={<Video33/>}></Route>
+                <Route path="29" element={<Video29/>}></Route>
                 <Route path={'/*'} element={<NotFound />}></Route>
             </Routes>
         </div>
