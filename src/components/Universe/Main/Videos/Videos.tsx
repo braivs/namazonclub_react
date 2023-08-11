@@ -8,6 +8,8 @@ import {Video36} from "../../../../localdata/videos/video36"
 import sC from 'src/common/styles.module.scss'
 import s from './Videos.module.scss'
 import cn from 'classnames'
+import {NotFound} from "../notFound"
+import {Video35} from "../../../../localdata/videos/video35"
 
 export const Videos = () => {
     return (
@@ -18,6 +20,9 @@ export const Videos = () => {
                 <Route path="41" element={<Video41/>}></Route>
                 <Route path="37" element={<Video37/>}></Route>
                 <Route path="36" element={<Video36/>}></Route>
+                <Route path="36" element={<Video36/>}></Route>
+                <Route path="35" element={<Video35/>}></Route>
+                <Route path={'/*'} element={<NotFound />}></Route>
             </Routes>
         </div>
     )
