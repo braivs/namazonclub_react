@@ -3,9 +3,8 @@ import img1 from 'src/img/competitions/2016/Shrove_Tuesday/armwrestling/1.jpg'
 import sC from 'src/common/styles.module.scss'
 import {Button} from "react-bootstrap"
 import {Collapse} from "@mui/material"
-import {Gallery} from "react-grid-gallery"
-import Lightbox from "yet-another-react-lightbox"
-import {getGalleryPhotoesFromRequire} from "../../../common/helpers"
+import {getGalleryPhotosFromRequire} from "../../../common/helpers"
+import {LightboxMy, PhotoAlbumMy} from "../../../common/ModdedComponents/ModdedComponents"
 
 const images = require.context('src/img/competitions/2016/Shrove_Tuesday/armwrestling/', false)
 const images2 = require.context('src/img/competitions/2016/Shrove_Tuesday/wrestling/', false)
@@ -15,24 +14,18 @@ export const Maslenitsa2016 = () => {
     const [open2, setOpen2] = useState(false)
     const [index, setIndex] = useState(-1)
     const [index2, setIndex2] = useState(-1)
-    const handleClick = (index: number) => setIndex(index)
-    const handleClick2 = (index: number) => setIndex2(index)
 
-    const photos = getGalleryPhotoesFromRequire(images)
-    const slides = photos.map(({original}) => ({
-        src: original
-    }))
+    const photos = getGalleryPhotosFromRequire(images)
+    const slides = photos.map(({src}) => ({src}))
 
-    const photos2 = getGalleryPhotoesFromRequire(images2)
-    const slides2 = photos2.map(({original}) => ({
-        src: original
-    }))
+    const photos2 = getGalleryPhotosFromRequire(images2)
+    const slides2 = photos.map(({src}) => ({src}))
 
     return (
         <>
             <h3>2015 - 2016</h3>
             <h4>Female power competitions for the Maslenitsa Festival, 2016</h4>
-            <img className={sC.mainImg} src={img1} alt=""/>
+            <img className={sC.videosMainImg} src={img1} alt=""/>
             <p>The female power competition for this year's Maslenitsa Festival took place at the Namazon Club on
                 Thursday, March 10th. It was held in three nominations: armwrestling, leg-wrestling and
                 pins-and-submissions wrestling where a wrestler could win a fight by either submission or pin. There
@@ -48,13 +41,8 @@ export const Maslenitsa2016 = () => {
                 opponents in both left and right hand fights.</p>
             <Button variant="primary" onClick={() => setOpen(!open)}>Armwrestling photos</Button>
             <Collapse in={open}>
-                <Gallery images={photos} enableImageSelection={false} onClick={handleClick}/>
-                <Lightbox
-                    slides={slides}
-                    open={index >= 0}
-                    index={index}
-                    close={() => setIndex(-1)}
-                />
+                <PhotoAlbumMy photos={photos} openSetState={setIndex}/>
+                <LightboxMy slides={slides} index={index} closeSetState={setIndex}/>
             </Collapse>
             <p>In the leg-wrestling contest, Viktoria Vardugina and Oxana Grigorenko divided 1st and 2nd places.</p>
             <p>The pins-and-submission fights were the most thrilling part of the competition. The three ladies wrestled
@@ -66,13 +54,8 @@ export const Maslenitsa2016 = () => {
                 2nd place.</p>
             <Button variant="primary" onClick={() => setOpen2(!open2)}>Wrestling photos</Button>
             <Collapse in={open2}>
-                <Gallery images={photos2} enableImageSelection={false} onClick={handleClick2}/>
-                <Lightbox
-                    slides={slides2}
-                    open={index2 >= 0}
-                    index={index2}
-                    close={() => setIndex2(-1)}
-                />
+                <PhotoAlbumMy photos={photos2} openSetState={setIndex2}/>
+                <LightboxMy slides={slides2} index={index2} closeSetState={setIndex2}/>
             </Collapse>
             <p>Anyway it was an interesting sporting event. Even though there were only few participants, it was well
                 compensated with their high fitness and wrestling level.</p>

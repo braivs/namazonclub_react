@@ -1,7 +1,7 @@
 import React, {useState} from 'react'
 import {Button} from "react-bootstrap"
 import sC from 'src/common/styles.module.scss'
-import {getGalleryForReactPhotoAlbumPhotoesFromRequire} from "../../common/helpers"
+import {getGalleryPhotosFromRequire} from "../../common/helpers"
 import {Collapse} from "@mui/material"
 import {LightboxMy, PhotoAlbumMy} from "../../common/ModdedComponents/ModdedComponents"
 import mainImg from 'src/img/videos/35main.jpg'
@@ -12,7 +12,7 @@ export const Video35 = () => {
     const [open, setOpen] = useState(false)
     const [index, setIndex] = useState(-1)
 
-    const photos = getGalleryForReactPhotoAlbumPhotoesFromRequire(images)
+    const photos = getGalleryPhotosFromRequire(images)
     const slides = photos.map(({src}) => ({src}))
 
     return (

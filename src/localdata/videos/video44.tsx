@@ -7,8 +7,7 @@ import p1_OGrigorenko_vs_VVardugina from 'src/img/videos/44/1_O.Grigorenko_vs_V.
 import p2_OGrigorenko_vs_VVardugina from 'src/img/videos/44/2_O.Grigorenko_vs_V.Vardugina.jpg'
 import p1_OGrigorenko_vs_VSmorodina from 'src/img/videos/44/1_O.Grigorenko_vs_V.Smorodina.jpg'
 import p2_OGrigorenko_vs_VSmorodina from 'src/img/videos/44/2_O.Grigorenko_vs_V.Smorodina.jpg'
-import {photosForReactPhotoAlbumFromArray} from "../../common/helpers"
-import PhotoAlbum from "react-photo-album"
+import {getGalleryPhotosFromRequireFromArray} from "../../common/helpers"
 import {NavLink} from "react-router-dom"
 import {LightboxMy, PhotoAlbumMy} from "../../common/ModdedComponents/ModdedComponents"
 
@@ -17,9 +16,9 @@ export const Video44 = () => {
     const [index2, setIndex2] = useState(-1)
     const [index3, setIndex3] = useState(-1)
 
-    const photos1 = photosForReactPhotoAlbumFromArray([VSmorodina_vs_VVardugina1, VSmorodina_vs_VVardugina2])
-    const photos2 = photosForReactPhotoAlbumFromArray([p1_OGrigorenko_vs_VVardugina, p2_OGrigorenko_vs_VVardugina])
-    const photos3 = photosForReactPhotoAlbumFromArray([p1_OGrigorenko_vs_VSmorodina, p2_OGrigorenko_vs_VSmorodina])
+    const photos1 = getGalleryPhotosFromRequireFromArray([VSmorodina_vs_VVardugina1, VSmorodina_vs_VVardugina2])
+    const photos2 = getGalleryPhotosFromRequireFromArray([p1_OGrigorenko_vs_VVardugina, p2_OGrigorenko_vs_VVardugina])
+    const photos3 = getGalleryPhotosFromRequireFromArray([p1_OGrigorenko_vs_VSmorodina, p2_OGrigorenko_vs_VSmorodina])
     const slides1 = photos1.map(({src}) => ({
         src
     }))

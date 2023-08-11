@@ -3,9 +3,8 @@ import {Button, Col, Row} from "react-bootstrap"
 import sC from 'src/common/styles.module.scss'
 import cn from 'classnames'
 import imgMain from 'src/img/videos/42main.jpg'
-import {getGalleryForReactPhotoAlbumPhotoesFromRequire} from "../../common/helpers"
+import {getGalleryPhotosFromRequire} from "../../common/helpers"
 import {Collapse} from "@mui/material"
-import PhotoAlbum from "react-photo-album"
 import {LightboxMy, PhotoAlbumMy} from "../../common/ModdedComponents/ModdedComponents"
 
 const images = require.context('src/img/videos/42/', false)
@@ -14,7 +13,7 @@ export const Video42 = () => {
     const [index, setIndex] = useState(-1)
 
     const [open, setOpen] = useState(false)
-    const photos = getGalleryForReactPhotoAlbumPhotoesFromRequire(images)
+    const photos = getGalleryPhotosFromRequire(images)
     const slides = photos.map(({src}) => ({
         src
     }))

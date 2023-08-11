@@ -2,9 +2,8 @@ import React, {useState} from 'react'
 import {Button, Row} from "react-bootstrap"
 import sC from 'src/common/styles.module.scss'
 import imgMain from 'src/img/videos/41main.jpg'
-import {getGalleryForReactPhotoAlbumPhotoesFromRequire} from "../../common/helpers"
+import {getGalleryPhotosFromRequire} from "../../common/helpers"
 import {Collapse} from "@mui/material"
-import PhotoAlbum from "react-photo-album"
 import {LightboxMy, PhotoAlbumMy} from "../../common/ModdedComponents/ModdedComponents"
 
 const images = require.context('src/img/videos/41/kz', false)
@@ -16,8 +15,8 @@ export const Video41 = () => {
 
     const [index, setIndex] = useState(-1)
     const [index2, setIndex2] = useState(-1)
-    const photos = getGalleryForReactPhotoAlbumPhotoesFromRequire(images)
-    const photos2 = getGalleryForReactPhotoAlbumPhotoesFromRequire(images2)
+    const photos = getGalleryPhotosFromRequire(images)
+    const photos2 = getGalleryPhotosFromRequire(images2)
 
     const slides = photos.map(({src}) => ({
         src
