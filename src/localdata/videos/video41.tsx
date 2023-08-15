@@ -46,8 +46,8 @@ export const Video41 = () => {
             <h5>Christina Shvets vs Zoya Dorofeeva</h5>
             <Button variant="primary" onClick={() => setOpen(!open)}>SCREENSHOTS</Button>
             <Collapse in={open}>
-                <PhotoAlbumMy photos={photos} openSetState={setIndex}/>
-                <LightboxMy slides={slides} index={index} closeSetState={setIndex}/>
+                <PhotoAlbumMy photos={photos} openCallback={setIndex}/>
+                <LightboxMy slides={slides} index={index} closeCallback={setIndex}/>
             </Collapse>
             <p>As for Victoria, she appeared to be an even more difficult opponent for Zoya. She defeated her twice in
                 their fights, both times with a choke hold. However, Zoya had a few good chances to defeat Vika not only
@@ -55,8 +55,8 @@ export const Video41 = () => {
                 such competitions, she wasn’t able to materialize any of those chances.</p>
             <Button variant="primary" onClick={() => setOpen2(!open2)}>SCREENSHOTS</Button>
             <Collapse in={open2}>
-                <PhotoAlbumMy photos={photos2} openSetState={setIndex2}/>
-                <LightboxMy slides={slides2} index={index2} closeSetState={setIndex2}/>
+                <PhotoAlbumMy photos={photos2} openCallback={setIndex2}/>
+                <LightboxMy slides={slides2} index={index2} closeCallback={setIndex2}/>
             </Collapse>
             <Row>
                 <hr/>

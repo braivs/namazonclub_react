@@ -42,22 +42,22 @@ export const Video44 = () => {
                 <Col className={cn('d-flex', 'justify-content-center')}>Viktoria Smorodina vs Viktoria Vardugina</Col>
             </Row>
             <Row>
-                <PhotoAlbumMy photos={photos1} openSetState={setIndex} layout={"rows"}/>
-                <LightboxMy slides={slides1} index={index} closeSetState={setIndex}/>
+                <PhotoAlbumMy photos={photos1} openCallback={setIndex} layout={"rows"}/>
+                <LightboxMy slides={slides1} index={index} closeCallback={setIndex}/>
             </Row>
             <Row>
                 <Col className={cn('d-flex', 'justify-content-center')}>Oksana Grigorenko vs Viktoria Vardugina</Col>
             </Row>
             <Row>
-                <PhotoAlbumMy photos={photos2} openSetState={setIndex2} layout={"rows"}/>
-                <LightboxMy slides={slides2} index={index2} closeSetState={setIndex2}/>
+                <PhotoAlbumMy photos={photos2} openCallback={setIndex2} layout={"rows"}/>
+                <LightboxMy slides={slides2} index={index2} closeCallback={setIndex2}/>
             </Row>
             <Row>
                 <Col className={cn('d-flex', 'justify-content-center')}>Oksana Grigorenko vs Viktoria Smorodina</Col>
             </Row>
             <Row>
-                <PhotoAlbumMy photos={photos3} openSetState={setIndex3} layout={"rows"}/>
-                <LightboxMy slides={slides3} index={index3} closeSetState={setIndex3}/>
+                <PhotoAlbumMy photos={photos3} openCallback={setIndex3} layout={"rows"}/>
+                <LightboxMy slides={slides3} index={index3} closeCallback={setIndex3}/>
             </Row>
             <Row>
                 <hr/>

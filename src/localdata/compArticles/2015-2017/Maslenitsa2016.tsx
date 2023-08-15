@@ -41,8 +41,8 @@ export const Maslenitsa2016 = () => {
                 opponents in both left and right hand fights.</p>
             <Button variant="primary" onClick={() => setOpen(!open)}>Armwrestling photos</Button>
             <Collapse in={open}>
-                <PhotoAlbumMy photos={photos} openSetState={setIndex}/>
-                <LightboxMy slides={slides} index={index} closeSetState={setIndex}/>
+                <PhotoAlbumMy photos={photos} openCallback={setIndex}/>
+                <LightboxMy slides={slides} index={index} closeCallback={setIndex}/>
             </Collapse>
             <p>In the leg-wrestling contest, Viktoria Vardugina and Oxana Grigorenko divided 1st and 2nd places.</p>
             <p>The pins-and-submission fights were the most thrilling part of the competition. The three ladies wrestled
@@ -54,8 +54,8 @@ export const Maslenitsa2016 = () => {
                 2nd place.</p>
             <Button variant="primary" onClick={() => setOpen2(!open2)}>Wrestling photos</Button>
             <Collapse in={open2}>
-                <PhotoAlbumMy photos={photos2} openSetState={setIndex2}/>
-                <LightboxMy slides={slides2} index={index2} closeSetState={setIndex2}/>
+                <PhotoAlbumMy photos={photos2} openCallback={setIndex2}/>
+                <LightboxMy slides={slides2} index={index2} closeCallback={setIndex2}/>
             </Collapse>
             <p>Anyway it was an interesting sporting event. Even though there were only few participants, it was well
                 compensated with their high fitness and wrestling level.</p>

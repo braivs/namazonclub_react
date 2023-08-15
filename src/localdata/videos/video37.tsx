@@ -37,9 +37,9 @@ export const Video37 = () => {
                 wrestler was able to gain a victory within the 4 min of time limit.</p>
             <Button variant="primary" onClick={() => setOpen(!open)}>SCREENSHOTS</Button>
             <Collapse in={open}>
-                <PhotoAlbumMy photos={photos} openSetState={setIndex}/>
+                <PhotoAlbumMy photos={photos} openCallback={setIndex}/>
             </Collapse>
-            <LightboxMy slides={slides} index={index} closeSetState={setIndex}/>
+            <LightboxMy slides={slides} index={index} closeCallback={setIndex}/>
             <p>We recommend this video for those of you who like real female wrestling and young sexy-looking girls with
                 competitive spirit. You will find it especially entertaining if you are interested to see a fight in
                 which one of the two girls grappling on the mat continuously struggles to pin her opponent down and

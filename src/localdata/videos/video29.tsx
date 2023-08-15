@@ -33,9 +33,9 @@ export const Video29 = () => {
             <p>If you are curious to see how it happened, watch this video.</p>
             <Button variant="primary" onClick={() => setOpen(!open)}>SCREENSHOTS</Button>
             <Collapse in={open}>
-                <PhotoAlbumMy layout="masonry" photos={photos} openSetState={setIndex}/>
+                <PhotoAlbumMy layout="masonry" photos={photos} openCallback={setIndex}/>
             </Collapse>
-            <LightboxMy slides={slides} index={index} closeSetState={setIndex}/>
+            <LightboxMy slides={slides} index={index} closeCallback={setIndex}/>
             <hr/>
             <p>You can buy <b>VIDEO 29</b> on <a href="https://gumroad.com/namazonclub">Gumroad</a>.</p>
         </>

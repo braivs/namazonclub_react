@@ -10,7 +10,7 @@ export const LightboxMy = (props: LightboxPropsType) => {
             slides={props.slides}
             open={props.index >= 0}
             index={props.index}
-            close={() => props.closeSetState(-1)}
+            close={() => props.closeCallback(-1)}
         />
     )
 }
@@ -20,7 +20,7 @@ export const PhotoAlbumMy = (props: PhotoAlbumPropsType) => {
         <div className={s.photoAlbum}>
             <PhotoAlbum layout={props.layout ? props.layout : 'masonry'}
                         photos={props.photos}
-                        onClick={({index}) => props.openSetState(index)}/>
+                        onClick={({index}) => props.openCallback(index)}/>
         </div>
 
     )
@@ -30,12 +30,12 @@ type LightboxPropsType = {
     layout?: 'masonry' | 'rows' | 'columns'
     slides: Slide[]
     index: number
-    closeSetState: (value: -1) => void
+    closeCallback: (value: -1) => void
 }
 
 type PhotoAlbumPropsType = {
     layout?: LayoutType
     photos: Photo[]
-    openSetState: (value: number) => void
+    openCallback: (value: number) => void
 }
 

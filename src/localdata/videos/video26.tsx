@@ -31,9 +31,9 @@ export const Video26 = () => {
                 arduously for every single point. The weaker woman didn’t give up easily.</p>
             <Button variant="primary" onClick={() => setOpen(!open)}>SCREENSHOTS</Button>
             <Collapse in={open}>
-                <PhotoAlbumMy layout="masonry" photos={photos} openSetState={setIndex}/>
+                <PhotoAlbumMy layout="masonry" photos={photos} openCallback={setIndex}/>
             </Collapse>
-            <LightboxMy slides={slides} index={index} closeSetState={setIndex}/>
+            <LightboxMy slides={slides} index={index} closeCallback={setIndex}/>
             <hr/>
             <p>You can buy <b>VIDEO {videoNumber}</b> on <a href="https://gumroad.com/namazonclub">Gumroad</a>.</p>
         </>

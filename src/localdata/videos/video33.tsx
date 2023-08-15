@@ -38,15 +38,15 @@ export const Video33 = () => {
             <h5>Lidia Oslopovskih vs Victoria Vardugina</h5>
             <Button variant="primary" onClick={() => setOpen(!open)}>SCREENSHOTS</Button>
             <Collapse in={open}>
-                <PhotoAlbumMy layout="masonry" photos={photos} openSetState={setIndex}/>
+                <PhotoAlbumMy layout="masonry" photos={photos} openCallback={setIndex}/>
             </Collapse>
-            <LightboxMy slides={slides} index={index} closeSetState={setIndex}/>
+            <LightboxMy slides={slides} index={index} closeCallback={setIndex}/>
             <h5>Yulia Borovik vs Tais</h5>
             <Button variant="primary" onClick={() => setOpen2(!open2)}>SCREENSHOTS</Button>
             <Collapse in={open2}>
-                <PhotoAlbumMy layout="masonry" photos={photos2} openSetState={setIndex2}/>
+                <PhotoAlbumMy layout="masonry" photos={photos2} openCallback={setIndex2}/>
             </Collapse>
-            <LightboxMy slides={slides2} index={index2} closeSetState={setIndex2}/>
+            <LightboxMy slides={slides2} index={index2} closeCallback={setIndex2}/>
             <hr/>
             <p>You can buy <b>VIDEO 33</b> on <a href="https://gumroad.com/namazonclub">Gumroad</a>.</p>
         </>

@@ -45,9 +45,9 @@ export const Video36 = () => {
             </p>
             <Button variant="primary" onClick={() => setOpen(!open)}>SCREENSHOTS</Button>
             <Collapse in={open}>
-                <PhotoAlbumMy layout="masonry" photos={photos} openSetState={setIndex}/>
+                <PhotoAlbumMy layout="masonry" photos={photos} openCallback={setIndex}/>
             </Collapse>
-            <LightboxMy slides={slides} index={index} closeSetState={setIndex}/>
+            <LightboxMy slides={slides} index={index} closeCallback={setIndex}/>
             <p>We recommend you to watch this movie (Video 36) if you like to see some ambitious, athletic girls with
                 beautiful bodies competing with each other in a hard-fought contest where everything is allowed:
                 choking, pinning and submission holds.</p>

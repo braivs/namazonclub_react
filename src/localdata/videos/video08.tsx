@@ -43,21 +43,21 @@ export const Video08 = () => {
             <h5>Elena Vasilyeva  vs  Tais</h5>
             <Button variant="primary" onClick={() => setOpen(!open)}>SCREENSHOTS</Button>
             <Collapse in={open}>
-                <PhotoAlbumMy layout="masonry" photos={photos} openSetState={setIndex}/>
+                <PhotoAlbumMy layout="masonry" photos={photos} openCallback={setIndex}/>
             </Collapse>
-            <LightboxMy slides={slides} index={index} closeSetState={setIndex}/>
+            <LightboxMy slides={slides} index={index} closeCallback={setIndex}/>
             <h5>Irina (Vlasta)  vs  Tais</h5>
             <Button variant="primary" onClick={() => setOpen2(!open2)}>SCREENSHOTS</Button>
             <Collapse in={open2}>
-                <PhotoAlbumMy layout="masonry" photos={photos2} openSetState={setIndex2}/>
+                <PhotoAlbumMy layout="masonry" photos={photos2} openCallback={setIndex2}/>
             </Collapse>
-            <LightboxMy slides={slides2} index={index2} closeSetState={setIndex2}/>
+            <LightboxMy slides={slides2} index={index2} closeCallback={setIndex2}/>
             <h5>Elena Vasilyeva  vs  Irina (Vlasta)</h5>
             <Button variant="primary" onClick={() => setOpen3(!open3)}>SCREENSHOTS</Button>
             <Collapse in={open3}>
-                <PhotoAlbumMy layout="masonry" photos={photos3} openSetState={setIndex3}/>
+                <PhotoAlbumMy layout="masonry" photos={photos3} openCallback={setIndex3}/>
             </Collapse>
-            <LightboxMy slides={slides3} index={index3} closeSetState={setIndex3}/>
+            <LightboxMy slides={slides3} index={index3} closeCallback={setIndex3}/>
             <hr/>
             <p>You can buy <b>VIDEO {videoNumber}</b> on <a href="https://gumroad.com/namazonclub">Gumroad</a>.</p>
         </>

@@ -54,9 +54,9 @@ export const Video42 = () => {
             </p>
             <Button variant="primary" onClick={() => setOpen(!open)}>SCREENSHOTS</Button>
             <Collapse in={open}>
-                <PhotoAlbumMy photos={photos} openSetState={setIndex}/>
+                <PhotoAlbumMy photos={photos} openCallback={setIndex}/>
             </Collapse>
-            <LightboxMy slides={slides} index={index} closeSetState={setIndex}/>
+            <LightboxMy slides={slides} index={index} closeCallback={setIndex}/>
             <Row>
                 <hr/>
                 <p>You can buy <b>VIDEO 42</b> at <a href="https://gumroad.com/namazonclub"> Gumroad </a></p>
