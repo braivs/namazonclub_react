@@ -4,12 +4,12 @@ import sC from 'src/common/styles.module.scss'
 import {getGalleryPhotosFromRequire} from "../../common/helpers"
 import {Collapse} from "@mui/material"
 import {LightboxMy, PhotoAlbumMy} from "../../common/ModdedComponents/ModdedComponents"
-import mainImg from 'src/img/videos/26main.jpg'
+import mainImg from 'src/img/videos/24main.jpg'
 
-const images = require.context('src/img/videos/26', false)
+const images = require.context('src/img/videos/24', false)
 
-export const Video26 = () => {
-    const videoNumber = 26
+export const Video24 = () => {
+    const videoNumber = 24
     const [open, setOpen] = useState(false)
     const [index, setIndex] = useState(-1)
     const photos = getGalleryPhotosFromRequire(images)
@@ -18,17 +18,20 @@ export const Video26 = () => {
     return (
         <>
             <h3>VIDEO {videoNumber}</h3>
-            <h4>Female Beach Wrestling. Part 1. June, 2011</h4>
+            <h4>Lyudmila vs Tais. Submission Grappling. October, 2011</h4>
             <p>
-                This video features a sand-wrestling contest between two ambitious women, <b>Tais</b> (5'7" / 130 lb)
-                and <b>Elena Vasilyeva</b> (5'6" / 134 lb). Tais, who has competed in various grappling and MMA
-                tournaments, has more experience than her younger opponent. But Elena is not a pushover either. She’s
-                also taken part in
+                <b>Lyudmila</b> (5’11” / 154 lb) is a strong sportswoman engaged in Muay Thai, but she is a newcomer in
+                our Club’s competitions, while <b>Tais</b> (5’7” / 130 lb) is a repeat winner at the competitions,
+                specializing in Submission Grappling and MMA.
             </p>
             <img className={sC.videosMainImg} src={mainImg} alt="imgMain"/>
-            <p>The two women fought nine rounds with submission grappling rules. It was an interesting and exciting
-                wrestling match with a lot of different pins, chokes and submission holds. The both wrestlers struggled
-                arduously for every single point. The weaker woman didn’t give up easily.</p>
+            <p>As you can see, Lyudmila is much heavier and taller than Tais. In this match, the girls wrestled three
+                rounds. Lyudmila managed to place Tais in a very difficult position at the beginning of the first
+                round.</p>
+            <p>
+                Watch the video and you will see what followed and how it all ended. If you like real mat wrestling
+                between some of the fittest and beautiful women then this video is for you.
+            </p>
             <Button variant="primary" onClick={() => setOpen(!open)}>SCREENSHOTS</Button>
             <Collapse in={open}>
                 <PhotoAlbumMy layout="masonry" photos={photos} openSetState={setIndex}/>
@@ -39,5 +42,3 @@ export const Video26 = () => {
         </>
     )
 }
-
-//todo: maybe fix drop of text in first p
