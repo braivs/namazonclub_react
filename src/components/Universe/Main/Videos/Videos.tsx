@@ -15,11 +15,13 @@ import {Video29} from "../../../../localdata/videos/video29"
 import {Video27} from "../../../../localdata/videos/video27"
 import {Video26} from "../../../../localdata/videos/video26"
 import {Video24} from "../../../../localdata/videos/video24"
+import {Video23} from "../../../../localdata/videos/video23"
 
 export const Videos = () => {
     return (
         <div className={cn(sC.compArticlesVideos, s.videos)}>
             <Routes>
+                {/*Wrestling*/}
                 <Route path="44" element={<Video44/>}></Route>
                 <Route path="42" element={<Video42/>}></Route>
                 <Route path="41" element={<Video41/>}></Route>
@@ -32,6 +34,7 @@ export const Videos = () => {
                 <Route path="27" element={<Video27/>}></Route>
                 <Route path="26" element={<Video26/>}></Route>
                 <Route path="24" element={<Video24/>}></Route>
+                <Route path="23" element={<Video23/>}></Route>
                 <Route path={'/*'} element={<NotFound />}></Route>
             </Routes>
         </div>
