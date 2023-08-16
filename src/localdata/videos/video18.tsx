@@ -4,7 +4,7 @@ import sC from 'src/common/styles.module.scss'
 import {getGalleryPhotosFromRequire} from "../../common/helpers"
 import {Collapse} from "@mui/material"
 import {LightboxMy, PhotoAlbumMy} from "../../common/ModdedComponents/ModdedComponents"
-import mainImg from 'src/img/videos/18main.jpg'
+import mainImg from 'src/img/videos/main/18main.jpg'
 
 const images = require.context('src/img/videos/18/mma-sportivnyj-prazdnik-2012-1', false)
 const images2 = require.context('src/img/videos/18/mma-sportivnyj-prazdnik-2012-2', false)

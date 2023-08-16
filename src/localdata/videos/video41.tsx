@@ -1,7 +1,7 @@
 import React, {useState} from 'react'
 import {Button, Row} from "react-bootstrap"
 import sC from 'src/common/styles.module.scss'
-import imgMain from 'src/img/videos/41main.jpg'
+import imgMain from 'src/img/videos/main/41main.jpg'
 import {getGalleryPhotosFromRequire} from "../../common/helpers"
 import {Collapse} from "@mui/material"
 import {LightboxMy, PhotoAlbumMy} from "../../common/ModdedComponents/ModdedComponents"
