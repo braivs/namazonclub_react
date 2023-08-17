@@ -9,6 +9,7 @@ const images2 = require.context('src/img/videos/28/tais-villian', false)
 
 export const Video28 = () => {
     const videoNumber = 28
+
     const [open, setOpen] = useState(false)
     const [index, setIndex] = useState(-1)
     const photos = getGalleryPhotosFromRequire(images)
