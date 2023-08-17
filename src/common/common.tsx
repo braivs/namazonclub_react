@@ -8,7 +8,8 @@ import {Slide} from "yet-another-react-lightbox"
 export const ButtonGallery = (props: PropsType) => {
     return (
         <>
-            <Button variant="primary" onClick={() => props.openCloseCallback(!props.isOpen)}>SCREENSHOTS</Button>
+            <Button variant="primary"
+                    onClick={() => props.openCloseCallback(!props.isOpen)}>{props.buttonName ? props.buttonName : 'SCREENSHOTS'}</Button>
             <Collapse in={props.isOpen}>
                 <PhotoAlbumMy layout="masonry" photos={props.photos} openCallback={props.indexCallback}/>
             </Collapse>
@@ -24,5 +25,5 @@ type PropsType = {
     isOpen: boolean
     photos: Photo[]
     slides: Slide[]
-    buttonName: string
+    buttonName?: string
 }
