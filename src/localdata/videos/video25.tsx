@@ -1,6 +1,6 @@
 import React, {useState} from 'react'
 import sC from 'src/common/styles.module.scss'
-import {getGalleryPhotosFromRequire} from "../../common/helpers"
+import {getGalleryPhotosFromRequire, getSlides} from "../../common/helpers"
 import mainImg from 'src/img/videos/main/25main.jpg'
 import {ButtonGallery} from "../../common/common"
 
@@ -13,17 +13,17 @@ export const Video25 = () => {
     const [open, setOpen] = useState(false)
     const [index, setIndex] = useState(-1)
     const photos = getGalleryPhotosFromRequire(images)
-    const slides = photos.map(({src}) => ({src}))
+    const slides = getSlides(photos)
 
     const [open2, setOpen2] = useState(false)
     const [index2, setIndex2] = useState(-1)
     const photos2 = getGalleryPhotosFromRequire(images2)
-    const slides2 = photos2.map(({src}) => ({src}))
+    const slides2 = getSlides(photos2)
 
     const [open3, setOpen3] = useState(false)
     const [index3, setIndex3] = useState(-1)
     const photos3 = getGalleryPhotosFromRequire(images3)
-    const slides3 = photos3.map(({src}) => ({src}))
+    const slides3 = getSlides(photos3)
 
     return (
         <>
