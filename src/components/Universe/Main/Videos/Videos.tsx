@@ -38,6 +38,7 @@ import {Video10} from "../../../../localdata/videos/video10"
 import {Video11} from "../../../../localdata/videos/video11"
 import {Video14} from "../../../../localdata/videos/video14"
 import {Video15} from "../../../../localdata/videos/video15"
+import {Video22} from "../../../../localdata/videos/video22"
 
 export const Videos = () => {
     return (
@@ -82,6 +83,7 @@ export const Videos = () => {
                 <Route path="11" element={<Video11/>}></Route>
                 <Route path="14" element={<Video14/>}></Route>
                 <Route path="15" element={<Video15/>}></Route>
+                <Route path="22" element={<Video22/>}></Route>
 
                 <Route path={'/*'} element={<NotFound />}></Route>
 
