@@ -10,7 +10,7 @@ const images = require.context('src/img/videos/03mix/wm1', false)
 const images2 = require.context('src/img/videos/03mix/wm2', false)
 
 export const Video03wm = () => {
-    const videoNumber = 3
+    const videoNumber = '3wm'
     const [open, setOpen] = useState(false)
     const [index, setIndex] = useState(-1)
     const photos = getGalleryPhotosFromRequire(images)
