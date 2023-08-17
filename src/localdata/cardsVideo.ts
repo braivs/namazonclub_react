@@ -246,12 +246,12 @@ export const cardsMix: Array<CardType> = [
         imgRef: video30,
     },
     {
-        id: 31_1,
+        id: '31_1',
         title: 'Mixed Wrestling\nBest Fights. Part 5.1. 2013',
         imgRef: video31_1,
     },
     {
-        id: 31_2,
+        id: '31_2',
         title: 'Mixed Wrestling\nBest Fights. Part 5.2. 2013',
         imgRef: video31_2,
     },
