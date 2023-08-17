@@ -1,10 +1,8 @@
 import React, {useState} from 'react'
-import {Button} from "react-bootstrap"
 import sC from 'src/common/styles.module.scss'
-import {getGalleryPhotosFromRequire} from "../../common/helpers"
-import {Collapse} from "@mui/material"
-import {LightboxMy, PhotoAlbumMy} from "../../common/ModdedComponents/ModdedComponents"
+import {getGalleryPhotosFromRequire, getSlides} from "../../common/helpers"
 import mainImg from 'src/img/videos/main/08main.jpg'
+import {ButtonGallery} from "../../common/common"
 
 const images = require.context('src/img/videos/08/1', false)
 const images2 = require.context('src/img/videos/08/plyazhnyj-turnir-2011-2', false)
@@ -12,18 +10,21 @@ const images3 = require.context('src/img/videos/08/plyazhnyj-turnir-2011-3', fal
 
 export const Video08 = () => {
     const videoNumber = 8
+
     const [open, setOpen] = useState(false)
-    const [open2, setOpen2] = useState(false)
-    const [open3, setOpen3] = useState(false)
     const [index, setIndex] = useState(-1)
-    const [index2, setIndex2] = useState(-1)
-    const [index3, setIndex3] = useState(-1)
     const photos = getGalleryPhotosFromRequire(images)
+    const slides = getSlides(photos)
+
+    const [open2, setOpen2] = useState(false)
+    const [index2, setIndex2] = useState(-1)
     const photos2 = getGalleryPhotosFromRequire(images2)
+    const slides2 = getSlides(photos2)
+
+    const [open3, setOpen3] = useState(false)
+    const [index3, setIndex3] = useState(-1)
     const photos3 = getGalleryPhotosFromRequire(images3)
-    const slides = photos.map(({src}) => ({src}))
-    const slides2 = photos2.map(({src}) => ({src}))
-    const slides3 = photos3.map(({src}) => ({src}))
+    const slides3 = getSlides(photos3)
 
     return (
         <>
@@ -41,23 +42,32 @@ export const Video08 = () => {
             <img className={sC.videosMainImg} src={mainImg} alt="imgMain"/>
             <p>If you like female wrestling not only indoors, but under the open sky as well, this film will suit you.</p>
             <h5>Elena Vasilyeva  vs  Tais</h5>
-            <Button variant="primary" onClick={() => setOpen(!open)}>SCREENSHOTS</Button>
-            <Collapse in={open}>
-                <PhotoAlbumMy layout="masonry" photos={photos} openCallback={setIndex}/>
-            </Collapse>
-            <LightboxMy slides={slides} index={index} closeCallback={setIndex}/>
+            <ButtonGallery
+                index={index}
+                indexCallback={setIndex}
+                isOpen={open}
+                openCloseCallback={setOpen}
+                photos={photos}
+                slides={slides}
+            />
             <h5>Irina (Vlasta)  vs  Tais</h5>
-            <Button variant="primary" onClick={() => setOpen2(!open2)}>SCREENSHOTS</Button>
-            <Collapse in={open2}>
-                <PhotoAlbumMy layout="masonry" photos={photos2} openCallback={setIndex2}/>
-            </Collapse>
-            <LightboxMy slides={slides2} index={index2} closeCallback={setIndex2}/>
+            <ButtonGallery
+                index={index2}
+                indexCallback={setIndex2}
+                isOpen={open2}
+                openCloseCallback={setOpen2}
+                photos={photos2}
+                slides={slides2}
+            />
             <h5>Elena Vasilyeva  vs  Irina (Vlasta)</h5>
-            <Button variant="primary" onClick={() => setOpen3(!open3)}>SCREENSHOTS</Button>
-            <Collapse in={open3}>
-                <PhotoAlbumMy layout="masonry" photos={photos3} openCallback={setIndex3}/>
-            </Collapse>
-            <LightboxMy slides={slides3} index={index3} closeCallback={setIndex3}/>
+            <ButtonGallery
+                index={index3}
+                indexCallback={setIndex3}
+                isOpen={open3}
+                openCloseCallback={setOpen3}
+                photos={photos3}
+                slides={slides3}
+            />
             <hr/>
             <p>You can buy <b>VIDEO {videoNumber}</b> on <a href="https://gumroad.com/namazonclub">Gumroad</a>.</p>
         </>

@@ -1,19 +1,18 @@
 import React, {useState} from 'react'
-import {Button} from "react-bootstrap"
 import sC from 'src/common/styles.module.scss'
-import {getGalleryPhotosFromRequire} from "../../common/helpers"
-import {Collapse} from "@mui/material"
-import {LightboxMy, PhotoAlbumMy} from "../../common/ModdedComponents/ModdedComponents"
+import {getGalleryPhotosFromRequire, getSlides} from "../../common/helpers"
 import mainImg from 'src/img/videos/main/26main.jpg'
+import {ButtonGallery} from "../../common/common"
 
 const images = require.context('src/img/videos/26', false)
 
 export const Video26 = () => {
     const videoNumber = 26
+
     const [open, setOpen] = useState(false)
     const [index, setIndex] = useState(-1)
     const photos = getGalleryPhotosFromRequire(images)
-    const slides = photos.map(({src}) => ({src}))
+    const slides = getSlides(photos)
 
     return (
         <>
@@ -29,11 +28,14 @@ export const Video26 = () => {
             <p>The two women fought nine rounds with submission grappling rules. It was an interesting and exciting
                 wrestling match with a lot of different pins, chokes and submission holds. The both wrestlers struggled
                 arduously for every single point. The weaker woman didn’t give up easily.</p>
-            <Button variant="primary" onClick={() => setOpen(!open)}>SCREENSHOTS</Button>
-            <Collapse in={open}>
-                <PhotoAlbumMy layout="masonry" photos={photos} openCallback={setIndex}/>
-            </Collapse>
-            <LightboxMy slides={slides} index={index} closeCallback={setIndex}/>
+            <ButtonGallery
+                index={index}
+                indexCallback={setIndex}
+                isOpen={open}
+                openCloseCallback={setOpen}
+                photos={photos}
+                slides={slides}
+            />
             <hr/>
             <p>You can buy <b>VIDEO {videoNumber}</b> on <a href="https://gumroad.com/namazonclub">Gumroad</a>.</p>
         </>

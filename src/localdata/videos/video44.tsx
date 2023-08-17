@@ -7,27 +7,22 @@ import p1_OGrigorenko_vs_VVardugina from 'src/img/videos/44/1_O.Grigorenko_vs_V.
 import p2_OGrigorenko_vs_VVardugina from 'src/img/videos/44/2_O.Grigorenko_vs_V.Vardugina.jpg'
 import p1_OGrigorenko_vs_VSmorodina from 'src/img/videos/44/1_O.Grigorenko_vs_V.Smorodina.jpg'
 import p2_OGrigorenko_vs_VSmorodina from 'src/img/videos/44/2_O.Grigorenko_vs_V.Smorodina.jpg'
-import {getGalleryPhotosFromRequireFromArray} from "../../common/helpers"
+import {getGalleryPhotosFromRequireFromArray, getSlides} from "../../common/helpers"
 import {NavLink} from "react-router-dom"
 import {LightboxMy, PhotoAlbumMy} from "../../common/ModdedComponents/ModdedComponents"
 
 export const Video44 = () => {
     const [index, setIndex] = useState(-1)
-    const [index2, setIndex2] = useState(-1)
-    const [index3, setIndex3] = useState(-1)
-
     const photos1 = getGalleryPhotosFromRequireFromArray([VSmorodina_vs_VVardugina1, VSmorodina_vs_VVardugina2])
+    const slides1 = getSlides(photos1)
+
+    const [index2, setIndex2] = useState(-1)
     const photos2 = getGalleryPhotosFromRequireFromArray([p1_OGrigorenko_vs_VVardugina, p2_OGrigorenko_vs_VVardugina])
+    const slides2 = getSlides(photos2)
+
+    const [index3, setIndex3] = useState(-1)
     const photos3 = getGalleryPhotosFromRequireFromArray([p1_OGrigorenko_vs_VSmorodina, p2_OGrigorenko_vs_VSmorodina])
-    const slides1 = photos1.map(({src}) => ({
-        src
-    }))
-    const slides2 = photos2.map(({src}) => ({
-        src
-    }))
-    const slides3 = photos3.map(({src}) => ({
-        src
-    }))
+    const slides3 = getSlides(photos3)
 
     return (
         <>

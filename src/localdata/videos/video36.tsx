@@ -1,25 +1,22 @@
 import React, {useState} from 'react'
-import {Button} from "react-bootstrap"
 import sC from 'src/common/styles.module.scss'
-import {getGalleryPhotosFromRequire} from "../../common/helpers"
-import {Collapse} from "@mui/material"
-import {LightboxMy, PhotoAlbumMy} from "../../common/ModdedComponents/ModdedComponents"
+import {getGalleryPhotosFromRequire, getSlides} from "../../common/helpers"
 import mainImg from 'src/img/videos/main/36main.jpg'
+import {ButtonGallery} from "../../common/common"
 
 const images = require.context('src/img/videos/36', false)
 
 export const Video36 = () => {
+    const videoNumber = 36
+
     const [open, setOpen] = useState(false)
     const [index, setIndex] = useState(-1)
-
     const photos = getGalleryPhotosFromRequire(images)
-    const slides = photos.map(({src}) => ({
-        src
-    }))
+    const slides = getSlides(photos)
 
     return (
         <>
-            <h3>VIDEO 36</h3>
+            <h3>VIDEO {videoNumber}</h3>
             <h4>Female submission grappling tournament between beginners. <u>Preliminary fights</u>.<br/>
                 Weight class: 145 to 160 lb. May, 2014</h4>
             <p>
@@ -43,16 +40,19 @@ export const Video36 = () => {
                 The video includes three matches, the first two ones of which consist of two rounds and the last one
                 (Vika vs Christina) goes three rounds.
             </p>
-            <Button variant="primary" onClick={() => setOpen(!open)}>SCREENSHOTS</Button>
-            <Collapse in={open}>
-                <PhotoAlbumMy layout="masonry" photos={photos} openCallback={setIndex}/>
-            </Collapse>
-            <LightboxMy slides={slides} index={index} closeCallback={setIndex}/>
+            <ButtonGallery
+                index={index}
+                indexCallback={setIndex}
+                isOpen={open}
+                openCloseCallback={setOpen}
+                photos={photos}
+                slides={slides}
+            />
             <p>We recommend you to watch this movie (Video 36) if you like to see some ambitious, athletic girls with
                 beautiful bodies competing with each other in a hard-fought contest where everything is allowed:
                 choking, pinning and submission holds.</p>
             <hr/>
-            <p>You can buy <b>VIDEO 36</b> on <a href='https://gumroad.com/namazonclub'>Gumroad</a>. </p>
+            <p>You can buy <b>VIDEO {videoNumber}</b> on <a href='https://gumroad.com/namazonclub'>Gumroad</a>. </p>
         </>
     )
 }

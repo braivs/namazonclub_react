@@ -1,20 +1,18 @@
 import React, {useState} from 'react'
-import {Button} from "react-bootstrap"
 import sC from 'src/common/styles.module.scss'
-import {getGalleryPhotosFromRequire} from "../../common/helpers"
-import {Collapse} from "@mui/material"
-import {LightboxMy, PhotoAlbumMy} from "../../common/ModdedComponents/ModdedComponents"
+import {getGalleryPhotosFromRequire, getSlides} from "../../common/helpers"
 import mainImg from 'src/img/videos/main/05main.jpg'
+import {ButtonGallery} from "../../common/common"
 
 const images = require.context('src/img/videos/05', false)
 
 export const Video05 = () => {
     const videoNumber = 5
+
     const [open, setOpen] = useState(false)
     const [index, setIndex] = useState(-1)
     const photos = getGalleryPhotosFromRequire(images)
-    const slides = photos.map(({src}) => ({src}))
-
+    const slides = getSlides(photos)
     return (
         <>
             <h3>VIDEO {videoNumber}</h3>
@@ -28,11 +26,14 @@ export const Video05 = () => {
                 This is the first video of our NEW SERIES of mixed matches. We represent only real mixed wrestling, no
                 giveaway. The battle of the sexes to the victory!
             </p>
-            <Button variant="primary" onClick={() => setOpen(!open)}>SCREENSHOTS</Button>
-            <Collapse in={open}>
-                <PhotoAlbumMy layout="masonry" photos={photos} openCallback={setIndex}/>
-            </Collapse>
-            <LightboxMy slides={slides} index={index} closeCallback={setIndex}/>
+            <ButtonGallery
+                index={index}
+                indexCallback={setIndex}
+                isOpen={open}
+                openCloseCallback={setOpen}
+                photos={photos}
+                slides={slides}
+            />
             <hr/>
             <p>You can buy <b>VIDEO {videoNumber}</b> on <a href="https://gumroad.com/namazonclub">Gumroad</a>.</p>
         </>

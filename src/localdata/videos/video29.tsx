@@ -1,14 +1,14 @@
 import React, {useState} from 'react'
-import {Button} from "react-bootstrap"
 import sC from 'src/common/styles.module.scss'
 import {getGalleryPhotosFromRequire} from "../../common/helpers"
-import {Collapse} from "@mui/material"
-import {LightboxMy, PhotoAlbumMy} from "../../common/ModdedComponents/ModdedComponents"
 import mainImg from 'src/img/videos/main/29main.jpg'
+import {ButtonGallery} from "../../common/common"
 
 const images = require.context('src/img/videos/29', false)
 
 export const Video29 = () => {
+    const videoNumber = 8
+
     const [open, setOpen] = useState(false)
     const [index, setIndex] = useState(-1)
 
@@ -17,7 +17,7 @@ export const Video29 = () => {
 
     return (
         <>
-            <h3>VIDEO 29</h3>
+            <h3>VIDEO {videoNumber}</h3>
             <h4>Elena Vasilyeva vs Tais. Submission Grappling. June, 2013</h4>
             <p>
                 <b>Elena</b> (5'7" / 157 lb) is a strong and ambitious young woman. She has fought <b>Tais</b> (5'7" /
@@ -31,13 +31,16 @@ export const Video29 = () => {
                 For the first time, Tais loses a competitive submission match to Elena.
             </p>
             <p>If you are curious to see how it happened, watch this video.</p>
-            <Button variant="primary" onClick={() => setOpen(!open)}>SCREENSHOTS</Button>
-            <Collapse in={open}>
-                <PhotoAlbumMy layout="masonry" photos={photos} openCallback={setIndex}/>
-            </Collapse>
-            <LightboxMy slides={slides} index={index} closeCallback={setIndex}/>
+            <ButtonGallery
+                index={index}
+                indexCallback={setIndex}
+                isOpen={open}
+                openCloseCallback={setOpen}
+                photos={photos}
+                slides={slides}
+            />
             <hr/>
-            <p>You can buy <b>VIDEO 29</b> on <a href="https://gumroad.com/namazonclub">Gumroad</a>.</p>
+            <p>You can buy <b>VIDEO {videoNumber}</b> on <a href="https://gumroad.com/namazonclub">Gumroad</a>.</p>
         </>
     )
 }

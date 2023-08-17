@@ -1,20 +1,18 @@
 import React, {useState} from 'react'
-import {Button} from "react-bootstrap"
 import sC from 'src/common/styles.module.scss'
-import {getGalleryPhotosFromRequire} from "../../common/helpers"
-import {Collapse} from "@mui/material"
-import {LightboxMy, PhotoAlbumMy} from "../../common/ModdedComponents/ModdedComponents"
+import {getGalleryPhotosFromRequire, getSlides} from "../../common/helpers"
 import mainImg from 'src/img/videos/main/04main.jpg'
+import {ButtonGallery} from "../../common/common"
 
 const images = require.context('src/img/videos/04', false)
 
 export const Video04 = () => {
     const videoNumber = 4
+
     const [open, setOpen] = useState(false)
     const [index, setIndex] = useState(-1)
     const photos = getGalleryPhotosFromRequire(images)
-    const slides = photos.map(({src}) => ({src}))
-
+    const slides = getSlides(photos)
     return (
         <>
             <h3>VIDEO {videoNumber}</h3>
@@ -30,11 +28,14 @@ export const Video04 = () => {
                 Beyond the tournament, there was a prize fight between  Tais  (5'7" / 132 lb) and Natalia Mysik.
             </p>
             <p>If you like long pinning holds, head scissors and chokes in women’s fights, you will love this film.</p>
-            <Button variant="primary" onClick={() => setOpen(!open)}>SCREENSHOTS</Button>
-            <Collapse in={open}>
-                <PhotoAlbumMy layout="masonry" photos={photos} openCallback={setIndex}/>
-            </Collapse>
-            <LightboxMy slides={slides} index={index} closeCallback={setIndex}/>
+            <ButtonGallery
+                index={index}
+                indexCallback={setIndex}
+                isOpen={open}
+                openCloseCallback={setOpen}
+                photos={photos}
+                slides={slides}
+            />
             <hr/>
             <p>You can buy <b>VIDEO {videoNumber}</b> on <a href="https://gumroad.com/namazonclub">Gumroad</a>.</p>
         </>

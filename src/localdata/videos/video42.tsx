@@ -1,26 +1,24 @@
 import React, {useState} from 'react'
-import {Button, Col, Row} from "react-bootstrap"
+import {Col, Row} from "react-bootstrap"
 import sC from 'src/common/styles.module.scss'
 import cn from 'classnames'
 import imgMain from 'src/img/videos/main/42main.jpg'
-import {getGalleryPhotosFromRequire} from "../../common/helpers"
-import {Collapse} from "@mui/material"
-import {LightboxMy, PhotoAlbumMy} from "../../common/ModdedComponents/ModdedComponents"
+import {getGalleryPhotosFromRequire, getSlides} from "../../common/helpers"
+import {ButtonGallery} from "../../common/common"
 
 const images = require.context('src/img/videos/42/', false)
 
 export const Video42 = () => {
-    const [index, setIndex] = useState(-1)
+    const videoNumber = 42
 
+    const [index, setIndex] = useState(-1)
     const [open, setOpen] = useState(false)
     const photos = getGalleryPhotosFromRequire(images)
-    const slides = photos.map(({src}) => ({
-        src
-    }))
+    const slides = getSlides(photos)
 
     return (
         <>
-            <h3>VIDEO 42</h3>
+            <h3>VIDEO {videoNumber}</h3>
             <h4>Submission Grappling tournament. Part 2. October, 2014</h4>
             <p><b>VIDEO 42</b> is the second part of our HD video featuring the submission grappling mini- tournament
                 that took place on 13/10/2014. It includes two fights between <b>Christina Shvets</b> (68.9 kg / 151.9
@@ -52,14 +50,17 @@ export const Video42 = () => {
                 of endurance test. The longer the struggle went on, the more difficult it was getting for Christina to
                 control the match. She seemed pretty worn out in the end, while the same couldn’t be said for Victoria.
             </p>
-            <Button variant="primary" onClick={() => setOpen(!open)}>SCREENSHOTS</Button>
-            <Collapse in={open}>
-                <PhotoAlbumMy photos={photos} openCallback={setIndex}/>
-            </Collapse>
-            <LightboxMy slides={slides} index={index} closeCallback={setIndex}/>
+            <ButtonGallery
+                index={index}
+                indexCallback={setIndex}
+                isOpen={open}
+                openCloseCallback={setOpen}
+                photos={photos}
+                slides={slides}
+            />
             <Row>
                 <hr/>
-                <p>You can buy <b>VIDEO 42</b> at <a href="https://gumroad.com/namazonclub"> Gumroad </a></p>
+                <p>You can buy <b>VIDEO {videoNumber}</b> at <a href="https://gumroad.com/namazonclub"> Gumroad </a></p>
             </Row>
         </>
     )

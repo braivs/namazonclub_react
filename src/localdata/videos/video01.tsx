@@ -1,20 +1,18 @@
 import React, {useState} from 'react'
-import {Button} from "react-bootstrap"
 import sC from 'src/common/styles.module.scss'
-import {getGalleryPhotosFromRequire} from "../../common/helpers"
-import {Collapse} from "@mui/material"
-import {LightboxMy, PhotoAlbumMy} from "../../common/ModdedComponents/ModdedComponents"
+import {getGalleryPhotosFromRequire, getSlides} from "../../common/helpers"
 import mainImg from 'src/img/videos/main/01main.jpg'
+import {ButtonGallery} from "../../common/common"
 
 const images = require.context('src/img/videos/01', false)
 
 export const Video01 = () => {
     const videoNumber = 1
+
     const [open, setOpen] = useState(false)
     const [index, setIndex] = useState(-1)
     const photos = getGalleryPhotosFromRequire(images)
-    const slides = photos.map(({src}) => ({src}))
-
+    const slides = getSlides(photos)
     return (
         <>
             <h3>VIDEO {videoNumber}</h3>
@@ -30,11 +28,14 @@ export const Video01 = () => {
                 between Tais and Maria. The two girls showed very tough and uncompromising wrestling. This video
                 features all the three matches of the first round.</p>
             <img className={sC.videosMainImg} src={mainImg} alt="imgMain"/>
-            <Button variant="primary" onClick={() => setOpen(!open)}>SCREENSHOTS</Button>
-            <Collapse in={open}>
-                <PhotoAlbumMy layout="masonry" photos={photos} openCallback={setIndex}/>
-            </Collapse>
-            <LightboxMy slides={slides} index={index} closeCallback={setIndex}/>
+            <ButtonGallery
+                index={index}
+                indexCallback={setIndex}
+                isOpen={open}
+                openCloseCallback={setOpen}
+                photos={photos}
+                slides={slides}
+            />
             <hr/>
             <p>You can buy <b>VIDEO {videoNumber}</b> on <a href="https://gumroad.com/namazonclub">Gumroad</a>.</p>
         </>

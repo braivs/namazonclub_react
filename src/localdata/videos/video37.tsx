@@ -1,26 +1,22 @@
 import React, {useState} from 'react'
-import {Button} from "react-bootstrap"
 import sC from 'src/common/styles.module.scss'
-import {getGalleryPhotosFromRequire} from "../../common/helpers"
-import {Collapse} from "@mui/material"
-import {LightboxMy, PhotoAlbumMy} from "../../common/ModdedComponents/ModdedComponents"
+import {getGalleryPhotosFromRequire, getSlides} from "../../common/helpers"
 import mainImg from 'src/img/videos/37/22.jpg'
+import {ButtonGallery} from "../../common/common"
 
 const images = require.context('src/img/videos/37', false)
 
 export const Video37 = () => {
-    const [open, setOpen] = useState(false)
+    const videoNumber = 37
 
+    const [open, setOpen] = useState(false)
     const [index, setIndex] = useState(-1)
     const photos = getGalleryPhotosFromRequire(images)
-
-    const slides = photos.map(({src}) => ({
-        src
-    }))
+    const slides = getSlides(photos)
 
     return (
         <div className={sC.compArticlesVideos}>
-            <h3>VIDEO 37</h3>
+            <h3>VIDEO {videoNumber}</h3>
             <h4>Female submission grappling tournament between beginners. <u>Final fights</u>.<br/>
                 Weight class: 145 to 160 lb. May, 2014</h4>
             <p>
@@ -35,17 +31,20 @@ export const Video37 = () => {
                 other twice by applying submission holds.</p>
             <p>The final fight was much longer and more strenuous. Suffice it to say that in the first round neither
                 wrestler was able to gain a victory within the 4 min of time limit.</p>
-            <Button variant="primary" onClick={() => setOpen(!open)}>SCREENSHOTS</Button>
-            <Collapse in={open}>
-                <PhotoAlbumMy photos={photos} openCallback={setIndex}/>
-            </Collapse>
-            <LightboxMy slides={slides} index={index} closeCallback={setIndex}/>
+            <ButtonGallery
+                index={index}
+                indexCallback={setIndex}
+                isOpen={open}
+                openCloseCallback={setOpen}
+                photos={photos}
+                slides={slides}
+            />
             <p>We recommend this video for those of you who like real female wrestling and young sexy-looking girls with
                 competitive spirit. You will find it especially entertaining if you are interested to see a fight in
                 which one of the two girls grappling on the mat continuously struggles to pin her opponent down and
                 finally succeeds after long hard attempts</p>
             <hr/>
-            <p>You can buy <b>VIDEO 37</b> on <a href='https://gumroad.com/namazonclub'>Gumroad</a>.</p>
+            <p>You can buy <b>VIDEO {videoNumber}</b> on <a href='https://gumroad.com/namazonclub'>Gumroad</a>.</p>
         </div>
     )
 }

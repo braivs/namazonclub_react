@@ -1,23 +1,23 @@
 import React, {useState} from 'react'
-import {Button} from "react-bootstrap"
 import sC from 'src/common/styles.module.scss'
-import {getGalleryPhotosFromRequire} from "../../common/helpers"
-import {Collapse} from "@mui/material"
-import {LightboxMy, PhotoAlbumMy} from "../../common/ModdedComponents/ModdedComponents"
+import {getGalleryPhotosFromRequire, getSlides} from "../../common/helpers"
 import mainImg from 'src/img/videos/main/35main.jpg'
+import {ButtonGallery} from "../../common/common"
 
 const images = require.context('src/img/videos/35', false)
 
 export const Video35 = () => {
+    const videoNumber = 35
+
     const [open, setOpen] = useState(false)
     const [index, setIndex] = useState(-1)
 
     const photos = getGalleryPhotosFromRequire(images)
-    const slides = photos.map(({src}) => ({src}))
+    const slides = getSlides(photos)
 
     return (
         <>
-            <h3>VIDEO 35</h3>
+            <h3>VIDEO {videoNumber}</h3>
             <h4>Pins matches. Lidiya Oslopovskih, a newcomer in the Namazon Club's wrestling competitions. 2013</h4>
             <p>
                 Lovely young lady, <b>Lidiya Oslopovskih</b> (53 kg / 117 lbs), is a newcomer to the Namazon wrestling
@@ -37,13 +37,16 @@ export const Video35 = () => {
                 some long pin holds, as well as some hard attempts of the bottom lady to bridge out of these pins, then
                 this video is highly recommended for you.
             </p>
-            <Button variant="primary" onClick={() => setOpen(!open)}>SCREENSHOTS</Button>
-            <Collapse in={open}>
-                <PhotoAlbumMy layout="masonry" photos={photos} openCallback={setIndex}/>
-            </Collapse>
-            <LightboxMy slides={slides} index={index} closeCallback={setIndex}/>
+            <ButtonGallery
+                index={index}
+                indexCallback={setIndex}
+                isOpen={open}
+                openCloseCallback={setOpen}
+                photos={photos}
+                slides={slides}
+            />
             <hr/>
-            <p>You can buy <b>VIDEO 35</b> on <a href="https://gumroad.com/namazonclub">Gumroad</a>. </p>
+            <p>You can buy <b>VIDEO {videoNumber}</b> on <a href="https://gumroad.com/namazonclub">Gumroad</a>. </p>
         </>
     )
 }

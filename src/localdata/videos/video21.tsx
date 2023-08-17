@@ -1,11 +1,9 @@
 import React, {useState} from 'react'
-import {Button, Col, Row} from "react-bootstrap"
+import {Row} from "react-bootstrap"
 import sC from 'src/common/styles.module.scss'
-import cn from 'classnames'
 import imgMain from 'src/img/videos/main/21main.jpg'
-import {getGalleryPhotosFromRequire} from "../../common/helpers"
-import {Collapse} from "@mui/material"
-import {LightboxMy, PhotoAlbumMy} from "../../common/ModdedComponents/ModdedComponents"
+import {getGalleryPhotosFromRequire, getSlides} from "../../common/helpers"
+import {ButtonGallery} from "../../common/common"
 
 const images = require.context('src/img/videos/21/mma-pervaya-nevskaya-arena-2012-2', false)
 
@@ -14,7 +12,7 @@ export const Video21 = () => {
     const [index, setIndex] = useState(-1)
     const [open, setOpen] = useState(false)
     const photos = getGalleryPhotosFromRequire(images)
-    const slides = photos.map(({src}) => ({src}))
+    const slides = getSlides(photos)
 
     return (
         <>
@@ -32,11 +30,14 @@ export const Video21 = () => {
                 disappointed when watching this fight. However, if you love real, hard, uncompromising fights then
                 you’ll definitely like their match.
             </p>
-            <Button variant="primary" onClick={() => setOpen(!open)}>SCREENSHOTS</Button>
-            <Collapse in={open}>
-                <PhotoAlbumMy photos={photos} openCallback={setIndex}/>
-            </Collapse>
-            <LightboxMy slides={slides} index={index} closeCallback={setIndex}/>
+            <ButtonGallery
+                index={index}
+                indexCallback={setIndex}
+                isOpen={open}
+                openCloseCallback={setOpen}
+                photos={photos}
+                slides={slides}
+            />
             <Row>
                 <hr/>
                 <p>You can buy <b>VIDEO {videoNumber}</b> at <a href="https://gumroad.com/namazonclub"> Gumroad </a></p>
