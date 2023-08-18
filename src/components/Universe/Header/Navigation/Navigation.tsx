@@ -7,15 +7,13 @@ import {CustomToggle} from "../../../../common/DropdownCustom/DropdownCustom"
 
 export function Navigation() {
     return (
-        <nav className={s.navigation + " navbar navbar-expand-lg"}>
+        <Navbar expand="lg" className={s.navigation}>
             <Container>
                 <Navbar.Brand><NavLink to="/universe/home"><img src={logo} alt=""/></NavLink></Navbar.Brand>
-                <button className="navbar-toggler" type="button" data-toggle="collapse"
-                        data-target="#navbarSupportedContent"
-                        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span className={s.togglerIcon}>&#9776;</span>
-                </button>
-                <div className="collapse navbar-collapse" id="navbarSupportedContent">
+                <Navbar.Toggle aria-controls="basic-navbar-nav" className={s.togglerIcon}>
+                    &#9776;
+                </Navbar.Toggle>
+                <Navbar.Collapse id="basic-navbar-nav">
                     <ul className="navbar-nav mr-auto">
                         <li className="nav-item">
                             <NavLink to="home">HOME</NavLink>
@@ -65,9 +63,9 @@ export function Navigation() {
                             <NavLink to="contactus">CONTACT US</NavLink>
                         </li>
                     </ul>
-                </div>
+                {/*</div>*/}
+                </Navbar.Collapse>
             </Container>
-
-        </nav>
+        </Navbar>
     )
 }
