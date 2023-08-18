@@ -3,6 +3,7 @@ import sC from 'src/common/styles.module.scss'
 import {getGalleryPhotosFromRequire, getSlides} from "../../common/helpers"
 import mainImg from 'src/img/videos/main/39main.jpg'
 import {ButtonGallery} from "../../common/common"
+import {NavLink} from "react-router-dom"
 
 const images = require.context('src/img/videos/39', false)
 
@@ -19,8 +20,8 @@ export const Video39 = () => {
             <h3>VIDEO {videoNumber}</h3>
             <h4>Mixed wrestling. Villian vs Tais. Part 1. 2014</h4>
             <p>
-                In comparison with Alexandr whom you can see on our VIDEO
-                38 !!!ADD LINK!!!, <b>Villian</b> doesn’t look so big and strong. He weighs only 180 pounds. But he is
+                In comparison with Alexandr whom you can see on our <NavLink to="/universe/videos/38">VIDEO
+                38</NavLink>, <b>Villian</b> doesn’t look so big and strong. He weighs only 180 pounds. But he is
                 much faster
                 and far more experienced and skilled in wrestling. In their personal fights with each other Villian
                 usually comes out a winner. However, <b>Tais</b> who is 44 lb lighter than Villian says that it’s easier
@@ -46,5 +47,3 @@ export const Video39 = () => {
         </>
     )
 }
-
-//todo: add link

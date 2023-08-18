@@ -3,6 +3,7 @@ import sC from 'src/common/styles.module.scss'
 import {getGalleryPhotosFromRequire, getSlides} from "../../common/helpers"
 import mainImg from 'src/img/videos/main/36main.jpg'
 import {ButtonGallery} from "../../common/common"
+import {NavLink} from "react-router-dom"
 
 const images = require.context('src/img/videos/36', false)
 
@@ -29,8 +30,8 @@ export const Video36 = () => {
                 All the girls except Victoria Vardugina, who has already wrestled once before in the Namazon Club, are
                 beginners in submission grappling and participate for the first time here in the competition with
                 us.<br/>
-                About a half a year ago, in October 2013, Vika won a women's crossfit wrestling !!!ADD LINK HERE!!!
-                competition in our club by bringing an uncompromising wrestler
+                About a half a year ago, in October 2013, Vika won a women's <NavLink to="/universe/videos/33">crossfit
+                wrestling</NavLink> competition in our club by bringing an uncompromising wrestler
                 Lidiya Oslopovskih to submission in the final fight. Vika is a physically strong young woman who not
                 only learns how to wrestle, but also competes successfully in college arm wrestling tournaments.
             </p>
@@ -52,9 +53,7 @@ export const Video36 = () => {
                 beautiful bodies competing with each other in a hard-fought contest where everything is allowed:
                 choking, pinning and submission holds.</p>
             <hr/>
-            <p>You can buy <b>VIDEO {videoNumber}</b> on <a href='https://gumroad.com/namazonclub'>Gumroad</a>. </p>
+            <p>You can buy <b>VIDEO {videoNumber}</b> on <a href="https://gumroad.com/namazonclub">Gumroad</a>. </p>
         </>
     )
 }
-
-// todo: add link to crossfit wrestling

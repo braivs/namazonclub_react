@@ -68,5 +68,3 @@ export const Video41 = () => {
         </>
     )
 }
-
-// todo: add link

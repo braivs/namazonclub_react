@@ -50,5 +50,3 @@ export const Video35 = () => {
         </>
     )
 }
-
-// todo: add link to crossfit wrestling

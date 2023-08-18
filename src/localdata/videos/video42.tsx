@@ -5,6 +5,7 @@ import cn from 'classnames'
 import imgMain from 'src/img/videos/main/42main.jpg'
 import {getGalleryPhotosFromRequire, getSlides} from "../../common/helpers"
 import {ButtonGallery} from "../../common/common"
+import {NavLink} from "react-router-dom"
 
 const images = require.context('src/img/videos/42/', false)
 
@@ -28,9 +29,10 @@ export const Video42 = () => {
             <Col className={cn('d-flex', 'justify-content-center')}>
                 <img className={sC.videosMainImg} src={imgMain} alt="imgMain"/>
             </Col>
-            <p>This was the second time these rivals wrestled each other. The first one was at the
-                <b>!!!add link!!</b> tournament that was held for beginners on May
-                9th this year, where Victoria came out a winner. And here they were again on the same mat, Christina
+            <p>This was the second time these rivals wrestled each other. The first one was at the <NavLink
+                to="/universe/videos/36">tournament that was held for beginners on May
+                9th this year</NavLink>, where Victoria came out a winner. And here they were again on the same mat,
+                Christina
                 in a determined mood for the rematch!</p>
             <p>
                 According to the rules, in order to win an individual fight, it was necessary for both opponents either
@@ -66,4 +68,4 @@ export const Video42 = () => {
     )
 }
 
-// todo: add link
+// change link to tournaments, when competitions will be ready

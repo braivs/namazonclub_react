@@ -3,6 +3,7 @@ import sC from 'src/common/styles.module.scss'
 import {getGalleryPhotosFromRequire, getSlides} from "../../common/helpers"
 import mainImg from 'src/img/videos/37/22.jpg'
 import {ButtonGallery} from "../../common/common"
+import {NavLink} from "react-router-dom"
 
 const images = require.context('src/img/videos/37', false)
 
@@ -20,8 +21,9 @@ export const Video37 = () => {
             <h4>Female submission grappling tournament between beginners. <u>Final fights</u>.<br/>
                 Weight class: 145 to 160 lb. May, 2014</h4>
             <p>
-                This video is a continuation of the Video 36 that featured the preliminary fights HERE !!!ADD LINK TO
-                VIDEO 36!!!. Now here you can see two final fights in which the loser and the winner of the tournament
+                This video is a continuation of the Video 36 that featured the preliminary fights (see its
+                description <NavLink to="/universe/videos/36">HERE</NavLink>). Now here you can see two final fights in
+                which the loser and the winner of the tournament
                 were determined.
             </p>
             <img className={sC.videosMainImg} src={mainImg} alt="imgMain"/>
@@ -44,9 +46,7 @@ export const Video37 = () => {
                 which one of the two girls grappling on the mat continuously struggles to pin her opponent down and
                 finally succeeds after long hard attempts</p>
             <hr/>
-            <p>You can buy <b>VIDEO {videoNumber}</b> on <a href='https://gumroad.com/namazonclub'>Gumroad</a>.</p>
+            <p>You can buy <b>VIDEO {videoNumber}</b> on <a href="https://gumroad.com/namazonclub">Gumroad</a>.</p>
         </div>
     )
 }
-
-// todo: add link

@@ -3,6 +3,7 @@ import sC from 'src/common/styles.module.scss'
 import {getGalleryPhotosFromRequire, getSlides} from "../../common/helpers"
 import mainImg from 'src/img/videos/main/40main.jpg'
 import {ButtonGallery} from "../../common/common"
+import {NavLink} from "react-router-dom"
 
 const images = require.context('src/img/videos/40', false)
 
@@ -19,7 +20,8 @@ export const Video40 = () => {
             <h3>VIDEO {videoNumber}</h3>
             <h4>Mixed wrestling. Villian vs Tais. Part 2. 2014</h4>
             <p>
-                <b>VIDEO 40</b> is the continuation of VIDEO 39 !!!add link!!!. Here you can see six more
+                <b>VIDEO 40</b> is the continuation of <NavLink to="/universe/videos/39">VIDEO 39</NavLink>. Here you
+                can see six more
                 wrestling fights between <b>Villian</b> (180 lb) and <b>Tais</b> (136 lb), which took place in 2014. The
                 two competitors knew each other very well, since they have wrestled each other many times over the years
                 and their fights have been always aggressive and competitive.
@@ -43,7 +45,5 @@ export const Video40 = () => {
             <hr/>
             <p>You can buy <b>VIDEO {videoNumber}</b> on <a href="https://gumroad.com/namazonclub">Gumroad</a>.</p>
         </>
-)
+    )
 }
-
-//todo: add link
