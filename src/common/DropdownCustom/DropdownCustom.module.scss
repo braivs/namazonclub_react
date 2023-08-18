@@ -4,3 +4,8 @@
     padding-right: 25px;
 }
 
+@media (max-width: 991px) {
+    .customToggle {
+        padding-left: 0;
+    }
+}
