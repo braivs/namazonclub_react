@@ -16,8 +16,6 @@ import izida_irina_2008 from '../img/competitions/thumb/2008-izida-irina.jpg'
 import irina_tais_2009 from '../img/competitions/thumb/2009-irina-tais.jpg'
 import natalia_alex_2010 from '../img/competitions/thumb/2010-natalia-alex.jpg'
 
-
-
 export const cardsCompetitions2015_2017: Array<CardType> = [
     {
         id: 'maslenitsa-2015-2017',

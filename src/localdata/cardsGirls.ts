@@ -18,46 +18,55 @@ export const cardsGirls2010_2011: Array<CardType> = [
         id: 'mariya-ryljova',
         title: 'MARIA RYLYOVA\n5\'8\'\' / 130 lb',
         imgRef: maria,
+        years: "2010_2011"
     },
     {
         id: 'tais2011',
         title: 'TAIS\n5\'7\'\' / 130 lb',
         imgRef: tais2010_2011,
+        years: "2010_2011"
     },
     {
         id: 'irina',
         title: 'IRINA\n5\'9\'\' / 154 lb',
         imgRef: irina,
+        years: "2010_2011"
     },
     {
         id: 'valentina-perfileva',
         title: 'VALENTINA PERFILYEVA\n5\'8\'\' / 132 lb',
         imgRef: valentina,
+        years: "2010_2011"
     },
     {
         id: 'irina-vlasta',
         title: 'IRINA (VLASTA)\n5\'9\'\' / 154 lb',
         imgRef: vlasta,
+        years: "2010_2011"
     },
     {
         id: 'nadezhda-akhmerova',
         title: 'NADEZHDA AKHMEROVA\n5\'6\'\' / 132 lb',
         imgRef: nadezhda,
+        years: "2010_2011"
     },
     {
         id: 'elena-vasileva',
         title: 'ELENA VASILYEVA\n5\'6\'\' / 135 lb',
         imgRef: elena2010_2011,
+        years: "2010_2011"
     },
     {
         id: 'natalia-mysik',
         title: 'NATALIA MYSIK\n5\'11\'\' / 154 lb',
         imgRef: natalia,
+        years: "2010_2011"
     },
     {
         id: 'kseniya-voloshina',
         title: 'KSENIA VOLOSHINA\n5\'3\'\' / 141 lb',
         imgRef: ksenia,
+        years: "2010_2011"
     },
 ]
 
@@ -66,20 +75,24 @@ export const cardsGirls2012_2013: Array<CardType> = [
         id: 'tais2012-2013',
         title: 'Tais. 2013',
         imgRef: tais2012_2013,
+        years: "2012_2013"
     },
     {
         id: 'kara-teller',
         title: 'Kara Teller. 2012',
         imgRef: kara_teller,
+        years: "2012_2013"
     },
     {
         id: 'elena-vasileva2013',
         title: 'Elena Vasilyeva. 2013',
         imgRef: elena2012_2013,
+        years: "2012_2013"
     },
     {
         id: 'darya-balina',
         title: 'Elena Vasilyeva. 2013',
         imgRef: darya_balina,
+        years: "2012_2013"
     },
 ]

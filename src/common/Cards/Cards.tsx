@@ -16,6 +16,7 @@ export const Cards = (props: PropsType) => {
                             title={e.title}
                             imgRef={e.imgRef}
                             variant={props.variant}
+                            years={e.years}
                         />
                     })
                 }

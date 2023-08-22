@@ -16,7 +16,9 @@ export const CardComponent = (props: PropsType) => {
         }
     }
 
-    const toLink = () => `/universe/${props.variant}/${props.id}`
+    const toLink = () => props.variant === 'girl'
+      ? `/universe/${props.variant}/${props.years}/${props.id}`
+      : `/universe/${props.variant}/${props.id}`
 
     return (
         <Card className={cn(s.card, classSwitch(props.variant))}>
