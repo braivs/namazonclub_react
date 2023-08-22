@@ -4,4 +4,4 @@ export type CardType = {
     imgRef: string
 }
 
-export type VariantType = 'videos' | 'girls' | 'competitions'
+export type VariantType = 'video' | 'girl' | 'competition'

@@ -21,23 +21,23 @@ export const Competitions = () => {
             </div>
             {(cardsVariant === 'all' || cardsVariant === '2015-2017') && <div>
               <p>2015-2017</p>
-              <Cards cardsArray={cardsCompetitions2015_2017} variant={'competitions'}/>
+              <Cards cardsArray={cardsCompetitions2015_2017} variant={'competition'}/>
             </div> }
             {(cardsVariant === 'all' || cardsVariant === '2013-2014') && <div>
                 <p>2013-2014</p>
-                <Cards cardsArray={cardsCompetitions2013_2014} variant={'competitions'}/>
+                <Cards cardsArray={cardsCompetitions2013_2014} variant={'competition'}/>
             </div> }
             {(cardsVariant === 'all' || cardsVariant === '2012') && <div>
                 <p>2012</p>
-                <Cards cardsArray={cardsCompetitions2012} variant={'competitions'}/>
+                <Cards cardsArray={cardsCompetitions2012} variant={'competition'}/>
             </div> }
             {(cardsVariant === 'all' || cardsVariant === '2011') && <div>
                 <p>2011</p>
-                <Cards cardsArray={cardsCompetitions2011} variant={'competitions'}/>
+                <Cards cardsArray={cardsCompetitions2011} variant={'competition'}/>
             </div>}
             {(cardsVariant === 'all' || cardsVariant === 'Archive') && <div>
                 <p>Archive</p>
-                <Cards cardsArray={cardsArchive} variant={'competitions'}/>
+                <Cards cardsArray={cardsArchive} variant={'competition'}/>
             </div> }
         </>
     )

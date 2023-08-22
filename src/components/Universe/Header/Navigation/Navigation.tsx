@@ -26,12 +26,12 @@ export function Navigation() {
                                 VIDEO
                             </Dropdown.Toggle>
                             <Dropdown.Menu variant="dark" className={s.dropdownMenuSuper}>
-                                <Dropdown.Item as={NavLink} to={"/universe/video/wrestling"}>Wrestling</Dropdown.Item>
-                                <Dropdown.Item as={NavLink} to={"/universe/video/mma"}>MMA</Dropdown.Item>
-                                <Dropdown.Item as={NavLink} to={"/universe/video/boxing"}>Kickboxing</Dropdown.Item>
-                                <Dropdown.Item as={NavLink} to={"/universe/video/mix"}>Mixed wrestling</Dropdown.Item>
+                                <Dropdown.Item as={NavLink} to={"/universe/videos/wrestling"}>Wrestling</Dropdown.Item>
+                                <Dropdown.Item as={NavLink} to={"/universe/videos/mma"}>MMA</Dropdown.Item>
+                                <Dropdown.Item as={NavLink} to={"/universe/videos/boxing"}>Kickboxing</Dropdown.Item>
+                                <Dropdown.Item as={NavLink} to={"/universe/videos/mix"}>Mixed wrestling</Dropdown.Item>
                                 <Dropdown.Divider />
-                                <Dropdown.Item as={NavLink} to={"/universe/video/all"}>All categories</Dropdown.Item>
+                                <Dropdown.Item as={NavLink} to={"/universe/videos/all"}>All categories</Dropdown.Item>
                             </Dropdown.Menu>
                         </Dropdown>
                         <Dropdown>

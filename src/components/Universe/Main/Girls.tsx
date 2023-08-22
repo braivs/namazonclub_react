@@ -15,11 +15,11 @@ export const Girls = () => {
             </div>
             {(cardsVariant === 'all' || cardsVariant === '2012-2013') && <div>
               <p>2012 - 2013</p>
-              <Cards cardsArray={cardsGirls2012_2013} variant={"girls"}/>
+              <Cards cardsArray={cardsGirls2012_2013} variant={"girl"}/>
             </div> }
             {(cardsVariant === 'all' || cardsVariant === '2010-2011') && <div>
                 <p>2010-2011</p>
-                <Cards cardsArray={cardsGirls2010_2011} variant={"girls"}/>
+                <Cards cardsArray={cardsGirls2010_2011} variant={"girl"}/>
             </div>  }
         </>
     )

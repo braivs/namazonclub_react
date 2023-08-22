@@ -8,10 +8,10 @@ import cn from 'classnames'
 export const CardComponent = (props: PropsType) => {
     const classSwitch = (variant: VariantType) => {
         switch (variant) {
-            case "girls":
+            case "girl":
                 return s.girls
-            case "videos":
-            case "competitions":
+            case "video":
+            case "competition":
                 return s.videoCompetitions
         }
     }
@@ -25,7 +25,7 @@ export const CardComponent = (props: PropsType) => {
             </NavLink>
             <NavLink to={toLink()}>
                 <Card.Body className={s.cardBody}>
-                    {(props.variant === 'videos'
+                    {(props.variant === 'video'
                         ? 'VIDEO ' + props.id + '\n' : '')
                         + props.title}
                 </Card.Body>
