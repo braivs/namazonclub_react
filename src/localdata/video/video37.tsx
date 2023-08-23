@@ -16,7 +16,7 @@ export const Video37 = () => {
     const slides = getSlides(photos)
 
     return (
-        <div className={sC.compArticlesVideos}>
+        <div className={sC.compArticlesVideoGirl}>
             <h3>VIDEO {videoNumber}</h3>
             <h4>Female submission grappling tournament between beginners. <u>Final fights</u>.<br/>
                 Weight class: 145 to 160 lb. May, 2014</h4>

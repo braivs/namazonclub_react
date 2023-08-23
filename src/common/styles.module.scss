@@ -4,9 +4,7 @@
     }
 }
 
-
-
-.compArticlesVideos {
+.compArticlesVideoGirl {
     h3:first-of-type {
         color: #1B8BBA;
     }
@@ -19,4 +17,18 @@
 .videosMainImg {
     width: 100%;
     margin-bottom: 10px;
+}
+
+.videoGirl {
+    a {
+        color: #007bff;
+    }
+
+    button {
+        margin-bottom: 5px;
+    }
+
+    hr {
+        margin-top: 16px;
+    }
 }

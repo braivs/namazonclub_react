@@ -1,58 +1,57 @@
 import React from 'react'
 import {Route, Routes} from "react-router-dom"
-import {Video44} from "../../../../localdata/video/video44"
-import {Video42} from "../../../../localdata/video/video42"
-import {Video41} from "../../../../localdata/video/video41"
-import {Video37} from "../../../../localdata/video/video37"
-import {Video36} from "../../../../localdata/video/video36"
+import {Video44} from "../../../localdata/video/video44"
+import {Video42} from "../../../localdata/video/video42"
+import {Video41} from "../../../localdata/video/video41"
+import {Video37} from "../../../localdata/video/video37"
+import {Video36} from "../../../localdata/video/video36"
 import sC from 'src/common/styles.module.scss'
-import s from './Video.module.scss'
 import cn from 'classnames'
-import {NotFound} from "../notFound"
-import {Video35} from "../../../../localdata/video/video35"
-import {Video33} from "../../../../localdata/video/video33"
-import {Video29} from "../../../../localdata/video/video29"
-import {Video27} from "../../../../localdata/video/video27"
-import {Video26} from "../../../../localdata/video/video26"
-import {Video24} from "../../../../localdata/video/video24"
-import {Video23} from "../../../../localdata/video/video23"
-import {Video19} from "../../../../localdata/video/video19"
-import {Video16} from "../../../../localdata/video/video16"
-import {Video12} from "../../../../localdata/video/video12"
-import {Video08} from "../../../../localdata/video/video08"
-import {Video06} from "../../../../localdata/video/video06"
-import {Video04} from "../../../../localdata/video/video04"
-import {Video03} from "../../../../localdata/video/video03"
-import {Video02} from "../../../../localdata/video/video02"
-import {Video01} from "../../../../localdata/video/video01"
-import {Video09} from "../../../../localdata/video/video09"
-import { Video17 } from 'src/localdata/video/video17'
-import {Video18} from "../../../../localdata/video/video18"
-import {Video20} from "../../../../localdata/video/video20"
-import {Video21} from "../../../../localdata/video/video21"
-import {Video13} from "../../../../localdata/video/video13"
-import {Video03wm} from "../../../../localdata/video/video03wm"
-import {Video05} from "../../../../localdata/video/video05"
-import {Video07} from "../../../../localdata/video/video07"
-import {Video10} from "../../../../localdata/video/video10"
-import {Video11} from "../../../../localdata/video/video11"
-import {Video14} from "../../../../localdata/video/video14"
-import {Video15} from "../../../../localdata/video/video15"
-import {Video22} from "../../../../localdata/video/video22"
-import {Video25} from "../../../../localdata/video/video25"
-import {Video28} from "../../../../localdata/video/video28"
-import {Video30} from "../../../../localdata/video/video30"
-import {Video31_1} from "../../../../localdata/video/video31_1"
-import {Video31_2} from "../../../../localdata/video/video31_2"
-import {Video32} from "../../../../localdata/video/video32"
-import {Video34} from "../../../../localdata/video/video34"
-import {Video38} from "../../../../localdata/video/video38"
-import {Video39} from "../../../../localdata/video/video39"
-import {Video40} from "../../../../localdata/video/video40"
+import {NotFound} from "./notFound"
+import {Video35} from "../../../localdata/video/video35"
+import {Video33} from "../../../localdata/video/video33"
+import {Video29} from "../../../localdata/video/video29"
+import {Video27} from "../../../localdata/video/video27"
+import {Video26} from "../../../localdata/video/video26"
+import {Video24} from "../../../localdata/video/video24"
+import {Video23} from "../../../localdata/video/video23"
+import {Video19} from "../../../localdata/video/video19"
+import {Video16} from "../../../localdata/video/video16"
+import {Video12} from "../../../localdata/video/video12"
+import {Video08} from "../../../localdata/video/video08"
+import {Video06} from "../../../localdata/video/video06"
+import {Video04} from "../../../localdata/video/video04"
+import {Video03} from "../../../localdata/video/video03"
+import {Video02} from "../../../localdata/video/video02"
+import {Video01} from "../../../localdata/video/video01"
+import {Video09} from "../../../localdata/video/video09"
+import {Video17} from 'src/localdata/video/video17'
+import {Video18} from "../../../localdata/video/video18"
+import {Video20} from "../../../localdata/video/video20"
+import {Video21} from "../../../localdata/video/video21"
+import {Video13} from "../../../localdata/video/video13"
+import {Video03wm} from "../../../localdata/video/video03wm"
+import {Video05} from "../../../localdata/video/video05"
+import {Video07} from "../../../localdata/video/video07"
+import {Video10} from "../../../localdata/video/video10"
+import {Video11} from "../../../localdata/video/video11"
+import {Video14} from "../../../localdata/video/video14"
+import {Video15} from "../../../localdata/video/video15"
+import {Video22} from "../../../localdata/video/video22"
+import {Video25} from "../../../localdata/video/video25"
+import {Video28} from "../../../localdata/video/video28"
+import {Video30} from "../../../localdata/video/video30"
+import {Video31_1} from "../../../localdata/video/video31_1"
+import {Video31_2} from "../../../localdata/video/video31_2"
+import {Video32} from "../../../localdata/video/video32"
+import {Video34} from "../../../localdata/video/video34"
+import {Video38} from "../../../localdata/video/video38"
+import {Video39} from "../../../localdata/video/video39"
+import {Video40} from "../../../localdata/video/video40"
 
 export const Video = () => {
     return (
-        <div className={cn(sC.compArticlesVideos, s.videos)}>
+        <div className={cn(sC.compArticlesVideoGirl, sC.videoGirl)}>
             <Routes>
                 {/*Wrestling*/}
                 <Route path="44" element={<Video44/>}></Route>
@@ -106,7 +105,6 @@ export const Video = () => {
                 <Route path="40" element={<Video40/>}></Route>
 
                 <Route path={'/*'} element={<NotFound />}></Route>
-
             </Routes>
         </div>
     )

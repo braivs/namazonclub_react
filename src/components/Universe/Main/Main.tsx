@@ -9,7 +9,7 @@ import {Girls} from "./Girls"
 import {Competitions} from "./Competitions"
 import {Articles} from "./Articles"
 import {CompArticles} from "./CompArticles"
-import {Video} from "./Video/Video"
+import {Video} from "./Video"
 import {Girl} from "./Girl"
 
 export function Main() {

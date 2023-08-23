@@ -8,7 +8,7 @@ export const CompArticles = () => {
     const {compArticle, years} = useParams()
 
     return (
-        <div className={sC.compArticlesVideos}>
+        <div className={sC.compArticlesVideoGirl}>
             <Container>
                 <Row>
                     <Col>
