@@ -1,9 +1,9 @@
 import React from 'react'
 
-export const NotFound = () => {
+export const InProgress = () => {
     return (
         <div>
-            Not found
+            In progress...
         </div>
     )
 }

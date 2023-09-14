@@ -7,7 +7,7 @@ import {Video37} from "../../../localdata/video/video37"
 import {Video36} from "../../../localdata/video/video36"
 import sC from 'src/common/styles.module.scss'
 import cn from 'classnames'
-import {NotFound} from "./notFound"
+import {InProgress} from "./inProgress"
 import {Video35} from "../../../localdata/video/video35"
 import {Video33} from "../../../localdata/video/video33"
 import {Video29} from "../../../localdata/video/video29"
@@ -104,7 +104,7 @@ export const Video = () => {
                 <Route path="39" element={<Video39/>}></Route>
                 <Route path="40" element={<Video40/>}></Route>
 
-                <Route path={'/*'} element={<NotFound />}></Route>
+                <Route path={'/*'} element={<InProgress />}></Route>
             </Routes>
         </div>
     )

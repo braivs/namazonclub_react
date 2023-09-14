@@ -3,7 +3,7 @@ import {Home} from "./Home/Home"
 import {ContactUs} from "./ContactUs/ContactUs"
 import s from "./Main.module.scss"
 import {Route, Routes} from "react-router-dom"
-import {NotFound} from "./notFound"
+import {InProgress} from "./inProgress"
 import {Videos} from "./Videos"
 import {Girls} from "./Girls"
 import {Competitions} from "./Competitions"
@@ -25,7 +25,7 @@ export function Main() {
             <Route path='compArticles/:years/:compArticle' element={<CompArticles/>}/>
             <Route path={'video/*'} element={<Video/>}/>
             <Route path={'girl/:years/*'} element={<Girl/>}/>
-            <Route path="*" element={<NotFound/>}/>
+            <Route path="*" element={<InProgress/>}/>
         </Routes>
 
     </main>
