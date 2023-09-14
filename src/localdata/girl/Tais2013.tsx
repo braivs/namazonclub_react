@@ -127,4 +127,4 @@ export const Tais2013 = () => {
 }
 
 //todo: Fix, maybe images2 & images3 is duplications, possible to take it from videos.
-//todo: fix link to elena-vasileva2013
+//todo: fix links

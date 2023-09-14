@@ -3,6 +3,7 @@ import {Route, Routes, useParams} from "react-router-dom"
 import sC from 'src/common/styles.module.scss'
 import {Tais2013} from "../../../localdata/girl/Tais2013"
 import cn from 'classnames'
+import {KaraTeller} from "../../../localdata/girl/kara_teller"
 
 export const Girl = () => {
   const {years} = useParams()
@@ -20,6 +21,7 @@ export const Girl = () => {
       <h3>Participants of competitions {yearsConverter(years)}</h3>
       <Routes>
         <Route path="tais2012-2013" element={<Tais2013/>}></Route>
+        <Route path="kara-teller" element={<KaraTeller/>}></Route>
       </Routes>
     </div>
   )
