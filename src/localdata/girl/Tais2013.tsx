@@ -1,7 +1,7 @@
 import React, {useState} from 'react'
 import imgMain from 'src/img/girl/tais2013/main.jpg'
 import imgMain2 from 'src/img/girl/tais2013/mma-rozhdestvenskij-kubok-2012-4/01.jpg'
-import imgMain3 from 'src/img/girl/tais2013/mma-kara-svetlany-2012-2/1.jpg'
+import imgMain3 from 'src/img/girl/tais2013/mma-kara-svetlany-2012-2/01.jpg'
 import imgMain4 from 'src/img/girl/tais2013/tais-varvara.jpg'
 import imgMain5 from 'src/img/girl/tais2013/2013-sg-elena-vasilyeva-tais.jpg'
 import sC from "../../common/styles.module.scss"
@@ -115,6 +115,7 @@ export const Tais2013 = () => {
       </p>
       <img className={sC.videosMainImg} src={imgMain5} alt="imgMain5"/>
       <h4><b>Tais</b> vs <b>Elena Vasilyeva</b></h4>
+      <p>in progress...</p>
       <p>Win-loss-draw record – 3:1:0 (for May 8, 2012)</p>
       <hr/>
       <p>
