@@ -13,6 +13,8 @@ import {LightboxMy, PhotoAlbumMy} from "../../common/ModdedComponents/ModdedComp
 import {MyYouTube} from "../../common/common"
 
 export const Video44 = () => {
+  const youtubeID = 'bc9RU5hP4k4'
+
   const [index, setIndex] = useState(-1)
   const photos1 = getGalleryPhotosFromRequireFromArray([VSmorodina_vs_VVardugina1, VSmorodina_vs_VVardugina2])
   const slides1 = getSlides(photos1)
@@ -36,11 +38,9 @@ export const Video44 = () => {
       </p>
       <Row>
         <Col className={cn('d-flex', 'justify-content-center')}>
-            <MyYouTube videoId="bc9RU5hP4k4"/>
+            <MyYouTube videoId={youtubeID}/>
         </Col>
       </Row>
-
-
       <Row>
         <Col className={cn('d-flex', 'justify-content-center')}>Viktoria Smorodina vs Viktoria Vardugina</Col>
       </Row>
