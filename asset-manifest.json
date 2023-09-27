@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "./static/css/main.25152797.css",
-    "main.js": "./static/js/main.10fefe5e.js",
+    "main.js": "./static/js/main.a3b2dc06.js",
     "static/js/787.66a41b5d.chunk.js": "./static/js/787.66a41b5d.chunk.js",
     "static/media/11.jpg": "./static/media/11.db4077af493ca07457d5.jpg",
     "static/media/tais-04.jpg": "./static/media/tais-04.ccbefd7ec7b7ad1c6d54.jpg",
@@ -102,13 +102,11 @@
     "static/media/2_O.Grigorenko_vs_V.Smorodina.jpg": "./static/media/2_O.Grigorenko_vs_V.Smorodina.2a6f65d23f49e0d9d027.jpg",
     "static/media/02.JPG": "./static/media/02.17065e7582bfa1bf0c1a.JPG",
     "static/media/18main.jpg": "./static/media/18main.31ae8775e8731eb7cecb.jpg",
-    "static/media/41main.jpg": "./static/media/41main.ddcbdd883234a1d0e338.jpg",
     "static/media/1_O.Grigorenko_vs_V.Vardugina.jpg": "./static/media/1_O.Grigorenko_vs_V.Vardugina.c95c8a3b863038e125d0.jpg",
     "static/media/8.JPG": "./static/media/8.6301a59b23e82a3c252d.JPG",
     "static/media/33main.jpg": "./static/media/33main.8f8a1551961213de4e13.jpg",
     "static/media/31_2main.jpg": "./static/media/31_2main.60684126308427e5baea.jpg",
     "static/media/2.JPG": "./static/media/2.0ae8a569233044831535.JPG",
-    "static/media/42main.jpg": "./static/media/42main.46d3f501c94af274b73a.jpg",
     "static/media/26main.jpg": "./static/media/26main.1965c69d2b1787eddb26.jpg",
     "static/media/34main.jpg": "./static/media/34main.82a2ac04b801fd53305a.jpg",
     "static/media/1_V.Smorodina_vs_V.Vardugina.jpg": "./static/media/1_V.Smorodina_vs_V.Vardugina.c468c7f753be34560678.jpg",
@@ -156,7 +154,6 @@
     "static/media/40main.jpg": "./static/media/40main.26b19a28091c23f1361d.jpg",
     "static/media/k01.jpg": "./static/media/k01.936447f8a28eafcf8fe6.jpg",
     "static/media/natalia.jpg": "./static/media/natalia.682e26fa89100462e1de.jpg",
-    "static/media/36main.jpg": "./static/media/36main.7c07cd2c20ecb8df06df.jpg",
     "static/media/ksenia.jpg": "./static/media/ksenia.996600ae7b6c883ad0d7.jpg",
     "static/media/elena2010-2011.jpg": "./static/media/elena2010-2011.eeae0099007ab5ae7645.jpg",
     "static/media/tais2010-2011.jpg": "./static/media/tais2010-2011.143881be378f6061e80a.jpg",
@@ -223,11 +220,11 @@
     "static/media/darya-balina.jpg": "./static/media/darya-balina.d6b03a83e99bf8befe46.jpg",
     "index.html": "./index.html",
     "main.25152797.css.map": "./static/css/main.25152797.css.map",
-    "main.10fefe5e.js.map": "./static/js/main.10fefe5e.js.map",
+    "main.a3b2dc06.js.map": "./static/js/main.a3b2dc06.js.map",
     "787.66a41b5d.chunk.js.map": "./static/js/787.66a41b5d.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.25152797.css",
-    "static/js/main.10fefe5e.js"
+    "static/js/main.a3b2dc06.js"
   ]
 }
