@@ -91,7 +91,7 @@ export const cardsGirls2012_2013: Array<CardType> = [
     },
     {
         id: 'darya-balina',
-        title: 'Elena Vasilyeva. 2013',
+        title: 'Darya Balina. 2012',
         imgRef: darya_balina,
         years: "2012_2013"
     },

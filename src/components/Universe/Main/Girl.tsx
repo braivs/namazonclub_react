@@ -30,7 +30,7 @@ export const Girl = () => {
         <Route path="valentina-perfileva" element={<InProgress/>}></Route>
         <Route path="irina-vlasta" element={<InProgress/>}></Route>
         <Route path="nadezhda-akhmerova" element={<InProgress/>}></Route>
-        <Route path="elena-vasileva" element={<InProgress/>}></Route>
+        <Route path="elena-vasileva2013" element={<InProgress/>}></Route>
         <Route path="natalia-mysik" element={<InProgress/>}></Route>
         <Route path="kseniya-voloshina" element={<InProgress/>}></Route>
       </Routes>

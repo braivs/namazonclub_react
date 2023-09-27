@@ -7,6 +7,7 @@ import imgMain5 from 'src/img/girl/tais2013/2013-sg-elena-vasilyeva-tais.jpg'
 import sC from "../../common/styles.module.scss"
 import {getGalleryPhotosFromRequire, getSlides} from "../../common/helpers"
 import {ButtonGallery} from "../../common/common"
+import {NavLink} from "react-router-dom"
 
 const images = require.context('src/img/girl/tais2013/main_gallery', false)
 const images2 = require.context('src/img/girl/tais2013/mma-rozhdestvenskij-kubok-2012-4', false)
@@ -57,8 +58,9 @@ export const Tais2013 = () => {
       <img className={sC.videosMainImg} src={imgMain2} alt="imgMain"/>
       <p>
         The fight was scheduled for 3 four-minute rounds with a one-minute rest period between each round. As it
-        happened, though, it didn’t take the fighters long to determine a winner. Tais defeated a
-        href="elena-vasileva2013Eng.html" Lena a !FIX LINK! (5'6" / 132 lb) already in the first round.
+        happened, though, it didn’t take the fighters long to determine a winner. Tais defeated
+        <NavLink to="/universe/girl/2012_2013/elena-vasileva2013"> Lena</NavLink> (5'6" / 132 lb) already in the first
+        round.
       </p>
       <ButtonGallery
         index={index2}
@@ -74,7 +76,8 @@ export const Tais2013 = () => {
       <h4>Tais vs Kara Teller. 2012</h4>
       <img className={sC.videosMainImg} src={imgMain3} alt="imgMain"/>
       <p>
-        During 2012 Tais has had three fights with a href="kara-tellerEng.html" Kara Teller a !Fix link! (5'7" / 119 lb). Two of
+        During 2012 Tais has had three fights with <NavLink to="/universe/girl/2012_2013/kara-teller"> Kara Teller</NavLink> (5'7" / 119
+        lb). Two of
         them Tais won with the victory by fall. In the third fight she was disqualified for arguing with the referee,
         and Kara was declared a winner.<br/>
         The photo album below shows some pics of the second fight between Tais and Kara. In that fight Tais destroyed
@@ -106,8 +109,10 @@ export const Tais2013 = () => {
       <img className={sC.videosMainImg} src={imgMain4} alt="imgMain4"/>
       <h4><b>Tais</b> vs <b>Varvara Akulova</b></h4>
       <p>
-        In <b>June 2013</b>, Tais again met her old rival, a href="elena-vasileva2013Eng.html" Elena
-        Vasilyeva a !Fix link! (5'7" / 157 lb), who had been away from Namazon Club for nearly two years, and during that time
+        In <b>June 2013</b>, Tais again met her old rival, <NavLink
+        to="/universe/girl/2012_2013/elena-vasileva2013"> Elena Vasilyeva</NavLink> (5'7" / 157 lb), who had been away
+        from Namazon Club for nearly two years, and during
+        that time
         had gained weight and strength and had greatly improved her wrestling ability.<br/>
         It was a hard fought and fairly even match, with submissions coming from both sides. And after more than 20
         minutes of struggling, Lena finally defeated her more experienced opponent. Thus, Tais lost the wrestling match
@@ -128,4 +133,5 @@ export const Tais2013 = () => {
 }
 
 //todo: Fix, maybe images2 & images3 is duplications, possible to take it from videos.
-//todo: fix links
+//todo: check link to Elena Vasilyeva after creating page.
+//todo: Tais vs Elena Vasilyeva. in progress check why I wrote this

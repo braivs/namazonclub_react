@@ -7,6 +7,7 @@ import imgMain5 from 'src/img/girl/kara-teller/mma-kara-svetlany-2012-3/9.jpg'
 import sC from "../../common/styles.module.scss"
 import {ButtonGallery} from "../../common/common"
 import {getGalleryPhotosFromRequire, getSlides} from "../../common/helpers"
+import {NavLink} from "react-router-dom"
 
 const images = require.context('src/img/girl/kara-teller/', false)
 const images2 = require.context('src/img/girl/kara-teller/mma-rozhdestvenskij-kubok-2012-1', false)
@@ -120,7 +121,7 @@ export const KaraTeller = () => {
       <h4>Kara vs Darya Balina. 2012</h4>
       <img className={sC.videosMainImg} src={imgMain4} alt="imgMain"/>
       <p>
-        Kara was the favorite to win this fight against Darya Balina !!!add link!! (the female
+        Kara was the favorite to win this fight against <NavLink to="/universe/girl/2012_2013/darya-balina">Darya Balina</NavLink> (the female
         self-defense Club "Panther", St. Petersburg, 5’4” / 124 lb). While Darya had pretty good kick-boxing skills, she
         didn’t feel so confident in wrestling (the consequent effect of her combat training with an emphasis on
         self-defense). The fight format was three four minute rounds with a rest period of one minute between them. But
@@ -182,5 +183,5 @@ export const KaraTeller = () => {
   )
 }
 
-//todo: add links
 //todo: Fix, maybe images2 & images3 & etc. is duplications, possible to take it from videos.
+//todo: check link to Darya Balina. 2012 after creating page.
