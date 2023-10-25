@@ -1,14 +1,16 @@
 import React, {useState} from 'react'
-import sC from 'src/common/styles.module.scss'
 import {getGalleryPhotosFromRequire, getSlides} from "../../common/helpers"
-import mainImg from 'src/img/video/main/27main.jpg'
-import {ButtonGallery} from "../../common/common"
+import {ButtonGallery, MyYouTube} from "../../common/common"
+import {Col, Row} from "react-bootstrap"
+import cn from "classnames"
 
 
 const images = require.context('src/img/video/27', false)
 
 export const Video27 = () => {
     const videoNumber = 27
+    const youtubeID = 'kTj_2JJAFoM'
+
     const [open, setOpen] = useState(false)
     const [index, setIndex] = useState(-1)
     const photos = getGalleryPhotosFromRequire(images)
@@ -24,7 +26,11 @@ export const Video27 = () => {
                 in our Video 26 (scroll the page down a little to see the initial description). Here in the Part 2 you
                 can see eight more rounds fought with the same rules as those in the Part 1.
             </p>
-            <img className={sC.videosMainImg} src={mainImg} alt="imgMain"/>
+            <Row>
+                <Col className={cn('d-flex', 'justify-content-center')}>
+                    <MyYouTube videoId={youtubeID}/>
+                </Col>
+            </Row>
             <p>Although both women are very ambitious, they are not quite equal in experience and skill. One of them is
                 still using some nice wrestling combinations, applying good choking and submission holds, while the
                 other is just struggling heavily, showing her fighting spirit and refusing to give up.</p>

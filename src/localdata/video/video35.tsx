@@ -1,13 +1,14 @@
 import React, {useState} from 'react'
-import sC from 'src/common/styles.module.scss'
 import {getGalleryPhotosFromRequire, getSlides} from "../../common/helpers"
-import mainImg from 'src/img/video/main/35main.jpg'
-import {ButtonGallery} from "../../common/common"
+import {ButtonGallery, MyYouTube} from "../../common/common"
+import {Col, Row} from "react-bootstrap"
+import cn from "classnames"
 
 const images = require.context('src/img/video/35', false)
 
 export const Video35 = () => {
     const videoNumber = 35
+    const youtubeID = 'tYIIf2sPt4c'
 
     const [open, setOpen] = useState(false)
     const [index, setIndex] = useState(-1)
@@ -25,7 +26,11 @@ export const Video35 = () => {
                 her three fights with the strongest and most experienced woman of the club, <b>Tais</b> (60 кг / 132
                 lb).
             </p>
-            <img className={sC.videosMainImg} src={mainImg} alt="imgMain"/>
+            <Row>
+                <Col className={cn('d-flex', 'justify-content-center')}>
+                    <MyYouTube videoId={youtubeID}/>
+                </Col>
+            </Row>
             <p>
                 It’s somewhat interesting and exciting to watch the way how Lidiya struggles, especially on the ground.
                 The rules required the opponents to wrestle to submission only, regardless if one wrestler would pin the

@@ -1,13 +1,14 @@
 import React, {useState} from 'react'
-import sC from 'src/common/styles.module.scss'
 import {getGalleryPhotosFromRequire} from "../../common/helpers"
-import mainImg from 'src/img/video/main/29main.jpg'
-import {ButtonGallery} from "../../common/common"
+import {ButtonGallery, MyYouTube} from "../../common/common"
+import {Col, Row} from "react-bootstrap"
+import cn from "classnames"
 
 const images = require.context('src/img/video/29', false)
 
 export const Video29 = () => {
-    const videoNumber = 8
+    const videoNumber = 29
+    const youtubeID = 'HaMtoel8Tdw'
 
     const [open, setOpen] = useState(false)
     const [index, setIndex] = useState(-1)
@@ -24,7 +25,11 @@ export const Video29 = () => {
                 130 lb) many times, two years ago, but then she disappeared from the Club. Now she’s back again,
                 stronger, heavier and more skillful and confident than ever.
             </p>
-            <img className={sC.videosMainImg} src={mainImg} alt="imgMain"/>
+            <Row>
+                <Col className={cn('d-flex', 'justify-content-center')}>
+                    <MyYouTube videoId={youtubeID}/>
+                </Col>
+            </Row>
             <p>From the very first minute it is clear that she wants to give a real fight to her experienced rival.
                 Although Tais is a very strong lady, she’s immediately in trouble against aggressive Elena. And after 15
                 minutes of intense wrestling, she is forced to admit her defeat.<br/>

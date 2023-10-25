@@ -1,13 +1,14 @@
 import React, {useState} from 'react'
-import sC from 'src/common/styles.module.scss'
 import {getGalleryPhotosFromRequire, getSlides} from "../../common/helpers"
-import mainImg from 'src/img/video/main/26main.jpg'
-import {ButtonGallery} from "../../common/common"
+import {ButtonGallery, MyYouTube} from "../../common/common"
+import {Col, Row} from "react-bootstrap"
+import cn from "classnames"
 
 const images = require.context('src/img/video/26', false)
 
 export const Video26 = () => {
     const videoNumber = 26
+    const youtubeID = 'iBBVt0JNN-Y'
 
     const [open, setOpen] = useState(false)
     const [index, setIndex] = useState(-1)
@@ -24,7 +25,11 @@ export const Video26 = () => {
                 tournaments, has more experience than her younger opponent. But Elena is not a pushover either. She’s
                 also taken part in
             </p>
-            <img className={sC.videosMainImg} src={mainImg} alt="imgMain"/>
+            <Row>
+                <Col className={cn('d-flex', 'justify-content-center')}>
+                    <MyYouTube videoId={youtubeID}/>
+                </Col>
+            </Row>
             <p>The two women fought nine rounds with submission grappling rules. It was an interesting and exciting
                 wrestling match with a lot of different pins, chokes and submission holds. The both wrestlers struggled
                 arduously for every single point. The weaker woman didn’t give up easily.</p>

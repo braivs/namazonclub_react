@@ -1,14 +1,15 @@
 import React, {useState} from 'react'
-import sC from 'src/common/styles.module.scss'
 import {getGalleryPhotosFromRequire, getSlides} from "../../common/helpers"
-import mainImg from 'src/img/video/main/33main.jpg'
-import {ButtonGallery} from "../../common/common"
+import {ButtonGallery, MyYouTube} from "../../common/common"
+import {Col, Row} from "react-bootstrap"
+import cn from "classnames"
 
 const images = require.context('src/img/video/33/lida-vika', false)
 const images2 = require.context('src/img/video/33/tais-yulia', false)
 
 export const Video33 = () => {
     const videoNumber = 33
+    const youtubeID = 'UdxhMrIku4A'
 
     const [open, setOpen] = useState(false)
     const [index, setIndex] = useState(-1)
@@ -31,7 +32,11 @@ export const Video33 = () => {
                 Oslopovskih</b> (53 kg / 117 lb) and <b>Victoria Vardugina</b> (69 kg / 152 lb) and in the absolute
                 category between <b>Yulia Borovik</b> (91 kg / 201 lb) and <b>Tais</b> (61 kg / 135 lb).
             </p>
-            <img className={sC.videosMainImg} src={mainImg} alt="imgMain"/>
+            <Row>
+                <Col className={cn('d-flex', 'justify-content-center')}>
+                    <MyYouTube videoId={youtubeID}/>
+                </Col>
+            </Row>
             <p>In spite of the significant weight difference between the opponents in each pair, their struggle on the
                 mat was strenuous, entertaining and exciting. The girls fought hard and bravely to win this last
                 decisive part of the tournament.</p>
