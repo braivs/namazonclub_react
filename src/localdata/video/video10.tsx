@@ -1,13 +1,14 @@
 import React, {useState} from 'react'
-import sC from 'src/common/styles.module.scss'
 import {getGalleryPhotosFromRequire, getSlides} from "../../common/helpers"
-import mainImg from 'src/img/video/main/10main.jpg'
-import {ButtonGallery} from "../../common/common"
+import {ButtonGallery, MyYouTube} from "../../common/common"
+import cn from "classnames"
+import {Col, Row} from "react-bootstrap"
 
 const images = require.context('src/img/video/10', false)
 
 export const Video10 = () => {
     const videoNumber = 10
+    const youtubeID = 'xbguaf9YTGo'
 
     const [open, setOpen] = useState(false)
     const [index, setIndex] = useState(-1)
@@ -27,7 +28,11 @@ export const Video10 = () => {
                 If you want to see highly competitive mixed wrestling matches fought in a submission grappling style,
                 then watch our film.
             </p>
-            <img className={sC.videosMainImg} src={mainImg} alt="imgMain"/>
+            <Row>
+                <Col className={cn('d-flex', 'justify-content-center')}>
+                    <MyYouTube videoId={youtubeID}/>
+                </Col>
+            </Row>
             <ButtonGallery
                 index={index}
                 indexCallback={setIndex}

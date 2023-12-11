@@ -1,14 +1,15 @@
 import React, {useState} from 'react'
-import sC from 'src/common/styles.module.scss'
 import {getGalleryPhotosFromRequire, getSlides} from "../../common/helpers"
-import mainImg from 'src/img/video/main/03MixMain.jpg'
-import {ButtonGallery} from "../../common/common"
+import {ButtonGallery, MyYouTube} from "../../common/common"
+import {Col, Row} from "react-bootstrap"
+import cn from "classnames"
 
 const images = require.context('src/img/video/03mix/wm1', false)
 const images2 = require.context('src/img/video/03mix/wm2', false)
 
 export const Video03wm = () => {
     const videoNumber = '3wm'
+    const youtubeID = 'sddvDSjafEY'
 
     const [open, setOpen] = useState(false)
     const [index, setIndex] = useState(-1)
@@ -34,7 +35,11 @@ export const Video03wm = () => {
                 Then the luck turned away from Alex ...</p>
             <p>If you like <b>mixed competitive wrestling</b>, then we believe you will love our film. Watch how
                 everything was!</p>
-            <img className={sC.videosMainImg} src={mainImg} alt="imgMain"/>
+          <Row>
+            <Col className={cn('d-flex', 'justify-content-center')}>
+              <MyYouTube videoId={youtubeID}/>
+            </Col>
+          </Row>
             <h5>Natalia Mysik  vs  Alex </h5>
             <ButtonGallery
                 index={index}

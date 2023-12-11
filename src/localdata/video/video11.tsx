@@ -1,13 +1,14 @@
 import React, {useState} from 'react'
-import sC from 'src/common/styles.module.scss'
 import {getGalleryPhotosFromRequire, getSlides} from "../../common/helpers"
-import mainImg from 'src/img/video/main/11main.jpg'
-import {ButtonGallery} from "../../common/common"
+import {ButtonGallery, MyYouTube} from "../../common/common"
+import cn from "classnames"
+import {Col, Row} from "react-bootstrap"
 
 const images = require.context('src/img/video/11', false)
 
 export const Video11 = () => {
     const videoNumber = 11
+    const youtubeID = '_T6qzHq5H60'
 
     const [open, setOpen] = useState(false)
     const [index, setIndex] = useState(-1)
@@ -27,7 +28,11 @@ export const Video11 = () => {
                 The struggle between Elena and Alex proved to be extremely hard and exhausting. Suffice it to say that
                 their first fight lasted more than 12 minutes.
             </p>
-            <img className={sC.videosMainImg} src={mainImg} alt="imgMain"/>
+            <Row>
+                <Col className={cn('d-flex', 'justify-content-center')}>
+                    <MyYouTube videoId={youtubeID}/>
+                </Col>
+            </Row>
             <p>
                 If you like sporting mixed wrestling, where there are choke holds, body scissors and head scissors, then
                 we believe you will love our film. Watch our film and you will know who - <b>Elena</b> or <b>Alex</b> -

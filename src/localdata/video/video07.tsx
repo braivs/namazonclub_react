@@ -1,13 +1,14 @@
 import React, {useState} from 'react'
-import sC from 'src/common/styles.module.scss'
 import {getGalleryPhotosFromRequire, getSlides} from "../../common/helpers"
-import mainImg from 'src/img/video/main/07main.jpg'
-import {ButtonGallery} from "../../common/common"
+import {ButtonGallery, MyYouTube} from "../../common/common"
+import {Col, Row} from "react-bootstrap"
+import cn from "classnames"
 
 const images = require.context('src/img/video/07', false)
 
 export const Video07 = () => {
     const videoNumber = 7
+    const youtubeID = 'sKIu0T-a4wE'
 
     const [open, setOpen] = useState(false)
     const [index, setIndex] = useState(-1)
@@ -18,7 +19,7 @@ export const Video07 = () => {
             <h3>VIDEO {videoNumber}</h3>
             <h4>Gray Wolf (Alex) vs Red Riding Hood (Tais). Extreme fight in cold weather. April 2011</h4>
             <p><b>Alex</b> (5'7" / 150 lb) hadn’t forgotten the loss to <b>Tais</b> (5'7" / 128 lb) in their previous
-                beach wrestling match (<b>Video 3</b>), and now having a transit stay in St. Petersburg, he tried to
+                beach wrestling match (<b>Video 3</b>),S and now having a transit stay in St. Petersburg, he tried to
                 take every opportunity to rematch. He hadn't enough time to go to the sports hall, so it was decided to
                 hold the rematch just in the forest on the lake shore.<br/>
                 There was a strong cold wind blowing on the shore. Tais came there wearing a red cap …
@@ -27,7 +28,11 @@ export const Video07 = () => {
                 Who eventually won the fight between the modern Little Red Cap and Gray Wolf? Watch our film and find
                 out! If you like sporting mixed wrestling, then this film is for you.
             </p>
-            <img className={sC.videosMainImg} src={mainImg} alt="imgMain"/>
+            <Row>
+                <Col className={cn('d-flex', 'justify-content-center')}>
+                    <MyYouTube videoId={youtubeID}/>
+                </Col>
+            </Row>
             <ButtonGallery
                 index={index}
                 indexCallback={setIndex}

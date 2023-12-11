@@ -1,13 +1,15 @@
 import React, {useState} from 'react'
-import sC from 'src/common/styles.module.scss'
 import {getGalleryPhotosFromRequire, getSlides} from "../../common/helpers"
-import mainImg from 'src/img/video/main/05main.jpg'
-import {ButtonGallery} from "../../common/common"
+import {ButtonGallery, MyYouTube} from "../../common/common"
+import {Col, Row} from "react-bootstrap"
+import cn from "classnames"
 
 const images = require.context('src/img/video/05', false)
 
 export const Video05 = () => {
     const videoNumber = 5
+    const youtubeID1 = 'hGAZo2Ffrz4'
+    const youtubeID2 = '4tJDir4UPXU'
 
     const [open, setOpen] = useState(false)
     const [index, setIndex] = useState(-1)
@@ -21,7 +23,16 @@ export const Video05 = () => {
                 9 rounds of long and arduous wrestling, not fragmented, and all this given in HD quality with an
                 optimized file size! <b>Villian</b> (5'8" / 177 lb) is a friend of our club and constant sparring
                 partner of our girls. <b>Tais</b> (5'7" / 132 lb) is the strongest girl of the Namazon Club.</p>
-            <img className={sC.videosMainImg} src={mainImg} alt="imgMain"/>
+            <Row>
+                <Col className={cn('d-flex', 'justify-content-center')}>
+                    <MyYouTube videoId={youtubeID1}/>
+                </Col>
+            </Row>
+            <Row>
+                <Col className={cn('d-flex', 'justify-content-center')}>
+                    <MyYouTube videoId={youtubeID2}/>
+                </Col>
+            </Row>
             <p>
                 This is the first video of our NEW SERIES of mixed matches. We represent only real mixed wrestling, no
                 giveaway. The battle of the sexes to the victory!
