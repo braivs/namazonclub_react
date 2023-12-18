@@ -1,14 +1,15 @@
 import React, {useState} from 'react'
-import sC from 'src/common/styles.module.scss'
 import {getGalleryPhotosFromRequire, getSlides} from "../../common/helpers"
-import mainImg from 'src/img/video/main/28main.jpg'
-import {ButtonGallery} from "../../common/common"
+import {ButtonGallery, MyYouTube} from "../../common/common"
+import {Col, Row} from "react-bootstrap"
+import cn from "classnames"
 
 const images = require.context('src/img/video/28/tais-alexander', false)
 const images2 = require.context('src/img/video/28/tais-villian', false)
 
 export const Video28 = () => {
     const videoNumber = 28
+    const youtubeID = '6nP3PAUF7hw'
 
     const [open, setOpen] = useState(false)
     const [index, setIndex] = useState(-1)
@@ -31,7 +32,11 @@ export const Video28 = () => {
                 strong and experienced fighter, she had a tough time in these fights, especially against big Alexander
                 who was 73 lb heavier than her.
             </p>
-            <img className={sC.videosMainImg} src={mainImg} alt="imgMain"/>
+            <Row>
+                <Col className={cn('d-flex', 'justify-content-center')}>
+                    <MyYouTube videoId={youtubeID}/>
+                </Col>
+            </Row>
             <p>To find out what was the result of this uneven challenge, watch this video.</p>
             <h5>Tais vs Alexander</h5>
             <ButtonGallery

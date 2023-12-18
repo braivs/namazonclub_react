@@ -1,13 +1,14 @@
 import React, {useState} from 'react'
-import sC from 'src/common/styles.module.scss'
 import {getGalleryPhotosFromRequire, getSlides} from "../../common/helpers"
-import mainImg from 'src/img/video/main/15main.jpg'
-import {ButtonGallery} from "../../common/common"
+import {ButtonGallery, MyYouTube} from "../../common/common"
+import {Col, Row} from "react-bootstrap"
+import cn from "classnames"
 
 const images = require.context('src/img/video/15', false)
 
 export const Video15 = () => {
     const videoNumber = 15
+    const youtubeID = 'piZ5J6Rierc'
 
     const [open, setOpen] = useState(false)
     const [index, setIndex] = useState(-1)
@@ -23,7 +24,11 @@ export const Video15 = () => {
                 continuing to wrestle. <b>Tais</b> (5’7” / 130 lb) accepted the challenge of the two men and wrestled
                 them a few more times.
             </p>
-            <img className={sC.videosMainImg} src={mainImg} alt="imgMain"/>
+            <Row>
+                <Col className={cn('d-flex', 'justify-content-center')}>
+                    <MyYouTube videoId={youtubeID}/>
+                </Col>
+            </Row>
             <p>The action took place on the sandy beach and on the grass. It was a nice sunny day, which helped us make
                 a colorful video. The video includes several fights, each of which ends with the submission of one
                 fighter.</p>

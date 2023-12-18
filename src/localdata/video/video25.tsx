@@ -1,8 +1,8 @@
 import React, {useState} from 'react'
-import sC from 'src/common/styles.module.scss'
 import {getGalleryPhotosFromRequire, getSlides} from "../../common/helpers"
-import mainImg from 'src/img/video/main/25main.jpg'
-import {ButtonGallery} from "../../common/common"
+import {ButtonGallery, MyYouTube} from "../../common/common"
+import {Col, Row} from "react-bootstrap"
+import cn from "classnames"
 
 const images = require.context('src/img/video/25/villian-elena', false)
 const images2 = require.context('src/img/video/25/villian-lyudmila', false)
@@ -10,6 +10,7 @@ const images3 = require.context('src/img/video/25/villian-tais', false)
 
 export const Video25 = () => {
     const videoNumber = 25
+    const youtubeID = '29EMwdnOvJk'
 
     const [open, setOpen] = useState(false)
     const [index, setIndex] = useState(-1)
@@ -42,7 +43,11 @@ export const Video25 = () => {
             <p>This video features five submission grappling fights (Tais and Elena wrestled Villian twice). The fights
                 take place both in a gym on a mat and outdoors on a sandy beach and on grass. If you like mixed
                 wrestling, then don’t miss this video.</p>
-            <img className={sC.videosMainImg} src={mainImg} alt="imgMain"/>
+            <Row>
+                <Col className={cn('d-flex', 'justify-content-center')}>
+                    <MyYouTube videoId={youtubeID}/>
+                </Col>
+            </Row>
             <p>If you like mixed wrestling, then don’t miss this video.</p>
             <h5>Villian vs Elena Vasilyeva</h5>
             <ButtonGallery

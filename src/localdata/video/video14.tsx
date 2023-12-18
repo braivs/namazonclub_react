@@ -1,14 +1,16 @@
 import React, {useState} from 'react'
-import sC from 'src/common/styles.module.scss'
 import {getGalleryPhotosFromRequire, getSlides} from "../../common/helpers"
-import mainImg from 'src/img/video/main/14main.jpg'
-import {ButtonGallery} from "../../common/common"
+import {ButtonGallery, MyYouTube} from "../../common/common"
+import {Col, Row} from "react-bootstrap"
+import cn from "classnames"
 
 const images = require.context('src/img/video/14/smeshannyj-plyazhnyj-turnir-2011-4', false)
 const images2 = require.context('src/img/video/14/smeshannyj-plyazhnyj-turnir-2011-5', false)
 
 export const Video14 = () => {
     const videoNumber = 14
+    const youtubeID1 = 'mXLIzt6ZBFk'
+    const youtubeID2 = 'dQjBmmyLnC0'
 
     const [open, setOpen] = useState(false)
     const [index, setIndex] = useState(-1)
@@ -31,7 +33,16 @@ export const Video14 = () => {
                 competition was organized in two rounds.<br/>
                 In the 1st part of the video series you will be able to see two short male and four mixed fights.
             </p>
-            <img className={sC.videosMainImg} src={mainImg} alt="imgMain"/>
+            <Row>
+                <Col className={cn('d-flex', 'justify-content-center')}>
+                    <MyYouTube videoId={youtubeID1}/>
+                </Col>
+            </Row>
+            <Row>
+                <Col className={cn('d-flex', 'justify-content-center')}>
+                    <MyYouTube videoId={youtubeID2}/>
+                </Col>
+            </Row>
             <p>
                 If you like sporting mixed wrestling (in a submission grappling style) on a beach, then you will have to
                 love our film. Purchase it if you want to see mixed fights with a strong and skilled female wrestler!
