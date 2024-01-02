@@ -5,11 +5,12 @@ import s from './Cards.module.scss'
 import {CardType, VariantType} from "../types"
 
 export const Cards = (props: PropsType) => {
+    const array = props.isReversed ? props.cardsArray.reverse() : props.cardsArray
     return (
         <div>
             <Row className={s.cardRow}>
                 {
-                    props.cardsArray.map(e => {
+                    array.map(e => {
                         return <CardComponent
                             key={e.id}
                             id={e.id}
@@ -28,4 +29,5 @@ export const Cards = (props: PropsType) => {
 type PropsType = {
     cardsArray: Array<CardType>
     variant: VariantType
+    isReversed?: boolean
 }

@@ -44,6 +44,7 @@ import video34 from 'src/img/videos/mixWrestThumb/video-34.jpg'
 import video38 from 'src/img/videos/mixWrestThumb/video-38.jpg'
 import video39 from 'src/img/videos/mixWrestThumb/video-39.jpg'
 import video40 from 'src/img/videos/mixWrestThumb/video-40.jpg'
+import nc45 from 'src/img/videos/mixWrestThumb/NC45_Braivs_Alyouna.jpg'
 
 export const cardsWrestling: Array<CardType> = [
     {
@@ -280,4 +281,9 @@ export const cardsMix: Array<CardType> = [
         title: 'Mixed Wrestling\nVillian vs Tais. Part 2. 2014',
         imgRef: video40,
     },
+    {
+        id: 'NC45',
+        title: 'Braivs vs Alyona\n11.10.2016',
+        imgRef: nc45,
+    }
 ]
