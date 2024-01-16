@@ -1,13 +1,14 @@
 import React, {useState} from 'react'
-import sC from 'src/common/styles.module.scss'
 import {getGalleryPhotosFromRequire, getSlides} from "../../common/helpers"
-import mainImg from 'src/img/video/main/31_1main.jpg'
-import {ButtonGallery} from "../../common/common"
+import {ButtonGallery, MyYouTube} from "../../common/common"
+import {Col, Row} from "react-bootstrap"
+import cn from "classnames"
 
 const images = require.context('src/img/video/31_1', false)
 
 export const Video31_1 = () => {
     const videoNumber = '31_1'
+    const youtubeID = '0C9U65HQSxY'
 
     const [open, setOpen] = useState(false)
     const [index, setIndex] = useState(-1)
@@ -26,7 +27,11 @@ export const Video31_1 = () => {
                 about equal in terms of wrestling ability. The fights between them are usually extremely competitive,
                 uncompromisingly hard and interesting from a technical point of view.
             </p>
-            <img className={sC.videosMainImg} src={mainImg} alt="imgMain"/>
+            <Row>
+                <Col className={cn('d-flex', 'justify-content-center')}>
+                    <MyYouTube videoId={youtubeID}/>
+                </Col>
+            </Row>
             <p>
                 On this day it was no exception. This part of the video includes the first five fights of the day.<br/>
                 Highly recommended for those of you who like real competitive mixed!

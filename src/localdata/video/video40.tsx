@@ -1,14 +1,15 @@
 import React, {useState} from 'react'
-import sC from 'src/common/styles.module.scss'
 import {getGalleryPhotosFromRequire, getSlides} from "../../common/helpers"
-import mainImg from 'src/img/video/main/40main.jpg'
-import {ButtonGallery} from "../../common/common"
+import {ButtonGallery, MyYouTube} from "../../common/common"
 import {NavLink} from "react-router-dom"
+import {Col, Row} from "react-bootstrap"
+import cn from "classnames"
 
 const images = require.context('src/img/video/40', false)
 
 export const Video40 = () => {
     const videoNumber = 40
+    const youtubeID = '_nBXLJXazc0'
 
     const [open, setOpen] = useState(false)
     const [index, setIndex] = useState(-1)
@@ -26,7 +27,11 @@ export const Video40 = () => {
                 two competitors knew each other very well, since they have wrestled each other many times over the years
                 and their fights have been always aggressive and competitive.
             </p>
-            <img className={sC.videosMainImg} src={mainImg} alt="imgMain"/>
+            <Row>
+                <Col className={cn('d-flex', 'justify-content-center')}>
+                    <MyYouTube videoId={youtubeID}/>
+                </Col>
+            </Row>
             <p>
                 It is interesting to note that, although their fights are, in general, evenly matched, Tais still has a
                 certain advantage over Villian. She knows well how to efficiently use her legs to handle her opponents,

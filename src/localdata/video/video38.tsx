@@ -1,13 +1,14 @@
 import React, {useState} from 'react'
-import sC from 'src/common/styles.module.scss'
 import {getGalleryPhotosFromRequire, getSlides} from "../../common/helpers"
-import mainImg from 'src/img/video/main/38main.jpg'
-import {ButtonGallery} from "../../common/common"
+import {ButtonGallery, MyYouTube} from "../../common/common"
+import {Col, Row} from "react-bootstrap"
+import cn from "classnames"
 
 const images = require.context('src/img/video/38', false)
 
 export const Video38 = () => {
     const videoNumber = 38
+    const youtubeID = 'Syc6WtXS2w0'
 
     const [open, setOpen] = useState(false)
     const [index, setIndex] = useState(-1)
@@ -23,7 +24,11 @@ export const Video38 = () => {
                 is pretty big and very strong. <b>Tais</b> (5'7" / 137 lb) has difficulties applying her technique due
                 to his size. However, she is strong and fast enough to efficiently use Alex's relative slowness.
             </p>
-            <img className={sC.videosMainImg} src={mainImg} alt="imgMain"/>
+            <Row>
+                <Col className={cn('d-flex', 'justify-content-center')}>
+                    <MyYouTube videoId={youtubeID}/>
+                </Col>
+            </Row>
             <p>
                 If you are a lover of real competitive mixed wrestling and enjoy aggressive and uncompromised struggle
                 between a man and woman on a mat, then we recommend you to watch this video.

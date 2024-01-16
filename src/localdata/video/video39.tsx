@@ -1,14 +1,15 @@
 import React, {useState} from 'react'
-import sC from 'src/common/styles.module.scss'
 import {getGalleryPhotosFromRequire, getSlides} from "../../common/helpers"
-import mainImg from 'src/img/video/main/39main.jpg'
-import {ButtonGallery} from "../../common/common"
+import {ButtonGallery, MyYouTube} from "../../common/common"
 import {NavLink} from "react-router-dom"
+import {Col, Row} from "react-bootstrap"
+import cn from "classnames"
 
 const images = require.context('src/img/video/39', false)
 
 export const Video39 = () => {
     const videoNumber = 39
+    const youtubeID = 'kpBVV_5iaYQ'
 
     const [open, setOpen] = useState(false)
     const [index, setIndex] = useState(-1)
@@ -28,7 +29,11 @@ export const Video39 = () => {
                 for her to fight Villian than Alexandr because in her fights against him she is better able to
                 successfully apply her technique.
             </p>
-            <img className={sC.videosMainImg} src={mainImg} alt="imgMain"/>
+            <Row>
+                <Col className={cn('d-flex', 'justify-content-center')}>
+                    <MyYouTube videoId={youtubeID}/>
+                </Col>
+            </Row>
             <p>
                 This video features six competitive fights. They were all real! You can judge by the screens below how
                 intense the fights were and how uncompromised the struggle in them was. If you like competitive mixed

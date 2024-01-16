@@ -1,13 +1,14 @@
 import React, {useState} from 'react'
-import sC from 'src/common/styles.module.scss'
 import {getGalleryPhotosFromRequire, getSlides} from "../../common/helpers"
-import mainImg from 'src/img/video/main/34main.jpg'
-import {ButtonGallery} from "../../common/common"
+import {ButtonGallery, MyYouTube} from "../../common/common"
+import {Col, Row} from "react-bootstrap"
+import cn from "classnames"
 
 const images = require.context('src/img/video/34', false)
 
 export const Video34 = () => {
     const videoNumber = '34'
+    const youtubeID = 'U0Eu-u52FQs'
 
     const [open, setOpen] = useState(false)
     const [index, setIndex] = useState(-1)
@@ -24,7 +25,11 @@ export const Video34 = () => {
                 not only outweigh her by at least more than 40 pounds, but also are superior to her in physical
                 strength. The rules of the fights are simple – the winner is the one who makes the other submit.
             </p>
-            <img className={sC.videosMainImg} src={mainImg} alt="imgMain"/>
+            <Row>
+                <Col className={cn('d-flex', 'justify-content-center')}>
+                    <MyYouTube videoId={youtubeID}/>
+                </Col>
+            </Row>
             <p>
                 In total, there are seven fights included in the video. Actually 14 minutes of intense action with hard
                 and strenuous struggle. It required of Tais a great amount of concentration and speed to withstand the

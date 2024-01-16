@@ -1,13 +1,14 @@
 import React, {useState} from 'react'
-import sC from 'src/common/styles.module.scss'
 import {getGalleryPhotosFromRequire, getSlides} from "../../common/helpers"
-import mainImg from 'src/img/video/main/30main.jpg'
-import {ButtonGallery} from "../../common/common"
+import {ButtonGallery, MyYouTube} from "../../common/common"
+import {Col, Row} from 'react-bootstrap'
+import cn from "classnames"
 
 const images = require.context('src/img/video/30', false)
 
 export const Video30 = () => {
     const videoNumber = 30
+    const youtubeID = 'Xf_8wprghvA'
 
     const [open, setOpen] = useState(false)
     const [index, setIndex] = useState(-1)
@@ -25,7 +26,11 @@ export const Video30 = () => {
                 of hard, aggressive and extremely competitive wrestling on a mat. The advantage shifts back and forth
                 between the man and woman in each round.
             </p>
-            <img className={sC.videosMainImg} src={mainImg} alt="imgMain"/>
+            <Row>
+                <Col className={cn('d-flex', 'justify-content-center')}>
+                    <MyYouTube videoId={youtubeID}/>
+                </Col>
+            </Row>
             <p>The winner is decided at the very end of the fight. Watch the video to find out who it was!</p>
             <ButtonGallery
                 index={index}

@@ -10,9 +10,9 @@ export const NC45 = () => {
     return (
         <>
             <h3>{videoNumber}</h3>
-            <h4>New fight from Namazon archive. Braivs and Alyouna has equal force.</h4>
+            <h4>Braivs vs Alyona. Mixed wrestling. 11.10.2016</h4>
             <p>
-                Braivs and Alyouna has equal force. Full video contain 16 mins of action.
+                Braivs and Alyouna has equal force. Full video contain 15 mins of action.
             </p>
             <Row>
                 <Col className={cn('d-flex', 'justify-content-center')}>
