@@ -1,14 +1,15 @@
 import React, {useState} from 'react'
-import sC from 'src/common/styles.module.scss'
 import {getGalleryPhotosFromRequire, getSlides} from "../../common/helpers"
-import mainImg from 'src/img/video/main/18main.jpg'
-import {ButtonGallery} from "../../common/common"
+import {ButtonGallery, MyYouTube} from "../../common/common"
+import {Col, Row} from "react-bootstrap"
+import cn from 'classnames'
 
 const images = require.context('src/img/video/18/mma-sportivnyj-prazdnik-2012-1', false)
 const images2 = require.context('src/img/video/18/mma-sportivnyj-prazdnik-2012-2', false)
 
 export const Video18 = () => {
     const videoNumber = 18
+    const youtubeID = 'fYEVVlzkUsA'
 
     const [open, setOpen] = useState(false)
     const [index, setIndex] = useState(-1)
@@ -29,7 +30,11 @@ export const Video18 = () => {
                 newcomer <b>Darya Balina</b> (St. Petersburg, 5’4” / 124 lb). Almost the whole fight is fought standing
                 up where Kara clearly dominates. Darya turns out to be very strong and holds out for nearly two rounds.
             </p>
-            <img className={sC.videosMainImg} src={mainImg} alt="imgMain"/>
+            <Row>
+                <Col className={cn('d-flex', 'justify-content-center')}>
+                    <MyYouTube videoId={youtubeID}/>
+                </Col>
+            </Row>
             <p>The second fight (Kara Teller vs Tais), unlike the first one, consists of mainly mat wrestling. For two
                 rounds Tais struggles to win the fight with a chokehold or submission lock, occasionally taking hits
                 from her opponent. The final result is quite surprising.</p>

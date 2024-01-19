@@ -1,14 +1,14 @@
 import React, {useState} from 'react'
-import {Row} from "react-bootstrap"
-import sC from 'src/common/styles.module.scss'
-import imgMain from 'src/img/video/main/20main.jpg'
+import {Col, Row} from "react-bootstrap"
 import {getGalleryPhotosFromRequire, getSlides} from "../../common/helpers"
-import {ButtonGallery} from "../../common/common"
+import {ButtonGallery, MyYouTube} from "../../common/common"
+import cn from 'classnames'
 
 const images = require.context('src/img/video/20/mma-pervaya-nevskaya-arena-2012-1', false)
 
 export const Video20 = () => {
     const videoNumber = 20
+    const youtubeID = 'qo9DmpAXT5w'
 
     const [index, setIndex] = useState(-1)
     const [open, setOpen] = useState(false)
@@ -24,7 +24,11 @@ export const Video20 = () => {
                 Nevsky Arena Tournament</b>". Both girls are well technically skilled. There is everything in this match
                 - hard punches and kicks alternate with a close power struggle.
             </p>
-            <img className={sC.videosMainImg} src={imgMain} alt="imgMain"/>
+            <Row>
+                <Col className={cn('d-flex', 'justify-content-center')}>
+                    <MyYouTube videoId={youtubeID}/>
+                </Col>
+            </Row>
             <p>The girls are fighting three full rounds. Yulia feels more confident in fighting standing up, while Kara
                 tries to win the fight on the ground.</p>
             <p>

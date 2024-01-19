@@ -1,8 +1,8 @@
 import React, {useState} from 'react'
-import sC from 'src/common/styles.module.scss'
 import {getGalleryPhotosFromRequire, getSlides} from "../../common/helpers"
-import mainImg from 'src/img/video/main/09main.jpg'
-import {ButtonGallery} from "../../common/common"
+import {ButtonGallery, MyYouTube} from "../../common/common"
+import {Col, Row} from "react-bootstrap"
+import cn from 'classnames'
 
 const images = require.context('src/img/video/09/mma-rozhdestvenskij-kubok-2012-1', false)
 const images2 = require.context('src/img/video/09/mma-rozhdestvenskij-kubok-2012-3', false)
@@ -10,6 +10,7 @@ const images3 = require.context('src/img/video/09/mma-rozhdestvenskij-kubok-2012
 
 export const Video09 = () => {
     const videoNumber = 9
+    const youtubeID = '8NnbhTgPKXE'
 
     const [open, setOpen] = useState(false)
     const [index, setIndex] = useState(-1)
@@ -36,7 +37,11 @@ export const Video09 = () => {
                 130 lb). The tournament was held in one round. So eventually, the girls had to have two fights each.
                 Each fight consisted of three 4 minute rounds with 1 minute rest between each round.
             </p>
-            <img className={sC.videosMainImg} src={mainImg} alt="imgMain"/>
+            <Row>
+                <Col className={cn('d-flex', 'justify-content-center')}>
+                    <MyYouTube videoId={youtubeID}/>
+                </Col>
+            </Row>
             <p>The girls fought hard and uncompromisingly in all the three fights.</p>
             <p>If you like competitive fights where there are strikes with arms and legs as well as wrestling with
                 armlocks and chokes, then you will have to love our film.</p>

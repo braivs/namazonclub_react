@@ -1,14 +1,15 @@
 import React, {useState} from 'react'
-import {Row} from "react-bootstrap"
-import sC from 'src/common/styles.module.scss'
-import imgMain from 'src/img/video/main/21main.jpg'
+import {Col, Row} from "react-bootstrap"
 import {getGalleryPhotosFromRequire, getSlides} from "../../common/helpers"
-import {ButtonGallery} from "../../common/common"
+import {ButtonGallery, MyYouTube} from "../../common/common"
+import cn from 'classnames'
 
 const images = require.context('src/img/video/21/mma-pervaya-nevskaya-arena-2012-2', false)
 
 export const Video21 = () => {
     const videoNumber = 21
+    const youtubeID = 'WO77phk8NWk'
+
     const [index, setIndex] = useState(-1)
     const [open, setOpen] = useState(false)
     const photos = getGalleryPhotosFromRequire(images)
@@ -23,7 +24,11 @@ export const Video21 = () => {
                 MMA fights, but that doesn't make their fight less interesting or entertaining; their punches are still
                 strong, the struggle is tough.
             </p>
-            <img className={sC.videosMainImg} src={imgMain} alt="imgMain"/>
+            <Row>
+                <Col className={cn('d-flex', 'justify-content-center')}>
+                    <MyYouTube videoId={youtubeID}/>
+                </Col>
+            </Row>
             <p>The girls are fighting three full rounds, and no one of them wants to give up.</p>
             <p>
                 If you don't like fights with a great amount of punches and kicks then you might perhaps be a little bit
