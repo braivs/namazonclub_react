@@ -47,7 +47,7 @@ export const MyYouTube = (props: YoutubePropsType) => {
   return <iframe
     width={frameWidth}
     height={frameHeight}
-    src={`https://www.youtube.com/embed/${props.videoId}`}
+    src={`https://www.youtube-nocookie.com/embed/${props.videoId}`}
     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
     allowFullScreen
   />
