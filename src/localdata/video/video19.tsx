@@ -2,13 +2,15 @@ import React, {useState} from 'react'
 import sC from 'src/common/styles.module.scss'
 import {getGalleryPhotosFromRequire, getSlides} from "../../common/helpers"
 import mainImg from 'src/img/video/main/19main.jpg'
-import mainImg2 from 'src/img/video/main/19main2.jpg'
-import {ButtonGallery} from "../../common/common"
+import {ButtonGallery, MyYouTube} from "../../common/common"
+import {Col, Row} from "react-bootstrap"
+import cn from "classnames"
 
 const images = require.context('src/img/video/19', false)
 
 export const Video19 = () => {
     const videoNumber = 19
+    const youtubeID = 'lJwlQIrfGww'
 
     const [open, setOpen] = useState(false)
     const [index, setIndex] = useState(-1)
@@ -37,7 +39,11 @@ export const Video19 = () => {
                 more experienced and technically skilled. The fight is fought in the grappling style. The intrigue of it
                 is that nobody knows in advance who would win in the end. The principal question is <b>WHICH will be
                     better, the skill or pure strength</b>.</p>
-            <img className={sC.videosMainImg} src={mainImg2} alt="imgMain2"/>
+            <Row>
+                <Col className={cn('d-flex', 'justify-content-center')}>
+                    <MyYouTube videoId={youtubeID}/>
+                </Col>
+            </Row>
             <p>It is really a hard fight! Clearly a big, strong Varvara does not want to lose to her smaller opponent.
                 In turn, Tais would like nothing better than to beat the bigger and stronger athlete to demonstrate her
                 skill and competitiveness. Who will prevail?</p>

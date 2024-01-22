@@ -1,13 +1,14 @@
 import React, {useState} from 'react'
-import sC from 'src/common/styles.module.scss'
 import {getGalleryPhotosFromRequire, getSlides} from "../../common/helpers"
-import mainImg from 'src/img/video/main/24main.jpg'
-import {ButtonGallery} from "../../common/common"
+import {ButtonGallery, MyYouTube} from "../../common/common"
+import {Col, Row} from "react-bootstrap"
+import cn from "classnames"
 
 const images = require.context('src/img/video/24', false)
 
 export const Video24 = () => {
     const videoNumber = 24
+    const youtubeID = 'NctqeFj1TG8'
 
     const [open, setOpen] = useState(false)
     const [index, setIndex] = useState(-1)
@@ -23,7 +24,11 @@ export const Video24 = () => {
                 our Club’s competitions, while <b>Tais</b> (5’7” / 130 lb) is a repeat winner at the competitions,
                 specializing in Submission Grappling and MMA.
             </p>
-            <img className={sC.videosMainImg} src={mainImg} alt="imgMain"/>
+            <Row>
+                <Col className={cn('d-flex', 'justify-content-center')}>
+                    <MyYouTube videoId={youtubeID}/>
+                </Col>
+            </Row>
             <p>As you can see, Lyudmila is much heavier and taller than Tais. In this match, the girls wrestled three
                 rounds. Lyudmila managed to place Tais in a very difficult position at the beginning of the first
                 round.</p>

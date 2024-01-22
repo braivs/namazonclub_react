@@ -1,13 +1,14 @@
 import React, {useState} from 'react'
-import sC from 'src/common/styles.module.scss'
 import {getGalleryPhotosFromRequire, getSlides} from "../../common/helpers"
-import mainImg from 'src/img/video/main/12main.jpg'
-import {ButtonGallery} from "../../common/common"
+import {ButtonGallery, MyYouTube} from "../../common/common"
+import {Col, Row} from "react-bootstrap"
+import cn from "classnames"
 
 const images = require.context('src/img/video/12', false)
 
 export const Video12 = () => {
     const videoNumber = 12
+    const youtubeID = 'tB47JzDQ-mc'
 
     const [open, setOpen] = useState(false)
     const [index, setIndex] = useState(-1)
@@ -26,7 +27,11 @@ export const Video12 = () => {
                 struggle for the 2nd place between the newcomers. Young and skilled Elena fought bravely against older
                 Irina.
             </p>
-            <img className={sC.videosMainImg} src={mainImg} alt="imgMain"/>
+            <Row>
+                <Col className={cn('d-flex', 'justify-content-center')}>
+                    <MyYouTube videoId={youtubeID}/>
+                </Col>
+            </Row>
             <p>However, how the fights between our favorites ended up, who and how won, you will know if you watch our
                 film.</p>
             <ButtonGallery

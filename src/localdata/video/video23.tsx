@@ -1,13 +1,15 @@
 import React, {useState} from 'react'
-import sC from 'src/common/styles.module.scss'
 import {getGalleryPhotosFromRequire, getSlides} from "../../common/helpers"
-import mainImg from 'src/img/video/main/23main.jpg'
-import {ButtonGallery} from "../../common/common"
+import {ButtonGallery, MyYouTube} from "../../common/common"
+import {Col, Row} from "react-bootstrap"
+import cn from "classnames"
 
 const images = require.context('src/img/video/23', false)
 
 export const Video23 = () => {
     const videoNumber = 23
+    const youtubeID = 'fbESZrys6fc'
+
     const [open, setOpen] = useState(false)
     const [index, setIndex] = useState(-1)
     const photos = getGalleryPhotosFromRequire(images)
@@ -22,7 +24,11 @@ export const Video23 = () => {
                 still a newcomer in her wrestling matches in the Namazon Club’s tournaments. <b>Tais</b> (5’7” / 130 lb)
                 is a well-known, strong and skilled lady who is specialized in Submission Grappling and ММА.
             </p>
-            <img className={sC.videosMainImg} src={mainImg} alt="imgMain"/>
+            <Row>
+                <Col className={cn('d-flex', 'justify-content-center')}>
+                    <MyYouTube videoId={youtubeID}/>
+                </Col>
+            </Row>
             <p>In this competitive match Irina, using her height and weight advantage, tried to force her experienced
                 opponent into a hard body-to-body fight. You will see what came out of it if you watch our video.</p>
             <p>
