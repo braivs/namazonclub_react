@@ -137,11 +137,11 @@ export const cardsWrestling: Array<CardType> = [
         title: 'Submission Grappling\n"Christmas Cup  2011"',
         imgRef: video4,
     },
-    {
+/*    {
         id: 3,
         title: 'Beach Wrestling\nMixed Tournament.  2010',
         imgRef: video3,
-    },
+    },*/
     {
         id: 2,
         title: 'Submission Grappling\nPart 2.  June,  2010',

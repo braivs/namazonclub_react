@@ -1,13 +1,14 @@
 import React, {useState} from 'react'
-import sC from 'src/common/styles.module.scss'
 import {getGalleryPhotosFromRequire, getSlides} from "../../common/helpers"
-import mainImg from 'src/img/video/main/01main.jpg'
-import {ButtonGallery} from "../../common/common"
+import {ButtonGallery, MyYouTube} from "../../common/common"
+import {Col, Row} from "react-bootstrap"
+import cn from "classnames"
 
 const images = require.context('src/img/video/01', false)
 
 export const Video01 = () => {
     const videoNumber = 1
+    const youtubeID = 'G7RTYfRO4B4'
 
     const [open, setOpen] = useState(false)
     const [index, setIndex] = useState(-1)
@@ -27,7 +28,11 @@ export const Video01 = () => {
             <p>The tournament was held in two rounds. As it was expected, the main struggle in the first round was
                 between Tais and Maria. The two girls showed very tough and uncompromising wrestling. This video
                 features all the three matches of the first round.</p>
-            <img className={sC.videosMainImg} src={mainImg} alt="imgMain"/>
+            <Row>
+                <Col className={cn('d-flex', 'justify-content-center')}>
+                    <MyYouTube videoId={youtubeID}/>
+                </Col>
+            </Row>
             <ButtonGallery
                 index={index}
                 indexCallback={setIndex}

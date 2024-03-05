@@ -1,13 +1,14 @@
 import React, {useState} from 'react'
-import sC from 'src/common/styles.module.scss'
 import {getGalleryPhotosFromRequire, getSlides} from "../../common/helpers"
-import mainImg from 'src/img/video/main/02main.jpg'
-import {ButtonGallery} from "../../common/common"
+import {ButtonGallery, MyYouTube} from "../../common/common"
+import {Col, Row} from "react-bootstrap"
+import cn from "classnames"
 
 const images = require.context('src/img/video/02', false)
 
 export const Video02 = () => {
     const videoNumber = 2
+    const youtubeID = 'Y_ixTzxIj44'
 
     const [open, setOpen] = useState(false)
     const [index, setIndex] = useState(-1)
@@ -17,7 +18,11 @@ export const Video02 = () => {
         <>
             <h3>VIDEO {videoNumber}</h3>
             <h4>Submission Grappling. Tournament. Part 2. June, 2010</h4>
-            <img className={sC.videosMainImg} src={mainImg} alt="imgMain"/>
+            <Row>
+                <Col className={cn('d-flex', 'justify-content-center')}>
+                    <MyYouTube videoId={youtubeID}/>
+                </Col>
+            </Row>
             <p>
                 This is the continuation of the movie 1. It features all the matches of the second round.<br/>
                 Here you can see another aggressive fight between the two favorites: <b>Tais</b> (5'7" / 128 lb) and <b>Maria

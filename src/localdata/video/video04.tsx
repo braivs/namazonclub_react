@@ -1,13 +1,14 @@
 import React, {useState} from 'react'
-import sC from 'src/common/styles.module.scss'
 import {getGalleryPhotosFromRequire, getSlides} from "../../common/helpers"
-import mainImg from 'src/img/video/main/04main.jpg'
-import {ButtonGallery} from "../../common/common"
+import {ButtonGallery, MyYouTube} from "../../common/common"
+import {Col, Row} from "react-bootstrap"
+import cn from "classnames"
 
 const images = require.context('src/img/video/04', false)
 
 export const Video04 = () => {
     const videoNumber = 4
+    const youtubeID = 'QAgCAy7XJiQ'
 
     const [open, setOpen] = useState(false)
     const [index, setIndex] = useState(-1)
@@ -17,7 +18,11 @@ export const Video04 = () => {
         <>
             <h3>VIDEO {videoNumber}</h3>
             <h4>"Christmas Cup 2011". Tournament on Submission Grappling</h4>
-            <img className={sC.videosMainImg} src={mainImg} alt="imgMain"/>
+            <Row>
+                <Col className={cn('d-flex', 'justify-content-center')}>
+                    <MyYouTube videoId={youtubeID}/>
+                </Col>
+            </Row>
             <p>
                 In the tournament participated: <b>Natalia Mysik</b> (5'11" / 154 lb), <b>Ksenia Voloshina</b> (5'3" /
                 141 lb) and <b>Valentina Perfilyeva</b> (5'8" / 139 lb). A feature of the competition was a big
