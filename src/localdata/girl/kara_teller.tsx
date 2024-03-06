@@ -68,7 +68,7 @@ export const KaraTeller = () => {
       <p>
         This was a very intense fight with a lot of punches, kicks, throws and ground wrestling. There were 3
         four-minute rounds with 4 minute breaks between each round.<br/>
-        First two rounds a href="elena-vasileva2013Eng.html" Elena a !fix link! (St. Petersburg, 5’6” / 132 lb) totally
+        First two rounds <NavLink to="/universe/girl/2012_2013/elena-vasileva2013">Elena</NavLink> (St. Petersburg, 5’6” / 132 lb) totally
         dominated throughout the first two rounds, giving Kara a very hard time.
       </p>
       <ButtonGallery
@@ -169,4 +169,3 @@ export const KaraTeller = () => {
 }
 
 //todo: Fix, maybe images2 & images3 & etc. is duplications, possible to take it from videos.
-//todo: check link to Darya Balina. 2012 after creating page.
