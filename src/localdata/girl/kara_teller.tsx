@@ -1,20 +1,19 @@
 import React, {useState} from 'react'
 import imgMain from 'src/img/girl/kara-teller/k01.jpg'
-import imgMain2 from 'src/img/girl/kara-teller/mma-rozhdestvenskij-kubok-2012-1/01.jpg'
-import imgMain3 from 'src/img/girl/kara-teller/mma-kara-svetlany-2012-1/01.jpg'
+import imgMain2 from 'src/img/video/09/mma-rozhdestvenskij-kubok-2012-1/01.jpg'
+import imgMain3 from 'src/img/video/17/mma-kara-svetlany-2012-1/01.jpg'
 import imgMain4 from 'src/img/girl/kara-teller/mma-sportivnyj-prazdnik-2012-1/01.jpg'
-import imgMain5 from 'src/img/girl/kara-teller/mma-kara-svetlany-2012-3/9.jpg'
+import imgMain5 from 'src/img/video/17/mma-kara-svetlany-2012-3/9.jpg'
 import sC from "../../common/styles.module.scss"
 import {ButtonGallery} from "../../common/common"
 import {getGalleryPhotosFromRequire, getSlides} from "../../common/helpers"
 import {NavLink} from "react-router-dom"
 
 const images = require.context('src/img/girl/kara-teller/', false)
-const images2 = require.context('src/img/girl/kara-teller/mma-rozhdestvenskij-kubok-2012-1', false)
-const images3 = require.context('src/img/girl/kara-teller/mma-rozhdestvenskij-kubok-2012-2', false)
-const images4 = require.context('src/img/girl/kara-teller/mma-kara-svetlany-2012-1', false)
+const images2 = require.context('src/img/video/09/mma-rozhdestvenskij-kubok-2012-1', false)
+const images4 = require.context('src/img/video/17/mma-kara-svetlany-2012-1', false)
 const images5 = require.context('src/img/girl/kara-teller/mma-sportivnyj-prazdnik-2012-1', false)
-const images6 = require.context('src/img/girl/kara-teller/mma-kara-svetlany-2012-3', false)
+const images6 = require.context('src/img/video/17/mma-kara-svetlany-2012-3', false)
 
 export const KaraTeller = () => {
   const [index, setIndex] = useState(-1)
@@ -26,11 +25,6 @@ export const KaraTeller = () => {
   const [open2, setOpen2] = useState(false)
   const photos2 = getGalleryPhotosFromRequire(images2)
   const slides2 = getSlides(photos2)
-
-  const [index3, setIndex3] = useState(-1)
-  const [open3, setOpen3] = useState(false)
-  const photos3 = getGalleryPhotosFromRequire(images3)
-  const slides3 = getSlides(photos3)
 
   const [index4, setIndex4] = useState(-1)
   const [open4, setOpen4] = useState(false)
@@ -88,15 +82,6 @@ export const KaraTeller = () => {
       />
       <p>In the third round it became clear that Elena was getting tired. Kara managed to get control of the fight, due
         to her combative spirit, and eventually she won by applying a choke hold.</p>
-      <ButtonGallery
-        index={index3}
-        indexCallback={setIndex3}
-        isOpen={open3}
-        openCloseCallback={setOpen3}
-        photos={photos3}
-        slides={slides3}
-        buttonName={buttonText}
-      />
       <p>It was a very hard and dramatic fight, perhaps one of the best we’ve ever had at the Club.</p>
       <h4>Kara vs Svetlana Solovyova. 2012</h4>
       <img className={sC.videosMainImg} src={imgMain3} alt="imgMain3"/>
