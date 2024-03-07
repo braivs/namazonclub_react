@@ -8,7 +8,6 @@ import {NavLink} from "react-router-dom"
 
 const images = require.context('src/img/girl/mariya-ryljova/', false)
 
-
 export const MariyaRyljova = () => {
     const [index, setIndex] = useState(-1)
     const [open, setOpen] = useState(false)
@@ -37,8 +36,8 @@ export const MariyaRyljova = () => {
             <h4><u>Results of fights</u></h4>
             <Table bordered>
                 <tr>
-                    <th scope="col">Maria Rylyova vs. Valentina Perfilyeva</th>
-                    <th scope="col">Maria Rylyova vs. Natalia Mysik</th>
+                    <th>Maria Rylyova vs. Valentina Perfilyeva</th>
+                    <th>Maria Rylyova vs. Natalia Mysik</th>
                 </tr>
                 <tr>
                     <td><NavLink to="/universe/video/12">VIDEO 12. Submission grappling. Tournament. April,
@@ -49,8 +48,8 @@ export const MariyaRyljova = () => {
             </Table>
             <Table bordered>
                 <tr>
-                    <th scope="col">Maria Rylyova vs. Tais</th>
-                    <th scope="col">Maria Rylyova vs. Nadezhda Akhmerova</th>
+                    <th>Maria Rylyova vs. Tais</th>
+                    <th>Maria Rylyova vs. Nadezhda Akhmerova</th>
                 </tr>
                 <tr>
                     <td><NavLink to="/universe/video/1">VIDEO 1. Submission grappling. Tournament. Part 1. June,
