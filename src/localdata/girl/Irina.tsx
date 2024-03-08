@@ -15,8 +15,8 @@ export const Irina = () => {
         open: open,
         setOpen: setOpen,
         photos: photos,
-        slides: slides
-    } = useGallery(images)
+        slides: slides,
+    } = useGallery(images, {width: 320, height: 245})
 
     const {
         index: index2,
@@ -25,7 +25,7 @@ export const Irina = () => {
         setOpen: setOpen2,
         photos: photos2,
         slides: slides2
-    } = useGallery(images2)
+    } = useGallery(images2, {width: 330, height: 220})
 
     const buttonName = 'See photos'
 
@@ -67,5 +67,3 @@ export const Irina = () => {
         </>
     )
 }
-
-// todo: need to change better aspect ratio
