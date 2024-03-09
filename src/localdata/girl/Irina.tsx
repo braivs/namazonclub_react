@@ -3,10 +3,7 @@ import sC from "../../common/styles.module.scss"
 import React from "react"
 import {useGallery} from "../../common/hooks"
 import {ButtonGallery} from "../../common/common"
-
-const images = require.context('src/img/girl/irina/subgr', false)
-const images2 = require.context('src/img/girl/irina/beachgr', false)
-
+import {DirIrinaBeachgr, DirIrinaSubgr} from "../../common/ImageContexts"
 
 export const Irina = () => {
     const {
@@ -16,7 +13,7 @@ export const Irina = () => {
         setOpen: setOpen,
         photos: photos,
         slides: slides,
-    } = useGallery(images, {width: 320, height: 245})
+    } = useGallery(DirIrinaSubgr, {width: 320, height: 245})
 
     const {
         index: index2,
@@ -25,7 +22,7 @@ export const Irina = () => {
         setOpen: setOpen2,
         photos: photos2,
         slides: slides2
-    } = useGallery(images2, {width: 330, height: 220})
+    } = useGallery(DirIrinaBeachgr, {width: 330, height: 220})
 
     const buttonName = 'See photos'
 
