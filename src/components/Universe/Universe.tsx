@@ -5,6 +5,7 @@ import {Slider} from "./Slider/Slider"
 import {Main} from "./Main/Main"
 import {Footer} from "./Footer/Footer"
 import {Container} from "react-bootstrap"
+import {GalleryDataProvider} from "../../common/GalleryDataProvider"
 
 export function Universe() {
     return (
@@ -12,7 +13,9 @@ export function Universe() {
             <Container>
                 <Header/>
                 <Slider/>
-                <Main/>
+                <GalleryDataProvider>
+                    <Main/>
+                </GalleryDataProvider>
                 <Footer/>
             </Container>
         </div>
