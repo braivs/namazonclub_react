@@ -4,6 +4,8 @@ import React from "react"
 import {useGallery} from "../../common/hooks"
 import {ButtonGallery} from "../../common/common"
 import {DirIrinaBeachgr, DirIrinaSubgr} from "../../common/ImageContexts"
+import {Col} from "react-bootstrap"
+import cn from "classnames"
 
 export const Irina = () => {
     const {
@@ -29,7 +31,9 @@ export const Irina = () => {
     return (
         <>
             <h4>IRINA</h4>
-            <img className={sC.videosMainImg} src={imgMain} alt="imgMain"/>
+            <Col className={cn('d-flex', 'justify-content-center')}>
+                <img className={sC.videosMainImg} src={imgMain} alt="imgMain"/>
+            </Col>
             <p>
                 <b>IRINA</b> ( 5'9" / 154 lb ) - one of the strongest participants of tournaments, the championships and
                 separate fights on <b>SUBMISSION GRAPPLING</b>, organized by club "Namazon". Spending each fight

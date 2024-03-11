@@ -1,14 +1,14 @@
 import React, {useState} from 'react'
-import {Row} from "react-bootstrap"
-import sC from 'src/common/styles.module.scss'
-import imgMain from 'src/img/video/main/13main.jpg'
+import {Col, Row} from "react-bootstrap"
 import {getGalleryPhotosFromRequire, getSlides} from "../../common/helpers"
-import {ButtonGallery} from "../../common/common"
+import {ButtonGallery, MyYouTube} from "../../common/common"
+import cn from "classnames"
 
 const images = require.context('src/img/video/13', false)
 
 export const Video13 = () => {
     const videoNumber = 13
+    const youtubeID = '0-6S3nnMNYk'
 
     const [index, setIndex] = useState(-1)
     const [open, setOpen] = useState(false)
@@ -22,7 +22,11 @@ export const Video13 = () => {
                 Perfilyev</b>a (5'8" / 132 lb) is specialized in karate (kumite), while <b>Nadezhda Akhmerova</b> (5'6"
                 / 128 lb) goes in for kickboxing.
             </p>
-            <img className={sC.videosMainImg} src={imgMain} alt="imgMain"/>
+            <Row>
+                <Col className={cn('d-flex', 'justify-content-center')}>
+                    <MyYouTube videoId={youtubeID}/>
+                </Col>
+            </Row>
             <p>
                 Both fights were hard and uncompromising, with the girls kicking and punching each other aggressively,
                 exchanging strikes, a lot of which were accurate and strong.<br/>

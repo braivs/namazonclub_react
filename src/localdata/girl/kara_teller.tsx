@@ -8,6 +8,8 @@ import sC from "../../common/styles.module.scss"
 import {ButtonGallery} from "../../common/common"
 import {getGalleryPhotosFromRequire, getSlides} from "../../common/helpers"
 import {NavLink} from "react-router-dom"
+import {Col} from "react-bootstrap"
+import cn from "classnames"
 
 const images = require.context('src/img/girl/kara-teller/', false)
 const images2 = require.context('src/img/video/09/mma-rozhdestvenskij-kubok-2012-1', false)
@@ -47,7 +49,9 @@ export const KaraTeller = () => {
   return (
     <>
       <h4>Kara Teller</h4>
-      <img className={sC.videosMainImg} src={imgMain} alt="imgMain"/>
+        <Col className={cn('d-flex', 'justify-content-center')}>
+            <img className={sC.videosMainImg} src={imgMain} alt="imgMain"/>
+        </Col>
       <ButtonGallery
         index={index}
         indexCallback={setIndex}
