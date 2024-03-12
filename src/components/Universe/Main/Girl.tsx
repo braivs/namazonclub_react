@@ -11,6 +11,7 @@ import {MariyaRyljova} from "../../../localdata/girl/MariyaRyljova"
 import {Tais2011} from "../../../localdata/girl/Tais2011"
 import {Irina} from "../../../localdata/girl/Irina"
 import {ValentinaPerfileva} from "../../../localdata/girl/ValentinaPerfileva"
+import {IrinaVlasta} from "../../../localdata/girl/IrinaVlasta"
 
 export const Girl = () => {
   const {years} = useParams()
@@ -34,7 +35,7 @@ export const Girl = () => {
         <Route path="tais2011" element={<Tais2011/>}></Route>
         <Route path="irina" element={<Irina/>}></Route>
         <Route path="valentina-perfileva" element={<ValentinaPerfileva/>}></Route>
-        <Route path="irina-vlasta" element={<InProgress/>}></Route>
+        <Route path="irina-vlasta" element={<IrinaVlasta/>}></Route>
         <Route path="nadezhda-akhmerova" element={<InProgress/>}></Route>
         <Route path="elena-vasileva2013" element={<ElenaVasileva2013/>}></Route>
         <Route path="natalia-mysik" element={<InProgress/>}></Route>

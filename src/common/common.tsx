@@ -18,6 +18,20 @@ export const ButtonGallery = (props: ButtonPropsType) => {
   )
 }
 
+export const CustomButtonGallery: React.FC<CustomButtonGalleryType> = ({ gallery, buttonName }) => {
+  return (
+      <ButtonGallery
+          index={gallery.index}
+          indexCallback={gallery.setIndex}
+          isOpen={gallery.open}
+          openCloseCallback={gallery.setOpen}
+          photos={gallery.photos}
+          slides={gallery.slides}
+          buttonName={buttonName}
+      />
+  );
+};
+
 export const MyYouTube = (props: YoutubePropsType) => {
 
   const [width, setWidth] = useState(window.innerWidth)
@@ -53,6 +67,15 @@ export const MyYouTube = (props: YoutubePropsType) => {
   />
 }
 
+type GalleryType = {
+  index: number;
+  setIndex: (index: number) => void;
+  open: boolean;
+  setOpen: (isOpen: boolean) => void;
+  photos: Array<Photo>; // Define 'Photo' based on your data structure
+  slides: Array<Slide>; // Define 'Slide' based on your data structure
+};
+
 type ButtonPropsType = {
   openCloseCallback: (value: boolean) => void
   indexCallback: (value: number) => void
@@ -66,3 +89,8 @@ type ButtonPropsType = {
 type YoutubePropsType = {
   videoId: string
 }
+
+type CustomButtonGalleryType = {
+  gallery: GalleryType
+  buttonName?: string
+};

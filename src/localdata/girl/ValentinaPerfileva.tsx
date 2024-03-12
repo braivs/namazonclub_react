@@ -9,22 +9,8 @@ import {ButtonGallery} from "../../common/common"
 import {NavLink} from "react-router-dom"
 
 export const ValentinaPerfileva = () => {
-    const {
-        index: index,
-        setIndex: setIndex,
-        open: open,
-        setOpen: setOpen,
-        photos: photos,
-        slides: slides,
-    } = useGallery(DirValentinaSubgr)
-    const {
-        index: index2,
-        setIndex: setIndex2,
-        open: open2,
-        setOpen: setOpen2,
-        photos: photos2,
-        slides: slides2,
-    } = useGallery(DirValentinaKick)
+    const gallery1 = useGallery(DirValentinaSubgr);
+    const gallery2 = useGallery(DirValentinaKick);
 
     return (
         <>
@@ -38,21 +24,21 @@ export const ValentinaPerfileva = () => {
                 the winner of the Olympic Games of martial arts "EAST-WEST" in karate (kumite).
             </p>
             <ButtonGallery
-                index={index}
-                indexCallback={setIndex}
-                isOpen={open}
-                openCloseCallback={setOpen}
-                photos={photos}
-                slides={slides}
+                index={gallery1.index}
+                indexCallback={gallery1.setIndex}
+                isOpen={gallery1.open}
+                openCloseCallback={gallery1.setOpen}
+                photos={gallery1.photos}
+                slides={gallery1.slides}
                 buttonName={'SUBMISSION GRAPPLING'}
             />
             <ButtonGallery
-                index={index2}
-                indexCallback={setIndex2}
-                isOpen={open2}
-                openCloseCallback={setOpen2}
-                photos={photos2}
-                slides={slides2}
+                index={gallery2.index}
+                indexCallback={gallery2.setIndex}
+                isOpen={gallery2.open}
+                openCloseCallback={gallery2.setOpen}
+                photos={gallery2.photos}
+                slides={gallery2.slides}
                 buttonName={'KICKBOXING'}
             />
             <h4><u>Results of fights</u></h4>
