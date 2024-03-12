@@ -7,4 +7,6 @@ export const DirValentinaSubgr = require.context('src/img/girl/valentina_perfile
 export const DirValentinaKick = require.context('src/img/girl/valentina_perfileva/kick', false)
 export const DirVlastaBeachgr = require.context('src/img/girl/irina_vlasta/beachgr', false)
 export const DirVlastaSubgr = require.context('src/img/girl/irina_vlasta/subgr', false)
+export const DirNadezhdaAkhmerovaSubgr = require.context('src/img/girl/nadezhda_akhmerova/subgr', false)
+export const DirNadezhdaAkhmerovaKick = require.context('src/img/girl/nadezhda_akhmerova/kick', false)
 
