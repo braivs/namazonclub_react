@@ -4,7 +4,6 @@ import sC from 'src/common/styles.module.scss'
 import {Tais2013} from "../../../localdata/girl/Tais2013"
 import cn from 'classnames'
 import {KaraTeller} from "../../../localdata/girl/kara_teller"
-import {InProgress} from "./inProgress"
 import {ElenaVasileva2013} from "../../../localdata/girl/Elena_Vasileva2013"
 import {DaryaBalina} from "../../../localdata/girl/DaryaBalina"
 import {MariyaRyljova} from "../../../localdata/girl/MariyaRyljova"
@@ -15,6 +14,7 @@ import {IrinaVlasta} from "../../../localdata/girl/IrinaVlasta"
 import {NadezhdaAkhmerova} from "../../../localdata/girl/NadezhdaAkhmerova"
 import {ElenaVasileva} from "../../../localdata/girl/ElenaVasileva"
 import {NataliaMysik} from "../../../localdata/girl/NataliaMysik"
+import {KseniyaVoloshina} from "../../../localdata/girl/KseniyaVoloshina"
 
 export const Girl = () => {
   const {years} = useParams()
@@ -43,7 +43,7 @@ export const Girl = () => {
         <Route path="elena-vasileva2013" element={<ElenaVasileva2013/>}></Route>
         <Route path="elena-vasileva" element={<ElenaVasileva/>}></Route>
         <Route path="natalia-mysik" element={<NataliaMysik/>}></Route>
-        <Route path="kseniya-voloshina" element={<InProgress/>}></Route>
+        <Route path="kseniya-voloshina" element={<KseniyaVoloshina/>}></Route>
       </Routes>
     </div>
   )
