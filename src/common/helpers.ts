@@ -1,5 +1,6 @@
 // this returns array of photos for react-grid-gallery
 import {Photo} from "react-photo-album"
+import {CardComponentType} from "./types"
 
 export const getGalleryPhotosFromRequire = (requreData: __WebpackModuleApi.RequireContext, width: number = 270, height: number = 152) => {
     const images: Array<string> = requreData.keys().map(image => requreData(image));
@@ -23,3 +24,17 @@ export const getGalleryPhotosFromRequireFromArray = (photos: Array<string>) => {
 }
 
 export const getSlides = (photos: Photo[]) => photos.map(({src}) => ({src}))
+
+export const toLink = (props: CardComponentType) => `/universe/${props.variant}/${props.years}/${props.id}`
+
+export const yearsConverter = (years: string | undefined): string | undefined => {
+    if (!years) return undefined; // Return undefined if input is undefined
+
+    const parts = years.split('_'); // Split the input string by underscore
+    if (parts.length !== 2) return undefined; // Return undefined if the format is not correct
+
+    const startYear = parts[0];
+    const endYear = parts[1];
+
+    return `${startYear} - ${endYear}`; // Return the formatted date range
+};
