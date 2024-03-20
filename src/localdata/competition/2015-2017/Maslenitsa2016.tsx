@@ -23,7 +23,6 @@ export const Maslenitsa2016 = () => {
 
     return (
         <>
-            <h3>2015 - 2016</h3>
             <h4>Female power competitions for the Maslenitsa Festival, 2016</h4>
             <img className={sC.videosMainImg} src={img1} alt=""/>
             <p>The female power competition for this year's Maslenitsa Festival took place at the Namazon Club on

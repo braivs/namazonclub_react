@@ -4,7 +4,7 @@ import {Mixwrestling} from "src/localdata/homeCards/Mixwrestling"
 import {MMA} from "src/localdata/homeCards/MMA"
 import s from "./Home.module.scss"
 import {ArticleCard} from "./ArticleCard"
-import {Maslenitsa2016} from "src/localdata/homeCards/Maslenitsa2016"
+import {Maslenitsa2016_Preview} from "src/localdata/homeCards/Maslenitsa2016_Preview"
 import {Row} from "react-bootstrap"
 
 export function Home() {
@@ -16,7 +16,7 @@ export function Home() {
             </Row>
             <Row className={s.rowMy}>
                 <ArticleCard children={<MMA/>}/>
-                <ArticleCard children={<Maslenitsa2016/>}/>
+                <ArticleCard children={<Maslenitsa2016_Preview/>}/>
             </Row>
         </div>
     )

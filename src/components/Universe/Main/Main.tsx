@@ -7,7 +7,6 @@ import {Videos} from "./Videos"
 import {Girls} from "./Girls"
 import {Competitions} from "./Competitions"
 import {Articles} from "./Articles"
-import {CompArticles} from "./CompArticles"
 import {Video} from "./Video"
 import {Girl} from "./Girl"
 import {Competition} from "./Competition"
@@ -22,7 +21,7 @@ export function Main() {
             <Route path="girls/:cardsVariant" element={<Girls/>}/>
             <Route path="competitions/:cardsVariant" element={<Competitions/>}/>
             <Route path='articles/:article' element={<Articles/>}/>
-            <Route path='compArticles/:years/:compArticle' element={<CompArticles/>}/>
+            {/*<Route path='compArticles/:years/:compArticle' element={<CompArticles/>}/>*/}
             <Route path={'video/*'} element={<Video/>}/>
             <Route path={'girl/:years/*'} element={<Girl/>}/>
             <Route path='competition/:years/*' element={<Competition/>}/>
