@@ -1,5 +1,5 @@
 import imgMain from 'src/img/girl/nadezhda_akhmerova/nadezhda.jpg'
-import {MainVideoImg} from "../../common/MainVideoImg"
+import {MainImg} from "../../common/MainImg"
 import React from "react"
 import {useGallery} from "../../common/hooks"
 import {DirNadezhdaAkhmerovaKick, DirNadezhdaAkhmerovaSubgr} from "../../common/ImageContexts"
@@ -15,7 +15,7 @@ export const NadezhdaAkhmerova = () => {
     return (
         <>
             <h4>NADEZHDA AKHMEROVA</h4>
-            <MainVideoImg imgMain={imgMain}/>
+            <MainImg imgMain={imgMain}/>
             <p>
                 <b>Nadezhda Akhmerova</b> ( 5'6" / 132 lb ) - the participant of club's tournaments on SUBMISSION
                 GRAPPLING.<br/>

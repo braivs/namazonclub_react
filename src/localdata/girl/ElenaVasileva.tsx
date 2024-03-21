@@ -1,4 +1,4 @@
-import {MainVideoImg} from "../../common/MainVideoImg"
+import {MainImg} from "../../common/MainImg"
 import imgMain from "../../img/girl/elena-vasileva/elena.jpg"
 import React from "react"
 import {CustomButtonGallery} from "../../common/common"
@@ -14,7 +14,7 @@ export const ElenaVasileva = () => {
     return (
         <>
             <h4>ELENA VASILYEVA</h4>
-            <MainVideoImg imgMain={imgMain}/>
+            <MainImg imgMain={imgMain}/>
             <p>
                 <b>Elena Vasilyeva</b> ( 5'6" / 135 lb ) - new young club star.<br/>
                 Specialization - SUBMISSION GRAPPLING, MMA, JUDO and ARM WRESTLING (candidate for the master of sports).

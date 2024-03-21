@@ -30,6 +30,7 @@ export const cardsCompetitions2013_2014: Array<CardType> = [
         id: 'tournament-2013',
         title: 'Women\'s Power Event\n Tournament. October 2013',
         imgRef: tournament_2013,
+        years: "2013_2014",
     },
     {
         id: 'tournament-2014',

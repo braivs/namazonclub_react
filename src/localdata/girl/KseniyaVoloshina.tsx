@@ -1,5 +1,5 @@
 import imgMain from "../../img/girl/kseniya-voloshina/kseniya.jpg"
-import {MainVideoImg} from "../../common/MainVideoImg"
+import {MainImg} from "../../common/MainImg"
 import React from "react"
 import {useGallery} from "../../common/hooks"
 import {DirKseniyaVoloshinaSubgr} from "../../common/ImageContexts"
@@ -13,7 +13,7 @@ export const KseniyaVoloshina = () => {
     return (
         <>
             <h4>KSENIA VOLOSHINA</h4>
-            <MainVideoImg imgMain={imgMain}/>
+            <MainImg imgMain={imgMain}/>
             <p>
                 <b>Ksenia Voloshina</b> ( 5'3" / 141 lb ) - the participant of club's tournaments on SUBMISSION
                 GRAPPLING.<br/>

@@ -1,5 +1,5 @@
 import imgMain from 'src/img/girl/irina_vlasta/vlasta.jpg'
-import {MainVideoImg} from "../../common/MainVideoImg"
+import {MainImg} from "../../common/MainImg"
 import {useGallery} from "../../common/hooks"
 import {DirVlastaBeachgr, DirVlastaSubgr} from "../../common/ImageContexts"
 import {CustomButtonGallery} from "../../common/common"
@@ -14,7 +14,7 @@ export const IrinaVlasta = () => {
     return (
         <>
             <h4>IRINA (VLASTA)</h4>
-            <MainVideoImg imgMain={imgMain}/>
+            <MainImg imgMain={imgMain}/>
             <p>
                 <b>Irina (Vlasta)</b> ( 5'9" / 154 lb ) - the participant of club's tournaments on SUBMISSION GRAPPLING.<br/>
                 She engaged in muay thai and polе dance.

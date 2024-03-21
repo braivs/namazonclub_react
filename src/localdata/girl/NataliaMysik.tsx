@@ -1,4 +1,4 @@
-import {MainVideoImg} from "../../common/MainVideoImg"
+import {MainImg} from "../../common/MainImg"
 import imgMain from "../../img/girl/natalia-mysik/natalia.jpg"
 import React from "react"
 import {useGallery} from "../../common/hooks"
@@ -13,7 +13,7 @@ export const NataliaMysik = () => {
     return (
         <>
             <h4>NATALIA MYSIK</h4>
-            <MainVideoImg imgMain={imgMain}/>
+            <MainImg imgMain={imgMain}/>
             <p><b>Natalia Mysik</b> ( 5'11" / 154 lb ) - the participant of club's tournaments on SUBMISSION
                 GRAPPLING.<br/>
                 She is a winner of the tournament on submission grappling "Christmas Cup 2011".</p>

@@ -3,6 +3,7 @@ import sC from 'src/common/styles.module.scss'
 import {yearsConverter} from "../../../common/helpers"
 import React from "react"
 import {Maslenitsa2016} from "../../../localdata/competition/2015-2017/Maslenitsa2016"
+import {Tournament2013} from "../../../localdata/competition/2013-2014/Tournament2013"
 
 export const Competition = () => {
     const {years} = useParams()
@@ -12,6 +13,7 @@ export const Competition = () => {
            <h3>{yearsConverter(years)}</h3>
             <Routes>
                 <Route path="maslenitsa-2016" element={<Maslenitsa2016/>}></Route>
+                <Route path='tournament-2013' element={<Tournament2013/>}></Route>
             </Routes>
         </div>
     )
