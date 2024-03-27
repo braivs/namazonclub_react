@@ -3,9 +3,7 @@ import {getGalleryPhotosFromRequire, getSlides} from "../../common/helpers"
 import {ButtonGallery, MyYouTube} from "../../common/common"
 import {Col, Row} from "react-bootstrap"
 import cn from "classnames"
-
-const images = require.context('src/img/video/33/lida-vika', false)
-const images2 = require.context('src/img/video/33/tais-yulia', false)
+import {DIR_LIDA_VIKA, DIR_TAIS_YULIA} from "../../common/ImageContexts"
 
 export const Video33 = () => {
     const videoNumber = 33
@@ -13,12 +11,12 @@ export const Video33 = () => {
 
     const [open, setOpen] = useState(false)
     const [index, setIndex] = useState(-1)
-    const photos = getGalleryPhotosFromRequire(images)
+    const photos = getGalleryPhotosFromRequire(DIR_LIDA_VIKA)
     const slides = getSlides(photos)
 
     const [open2, setOpen2] = useState(false)
     const [index2, setIndex2] = useState(-1)
-    const photos2 = getGalleryPhotosFromRequire(images2)
+    const photos2 = getGalleryPhotosFromRequire(DIR_TAIS_YULIA)
     const slides2 = getSlides(photos2)
 
     return (

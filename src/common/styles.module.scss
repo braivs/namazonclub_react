@@ -33,3 +33,12 @@
         margin-top: 16px;
     }
 }
+
+.textAlignCenter {
+    text-align: center;
+}
+
+// for reactBootstrap table
+.customTablePadding > :not(caption) > * > * {
+    padding: 0;
+}
