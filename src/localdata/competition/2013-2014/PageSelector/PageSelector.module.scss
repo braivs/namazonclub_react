@@ -1,0 +1,12 @@
+.pageSelector {
+    cursor: pointer;
+    text-decoration: underline;
+    color: var(--color-accent);
+    text-decoration-color: var(--color-accent);
+}
+
+.active {
+    cursor: auto;
+    text-decoration: none;
+    color: black;
+}

@@ -1,12 +1,15 @@
 import imgMain from "../../../img/competitions/2013_2014/silovye_edinoborstva_2013/yaroslava-masha/08.jpg"
 import {MainImg} from "../../../common/MainImg"
-import React from "react"
+import React, {useState} from "react"
+import {PageSelector} from "./PageSelector/PageSelector"
 
-export const Tournament2013 = () => {
+export const Tournament2013Main = () => {
+    const [pageValue, setPageValue] = useState(1)
 
     return (
         <>
             <h4>Women's Power Event Tournament. October, 2013</h4>
+            <PageSelector activePage={pageValue} setActivePage={setPageValue}/>
             <MainImg imgMain={imgMain}/>
             <p>
                 The female power combat tournament was organized in cooperation with the Female Single Combat Club
