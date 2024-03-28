@@ -20,10 +20,11 @@ export const Tournament2013Main = () => {
             <h4>Women's Power Event Tournament. October, 2013</h4>
             <PageSelector activePage={pageValue} setActivePage={setPageValue}/>
             {ActiveTournamentComponent && <ActiveTournamentComponent />}
+            <PageSelector activePage={pageValue} setActivePage={setPageValue} mode={'prevNext'}/>
         </>
     )
 }
 
 type TournamentComponentMap = {
-    [key: number]: React.ElementType;
+    [key: number]: React.ElementType
 };
