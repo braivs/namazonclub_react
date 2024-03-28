@@ -12,7 +12,6 @@ export const Tournament2013_2 = () => {
 
     return (
         <>
-            <h4>Women's Power Event Tournament. October, 2013</h4>
             <h4 className={sC.textAlignCenter}><u>Results of the first round (Quarter-finals):</u></h4>
             <h5 className={sC.textAlignCenter}><u>LISA Sergovskaya vs LIDA Oslopovskih</u></h5>
             <Table bordered className={sC.customTablePadding}>
