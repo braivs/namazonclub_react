@@ -4,6 +4,7 @@ import {LightboxMy, PhotoAlbumMy} from "../ModdedComponents/ModdedComponents"
 import React from "react"
 import {Photo} from "react-photo-album"
 import {Slide} from "yet-another-react-lightbox"
+import s from './ButtonGallery.module.scss'
 
 type ButtonPropsType = {
     openCloseCallback: (value: boolean) => void
@@ -13,17 +14,18 @@ type ButtonPropsType = {
     photos: Photo[]
     slides: Slide[]
     buttonName?: string
+    isExtraMargin?: boolean
 }
 
 export const ButtonGallery = (props: ButtonPropsType) => {
     return (
-        <>
+        <div className={props.isExtraMargin ? s.buttonGallery : ''}>
             <Button variant="primary"
                     onClick={() => props.openCloseCallback(!props.isOpen)}>{props.buttonName ? props.buttonName : 'SCREENSHOTS'}</Button>
             <Collapse in={props.isOpen}>
                 <PhotoAlbumMy layout="masonry" photos={props.photos} openCallback={props.indexCallback}/>
             </Collapse>
             <LightboxMy slides={props.slides} index={props.index} closeCallback={props.indexCallback}/>
-        </>
+        </div>
     )
 }
