@@ -25,7 +25,11 @@ export const getGalleryPhotosFromRequireFromArray = (photos: Array<string>) => {
 
 export const getSlides = (photos: Photo[]) => photos.map(({src}) => ({src}))
 
-export const toLink = (props: CardComponentType) => `/universe/${props.variant}/${props.years}/${props.id}`
+export const toLink = (props: CardComponentType) => {
+    return props.years === undefined
+        ? `/universe/${props.variant}/${props.id}`
+        : `/universe/${props.variant}/${props.years}/${props.id}`
+};
 
 export const yearsConverter = (years: string | undefined): string | undefined => {
     if (!years) return undefined; // Return undefined if input is undefined
