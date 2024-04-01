@@ -48,8 +48,10 @@ export const PageSelector: React.FC<PageSelector> = ({activePage, setActivePage,
 
                     </>
                     : <>
-                        <li onClick={() => onPrevClick()} className={cn(s.pageSelector, specialActiveSelectorPrev())}>Prev</li>
-                        <li onClick={() => onNextClick()} className={cn(s.pageSelector, specialActiveSelectorNext())}>Next</li>
+                        <li onClick={() => onPrevClick()} className={cn(s.pageSelector, specialActiveSelectorPrev())}>Prev
+                        </li>
+                        <li onClick={() => onNextClick()} className={cn(s.pageSelector, specialActiveSelectorNext())}>Next
+                        </li>
                     </>
 
             }

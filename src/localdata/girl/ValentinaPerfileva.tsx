@@ -5,8 +5,8 @@ import {Col, Table} from "react-bootstrap"
 import cn from "classnames"
 import {useGallery} from "../../common/hooks"
 import {DirValentinaKick, DirValentinaSubgr} from "../../common/ImageContexts"
-import {ButtonGallery} from "../../common/common"
 import {NavLink} from "react-router-dom"
+import {ButtonGallery} from "../../common/ButtonGallery/ButtonGallery"
 
 export const ValentinaPerfileva = () => {
     const gallery1 = useGallery(DirValentinaSubgr);

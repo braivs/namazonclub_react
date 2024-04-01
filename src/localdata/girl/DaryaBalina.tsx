@@ -3,7 +3,8 @@ import sC from "../../common/styles.module.scss"
 import React, {useState} from "react"
 import {NavLink} from "react-router-dom"
 import {getGalleryPhotosFromRequire, getSlides} from "../../common/helpers"
-import {ButtonGallery} from "../../common/common"
+
+import {ButtonGallery} from "../../common/ButtonGallery/ButtonGallery"
 
 const images = require.context('src/img/video/18/mma-sportivnyj-prazdnik-2012-1', false)
 const images2 = require.context('src/img/video/21/mma-pervaya-nevskaya-arena-2012-2', false)

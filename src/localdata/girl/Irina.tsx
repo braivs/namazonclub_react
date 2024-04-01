@@ -2,10 +2,10 @@ import imgMain from 'src/img/girl/irina/irina.jpg'
 import sC from "../../common/styles.module.scss"
 import React from "react"
 import {useGallery} from "../../common/hooks"
-import {ButtonGallery} from "../../common/common"
 import {DirIrinaBeachgr, DirIrinaSubgr} from "../../common/ImageContexts"
 import {Col} from "react-bootstrap"
 import cn from "classnames"
+import {ButtonGallery} from "../../common/ButtonGallery/ButtonGallery"
 
 export const Irina = () => {
     const {

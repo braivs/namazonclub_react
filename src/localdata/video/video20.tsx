@@ -1,8 +1,9 @@
 import React, {useState} from 'react'
 import {Col, Row} from "react-bootstrap"
 import {getGalleryPhotosFromRequire, getSlides} from "../../common/helpers"
-import {ButtonGallery, MyYouTube} from "../../common/common"
+import {MyYouTube} from "../../common/common"
 import cn from 'classnames'
+import {ButtonGallery} from "../../common/ButtonGallery/ButtonGallery"
 
 const images = require.context('src/img/video/20/mma-pervaya-nevskaya-arena-2012-1', false)
 

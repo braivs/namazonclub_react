@@ -2,9 +2,9 @@ import imgMain from 'src/img/girl/mariya-ryljova/7.jpg'
 import sC from "../../common/styles.module.scss"
 import React, {useState} from "react"
 import {getGalleryPhotosFromRequire, getSlides} from "../../common/helpers"
-import {ButtonGallery} from "../../common/common"
 import {Table} from "react-bootstrap"
 import {NavLink} from "react-router-dom"
+import {ButtonGallery} from "../../common/ButtonGallery/ButtonGallery"
 
 const images = require.context('src/img/girl/mariya-ryljova/', false)
 

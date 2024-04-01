@@ -4,7 +4,8 @@ import sC from "../../common/styles.module.scss"
 import React, {useState} from "react"
 import {NavLink} from "react-router-dom"
 import {getGalleryPhotosFromRequire, getSlides} from "../../common/helpers"
-import {ButtonGallery} from "../../common/common"
+
+import {ButtonGallery} from "../../common/ButtonGallery/ButtonGallery"
 
 const images = require.context('src/img/video/09/mma-rozhdestvenskij-kubok-2012-1', false)
 

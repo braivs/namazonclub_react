@@ -2,10 +2,10 @@ import imgMain from 'src/img/girl/tais2011/main/08.jpg'
 import sC from "../../common/styles.module.scss"
 import React, {useState} from "react"
 import {getGalleryPhotosFromRequire, getSlides} from "../../common/helpers"
-import {ButtonGallery} from "../../common/common"
 import {useGallery} from "../../common/hooks"
 import {Table} from "react-bootstrap"
 import {NavLink} from "react-router-dom"
+import {ButtonGallery} from "../../common/ButtonGallery/ButtonGallery"
 
 const images = require.context('src/img/girl/tais2011/main', false)
 const images2 = require.context('src/img/girl/tais2011/subgr', false)

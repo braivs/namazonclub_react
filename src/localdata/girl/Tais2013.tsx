@@ -6,8 +6,8 @@ import imgMain4 from 'src/img/girl/tais2013/tais-varvara.jpg'
 import imgMain5 from 'src/img/girl/tais2013/2013-sg-elena-vasilyeva-tais.jpg'
 import sC from "../../common/styles.module.scss"
 import {getGalleryPhotosFromRequire, getSlides} from "../../common/helpers"
-import {ButtonGallery} from "../../common/common"
 import {NavLink} from "react-router-dom"
+import {ButtonGallery} from "../../common/ButtonGallery/ButtonGallery"
 
 const images = require.context('src/img/girl/tais2013/main_gallery', false)
 const images2 = require.context('src/img/girl/tais2013/mma-rozhdestvenskij-kubok-2012-4', false)

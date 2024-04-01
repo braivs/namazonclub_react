@@ -1,8 +1,9 @@
 import React, {useState} from 'react'
 import {getGalleryPhotosFromRequire, getSlides} from "../../common/helpers"
-import {ButtonGallery, MyYouTube} from "../../common/common"
+import {MyYouTube} from "../../common/common"
 import {Col, Row} from "react-bootstrap"
 import cn from "classnames"
+import {ButtonGallery} from "../../common/ButtonGallery/ButtonGallery"
 
 const images = require.context('src/img/video/24', false)
 

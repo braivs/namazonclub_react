@@ -2,8 +2,8 @@ import sC from 'src/common/styles.module.scss'
 import {Table} from "react-bootstrap"
 import {useGallery} from "../../../common/hooks"
 import {DIR_LIDA_VIKA, DIR_TAIS_YULIA, DIR_YAROSLAVA_VIKA} from "../../../common/ImageContexts"
-import {ButtonGallery} from "../../../common/common"
 import React from "react"
+import {ButtonGallery} from "../../../common/ButtonGallery/ButtonGallery"
 
 export const Tournament2013_3 = () => {
     const gallery1 = useGallery(DIR_YAROSLAVA_VIKA)

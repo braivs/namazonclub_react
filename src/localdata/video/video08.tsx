@@ -2,7 +2,8 @@ import React, {useState} from 'react'
 import sC from 'src/common/styles.module.scss'
 import {getGalleryPhotosFromRequire, getSlides} from "../../common/helpers"
 import mainImg from 'src/img/video/main/08main.jpg'
-import {ButtonGallery} from "../../common/common"
+
+import {ButtonGallery} from "../../common/ButtonGallery/ButtonGallery"
 
 const images = require.context('src/img/video/08/1', false)
 const images2 = require.context('src/img/video/08/plyazhnyj-turnir-2011-2', false)

@@ -5,11 +5,11 @@ import imgMain3 from 'src/img/video/17/mma-kara-svetlany-2012-1/01.jpg'
 import imgMain4 from 'src/img/girl/kara-teller/mma-sportivnyj-prazdnik-2012-1/01.jpg'
 import imgMain5 from 'src/img/video/17/mma-kara-svetlany-2012-3/9.jpg'
 import sC from "../../common/styles.module.scss"
-import {ButtonGallery} from "../../common/common"
 import {getGalleryPhotosFromRequire, getSlides} from "../../common/helpers"
 import {NavLink} from "react-router-dom"
 import {Col} from "react-bootstrap"
 import cn from "classnames"
+import {ButtonGallery} from "../../common/ButtonGallery/ButtonGallery"
 
 const images = require.context('src/img/girl/kara-teller/', false)
 const images2 = require.context('src/img/video/09/mma-rozhdestvenskij-kubok-2012-1', false)
