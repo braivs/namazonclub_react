@@ -7,6 +7,10 @@
 }
 
 .compArticlesVideoGirl {
+    a {
+        color: #007bff;
+    }
+
     h3:first-of-type {
         color: var(--color-accent);
     }
@@ -23,9 +27,7 @@
 }
 
 .videoGirl {
-    a {
-        color: #007bff;
-    }
+
 
     button {
         margin-bottom: 5px;

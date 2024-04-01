@@ -15,8 +15,6 @@ export const Competition = () => {
             <Routes>
                 <Route path="maslenitsa-2016" element={<Maslenitsa2016/>}></Route>
                 <Route path='tournament-2013' element={<Tournament2013Main/>}></Route>
-                {/*<Route path='tournament-2013' element={<Tournament2013_2/>}></Route>*/}
-                {/*<Route path='tournament-2013' element={<Tournament2013_3/>}></Route>*/}
             </Routes>
         </div>
     )
