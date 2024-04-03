@@ -17,7 +17,6 @@ import video12 from 'src/img/videos/wrestThumb/video-12.jpg'
 import video8 from 'src/img/videos/wrestThumb/video-8.jpg'
 import video6 from 'src/img/videos/wrestThumb/video-6.jpg'
 import video4 from 'src/img/videos/wrestThumb/video-4.jpg'
-import video3 from 'src/img/videos/wrestThumb/video-3-ww.jpg'
 import video2 from 'src/img/videos/wrestThumb/video-2.jpg'
 import video1 from 'src/img/videos/wrestThumb/video-1.jpg'
 import video9 from 'src/img/videos/mmaThumb/video-9.jpg'
@@ -45,8 +44,14 @@ import video38 from 'src/img/videos/mixWrestThumb/video-38.jpg'
 import video39 from 'src/img/videos/mixWrestThumb/video-39.jpg'
 import video40 from 'src/img/videos/mixWrestThumb/video-40.jpg'
 import nc45 from 'src/img/videos/mixWrestThumb/NC45_Braivs_Alyouna.jpg'
+import nc46 from 'src/img/videos/wrestThumb/nc46.jpg'
 
 export const cardsWrestling: Array<CardType> = [
+    {
+        id: 'NC46',
+        title: 'Alena vs Kurmandi 2017',
+        imgRef: nc46,
+    },
     {
         id: 44,
         title: 'The Maslenitsa Festival, 2015-2017\nPins-and-Submissions Wrestling',

@@ -49,6 +49,7 @@ import {Video38} from "../../../localdata/video/video38"
 import {Video39} from "../../../localdata/video/video39"
 import {Video40} from "../../../localdata/video/video40"
 import {NC45} from "../../../localdata/video/nc45"
+import {NC46} from "../../../localdata/video/nc46"
 
 export const Video = () => {
     return (
@@ -105,6 +106,7 @@ export const Video = () => {
                 <Route path="39" element={<Video39/>}></Route>
                 <Route path="40" element={<Video40/>}></Route>
                 <Route path="NC45" element={<NC45/>}></Route>
+                <Route path="NC46" element={<NC46/>}></Route>
 
                 <Route path={'/*'} element={<InProgress />}></Route>
             </Routes>

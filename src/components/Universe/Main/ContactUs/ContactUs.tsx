@@ -10,7 +10,8 @@ export function ContactUs() {
                 <p>Facebook: <a
                     href="https://www.facebook.com/groups/namazonclub">https://www.facebook.com/groups/namazonclub</a>
                 </p>
-                <p>VK: <a href="https://vk.com/namazon">https://vk.com/namazon</a></p>
+              <p>Telegram: <a href="https://t.me/namazonclub">https://t.me/namazonclub</a></p>
+              <p>VK: <a href="https://vk.com/namazon">https://vk.com/namazon</a></p>
             </Col>
         </Row>
     )
