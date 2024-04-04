@@ -4,6 +4,8 @@
 ///33:
 export const DIR_LIDA_VIKA = require.context('src/img/video/33/lida-vika', false)
 export const DIR_TAIS_YULIA = require.context('src/img/video/33/tais-yulia', false)
+//NC46 Alena Kurmandi 30.03.2017 - 06.04.2017
+export const DIR_NC46 = require.context('src/img/video/nc46', false)
 
 // girls
 export const DirIrinaSubgr = require.context('src/img/girl/irina/subgr', false)
