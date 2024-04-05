@@ -45,8 +45,14 @@ import video39 from 'src/img/videos/mixWrestThumb/video-39.jpg'
 import video40 from 'src/img/videos/mixWrestThumb/video-40.jpg'
 import nc45 from 'src/img/videos/mixWrestThumb/NC45_Braivs_Alyouna.jpg'
 import nc46 from 'src/img/videos/wrestThumb/nc46.jpg'
+import nc47 from 'src/img/videos/wrestThumb/nc47cover_small.jpg'
 
 export const cardsWrestling: Array<CardType> = [
+    {
+        id: 'NC47',
+        title: 'Women\'s strength competition at Maslenitsa 2017',
+        imgRef: nc47,
+    },
     {
         id: 'NC46',
         title: 'Alena vs Kurmandi 2017',
