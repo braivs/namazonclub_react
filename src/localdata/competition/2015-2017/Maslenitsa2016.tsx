@@ -19,7 +19,7 @@ export const Maslenitsa2016 = () => {
     const slides = photos.map(({src}) => ({src}))
 
     const photos2 = getGalleryPhotosFromRequire(images2)
-    const slides2 = photos.map(({src}) => ({src}))
+    const slides2 = photos2.map(({src}) => ({src}))
 
     return (
         <>
