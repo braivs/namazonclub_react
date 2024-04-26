@@ -1,10 +1,10 @@
 import React from "react"
 import {Table} from "react-bootstrap"
 import sC from 'src/common/styles.module.scss'
-import {useGallery} from "../../../common/hooks"
-import {DirDarinaViktoria, DirYaroslavaMasha} from "../../../common/ImageContexts"
+import {useGallery} from "../../../../common/hooks"
+import {DirDarinaViktoria, DirYaroslavaMasha} from "../../../../common/ImageContexts"
 
-import {ButtonGallery} from "../../../common/ButtonGallery/ButtonGallery"
+import {ButtonGallery} from "../../../../common/ButtonGallery/ButtonGallery"
 
 export const Tournament2013_2 = () => {
     const gallery1 = useGallery(DirDarinaViktoria)

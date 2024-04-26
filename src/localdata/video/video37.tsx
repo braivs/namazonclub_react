@@ -1,22 +1,18 @@
-import React, {useState} from 'react'
+import React from 'react'
 import sC from 'src/common/styles.module.scss'
-import {getGalleryPhotosFromRequire, getSlides} from "../../common/helpers"
 import {MyYouTube} from "../../common/common"
 import {NavLink} from "react-router-dom"
 import {Col, Row} from "react-bootstrap"
 import cn from 'classnames'
 import {ButtonGallery} from "../../common/ButtonGallery/ButtonGallery"
-
-const images = require.context('src/img/video/37', false)
+import {useGallery} from "../../common/hooks"
+import {DIR37} from "../../common/ImageContexts"
 
 export const Video37 = () => {
   const videoNumber = 37
   const youtubeID = 'oxAzT_GWSJA'
 
-  const [open, setOpen] = useState(false)
-  const [index, setIndex] = useState(-1)
-  const photos = getGalleryPhotosFromRequire(images)
-  const slides = getSlides(photos)
+  const gallery1 = useGallery(DIR37)
 
   return (
     <div className={sC.compArticlesVideoGirl}>
@@ -41,12 +37,12 @@ export const Video37 = () => {
       <p>The final fight was much longer and more strenuous. Suffice it to say that in the first round neither
         wrestler was able to gain a victory within the 4 min of time limit.</p>
       <ButtonGallery
-        index={index}
-        indexCallback={setIndex}
-        isOpen={open}
-        openCloseCallback={setOpen}
-        photos={photos}
-        slides={slides}
+        index={gallery1.index}
+        indexCallback={gallery1.setIndex}
+        isOpen={gallery1.open}
+        openCloseCallback={gallery1.setOpen}
+        photos={gallery1.photos}
+        slides={gallery1.slides}
       />
       <p>We recommend this video for those of you who like real female wrestling and young sexy-looking girls with
         competitive spirit. You will find it especially entertaining if you are interested to see a fight in

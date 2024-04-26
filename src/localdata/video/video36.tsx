@@ -1,21 +1,17 @@
-import React, {useState} from 'react'
-import {getGalleryPhotosFromRequire, getSlides} from "../../common/helpers"
+import React from 'react'
 import {MyYouTube} from "../../common/common"
 import {NavLink} from "react-router-dom"
 import {Col} from "react-bootstrap"
 import cn from "classnames"
 import {ButtonGallery} from "../../common/ButtonGallery/ButtonGallery"
-
-const images = require.context('src/img/video/36', false)
+import {useGallery} from "../../common/hooks"
+import {DIR36} from "../../common/ImageContexts"
 
 export const Video36 = () => {
   const videoNumber = 36
   const youtubeID = 'kkbQ7YEQ9nQ'
 
-  const [open, setOpen] = useState(false)
-  const [index, setIndex] = useState(-1)
-  const photos = getGalleryPhotosFromRequire(images)
-  const slides = getSlides(photos)
+  const gallery1 = useGallery(DIR36)
 
   return (
     <>
@@ -46,12 +42,12 @@ export const Video36 = () => {
         (Vika vs Christina) goes three rounds.
       </p>
       <ButtonGallery
-        index={index}
-        indexCallback={setIndex}
-        isOpen={open}
-        openCloseCallback={setOpen}
-        photos={photos}
-        slides={slides}
+        index={gallery1.index}
+        indexCallback={gallery1.setIndex}
+        isOpen={gallery1.open}
+        openCloseCallback={gallery1.setOpen}
+        photos={gallery1.photos}
+        slides={gallery1.slides}
       />
       <p>We recommend you to watch this movie (Video 36) if you like to see some ambitious, athletic girls with
         beautiful bodies competing with each other in a hard-fought contest where everything is allowed:

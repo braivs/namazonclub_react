@@ -1,5 +1,5 @@
-import imgMain from "../../../img/competitions/2013_2014/silovye_edinoborstva_2013/yaroslava-masha/08.jpg"
-import {MainImg} from "../../../common/MainImg"
+import imgMain from "../../../../img/competitions/2013_2014/silovye_edinoborstva_2013/yaroslava-masha/08.jpg"
+import {MainImg} from "../../../../common/MainImg"
 import React from "react"
 
 export const Tournament2013_1 = () => {
