@@ -75,8 +75,9 @@ export const Grappling2014 = () => {
       />
       <h5><u>Victoria Vardugina vs Christina Shvets</u></h5>
       <p>
-        Christina and Victoria had met each other five months ago at the <a href="tournament-2014.html">grappling
-        tournament between beginners</a>. That time Victoria had celebrated victory in a very hard-fought match.
+        Christina and Victoria had met each other five months ago at the <NavLink
+        to="/universe/competition/2013_2014/tournament-2014">the grappling tournament between
+        beginners</NavLink>. That time Victoria had celebrated victory in a very hard-fought match.
         Christina had trained a lot since then, doing her best to improve in wrestling. She had gained weight, strength
         and experience, which made her a real fighter and dangerous opponent for other girls on the wrestling mat. Vika,
         by contrast, had reduced her weight, so by the time of their October encounter she had been outweighed by 8
