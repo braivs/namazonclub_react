@@ -46,11 +46,17 @@ import video40 from 'src/img/videos/mixWrestThumb/video-40.jpg'
 import nc45 from 'src/img/videos/mixWrestThumb/NC45_Braivs_Alyouna.jpg'
 import nc46 from 'src/img/videos/wrestThumb/nc46.jpg'
 import nc47 from 'src/img/videos/wrestThumb/nc47cover_small.jpg'
+import nc48 from 'src/img/videos/wrestThumb/nc48.jpg'
 
 export const cardsWrestling: Array<CardType> = [
     {
+        id: 'NC48',
+        title: 'Competitions Spring 2017',
+        imgRef: nc48,
+    },
+    {
         id: 'NC47',
-        title: 'Women\'s strength competition at Maslenitsa 2017',
+        title: 'Women\'s strength competiton at Maslenitsa 2017',
         imgRef: nc47,
     },
     {
