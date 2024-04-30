@@ -1,26 +1,17 @@
-import React, {useState} from 'react'
+import React from 'react'
 import {Col, Row} from "react-bootstrap"
-import {getGalleryPhotosFromRequire, getSlides} from "../../common/helpers"
 import {MyYouTube} from "../../common/common"
 import cn from 'classnames'
 import {ButtonGallery} from "../../common/ButtonGallery/ButtonGallery"
-
-const images = require.context('src/img/video/41/kz', false)
-const images2 = require.context('src/img/video/41/vz', false)
+import {useGallery} from "../../common/hooks"
+import {DIR41_KZ, DIR41_VZ} from "../../common/ImageContexts"
 
 export const Video41 = () => {
+  const gallery1 = useGallery(DIR41_KZ)
+  const gallery2 = useGallery(DIR41_VZ)
+
   const videoNumber = 41
   const youtubeID = 'vE6uc_UXaWc'
-
-  const [open, setOpen] = useState(false)
-  const [index, setIndex] = useState(-1)
-  const photos = getGalleryPhotosFromRequire(images)
-  const slides = getSlides(photos)
-
-  const [open2, setOpen2] = useState(false)
-  const [index2, setIndex2] = useState(-1)
-  const photos2 = getGalleryPhotosFromRequire(images2)
-  const slides2 = getSlides(photos2)
 
   return (
     <>
@@ -46,12 +37,12 @@ export const Video41 = () => {
         herself on her back and Christina earned a pinfall win over her.</p>
       <h5>Christina Shvets vs Zoya Dorofeeva</h5>
       <ButtonGallery
-        index={index}
-        indexCallback={setIndex}
-        isOpen={open}
-        openCloseCallback={setOpen}
-        photos={photos}
-        slides={slides}
+        index={gallery1.index}
+        indexCallback={gallery1.setIndex}
+        isOpen={gallery1.open}
+        openCloseCallback={gallery1.setOpen}
+        photos={gallery1.photos}
+        slides={gallery1.slides}
       />
       <p>As for Victoria, she appeared to be an even more difficult opponent for Zoya. She defeated her twice in
         their fights, both times with a choke hold. However, Zoya had a few good chances to defeat Vika not only
@@ -59,12 +50,12 @@ export const Video41 = () => {
         such competitions, she wasn’t able to materialize any of those chances.</p>
       <h5>Victoria Vardugina vs Zoya Dorofeeva</h5>
       <ButtonGallery
-        index={index2}
-        indexCallback={setIndex2}
-        isOpen={open2}
-        openCloseCallback={setOpen2}
-        photos={photos2}
-        slides={slides2}
+        index={gallery2.index}
+        indexCallback={gallery2.setIndex}
+        isOpen={gallery2.open}
+        openCloseCallback={gallery2.setOpen}
+        photos={gallery2.photos}
+        slides={gallery2.slides}
       />
       <Row>
         <hr/>

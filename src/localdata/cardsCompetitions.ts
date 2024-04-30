@@ -42,6 +42,7 @@ export const cardsCompetitions2013_2014: Array<CardType> = [
         id: 'grappling-2014',
         title: 'Tournament for the prize of the\nNamazon Club. October, 2014',
         imgRef: grappling_2014,
+        years: "2013_2014",
     },
 ]
 

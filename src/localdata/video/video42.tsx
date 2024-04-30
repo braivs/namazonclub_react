@@ -1,21 +1,17 @@
-import React, {useState} from 'react'
+import React from 'react'
 import {Col, Row} from "react-bootstrap"
 import cn from 'classnames'
-import {getGalleryPhotosFromRequire, getSlides} from "../../common/helpers"
 import {MyYouTube} from "../../common/common"
 import {NavLink} from "react-router-dom"
 import {ButtonGallery} from "../../common/ButtonGallery/ButtonGallery"
-
-const images = require.context('src/img/video/42/', false)
+import {useGallery} from "../../common/hooks"
+import {DIR42} from "../../common/ImageContexts"
 
 export const Video42 = () => {
   const videoNumber = 42
   const youtubeID = 'e8fADPtHm7w'
 
-  const [index, setIndex] = useState(-1)
-  const [open, setOpen] = useState(false)
-  const photos = getGalleryPhotosFromRequire(images)
-  const slides = getSlides(photos)
+  const gallery1 = useGallery(DIR42)
 
   return (
     <>
@@ -55,12 +51,12 @@ export const Video42 = () => {
         control the match. She seemed pretty worn out in the end, while the same couldn’t be said for Victoria.
       </p>
       <ButtonGallery
-        index={index}
-        indexCallback={setIndex}
-        isOpen={open}
-        openCloseCallback={setOpen}
-        photos={photos}
-        slides={slides}
+        index={gallery1.index}
+        indexCallback={gallery1.setIndex}
+        isOpen={gallery1.open}
+        openCloseCallback={gallery1.setOpen}
+        photos={gallery1.photos}
+        slides={gallery1.slides}
       />
       <Row>
         <hr/>
