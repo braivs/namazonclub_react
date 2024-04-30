@@ -6,6 +6,7 @@ import {Maslenitsa2016} from "../../../localdata/competition/2015-2017/Maslenits
 import {Tournament2013Main} from "../../../localdata/competition/2013-2014/Tournament2013/Tournament2013Main"
 import {Tournament2014} from "../../../localdata/competition/2013-2014/Tournament2014"
 import {Grappling2014} from "../../../localdata/competition/2013-2014/Grappling2014"
+import {InProgress} from "./inProgress"
 
 export const Competition = () => {
     const {years} = useParams()
@@ -18,6 +19,7 @@ export const Competition = () => {
                 <Route path='tournament-2013' element={<Tournament2013Main/>}></Route>
                 <Route path='tournament-2014' element={<Tournament2014/>}></Route>
                 <Route path='grappling-2014' element={<Grappling2014/>}></Route>
+                <Route path={'/*'} element={<InProgress />}></Route>
             </Routes>
         </div>
     )
