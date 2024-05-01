@@ -1,6 +1,10 @@
 // for batch import
 
 //videos:
+///09:
+export const DIR09_1 = require.context('src/img/video/09/mma-rozhdestvenskij-kubok-2012-1', false)
+export const DIR09_2 = require.context('src/img/video/09/mma-rozhdestvenskij-kubok-2012-3', false)
+export const DIR09_3 = require.context('src/img/video/09/mma-rozhdestvenskij-kubok-2012-4', false)
 ///33:
 export const DIR_LIDA_VIKA = require.context('src/img/video/33/lida-vika', false)
 export const DIR_TAIS_YULIA = require.context('src/img/video/33/tais-yulia', false)
@@ -38,6 +42,9 @@ export const DIR37_TOURNAMENT2014_1 = require.context('src/img/video/37', false,
 export const DIR37_TOURNAMENT2014_2 = require.context('src/img/video/37', false, /\/(?:0[5-9]|1\d|2[0-3])\.jpg$/) // Daria Uvarova and Victoria Vardugina
 //Submission Grappling tournament for the prize of the Namazon Club. October, 2014
 export const DIR_GRAPPLING2014_AWARDS = require.context('src/img/competitions/2013_2014/grappling_2014/awardPhotos', false)
+//Submission Grappling tournament for the prize of the Namazon Club. October, 2014
+export const DIR_CHRISTMAS2012_1 = require.context('src/img/video/09/mma-rozhdestvenskij-kubok-2012-1', false, /\/(?:0[1-9]|1[0-2])\.jpg$/); // Elena Vasilyeva vs Kara Teller, round 1 & 2
+export const DIR_CHRISTMAS2012_2 = require.context('src/img/video/09/mma-rozhdestvenskij-kubok-2012-1', false, /\/1[3-7]\.jpg$/); // Elena Vasilyeva vs Kara Teller, round 3
 
 
 

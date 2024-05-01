@@ -32,10 +32,11 @@ export const toLink = (props: CardComponentType) => {
 };
 
 export const yearsConverter = (years: string | undefined): string | undefined => {
+    debugger
     if (!years) return undefined; // Return undefined if input is undefined
 
     const parts = years.split('_'); // Split the input string by underscore
-    if (parts.length !== 2) return undefined; // Return undefined if the format is not correct
+    if (parts.length !== 2) return years; // Return undefined if the format is not correct
 
     const startYear = parts[0];
     const endYear = parts[1];
