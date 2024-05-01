@@ -14,12 +14,11 @@ type ButtonPropsType = {
     photos: Photo[]
     slides: Slide[]
     buttonName?: string
-    isExtraMargin?: boolean
 }
 
 export const ButtonGallery = (props: ButtonPropsType) => {
     return (
-        <div className={props.isExtraMargin ? s.buttonGallery : ''}>
+        <div className={s.buttonGallery}>
             <Button variant="primary"
                     onClick={() => props.openCloseCallback(!props.isOpen)}>{props.buttonName ? props.buttonName : 'SCREENSHOTS'}</Button>
             <Collapse in={props.isOpen}>

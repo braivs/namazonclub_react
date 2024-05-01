@@ -137,7 +137,6 @@ export const Tournament2013_2 = () => {
                 photos={gallery2.photos}
                 slides={gallery2.slides}
                 buttonName={buttonText}
-                isExtraMargin={true}
             />
             <p>
                 The winners of the first two pairs and the both contestants of the third pair entered the semi-finals

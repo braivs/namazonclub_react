@@ -86,7 +86,6 @@ export const Tournament2013_3 = () => {
                 photos={gallery1.photos}
                 slides={gallery1.slides}
                 buttonName={buttonText}
-                isExtraMargin={true}
             />
             <p>
                 The semi-final results show that <b>Vika</b> had an obvious advantage over <b>Yaroslava</b>, just
@@ -110,7 +109,6 @@ export const Tournament2013_3 = () => {
                 photos={gallery2.photos}
                 slides={gallery2.slides}
                 buttonName={buttonText}
-                isExtraMargin={true}
             />
             <p>Eventually <b>VIKA Vardugina</b> won the tournament, and <b>LIDA Oslopovskih</b> took the 2nd place.</p>
             <h4 className={sC.textAlignCenter}><u>Absolute division</u></h4>
@@ -173,7 +171,6 @@ export const Tournament2013_3 = () => {
                 photos={gallery3.photos}
                 slides={gallery3.slides}
                 buttonName={buttonText}
-                isExtraMargin={true}
             />
             <p><b>TAIS</b> won the 1st place in the absolute (open weight) division, <b>YULIA Borovik</b> took the 2nd.
             </p>
