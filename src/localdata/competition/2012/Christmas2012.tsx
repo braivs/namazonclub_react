@@ -1,10 +1,10 @@
-import imgMain from "../../../img/video/09/mma-rozhdestvenskij-kubok-2012-1/16.jpg"
-import {MainImg} from "../../../common/MainImg"
+import imgMain from "src/img/video/09/mma-rozhdestvenskij-kubok-2012-1/16.jpg"
+import {MainImg} from "src/common/MainImg"
 import React from "react"
 import {NavLink} from "react-router-dom"
-import {useGallery} from "../../../common/hooks"
+import {useGallery} from "src/common/hooks"
 import {DIR09_2, DIR09_3, DIR_CHRISTMAS2012_1, DIR_CHRISTMAS2012_2} from "../../../common/ImageContexts"
-import {ButtonGallery} from "../../../common/ButtonGallery/ButtonGallery"
+import {ButtonGallery} from "src/common/ButtonGallery/ButtonGallery"
 
 export const Christmas2012 = () => {
   const gallery1 = useGallery(DIR_CHRISTMAS2012_1)
@@ -14,7 +14,7 @@ export const Christmas2012 = () => {
   const buttonText = 'See photos'
 
   return (
-    <div>
+    <>
       <h4>MMA fights. Tournament "Christmas Cup 2012"</h4>
       <MainImg imgMain={imgMain}/>
       <p>
@@ -95,6 +95,6 @@ export const Christmas2012 = () => {
         9</u></b>. MMA tournament "Christmas Cup 2012") on <a href="https://gumroad.com/namazonclub">Gumroad</a> and you
         will be able to see everything yourself.
       </p>
-    </div>
+    </>
   )
 }

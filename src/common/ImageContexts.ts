@@ -5,6 +5,10 @@
 export const DIR09_1 = require.context('src/img/video/09/mma-rozhdestvenskij-kubok-2012-1', false)
 export const DIR09_2 = require.context('src/img/video/09/mma-rozhdestvenskij-kubok-2012-3', false)
 export const DIR09_3 = require.context('src/img/video/09/mma-rozhdestvenskij-kubok-2012-4', false)
+///17 MMA and Submission Grappling. February, 2012:
+export const DIR17_1 = require.context('src/img/video/17/mma-kara-svetlany-2012-1', false)
+export const DIR17_2 = require.context('src/img/video/17/mma-kara-svetlany-2012-2', false)
+export const DIR17_3 = require.context('src/img/video/17/mma-kara-svetlany-2012-3', false)
 ///33:
 export const DIR_LIDA_VIKA = require.context('src/img/video/33/lida-vika', false)
 export const DIR_TAIS_YULIA = require.context('src/img/video/33/tais-yulia', false)
