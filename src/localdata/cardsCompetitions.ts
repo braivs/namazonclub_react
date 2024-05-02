@@ -63,7 +63,7 @@ const cardsCompetitions2012Data : Array<CardType> = [
         imgRef: KaraTellervsDariaBalina,
     },
     {
-        id: 'varvara-tais',
+        id: 'varvara-tais-2012',
         title: 'Varvara Akulova vs Tais.\nSubmission grappling. 2012',
         imgRef: VarvaravsTais,
     },

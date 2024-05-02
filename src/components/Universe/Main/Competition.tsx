@@ -10,6 +10,7 @@ import {InProgress} from "./inProgress"
 import {Christmas2012} from "../../../localdata/competition/2012/Christmas2012"
 import {MMA2012} from "../../../localdata/competition/2012/MMA2012"
 import {SportHoliday2012} from "../../../localdata/competition/2012/SportHoliday2012"
+import {VarvaraTais2012} from "../../../localdata/competition/2012/VarvaraTais2012"
 
 export const Competition = () => {
     const {years} = useParams()
@@ -28,6 +29,7 @@ export const Competition = () => {
                 <Route path='christmas-2012' element={<Christmas2012/>}></Route>
                 <Route path='mma-2012' element={<MMA2012/>}></Route>
                 <Route path='sportHoliday-2012' element={<SportHoliday2012/>}></Route>
+                <Route path='varvara-tais-2012' element={<VarvaraTais2012/>}></Route>
                 <Route path={'/*'} element={<InProgress />}></Route>
             </Routes>
         </div>
