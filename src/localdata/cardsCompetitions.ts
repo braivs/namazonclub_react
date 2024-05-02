@@ -80,7 +80,7 @@ export const cardsCompetitions2012: Array<CardType> = cardsCompetitions2012Data.
     years: '2012',
 }));
 
-export const cardsCompetitions2011: Array<CardType> = [
+export const cardsCompetitions2011Data: Array<CardType> = [
     {
         id: 'christmas-2011',
         title: 'Christmas Cup 2011 Submission Grappling',
@@ -97,6 +97,12 @@ export const cardsCompetitions2011: Array<CardType> = [
         imgRef: alex_elena_2011,
     },
 ]
+
+// Add 'years: 2011' to each object in the array
+export const cardsCompetitions2011: Array<CardType> = cardsCompetitions2011Data.map(card => ({
+    ...card,
+    years: '2011',
+}));
 
 export const cardsArchive: Array<CardType> = [
     {

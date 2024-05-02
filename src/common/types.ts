@@ -7,7 +7,7 @@ export type CardType = {
 
 export type VariantType = 'video' | 'girl' | 'competition'
 
-export type YearsType = '2010_2011' | '2012_2013' | '2015_2017' | '2013_2014' | '2012'
+export type YearsType = '2010_2011' | '2012_2013' | '2015_2017' | '2013_2014' | '2012' | '2011'
 
 export type CardComponentType = CardType & {
     variant: VariantType
