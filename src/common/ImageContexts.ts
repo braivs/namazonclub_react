@@ -12,6 +12,10 @@ export const DIR17_3 = require.context('src/img/video/17/mma-kara-svetlany-2012-
 // 18 MMA fights in the May holidays.
 export const DIR_MMA_SPORT_HOLIDAY_1 = require.context('src/img/video/18/mma-sportivnyj-prazdnik-2012-1', false)
 export const DIR_MMA_SPORT_HOLIDAY_2 = require.context('src/img/video/18/mma-sportivnyj-prazdnik-2012-2', false)
+// 20:
+export const DIR_NEVSKAYA_ARENA_1 = require.context('src/img/video/20/mma-pervaya-nevskaya-arena-2012-1', false)
+export const DIR_NEVSKAYA_ARENA_2 = require.context('src/img/video/21/mma-pervaya-nevskaya-arena-2012-2', false)
+
 ///33:
 export const DIR_LIDA_VIKA = require.context('src/img/video/33/lida-vika', false)
 export const DIR_TAIS_YULIA = require.context('src/img/video/33/tais-yulia', false)
