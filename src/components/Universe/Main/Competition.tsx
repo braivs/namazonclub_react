@@ -9,6 +9,7 @@ import {Grappling2014} from "../../../localdata/competition/2013-2014/Grappling2
 import {InProgress} from "./inProgress"
 import {Christmas2012} from "../../../localdata/competition/2012/Christmas2012"
 import {MMA2012} from "../../../localdata/competition/2012/MMA2012"
+import {SportHoliday2012} from "../../../localdata/competition/2012/SportHoliday2012"
 
 export const Competition = () => {
     const {years} = useParams()
@@ -26,6 +27,7 @@ export const Competition = () => {
                 //2012
                 <Route path='christmas-2012' element={<Christmas2012/>}></Route>
                 <Route path='mma-2012' element={<MMA2012/>}></Route>
+                <Route path='sportHoliday-2012' element={<SportHoliday2012/>}></Route>
                 <Route path={'/*'} element={<InProgress />}></Route>
             </Routes>
         </div>
