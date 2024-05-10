@@ -1,6 +1,11 @@
 // for batch import
 
 //videos:
+// 08: Beach Tournament. Submission Grappling. June, 2011
+export const DIR08_1 = require.context('src/img/video/08/1', false) // Elena Vasilyeva vs Tais
+export const DIR08_2 = require.context('src/img/video/08/plyazhnyj-turnir-2011-2', false) // Irina (Vlasta) vs Tais
+export const DIR08_3 = require.context('src/img/video/08/plyazhnyj-turnir-2011-3', false) // Elena Vasilyeva vs Irina (Vlasta)
+
 ///09:
 export const DIR09_1 = require.context('src/img/video/09/mma-rozhdestvenskij-kubok-2012-1', false)
 export const DIR09_2 = require.context('src/img/video/09/mma-rozhdestvenskij-kubok-2012-3', false)
