@@ -1,6 +1,11 @@
 // for batch import
 
 //videos:
+// 03 + 03wm: Beach Wrestling. Mixed Tournament. Two girls vs one man
+export const DIR03_1 = require.context('src/img/video/03mix/wm1', false) // Natalia Mysik  vs  Alex
+export const DIR03_2 = require.context('src/img/video/03mix/wm2', false) // Alex  vs  Tais
+export const DIR03_3 = require.context('src/img/video/03/ww', false) // Natalia Mysik vs Tais
+
 // 08: Beach Tournament. Submission Grappling. June, 2011
 export const DIR08_1 = require.context('src/img/video/08/1', false) // Elena Vasilyeva vs Tais
 export const DIR08_2 = require.context('src/img/video/08/plyazhnyj-turnir-2011-2', false) // Irina (Vlasta) vs Tais

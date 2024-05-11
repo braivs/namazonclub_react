@@ -17,6 +17,7 @@ import video12 from 'src/img/videos/wrestThumb/video-12.jpg'
 import video8 from 'src/img/videos/wrestThumb/video-8.jpg'
 import video6 from 'src/img/videos/wrestThumb/video-6.jpg'
 import video4 from 'src/img/videos/wrestThumb/video-4.jpg'
+import video3 from 'src/img/videos/wrestThumb/video-3-ww.jpg'
 import video2 from 'src/img/videos/wrestThumb/video-2.jpg'
 import video1 from 'src/img/videos/wrestThumb/video-1.jpg'
 import video9 from 'src/img/videos/mmaThumb/video-9.jpg'
@@ -154,11 +155,11 @@ export const cardsWrestling: Array<CardType> = [
         title: 'Submission Grappling\n"Christmas Cup  2011"',
         imgRef: video4,
     },
-/*    {
+    {
         id: 3,
         title: 'Beach Wrestling\nMixed Tournament.  2010',
         imgRef: video3,
-    },*/
+    },
     {
         id: 2,
         title: 'Submission Grappling\nPart 2.  June,  2010',
