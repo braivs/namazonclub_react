@@ -5,11 +5,16 @@
 export const DIR08_1 = require.context('src/img/video/08/1', false) // Elena Vasilyeva vs Tais
 export const DIR08_2 = require.context('src/img/video/08/plyazhnyj-turnir-2011-2', false) // Irina (Vlasta) vs Tais
 export const DIR08_3 = require.context('src/img/video/08/plyazhnyj-turnir-2011-3', false) // Elena Vasilyeva vs Irina (Vlasta)
-
 ///09:
 export const DIR09_1 = require.context('src/img/video/09/mma-rozhdestvenskij-kubok-2012-1', false)
 export const DIR09_2 = require.context('src/img/video/09/mma-rozhdestvenskij-kubok-2012-3', false)
 export const DIR09_3 = require.context('src/img/video/09/mma-rozhdestvenskij-kubok-2012-4', false)
+// 11: Alex vs Elena Vasilyeva (Gladiatriks), Mixed Beach Wrestling. July, 2011
+export const DIR11 = require.context('src/img/video/11', false)
+//14: Two men against one woman. Mixed wrestling on a beach. Part 1. 2011
+// + here competitions: Mixed beach tournament. Submission Grappling. July, 2011
+export const DIR14_1 = require.context('src/img/video/14/smeshannyj-plyazhnyj-turnir-2011-4', false) //Tais vs Alex
+export const DIR14_2 = require.context('src/img/video/14/smeshannyj-plyazhnyj-turnir-2011-5', false) //Tais vs Villian
 ///17 MMA and Submission Grappling. February, 2012:
 export const DIR17_1 = require.context('src/img/video/17/mma-kara-svetlany-2012-1', false)
 export const DIR17_2 = require.context('src/img/video/17/mma-kara-svetlany-2012-2', false)
@@ -26,7 +31,7 @@ export const DIR_LIDA_VIKA = require.context('src/img/video/33/lida-vika', false
 export const DIR_TAIS_YULIA = require.context('src/img/video/33/tais-yulia', false)
 export const DIR36 = require.context('src/img/video/36', false) // 36 Female submission grappling tournament between beginners. Preliminary fights.
 export const DIR37 = require.context('src/img/video/37', false) // 37 Female submission grappling tournament between beginners. <u>Final fights
-export const DIR41_KZ = require.context('src/img/video/41/kz', false) 
+export const DIR41_KZ = require.context('src/img/video/41/kz', false)
 export const DIR41_VZ = require.context('src/img/video/41/vz', false)
 export const DIR42 = require.context('src/img/video/42', false) // Victoria Vardugina vs Christina Shvets
 export const DIR_NC46 = require.context('src/img/video/nc46', false) //NC46 Alena Kurmandi 30.03.2017 - 06.04.2017
@@ -59,13 +64,18 @@ export const DIR37_TOURNAMENT2014_2 = require.context('src/img/video/37', false,
 //Submission Grappling tournament for the prize of the Namazon Club. October, 2014
 export const DIR_GRAPPLING2014_AWARDS = require.context('src/img/competitions/2013_2014/grappling_2014/awardPhotos', false)
 //Submission Grappling tournament for the prize of the Namazon Club. October, 2014
-export const DIR_CHRISTMAS2012_1 = require.context('src/img/video/09/mma-rozhdestvenskij-kubok-2012-1', false, /\/(?:0[1-9]|1[0-2])\.jpg$/); // Elena Vasilyeva vs Kara Teller, round 1 & 2
-export const DIR_CHRISTMAS2012_2 = require.context('src/img/video/09/mma-rozhdestvenskij-kubok-2012-1', false, /\/1[3-7]\.jpg$/); // Elena Vasilyeva vs Kara Teller, round 3
+export const DIR_CHRISTMAS2012_1 = require.context('src/img/video/09/mma-rozhdestvenskij-kubok-2012-1', false, /\/(?:0[1-9]|1[0-2])\.jpg$/) // Elena Vasilyeva vs Kara Teller, round 1 & 2
+export const DIR_CHRISTMAS2012_2 = require.context('src/img/video/09/mma-rozhdestvenskij-kubok-2012-1', false, /\/1[3-7]\.jpg$/) // Elena Vasilyeva vs Kara Teller, round 3
 //MMA fights in the May holidays:
 export const DIR_MMA_SPORT_HOLIDAY_3 = require.context('src/img/competitions/2012/mma-sportivnyj-prazdnik-2012-3', false)
 //Submission Grappling tournament "Christmas Cup 2011"
 export const DIR_CHRISTMAS_2011_1 = require.context('src/img/competitions/2011/christmas-2011/rozhdestvenskij-kubok-2011-1', false)
 export const DIR_CHRISTMAS_2011_2 = require.context('src/img/video/04', false, /\/(?:3[9-]|4[0-2])\.jpg$/)
+//Mixed beach tournament. Submission Grappling. July, 2011
+export const DIR_BEACH_MIX_2011 = require.context('src/img/competitions/2011/beach-mix-2011/smeshannyj-plyazhnyj-turnir-2011-1', false) // Villian vs Alex
+export const DIR_BEACH_MIX_2011_2 = require.context('src/img/competitions/2011/beach-mix-2011/smeshannyj-plyazhnyj-turnir-2011-2', false) // Villian vs Elena Vasilyeva
+export const DIR_BEACH_MIX_2011_3 = require.context('src/img/competitions/2011/beach-mix-2011/smeshannyj-plyazhnyj-turnir-2011-3', false) // Tais vs Elena Vasilyeva
+
 
 
 
