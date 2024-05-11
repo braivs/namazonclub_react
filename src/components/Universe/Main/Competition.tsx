@@ -15,6 +15,7 @@ import {NevskayaArena2012} from "../../../localdata/competition/2012/NevskayaAre
 import {Christmas2011} from "../../../localdata/competition/2011/Christmas2011"
 import {Beach2011} from "../../../localdata/competition/2011/Beach2011"
 import {BeachMix2011} from "../../../localdata/competition/2011/BeachMix2011"
+import {IzidaVsTais2008} from "../../../localdata/competition/Archive/IzidaVsTais2008"
 
 export const Competition = () => {
     const {years} = useParams()
@@ -39,6 +40,7 @@ export const Competition = () => {
                 <Route path='christmas-2011' element={<Christmas2011/>}></Route>
                 <Route path='beach-2011' element={<Beach2011/>}></Route>
                 <Route path='beach-mix-2011' element={<BeachMix2011/>}></Route>
+                <Route path='IzidaVsTais2008' element={<IzidaVsTais2008/>}></Route>
                 <Route path={'/*'} element={<InProgress />}></Route>
             </Routes>
         </div>
