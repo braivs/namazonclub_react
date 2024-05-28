@@ -10,7 +10,7 @@ export const NC45 = () => {
     return (
         <>
             <h3>{videoNumber}</h3>
-            <h4>Braivs vs Alyona. Mixed wrestling. 11.10.2016</h4>
+            <h4>Braivs vs Alyona. Mixed wrestling. 13.10.2016</h4>
             <p>
                 Braivs and Alyouna has equal force. Full video contain 15 mins of action.
             </p>
