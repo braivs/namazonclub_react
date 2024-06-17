@@ -51,5 +51,6 @@ export const Video37 = () => {
       <hr/>
       <p>You can buy <b>VIDEO {videoNumber}</b> on <a href="https://gumroad.com/namazonclub">Gumroad</a>.</p>
     </div>
+
   )
 }
