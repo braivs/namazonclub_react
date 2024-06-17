@@ -48,6 +48,8 @@ import nc45 from 'src/img/videos/mixWrestThumb/NC45_Braivs_Alyouna.jpg'
 import nc46 from 'src/img/videos/wrestThumb/nc46.jpg'
 import nc47 from 'src/img/videos/wrestThumb/nc47cover_small.jpg'
 import nc48 from 'src/img/videos/wrestThumb/nc48.jpg'
+import nc49 from 'src/img/videos/mixWrestThumb/nc49_preview.jpg'
+import nc50 from 'src/img/videos/mixWrestThumb/NC50.jpg'
 
 export const cardsWrestling: Array<CardType> = [
     {
@@ -303,5 +305,16 @@ export const cardsMix: Array<CardType> = [
         id: 'NC45',
         title: 'Braivs vs Alyona\n11.10.2016',
         imgRef: nc45,
+    },
+    {
+        id: 'NC49',
+        title: 'Braivs vs Alyona collection\n2016-2017',
+        imgRef: nc49,
+    },
+    {
+        id: 'NC50',
+        title: 'Tais vs Braivs collection\n2014-2017',
+        imgRef: nc50,
     }
+
 ]
