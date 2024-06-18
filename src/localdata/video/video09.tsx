@@ -20,20 +20,20 @@ export const Video09 = () => {
       <h3>VIDEO {videoNumber}</h3>
       <h4>MMA tournament "Christmas Cup 2012"</h4>
       <p>
-        In this tournament participated three fighters: <b>Elena Vasilyeva</b> (St. Petersburg, 5’6” / 132
-        lb), <b>Kara Teller</b>, Namazon Club’s newcomer (Moscow, 5’7” / 119 lb), Tais (St. Petersburg, 5’7” /
-        130 lb). The tournament was held in one round. So eventually, the girls had to have two fights each.
-        Each fight consisted of three 4 minute rounds with 1 minute rest between each round.
+        Three fighters participated in this tournament: <b>Elena Vasilyeva</b> (St. Petersburg, 5’6” / 132 lb),
+        <b>Kara Teller</b>, a newcomer from Namazon Club (Moscow, 5’7” / 119 lb), and <b>Tais</b> (St. Petersburg,
+        5’7” / 130 lb). The tournament was conducted in a single round format, with each fighter having two matches.
+        Each match consisted of three 4-minute rounds with a 1-minute rest period between rounds.
       </p>
       <Row>
         <Col className={cn('d-flex', 'justify-content-center')}>
           <MyYouTube videoId={youtubeID}/>
         </Col>
       </Row>
-      <p>The girls fought hard and uncompromisingly in all the three fights.</p>
-      <p>If you like competitive fights where there are strikes with arms and legs as well as wrestling with
-        armlocks and chokes, then you will have to love our film.</p>
-      <h5><u>First fight</u> Elena Vasilyeva vs Kara Teller</h5>
+      <p>The fighters competed fiercely and uncompromisingly in all three matches.</p>
+      <p>If you enjoy competitive fights involving strikes with arms and legs, as well as wrestling with armlocks and
+        chokes, then you will definitely enjoy our film.</p>
+      <h5><u>First fight:</u> Elena Vasilyeva vs Kara Teller</h5>
       <ButtonGallery
         index={gallery1.index}
         indexCallback={gallery1.setIndex}
@@ -43,7 +43,7 @@ export const Video09 = () => {
         slides={gallery1.slides}
         buttonName={buttonText}
       />
-      <h5><u>Second fight</u> Kara Teller vs Tais</h5>
+      <h5><u>Second fight:</u> Kara Teller vs Tais</h5>
       <ButtonGallery
         index={gallery2.index}
         indexCallback={gallery2.setIndex}
@@ -53,7 +53,7 @@ export const Video09 = () => {
         slides={gallery2.slides}
         buttonName={buttonText}
       />
-      <h5><u>Second fight</u> Elena Vasilyeva vs Tais</h5>
+      <h5><u>Third fight:</u> Elena Vasilyeva vs Tais</h5>
       <ButtonGallery
         index={gallery3.index}
         indexCallback={gallery3.setIndex}
@@ -66,5 +66,6 @@ export const Video09 = () => {
       <hr/>
       <p>You can buy <b>VIDEO {videoNumber}</b> on <a href="https://gumroad.com/namazonclub">Gumroad</a>.</p>
     </>
+
   )
 }
