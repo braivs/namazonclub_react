@@ -23,8 +23,7 @@ export const Video26 = () => {
       <p>
         This video features a sand-wrestling contest between two ambitious women, <b>Tais</b> (5'7" / 130 lb)
         and <b>Elena Vasilyeva</b> (5'6" / 134 lb). Tais, who has competed in various grappling and MMA
-        tournaments, has more experience than her younger opponent. But Elena is not a pushover either. She’s
-        also taken part in
+        tournaments, has more experience than her younger opponent. But Elena is not a pushover either.
       </p>
       <Row>
         <Col className={cn('d-flex', 'justify-content-center')}>

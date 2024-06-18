@@ -24,7 +24,7 @@ export const Video35 = () => {
         <p>
           Lovely young lady, <b>Lidiya Oslopovskih</b> (53 kg / 117 lbs), is a newcomer to the Namazon wrestling
           competitions. She is a small but agile fighter, with a very well-built body. In this video, you can see
-          her three fights with the strongest and most experienced woman of the club, <b>Tais</b> (60 кг / 132 lb).
+          her three fights with the strongest and most experienced woman of the club, <b>Tais</b> (60 kg / 132 lb).
         </p>
         <Row>
           <Col className={cn('d-flex', 'justify-content-center')}>
