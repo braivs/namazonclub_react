@@ -9,47 +9,46 @@ import {ButtonGallery} from "../../common/ButtonGallery/ButtonGallery"
 const images = require.context('src/img/video/39', false)
 
 export const Video39 = () => {
-    const videoNumber = 39
-    const youtubeID = 'kpBVV_5iaYQ'
+  const videoNumber = 39
+  const youtubeID = 'kpBVV_5iaYQ'
 
-    const [open, setOpen] = useState(false)
-    const [index, setIndex] = useState(-1)
-    const photos = getGalleryPhotosFromRequire(images)
-    const slides = getSlides(photos)
+  const [open, setOpen] = useState(false)
+  const [index, setIndex] = useState(-1)
+  const photos = getGalleryPhotosFromRequire(images)
+  const slides = getSlides(photos)
 
-    return (
-        <>
-            <h3>VIDEO {videoNumber}</h3>
-            <h4>Mixed wrestling. Villian vs Tais. Part 1. 2014</h4>
-            <p>
-                In comparison with Alexandr whom you can see on our <NavLink to="/universe/videos/38">VIDEO
-                38</NavLink>, <b>Villian</b> doesn’t look so big and strong. He weighs only 180 pounds. But he is
-                much faster
-                and far more experienced and skilled in wrestling. In their personal fights with each other Villian
-                usually comes out a winner. However, <b>Tais</b> who is 44 lb lighter than Villian says that it’s easier
-                for her to fight Villian than Alexandr because in her fights against him she is better able to
-                successfully apply her technique.
-            </p>
-            <Row>
-                <Col className={cn('d-flex', 'justify-content-center')}>
-                    <MyYouTube videoId={youtubeID}/>
-                </Col>
-            </Row>
-            <p>
-                This video features six competitive fights. They were all real! You can judge by the screens below how
-                intense the fights were and how uncompromised the struggle in them was. If you like competitive mixed
-                wrestling, then the <b>VIDEO 39</b> is also for you.
-            </p>
-            <ButtonGallery
-                index={index}
-                indexCallback={setIndex}
-                isOpen={open}
-                openCloseCallback={setOpen}
-                photos={photos}
-                slides={slides}
-            />
-            <hr/>
-            <p>You can buy <b>VIDEO {videoNumber}</b> on <a href="https://gumroad.com/namazonclub">Gumroad</a>.</p>
-        </>
-    )
+  return (
+    <>
+      <h3>VIDEO {videoNumber}</h3>
+      <h4>Mixed wrestling. Villian vs Tais. Part 1. 2014</h4>
+      <p>
+        In comparison with Alexandr, whom you can see in our <NavLink to="/universe/video/38">VIDEO
+        38</NavLink>, <b>Villian</b> doesn’t appear as big and strong, weighing only 180 pounds. However, he compensates
+        with speed, experience, and wrestling skill. In their personal matches, Villian usually emerges as the victor.
+        Interestingly, despite being 44 pounds lighter than Villian, <b>Tais</b> finds it easier to fight Villian than
+        Alexandr because she can more effectively apply her techniques against him.
+      </p>
+      <Row>
+        <Col className={cn('d-flex', 'justify-content-center')}>
+          <MyYouTube videoId={youtubeID}/>
+        </Col>
+      </Row>
+      <p>
+        This video showcases six competitive fights, all of which were real and intense! You can judge from the screens
+        below how intense and uncompromising the battles were. If you enjoy competitive mixed wrestling,
+        then <b>VIDEO {videoNumber}</b> is definitely for you.
+      </p>
+      <ButtonGallery
+        index={index}
+        indexCallback={setIndex}
+        isOpen={open}
+        openCloseCallback={setOpen}
+        photos={photos}
+        slides={slides}
+      />
+      <hr/>
+      <p>You can buy <b>VIDEO {videoNumber}</b> on <a href="https://gumroad.com/namazonclub">Gumroad</a>.</p>
+    </>
+
+  )
 }

@@ -6,7 +6,7 @@ import {MyYouTube} from "../../common/common"
 export const NC49 = () => {
   const videoNumber = 'NC49'
   const youtubeID = 'LETUteJJ724'
-  
+
   return (
     <>
       <h3>{videoNumber}</h3>
@@ -17,15 +17,15 @@ export const NC49 = () => {
         </Col>
       </Row>
       <p>
-        This is a collection of wrestling clips featuring Braivs and Alyona, combined into one movie. Filmed over 5 days
-        between the end of 2016 and the beginning of 2017. The full clip is 56 minutes long! Just so you know, it is
-        more
-        male-dominative.
+        This is a collection of wrestling clips featuring Braivs and Alyona, compiled into a single film. Filmed over 5
+        days between late 2016 and early 2017. The full clip is 56 minutes long! Please note, it is more male-dominated.
       </p>
       <Row>
         <hr/>
-        <p>You can buy <b>VIDEO {videoNumber}</b> at <a href="https://namazonclub.gumroad.com/l/nc49"> Gumroad </a></p>
+        <p>You can purchase <b>VIDEO {videoNumber}</b> on <a href="https://namazonclub.gumroad.com/l/nc49">Gumroad</a>.
+        </p>
       </Row>
     </>
+
   )
 }

@@ -16,14 +16,16 @@ export const NC50 = () => {
         </Col>
       </Row>
       <p>
-        This is a collection of wrestling clips featuring Braivs and Tais, combined into one movie. Filmed over 8 days
-        between 2014 and 2017. Braivs did everything he can, but Tais is more stronger. The full clip is 23 minutes
-        long.
+        This is a collection of wrestling clips featuring Braivs and Tais, compiled into a single film. Filmed over 8
+        days between 2014 and 2017, Braivs put forth his best effort, but Tais proved to be stronger. The full clip is
+        23 minutes long.
       </p>
       <Row>
         <hr/>
-        <p>You can buy <b>VIDEO {videoNumber}</b> at <a href="https://namazonclub.gumroad.com/l/nc50"> Gumroad </a></p>
+        <p>You can purchase <b>VIDEO {videoNumber}</b> on <a href="https://namazonclub.gumroad.com/l/nc50">Gumroad</a>.
+        </p>
       </Row>
     </>
+
   )
 }

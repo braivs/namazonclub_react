@@ -20,11 +20,11 @@ export const Video14 = () => {
       <h4>Two men against one woman. Mixed wrestling on a beach. Part 1. 2011</h4>
       <p>
         Two men against one woman. Mixed wrestling. Part 1. 2011<br/>
-        This video features a short improvised mixed wrestling tournament that was held on one of the beaches of
-        St. Petersburg. The men were represented by <b>Alex</b> (5’9” / 154 lb) and <b>Villian</b> (5'8” / 177
-        lb). The female fighter was <b>Tais</b> (5’7” / 130 lb), the strongest girl of the Namazon Club. The
-        competition was organized in two rounds.<br/>
-        In the 1st part of the video series you will be able to see two short male and four mixed fights.
+        This video features a short improvised mixed wrestling tournament held on one of the beaches of St. Petersburg.
+        The men were represented by <b>Alex</b> (5’9” / 154 lb) and <b>Villian</b> (5'8” / 177 lb). The female fighter
+        was <b>Tais</b> (5’7” / 130 lb), the strongest girl of the Namazon Club. The competition was organized in two
+        rounds.<br/>
+        In the 1st part of the video series, you will see two short male and four mixed fights.
       </p>
       <Row>
         <Col className={cn('d-flex', 'justify-content-center')}>
@@ -37,8 +37,8 @@ export const Video14 = () => {
         </Col>
       </Row>
       <p>
-        If you like sporting mixed wrestling (in a submission grappling style) on a beach, then you will have to
-        love our film. Purchase it if you want to see mixed fights with a strong and skilled female wrestler!
+        If you like sporting mixed wrestling (in a submission grappling style) on a beach, then you will love our film.
+        Purchase it if you want to see mixed fights with a strong and skilled female wrestler!
       </p>
       <h5>Tais vs Alex</h5>
       <ButtonGallery
