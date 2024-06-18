@@ -23,16 +23,16 @@ export const Video03 = () => {
         </Col>
       </Row>
       <p>
-        Female (Namazonian) wrestlers at the tournament were <b>Tais</b> (5’7” / 132 lb) and <b>Natalia
-        Mysik</b> (5’11” / 154 lb). Their male opponent was Alex (5’9” / 150 lb). Namely, due to the three
-        fights between Natalia and Tais, <b>VIDEO 3</b> can go in the <b>WRESTLING</b> section of the website,
-        where the <b>FEMALE WRESTLING</b> matches are presented.
+        Female wrestlers from Namazon participated in the tournament: <b>Tais</b> (5’7” / 132 lb) and <b>Natalia
+        Mysik</b> (5’11” / 154 lb). Their male opponent was Alex (5’9” / 150 lb). Specifically, the three fights between
+        Natalia and Tais from <b>VIDEO {videoNumber}</b> are featured in the <b>WRESTLING</b> section of the website,
+        showcasing <b>FEMALE WRESTLING</b> matches.
       </p>
-      <p>In these fights the rules were <b>SUBMISSION</b> only, no time limits indicated. This time Tais wrestled
-        a woman who was not only heavier than her but physically stronger as well. The struggle was very tough!
-        Both women fought in an aggressive manner, trying to gain an upper position and apply a good pin or
-        submission hold. Especially dramatic were the first two fights during which the wrestlers struggled
-        mostly on wet sand and the advantages were changing.</p>
+      <p>These matches followed <b>SUBMISSION</b> only rules with no specified time limits. This time, Tais wrestled
+        against a woman who was not only heavier but also physically stronger. The struggle was intense! Both women
+        fought aggressively, vying for advantageous positions and attempting effective pins or submission holds.
+        Particularly dramatic were the first two matches, which took place mainly on wet sand, with momentum shifting
+        back and forth.</p>
       <ButtonGallery
         index={gallery1.index}
         indexCallback={gallery1.setIndex}
@@ -44,6 +44,7 @@ export const Video03 = () => {
       <hr/>
       <p>You can buy <b>VIDEO {videoNumber}</b> on <a href="https://gumroad.com/namazonclub">Gumroad</a>.</p>
     </>
+
   )
 }
 

@@ -19,16 +19,15 @@ export const Video08 = () => {
       <h3>VIDEO {videoNumber}</h3>
       <h4>Beach Tournament. Submission Grappling. June, 2011</h4>
       <p>
-        Two new girls - <b>Elena Vasilyeva</b> (5'6" / 135 lb) and <b>Irina (Vlasta)</b> (5’9’’ / 154 lb) - took
-        part in the beach wrestling tournament alongside with <b>Tais</b> (5’7” / 130 lb). Elena is specialized
-        in submission grappling, judo and armwrestling and Irina in submission grappling, muay thai and pole
-        dancing.<br/>
-        The tournament was held in two rounds. The fights had no time limit. Especially tough and hard was the
-        struggle for the 2nd place between the newcomers. Young and skilled Elena fought bravely against older
-        Irina.
+        Two new competitors - <b>Elena Vasilyeva</b> (5'6" / 135 lb) and <b>Irina (Vlasta)</b> (5’9’’ / 154 lb) -
+        participated in the beach wrestling tournament alongside <b>Tais</b> (5’7” / 130 lb). Elena specializes in
+        submission grappling, judo, and arm wrestling, while Irina specializes in submission grappling, muay thai, and
+        pole dancing.<br/>
+        The tournament was held in two rounds with no time limits. The struggle for the 2nd place between the newcomers
+        was especially tough and intense. Young and skilled Elena fought bravely against the older Irina.
       </p>
       <MainImg imgMain={mainImg}/>
-      <p>If you like female wrestling not only indoors, but under the open sky as well, this film will suit you.</p>
+      <p>If you enjoy female wrestling not only indoors, but also under the open sky, this film is perfect for you.</p>
       <h5>Elena Vasilyeva vs Tais</h5>
       <ButtonGallery
         index={gallery1.index}
