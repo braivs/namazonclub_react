@@ -49,9 +49,9 @@ export const KaraTeller = () => {
   return (
     <>
       <h4>Kara Teller</h4>
-        <Col className={cn('d-flex', 'justify-content-center')}>
-            <img className={sC.videosMainImg} src={imgMain} alt="imgMain"/>
-        </Col>
+      <Col className={cn('d-flex', 'justify-content-center')}>
+        <img className={sC.videosMainImg} src={imgMain} alt="imgMain"/>
+      </Col>
       <ButtonGallery
         index={index}
         indexCallback={setIndex}
@@ -61,19 +61,20 @@ export const KaraTeller = () => {
         slides={slides}
         buttonName={buttonText}
       />
-      <p><b>Kara Teller</b> (the Vityaz Club, Moscow) is a very tender, feminine girl in daily life and a tough, brave,
-        stubborn fighter on a wrestling mat and in a ring. She is specialized in karate, sambo, MMA and also in
-        hand-to-hand combat named street fighting. Being 5'7" tall and weighing 121 lb, she is afraid of nobody and
-        fights valiantly against opponents who are heavier and physically stronger than her. At the Namazon Club, she
-        participated mainly in MMA fights.</p>
+      <p>
+        <b>Kara Teller</b> (the Vityaz Club, Moscow) is a very tender, feminine girl in daily life and a tough, brave,
+        stubborn fighter on a wrestling mat and in a ring. She specializes in karate, sambo, MMA, and hand-to-hand
+        combat known as street fighting. At 5'7" and weighing 121 lb, she fears nobody and valiantly fights against
+        heavier and stronger opponents. At the Namazon Club, she mainly participated in MMA fights.
+      </p>
       <h4><u>Kara Teller in MMA fights</u></h4>
       <h4>Kara vs Elena Vasilyeva. Christmas Cup 2012</h4>
       <img className={sC.videosMainImg} src={imgMain2} alt="imgMain2"/>
       <p>
-        This was a very intense fight with a lot of punches, kicks, throws and ground wrestling. There were 3
-        four-minute rounds with 4 minute breaks between each round.<br/>
-        First two rounds <NavLink to="/universe/girl/2012_2013/elena-vasileva2013">Elena</NavLink> (St. Petersburg, 5’6” / 132 lb) totally
-        dominated throughout the first two rounds, giving Kara a very hard time.
+        This was an intense fight with numerous punches, kicks, throws, and ground wrestling. The match had three
+        four-minute rounds with four-minute breaks between each round. <NavLink
+        to="/universe/girl/2012_2013/elena-vasileva2013">Elena</NavLink> (St. Petersburg, 5'6" / 132 lb) dominated the
+        first two rounds, giving Kara a very hard time.
       </p>
       <ButtonGallery
         index={index2}
@@ -84,18 +85,21 @@ export const KaraTeller = () => {
         slides={slides2}
         buttonName={buttonText}
       />
-      <p>In the third round it became clear that Elena was getting tired. Kara managed to get control of the fight, due
-        to her combative spirit, and eventually she won by applying a choke hold.</p>
-      <p>It was a very hard and dramatic fight, perhaps one of the best we’ve ever had at the Club.</p>
+      <p>
+        In the third round, it became clear that Elena was getting tired. Kara managed to gain control of the fight due
+        to her combative spirit and eventually won by applying a choke hold. It was a very hard and dramatic fight,
+        perhaps one of the best we've ever had at the Club.
+      </p>
       <h4>Kara vs Svetlana Solovyova. 2012</h4>
       <img className={sC.videosMainImg} src={imgMain3} alt="imgMain3"/>
       <p>
-        Quite obviously, <b>Svetlana Solovyova</b> (St. Petersburg; 5’7” / 124 lb) was superior to Kara in physical
-        power. For example, dynamometric measures of her hand grip strength were 56.3 kg (124 lb), which was more than
-        her own weight! But on Kara’s side was her fighting experience that made up for the lack of her strength during
-        their fight.<br/>
-        In the beginning, when the girls were exchanging blows and kicks in stand up, Svetlana was still able to somehow
-        withstand Kara’s attacks, but when the fight was brought to the ground, Kara’s advantage became more evident.
+        <b>Svetlana Solovyova</b> (St. Petersburg, 5'7" / 124 lb) was clearly superior to Kara in physical power. For
+        example, her hand grip strength was measured at 56.3 kg (124 lb), more than her own weight! However, Kara’s
+        fighting experience compensated for her lack of strength during their fight.
+      </p>
+      <p>
+        Initially, Svetlana could withstand Kara's attacks during their stand-up exchanges, but when the fight went to
+        the ground, Kara's advantage became evident. Kara won by a choke hold in 1:13.
       </p>
       <ButtonGallery
         index={index4}
@@ -106,18 +110,13 @@ export const KaraTeller = () => {
         slides={slides4}
         buttonName={buttonText}
       />
-      <p>Kara won by a choke hold in 1:13.</p>
       <h4>Kara vs Darya Balina. 2012</h4>
       <img className={sC.videosMainImg} src={imgMain4} alt="imgMain"/>
       <p>
-        Kara was the favorite to win this fight against <NavLink to="/universe/girl/2012_2013/darya-balina">Darya Balina</NavLink> (the female
-        self-defense Club "Panther", St. Petersburg, 5’4” / 124 lb). While Darya had pretty good kick-boxing skills, she
-        didn’t feel so confident in wrestling (the consequent effect of her combat training with an emphasis on
-        self-defense). The fight format was three four minute rounds with a rest period of one minute between them. But
-        it took Kara only two rounds to gain a victory. The first round was fought in stand up. Kara was better with her
-        striking. In the second round the fight came to the ground, where Kara again took advantage of Darya and
-        finished her off with a choke (the way of finishing an opponent off that has already become Kara’s beloved
-        tradition).
+        Kara was the favorite to win this fight against <NavLink to="/universe/girl/2012_2013/darya-balina">Darya
+        Balina</NavLink> (the female self-defense Club "Panther", St. Petersburg, 5'4" / 124 lb). While Darya had good
+        kickboxing skills, she was less confident in wrestling due to her combat training focus on self-defense. The
+        fight format was three four-minute rounds with one-minute rest periods between them.
       </p>
       <ButtonGallery
         index={index5}
@@ -129,19 +128,16 @@ export const KaraTeller = () => {
         buttonName={buttonText}
       />
       <p>
-        The fight format was three four minute rounds with a rest period of one minute between them. But it took Kara
-        only two rounds to gain a victory.<br/>
-        The first round was fought in stand up. Kara was better with her striking. In the second round the fight came to
-        the ground, where Kara again took advantage of Darya and finished her off with a choke (the way of finishing an
-        opponent off that has already become Kara’s beloved tradition).
+        It took Kara only two rounds to secure victory. The first round was fought in stand-up, with Kara showing
+        superior striking. In the second round, the fight went to the ground where Kara again took advantage and
+        finished Darya with a choke hold, a method that has become Kara's trademark.
       </p>
-      <h4><u>Kara Teller in Submission Grappling fights</u></h4>
+      <h4><u>Kara Teller in Submission Grappling Fights</u></h4>
       <h4>Kara vs Svetlana Solovyova. 2012</h4>
       <img className={sC.videosMainImg} src={imgMain5} alt="imgMain"/>
       <p>
-        The girls had two fights with each other. The first one was a short MMA fight that lasted a little more than a
-        minute. After having finished it, they had decided to test their strengths in the second one. This time the
-        rules were submission grappling on the ground, with a certain time limit set for the fight.
+        The girls had two fights with each other. The first was a short MMA fight lasting just over a minute. Afterward,
+        they decided to test their strengths again under submission grappling rules, with a set time limit.
       </p>
       <ButtonGallery
         index={index6}
@@ -153,20 +149,18 @@ export const KaraTeller = () => {
         buttonName={buttonText}
       />
       <p>
-        As the opponents were in about the same weight class, their contest was interesting and intriguing. Svetlana
-        (St. Petersburg, 5’7” / 124 lb) was physically more powerful and spent the majority of the fight on top of Kara,
-        while Kara, being on her back, used a head scissors in the defense, struggling to get control of Svetlana’s arm
-        from the bottom position, trying to apply a painful submission hold. However, the time went on and nobody seemed
-        to be able to earn the victory. Svetlana showed an evident lack of wrestling skill, while Kara wasn’t strong
-        enough to successfully counterattack. Eventually, the girls got tired, especially Svetlana, and the fight was
-        stopped with no winner. It was a <b>draw</b>.
+        Both were in the same weight class, making their contest interesting and intriguing. Svetlana (St. Petersburg,
+        5'7" / 124 lb) was physically more powerful and spent most of the fight on top of Kara. Kara, on her back, used
+        a head scissors in defense and struggled to control Svetlana’s arm from the bottom, attempting a submission
+        hold. However, neither could secure a victory within the time limit. Svetlana's lack of wrestling skill and
+        Kara’s insufficient strength for a successful counterattack led to a <b>draw</b>.
       </p>
-      <h4><u>Results for 2012 MMA Tournaments </u></h4>
-      <p>Win-loss-draw record – 4:3:0 (for July 1, 2012)</p>
+      <h4><u>Results for 2012 MMA Tournaments</u></h4>
+      <p>Win-loss-draw record: 4:3:0 (as of July 1, 2012)</p>
       <hr/>
       <p>
-        In our store on <a href="https://gumroad.com/namazonclub">Gumroad</a> you can purchase full videos of Kara’s MMA
-        fights held in the Namazon Club (Videos 9, 17, 18 and 20).
+        In our store on <a href="https://gumroad.com/namazonclub">Gumroad</a>, you can purchase full videos of Kara’s
+        MMA fights held at the Namazon Club (Videos 9, 17, 18, and 20).
       </p>
     </>
   )

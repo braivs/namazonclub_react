@@ -21,7 +21,7 @@ export const Video37 = () => {
         Weight class: 145 to 160 lb. May, 2014</h4>
       <p>
         This video is a continuation of the Video 36 that featured the preliminary fights (see its
-        description <NavLink to="/universe/videos/36">HERE</NavLink>). Now here you can see two final fights in
+        description <NavLink to="/universe/video/36">HERE</NavLink>). Now here you can see two final fights in
         which the loser and the winner of the tournament
         were determined.
       </p>
@@ -47,7 +47,7 @@ export const Video37 = () => {
       <p>We recommend this video for those of you who like real female wrestling and young sexy-looking girls with
         competitive spirit. You will find it especially entertaining if you are interested to see a fight in
         which one of the two girls grappling on the mat continuously struggles to pin her opponent down and
-        finally succeeds after long hard attempts</p>
+        finally succeeds after long hard attempts.</p>
       <hr/>
       <p>You can buy <b>VIDEO {videoNumber}</b> on <a href="https://gumroad.com/namazonclub">Gumroad</a>.</p>
     </div>

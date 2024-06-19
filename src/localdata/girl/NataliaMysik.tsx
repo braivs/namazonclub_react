@@ -11,36 +11,35 @@ export const NataliaMysik = () => {
     const gallery1 = useGallery(DirNataliaMysikSubgr)
 
     return (
-        <>
-            <h4>NATALIA MYSIK</h4>
-            <MainImg imgMain={imgMain}/>
-            <p><b>Natalia Mysik</b> ( 5'11" / 154 lb ) - the participant of club's tournaments on SUBMISSION
-                GRAPPLING.<br/>
-                She is a winner of the tournament on submission grappling "Christmas Cup 2011".</p>
-            <CustomButtonGallery gallery={gallery1} buttonName="SUBMISSION GRAPPLING"/>
-            <h4><u>Results of fights</u></h4>
-            <Table bordered>
-                <tr>
-                    <th>Natalia Mysik vs Maria Rylyova</th>
-                    <th>Natalia Mysik vs Valentina Perfilyeva</th>
-                </tr>
-                <tr>
-                    <td><NavLink to="/universe/video/12">VIDEO 12. Submission grappling. Tournament. April, 2010</NavLink></td>
-                    <td><NavLink to="/universe/video/4">VIDEO 4. "Christmas Cup 2011". Tournament on Submission Grappling</NavLink></td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td><NavLink to="/universe/video/12">VIDEO 12. Submission grappling. Tournament. April, 2010</NavLink></td>
-                </tr>
-            </Table>
-            <Table bordered>
-                <tr>
-                    <th>Natalia Mysik vs Ksenia Voloshina</th>
-                </tr>
-                <tr>
-                    <td><NavLink to="/universe/video/4">VIDEO 4. "Christmas Cup 2011". Tournament on Submission Grappling</NavLink></td>
-                </tr>
-            </Table>
-        </>
+      <>
+        <h4>Natalia Mysik</h4>
+        <MainImg imgMain={imgMain}/>
+        <p><b>Natalia Mysik</b> (5'11" / 154 lb) - a participant in the club's tournaments on Submission Grappling.<br/>
+          She is the winner of the "Christmas Cup 2011" tournament in Submission Grappling.</p>
+        <CustomButtonGallery gallery={gallery1} buttonName="Submission grappling"/>
+        <h4><u>Results of Fights</u></h4>
+        <Table bordered>
+          <tr>
+            <th>Natalia Mysik vs. Maria Rylyova</th>
+            <th>Natalia Mysik vs. Valentina Perfilyeva</th>
+          </tr>
+          <tr>
+            <td><NavLink to="/universe/video/12">VIDEO 12. Submission grappling. Tournament. April, 2010</NavLink></td>
+            <td><NavLink to="/universe/video/4">VIDEO 4. "Christmas Cup 2011". Tournament on Submission Grappling</NavLink></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td><NavLink to="/universe/video/12">VIDEO 12. Submission grappling. Tournament. April, 2010</NavLink></td>
+          </tr>
+        </Table>
+        <Table bordered>
+          <tr>
+            <th>Natalia Mysik vs. Ksenia Voloshina</th>
+          </tr>
+          <tr>
+            <td><NavLink to="/universe/video/4">VIDEO 4. "Christmas Cup 2011". Tournament on Submission Grappling</NavLink></td>
+          </tr>
+        </Table>
+      </>
     )
 }
