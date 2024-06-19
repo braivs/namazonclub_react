@@ -68,107 +68,107 @@ export const cardsWrestling: Array<CardType> = [
         imgRef: nc46,
     },
     {
-        id: 44,
+        id: 'NC44',
         title: 'The Maslenitsa Festival, 2015-2017\nPins-and-Submissions Wrestling',
         imgRef: power2016,
     },
     {
-        id: 42,
+        id: 'NC42',
         title: 'Submission Grappling\nTournament. Part 2. 2014',
         imgRef: video42,
     },
     {
-        id: 41,
+        id: 'NC41',
         title: 'Submission Grappling\nTournament. Part 1. 2014',
         imgRef: video41,
     },
     {
-        id: 37,
+        id: 'NC37',
         title: 'Tournament between beginners\nPart 2. Final fights. 2014',
         imgRef: video37,
     },
     {
-        id: 36,
+        id: 'NC36',
         title: 'Tournament between beginners\nPart 1. Preliminary fights. 2014',
         imgRef: video36,
     },
     {
-        id: 35,
+        id: 'NC35',
         title: 'Lidiya Oslopovskih vs Tais\nPins matches. 2013',
         imgRef: video35,
     },
     {
-        id: 33,
+        id: 'NC33',
         title: 'Crossfit tournament\nSubmission Grappling. 2013',
         imgRef: video33,
     },
     {
-        id: 29,
+        id: 'NC29',
         title: 'Elena Vasilyeva vs Tais\nSubmission Grappling. 2013',
         imgRef: video29,
     },
     {
-        id: 27,
+        id: 'NC27',
         title: 'Female Beach Wrestling\nPart 2. June, 2011',
         imgRef: video27,
     },
     {
-        id: 26,
+        id: 'NC26',
         title: 'Female Beach Wrestling\nPart 2. June, 2011',
         imgRef: video26,
     },
     {
-        id: 24,
+        id: 'NC24',
         title: 'Lyudmila vs Tais\nSubmission Grappling. 2011',
         imgRef: video24,
     },
     {
-        id: 23,
+        id: 'NC23',
         title: 'Irina (Vlasta) vs Tais\nSubmission Grappling. 2011',
         imgRef: video23,
     },
     {
-        id: 19,
+        id: 'NC19',
         title: 'Varvara Akulova vs Tais\nSubmission Grappling. 2012',
         imgRef: video19,
     },
     {
-        id: 16,
+        id: 'NC16',
         title: 'Elena Vasilyeva vs Tais\nSubmission Grappling. 2011',
         imgRef: video16,
     },
     {
-        id: 12,
+        id: 'NC12',
         title: 'Submission Grappling\nTournament.  April,  2010',
         imgRef: video12,
     },
     {
-        id: 8,
+        id: 'NC08',
         title: 'Women\'s Beach Tournament\nSubmission Grappling.  2011',
         imgRef: video8,
     },
     {
-        id: 6,
+        id: 'NC06',
         title: 'Maria Rylyova  vs Tais\nArmwrestling and Wrestling',
         imgRef: video6,
     },
     {
-        id: 4,
+        id: 'NC04',
         title: 'Submission Grappling\n"Christmas Cup  2011"',
         imgRef: video4,
     },
     {
-        id: 3,
+        id: 'NC03',
         title: 'Beach Wrestling\nMixed Tournament.  2010',
         imgRef: video3,
     },
     {
-        id: 2,
+        id: 'NC02',
         title: 'Submission Grappling\nPart 2.  June,  2010',
         imgRef: video2,
     },
     {
-        id: 1,
+        id: 'NC01',
         title: 'Submission Grappling\nPart 1.  June,  2010',
         imgRef: video1,
     },
@@ -176,27 +176,27 @@ export const cardsWrestling: Array<CardType> = [
 
 export const cardsMMA: Array<CardType> = [
     {
-        id: 9,
+        id: 'NC9',
         title: 'MMA tournament\n“Christmas Cup 2012”',
         imgRef: video9,
     },
     {
-        id: 17,
+        id: 'NC17',
         title: 'MMA and Submission\nGrappling. February, 2012',
         imgRef: video17,
     },
     {
-        id: 18,
+        id: 'NC18',
         title: 'MMA. Kara Teller vs Darya\nBalina and Tais.  May, 2012',
         imgRef: video18,
     },
     {
-        id: 20,
+        id: 'NC20',
         title: 'MMA. Kara Teller vs Darya\nBalina and Tais.  May, 2012',
         imgRef: video20,
     },
     {
-        id: 21,
+        id: 'NC21',
         title: 'MMA. Darya Balina vs\nOlga. July, 2012',
         imgRef: video21,
     },
@@ -204,7 +204,7 @@ export const cardsMMA: Array<CardType> = [
 
 export const cardsBoxing: Array<CardType> = [
     {
-        id: 13,
+        id: 'NC13',
         title: 'V.Perfilyeva  vs  N.Ahmerova\nKickboxing. 2011',
         imgRef: video13,
     }
@@ -212,92 +212,92 @@ export const cardsBoxing: Array<CardType> = [
 
 export const cardsMix: Array<CardType> = [
     {
-        id: '3wm',
+        id: 'NC03wm',
         title: 'Beach Wrestling\nMixed Tournament. 2010',
         imgRef: video3wm,
     },
     {
-        id: 5,
+        id: 'NC05',
         title: 'Villian  vs  Tais\nMixed Wrestling. 2011',
         imgRef: video5,
     },
     {
-        id: 7,
+        id: 'NC07',
         title: 'Alex  vs  Tais\nExtreme fight. 2011',
         imgRef: video7,
     },
     {
-        id: 10,
+        id: 'NC10',
         title: 'Mixed Wrestling\nBest Fights. Part 1. 2011',
         imgRef: video10,
     },
     {
-        id: 11,
+        id: 'NC11',
         title: 'Alex  vs  Elena\nBeach Wrestling. 2011',
         imgRef: alexElena,
     },
     {
-        id: 14,
+        id: 'NC14',
         title: 'Two men against one\nwoman. Part 1. 2011',
         imgRef: video14,
     },
     {
-        id: 15,
+        id: 'NC15',
         title: 'Two men against one\nwoman. Part 2. 2011',
         imgRef: video15,
     },
     {
-        id: 22,
+        id: 'NC22',
         title: 'Irina and Elena vs Villian\nMixed Wrestling. 2011',
         imgRef: video22,
     },
     {
-        id: 25,
+        id: 'NC25',
         title: 'Mixed Wrestling\nBest Fights. Part 2. 2011',
         imgRef: video25,
     },
     {
-        id: 28,
+        id: 'NC28',
         title: 'Mixed Wrestling\nBest Fights. Part 3. 2011',
         imgRef: video28,
     },
     {
-        id: 30,
+        id: 'NC30',
         title: 'Mixed Wrestling\nBest Fights. Part 4. 2013',
         imgRef: video30,
     },
     {
-        id: '31_1',
+        id: 'NC31_1',
         title: 'Mixed Wrestling\nBest Fights. Part 5.1. 2013',
         imgRef: video31_1,
     },
     {
-        id: '31_2',
+        id: 'NC31_2',
         title: 'Mixed Wrestling\nBest Fights. Part 5.2. 2013',
         imgRef: video31_2,
     },
     {
-        id: 32,
+        id: 'NC32',
         title: 'Mixed Wrestling\nArtem vs Tais. 2013',
         imgRef: video32,
     },
     {
-        id: 34,
+        id: 'NC34',
         title: 'Mixed Wrestling\nArtem vs Tais. 2013',
         imgRef: video34,
     },
     {
-        id: 38,
+        id: 'NC38',
         title: 'Mixed Wrestling\nAlexander vs Tais. 2014',
         imgRef: video38,
     },
     {
-        id: 39,
+        id: 'NC39',
         title: 'Mixed Wrestling\nVillian vs Tais. Part 1. 2014',
         imgRef: video39,
     },
     {
-        id: 40,
+        id: 'NC40',
         title: 'Mixed Wrestling\nVillian vs Tais. Part 2. 2014',
         imgRef: video40,
     },
@@ -316,5 +316,4 @@ export const cardsMix: Array<CardType> = [
         title: 'Tais vs Braivs collection\n2014-2017',
         imgRef: nc50,
     }
-
 ]

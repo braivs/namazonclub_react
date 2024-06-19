@@ -25,7 +25,7 @@ export const CardComponent = (props: CardComponentType) => {
             <NavLink to={toLink(props)}>
                 <Card.Body className={s.cardBody}>
                     {(props.variant === 'video'
-                        ? 'VIDEO ' + props.id + '\n' : '')
+                        ? props.id + '\n' : '')
                         + props.title}
                 </Card.Body>
             </NavLink>
