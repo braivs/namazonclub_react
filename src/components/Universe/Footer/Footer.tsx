@@ -13,7 +13,7 @@ export function Footer() {
             </div>
             <div className="row">
                 <div className="col-12 text-center">
-                    <p>©Club of single combats for women "Namazon"</p>
+                    <p>© Namazon club</p>
                     <p className={s.socialMy}><span>Site created by Braivs</span><span><a
                         href="https://t.me/namazonclub"><img
                         src={socialTelegramColor} alt=""/></a></span><span>in 2023</span></p>
