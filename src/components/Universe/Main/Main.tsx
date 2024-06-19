@@ -15,7 +15,7 @@ export function Main() {
   return (
     <main className={s.main}>
         <Routes>
-            <Route path="home" element={<Home/>}/>
+            <Route path="/" element={<Home/>}/>
             <Route path="contactus" element={<ContactUs/>}/>
             <Route path="videos/:cardsVariant" element={<Videos/>}/>
             <Route path="girls/:cardsVariant" element={<Girls/>}/>

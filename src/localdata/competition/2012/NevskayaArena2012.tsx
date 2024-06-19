@@ -22,8 +22,8 @@ export const NevskayaArena2012 = () => {
       </p>
       <p>
         The inaugural Nevsky Arena took place in Park Sosnovka on July 1, 2012. Participants included: <NavLink
-        to="/universe/girl/2012_2013/kara-teller">Kara Teller</NavLink> (Vityaz Club, Moscow, 5'7" / 123 lb), <NavLink
-        to="/universe/girl/2012_2013/darya-balina">Darya Balina</NavLink> (Panther Female Self-Defense Club, St.
+        to="/girl/2012_2013/kara-teller">Kara Teller</NavLink> (Vityaz Club, Moscow, 5'7" / 123 lb), <NavLink
+        to="/girl/2012_2013/darya-balina">Darya Balina</NavLink> (Panther Female Self-Defense Club, St.
         Petersburg,
         5'4" / 124 lb), <b>Yulia Fedutenko</b> (Tibron Mixed Martial Arts Club, St. Petersburg, 5'8" / 130 lb), and
         newcomer

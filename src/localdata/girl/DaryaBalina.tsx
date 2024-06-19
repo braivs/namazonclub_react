@@ -28,7 +28,7 @@ export const DaryaBalina = () => {
           <b>Darya Balina</b> is a young fighter from St. Petersburg (5’4” / 124 lb). She trains in martial arts at the female self-defense club "Panther". At the Namazon Club, she had a pair of hard-fought MMA fights where she displayed stamina and a will to win. In her last fight there, Darya faced an opponent who exceeded her weight by about 15 pounds. Despite this disadvantage, she was able to avoid defeat.
         </p>
         <p>
-          The first MMA fight that Darya Balina had at the Namazon Club was against our guest from Moscow, <NavLink to="/universe/girl/2012_2013/kara-teller">Kara Teller</NavLink> (5’7” / 123 lb). It went two rounds with the more experienced Kara prevailing, winning by a choke in the middle of the second round.
+          The first MMA fight that Darya Balina had at the Namazon Club was against our guest from Moscow, <NavLink to="/girl/2012_2013/kara-teller">Kara Teller</NavLink> (5’7” / 123 lb). It went two rounds with the more experienced Kara prevailing, winning by a choke in the middle of the second round.
         </p>
         <ButtonGallery
           index={index}

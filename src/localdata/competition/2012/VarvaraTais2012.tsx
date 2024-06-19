@@ -25,7 +25,7 @@ export const VarvaraTais2012 = () => {
         has achieved these results without the use of any steroids, which is very rare in the strength sports.
       </p>
       <p>
-        <NavLink to="/universe/girl/2012_2013/tais2012-2013">Tais</NavLink> is the leader of the Namazon Club. She
+        <NavLink to="/girl/2012_2013/tais2012-2013">Tais</NavLink> is the leader of the Namazon Club. She
         specializes in wrestling
         and MMA. In this fight Varvara has a significant advantage in weight (about 15 kg / 33 lb) and in strength, but
         Tais is more experienced and technically skilled.

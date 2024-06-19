@@ -48,13 +48,13 @@ export const ValentinaPerfileva = () => {
           <th>Valentina Perfilyeva vs Natalia Mysik</th>
         </tr>
         <tr>
-          <td><NavLink to="/universe/video/12">VIDEO 12. Submission grappling. Tournament. April, 2010</NavLink></td>
-          <td><NavLink to="/universe/video/4">VIDEO 4. "Christmas Cup 2011". Tournament on Submission
+          <td><NavLink to="/video/12">VIDEO 12. Submission grappling. Tournament. April, 2010</NavLink></td>
+          <td><NavLink to="/video/4">VIDEO 4. "Christmas Cup 2011". Tournament on Submission
             Grappling</NavLink></td>
         </tr>
         <tr>
           <td></td>
-          <td><NavLink to="/universe/video/12">VIDEO 12. Submission grappling. Tournament. April, 2010</NavLink></td>
+          <td><NavLink to="/video/12">VIDEO 12. Submission grappling. Tournament. April, 2010</NavLink></td>
         </tr>
       </Table>
       <Table bordered>
@@ -63,9 +63,9 @@ export const ValentinaPerfileva = () => {
           <th>Valentina Perfilyeva vs Nadezhda Akhmerova</th>
         </tr>
         <tr>
-          <td><NavLink to="/universe/video/4">VIDEO 4. "Christmas Cup 2011". Tournament on Submission
+          <td><NavLink to="/video/4">VIDEO 4. "Christmas Cup 2011". Tournament on Submission
             Grappling</NavLink></td>
-          <td><NavLink to="/universe/video/13">VIDEO 13. Kickboxing. Nadezhda Akhmerova vs Valentina Perfilyeva.
+          <td><NavLink to="/video/13">VIDEO 13. Kickboxing. Nadezhda Akhmerova vs Valentina Perfilyeva.
             2011</NavLink></td>
         </tr>
       </Table>

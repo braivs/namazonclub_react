@@ -29,7 +29,7 @@ export const ElenaVasileva2013 = () => {
         <p>
           The most memorable of all Elena’s fights is likely her MMA fight held as part of the
           Christmas Cup Tournament 2012, where she fought against our guest from Moscow,
-          <NavLink to="/universe/girl/2012_2013/kara-teller"> Kara Teller</NavLink> (5'7" / 119 lb).<br/>
+          <NavLink to="/girl/2012_2013/kara-teller"> Kara Teller</NavLink> (5'7" / 119 lb).<br/>
           If not counting multiple sparring MMA matches, her fight with Kara in that tournament was Elena’s debut
           in MMA competitions.<br/>
           The fight consisted of 3 rounds, each lasting 4 minutes with 1 minute of rest between each round. Elena

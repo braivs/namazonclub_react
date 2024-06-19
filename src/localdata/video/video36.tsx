@@ -29,7 +29,7 @@ export const Video36 = () => {
       <p>
         All the girls except Victoria Vardugina, who has already wrestled once before at the Namazon Club, are
         beginners in submission grappling and are participating here for the first time.<br/>
-        About half a year ago, in October 2013, Vika won a women's <NavLink to="/universe/videos/33">crossfit
+        About half a year ago, in October 2013, Vika won a women's <NavLink to="/video/33">crossfit
         wrestling</NavLink> competition in our club by forcing the uncompromising wrestler Lidiya Oslopovskih
         to submit in the final fight. Vika is a physically strong young woman who not only learns how to wrestle
         but also competes successfully in college arm wrestling tournaments.

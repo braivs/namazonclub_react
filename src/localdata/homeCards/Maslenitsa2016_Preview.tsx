@@ -5,7 +5,7 @@ import {NavLink} from "react-router-dom"
 export const Maslenitsa2016_Preview = () => {
   return (
     <>
-      <NavLink to={'/universe/competition/2015-2017/maslenitsa-2016'}>
+      <NavLink to={'/competition/2015-2017/maslenitsa-2016'}>
         <h3>Female Power Competitions for the Maslenitsa Festival, 2016</h3>
       </NavLink>
       <img src={power2016} alt=""/>
@@ -13,7 +13,7 @@ export const Maslenitsa2016_Preview = () => {
         March 10th. It was held in three categories: armwrestling, leg-wrestling, and pins-and-submissions wrestling,
         where a wrestler could win a fight by either submission or pin. There were three participants in total who
         competed in the same weight category - up to 60 kg.</p>
-      <NavLink to={'/universe/competition/2015-2017/maslenitsa-2016'}>
+      <NavLink to={'/competition/2015-2017/maslenitsa-2016'}>
         <button type="button">Read more...</button>
       </NavLink>
     </>

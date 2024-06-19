@@ -57,7 +57,7 @@ export const Tais2013 = () => {
       <img className={sC.videosMainImg} src={imgMain2} alt="imgMain"/>
       <p>
         The fight was scheduled for 3 four-minute rounds with a one-minute rest period between each round. Tais
-        defeated <NavLink to="/universe/girl/2012_2013/elena-vasileva2013">Lena</NavLink> (5'6" / 132 lb) already in
+        defeated <NavLink to="/girl/2012_2013/elena-vasileva2013">Lena</NavLink> (5'6" / 132 lb) already in
         the first round.
       </p>
       <ButtonGallery
@@ -74,7 +74,7 @@ export const Tais2013 = () => {
       <h4>Tais vs Kara Teller. 2012</h4>
       <img className={sC.videosMainImg} src={imgMain3} alt="imgMain"/>
       <p>
-        In 2012, Tais fought three times against <NavLink to="/universe/girl/2012_2013/kara-teller">Kara
+        In 2012, Tais fought three times against <NavLink to="/girl/2012_2013/kara-teller">Kara
         Teller</NavLink>
         (5'7" / 119 lb), winning two matches by fall. In the third fight, she was disqualified for arguing with the
         referee, and Kara was declared the winner.<br/>
@@ -106,7 +106,7 @@ export const Tais2013 = () => {
       <img className={sC.videosMainImg} src={imgMain4} alt="imgMain4"/>
       <p><b>Tais</b> vs <b>Varvara Akulova</b></p>
       <p>In June 2013, Tais faced her old rival <NavLink
-        to="/universe/girl/2012_2013/elena-vasileva2013">Elena Vasilyeva</NavLink> (5'7" / 157 lb), who had been
+        to="/girl/2012_2013/elena-vasileva2013">Elena Vasilyeva</NavLink> (5'7" / 157 lb), who had been
         away from the Namazon Club for nearly two years, during which she gained weight, strength, and improved
         wrestling abilities.<br/>
         It was a hard-fought and fairly even match, with submissions coming from both sides. After over 20 minutes of

@@ -17,7 +17,7 @@ export const MMA2012 = () => {
       <h4>MMA and Submission Grappling: Kara against Svetlana and Tais</h4>
       <MainImg imgMain={imgMain}/>
       <p>
-        The participants in the fights were <NavLink to="/universe/girl/2012_2013/kara-teller">Kara
+        The participants in the fights were <NavLink to="/girl/2012_2013/kara-teller">Kara
         Teller</NavLink> (Moscow, 5’7” / 121 lb) and Svetlana Solovyova (St. Petersburg, 5’7” / 124 lb). Kara is a
         familiar
         face in competitions in St. Petersburg, known for her "street fight" style. Svetlana, on the other hand, excels

@@ -5,7 +5,7 @@ import {NavLink} from "react-router-dom"
 export function Mixwrestling() {
   return (
     <>
-      <NavLink to={'/universe/articles/mix'}>
+      <NavLink to={'/articles/mix'}>
         <h3>Mixed Wrestling (Mixwrestling)</h3>
       </NavLink>
       <img src={mw} alt=""/>
@@ -15,7 +15,7 @@ export function Mixwrestling() {
         wrestling is also practiced with us. In this case, the competitors for the fights are selected based on their
         weight categories and physical strength.
       </p>
-      <NavLink to={'/universe/articles/mix'}>
+      <NavLink to={'/articles/mix'}>
         <button type="button">Read more...</button>
       </NavLink>
 

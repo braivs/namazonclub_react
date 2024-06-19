@@ -24,12 +24,12 @@ export const NataliaMysik = () => {
             <th>Natalia Mysik vs. Valentina Perfilyeva</th>
           </tr>
           <tr>
-            <td><NavLink to="/universe/video/12">VIDEO 12. Submission grappling. Tournament. April, 2010</NavLink></td>
-            <td><NavLink to="/universe/video/4">VIDEO 4. "Christmas Cup 2011". Tournament on Submission Grappling</NavLink></td>
+            <td><NavLink to="/video/12">VIDEO 12. Submission grappling. Tournament. April, 2010</NavLink></td>
+            <td><NavLink to="/video/4">VIDEO 4. "Christmas Cup 2011". Tournament on Submission Grappling</NavLink></td>
           </tr>
           <tr>
             <td></td>
-            <td><NavLink to="/universe/video/12">VIDEO 12. Submission grappling. Tournament. April, 2010</NavLink></td>
+            <td><NavLink to="/video/12">VIDEO 12. Submission grappling. Tournament. April, 2010</NavLink></td>
           </tr>
         </Table>
         <Table bordered>
@@ -37,7 +37,7 @@ export const NataliaMysik = () => {
             <th>Natalia Mysik vs. Ksenia Voloshina</th>
           </tr>
           <tr>
-            <td><NavLink to="/universe/video/4">VIDEO 4. "Christmas Cup 2011". Tournament on Submission Grappling</NavLink></td>
+            <td><NavLink to="/video/4">VIDEO 4. "Christmas Cup 2011". Tournament on Submission Grappling</NavLink></td>
           </tr>
         </Table>
       </>

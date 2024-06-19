@@ -21,7 +21,7 @@ export const Video37 = () => {
         Weight class: 145 to 160 lb. May, 2014</h4>
       <p>
         This video is a continuation of the Video 36 that featured the preliminary fights (see its
-        description <NavLink to="/universe/video/36">HERE</NavLink>). Now here you can see two final fights in
+        description <NavLink to="/video/36">HERE</NavLink>). Now here you can see two final fights in
         which the loser and the winner of the tournament
         were determined.
       </p>

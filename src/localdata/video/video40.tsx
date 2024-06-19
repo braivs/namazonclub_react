@@ -22,7 +22,7 @@ export const Video40 = () => {
       <h3>VIDEO {videoNumber}</h3>
       <h4>Mixed wrestling. Villian vs Tais. Part 2. 2014</h4>
       <p>
-        <b>VIDEO {videoNumber}</b> is the continuation of <NavLink to="/universe/videos/39">VIDEO 39</NavLink>. Here you
+        <b>VIDEO {videoNumber}</b> is the continuation of <NavLink to="/video/39">VIDEO 39</NavLink>. Here you
         can see six more wrestling fights between <b>Villian</b> (180 lb) and <b>Tais</b> (136 lb), which took place in
         2014. The two competitors knew each other very well, having wrestled each other many times over the years,
         resulting in always aggressive and competitive fights.

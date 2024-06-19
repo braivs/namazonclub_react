@@ -21,7 +21,7 @@ export const Grappling2014 = () => {
       <h4>Submission Grappling Tournament for the prize of the Namazon Club. October, 2014</h4>
       <p>
         Three girls participated in this October grappling tournament. Two of them had previously competed against each
-        other in <NavLink to="/universe/competition/2013_2014/tournament-2014">the grappling tournament for
+        other in <NavLink to="/competition/2013_2014/tournament-2014">the grappling tournament for
         beginners</NavLink>
         held on May 9, 2014, at the club. Once again, Victoria Vardugina (144 lb) emerged as the winner. Christina
         Shvets
@@ -83,7 +83,7 @@ export const Grappling2014 = () => {
       <h5><u>Victoria Vardugina vs Christina Shvets</u></h5>
       <p>
         Christina and Victoria had faced each other five months earlier in <NavLink
-        to="/universe/competition/2013_2014/tournament-2014">the grappling tournament for beginners</NavLink>, where
+        to="/competition/2013_2014/tournament-2014">the grappling tournament for beginners</NavLink>, where
         Victoria emerged victorious after a hard-fought match. Since then, Christina had dedicated herself to training,
         improving her wrestling skills, strength, and experience, transforming herself into a formidable fighter and a
         dangerous opponent for others on the mat. Meanwhile, Victoria had reduced her weight, leading to an 8-pound

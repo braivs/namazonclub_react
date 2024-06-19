@@ -26,9 +26,9 @@ export const KseniyaVoloshina = () => {
           <th>Ksenia Voloshina vs. Valentina Perfilyeva</th>
         </tr>
         <tr>
-          <td><NavLink to="/universe/video/4">VIDEO 4. "Christmas Cup 2011". Tournament on Submission
+          <td><NavLink to="/video/4">VIDEO 4. "Christmas Cup 2011". Tournament on Submission
             Grappling</NavLink></td>
-          <td><NavLink to="/universe/video/4">VIDEO 4. "Christmas Cup 2011". Tournament on Submission
+          <td><NavLink to="/video/4">VIDEO 4. "Christmas Cup 2011". Tournament on Submission
             Grappling</NavLink></td>
         </tr>
       </Table>

@@ -29,7 +29,7 @@ export const Video42 = () => {
         </Col>
       </Row>
       <p>This was their second encounter. The first was at a <NavLink
-        to="/universe/videos/36">tournament for beginners held on May 9th of that year</NavLink>, where Victoria emerged
+        to="/video/36">tournament for beginners held on May 9th of that year</NavLink>, where Victoria emerged
         victorious. Here they were again on the same mat, with Christina determined for a rematch!</p>
       <p>
         According to the rules, to win an individual fight, it was necessary to either submit the opponent or pin

@@ -73,7 +73,7 @@ export const KaraTeller = () => {
       <p>
         This was an intense fight with numerous punches, kicks, throws, and ground wrestling. The match had three
         four-minute rounds with four-minute breaks between each round. <NavLink
-        to="/universe/girl/2012_2013/elena-vasileva2013">Elena</NavLink> (St. Petersburg, 5'6" / 132 lb) dominated the
+        to="/girl/2012_2013/elena-vasileva2013">Elena</NavLink> (St. Petersburg, 5'6" / 132 lb) dominated the
         first two rounds, giving Kara a very hard time.
       </p>
       <ButtonGallery
@@ -113,7 +113,7 @@ export const KaraTeller = () => {
       <h4>Kara vs Darya Balina. 2012</h4>
       <img className={sC.videosMainImg} src={imgMain4} alt="imgMain"/>
       <p>
-        Kara was the favorite to win this fight against <NavLink to="/universe/girl/2012_2013/darya-balina">Darya
+        Kara was the favorite to win this fight against <NavLink to="/girl/2012_2013/darya-balina">Darya
         Balina</NavLink> (the female self-defense Club "Panther", St. Petersburg, 5'4" / 124 lb). While Darya had good
         kickboxing skills, she was less confident in wrestling due to her combat training focus on self-defense. The
         fight format was three four-minute rounds with one-minute rest periods between them.

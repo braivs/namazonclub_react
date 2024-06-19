@@ -96,15 +96,15 @@ export const Tais2011 = () => {
           <th>Tais vs. Nadezhda Akhmerova</th>
         </tr>
         <tr>
-          <td><NavLink to="/universe/video/1">VIDEO 1. Submission grappling. Tournament. Part 1. June, 2010</NavLink></td>
-          <td><NavLink to="/universe/video/1">VIDEO 1. Submission grappling. Tournament. Part 1. June, 2010</NavLink></td>
+          <td><NavLink to="/video/1">VIDEO 1. Submission grappling. Tournament. Part 1. June, 2010</NavLink></td>
+          <td><NavLink to="/video/1">VIDEO 1. Submission grappling. Tournament. Part 1. June, 2010</NavLink></td>
         </tr>
         <tr>
-          <td><NavLink to="/universe/video/2">VIDEO 2. Submission grappling. Tournament. Part 2. June, 2010</NavLink></td>
-          <td><NavLink to="/universe/video/2">VIDEO 2. Submission grappling. Tournament. Part 2. June, 2010</NavLink></td>
+          <td><NavLink to="/video/2">VIDEO 2. Submission grappling. Tournament. Part 2. June, 2010</NavLink></td>
+          <td><NavLink to="/video/2">VIDEO 2. Submission grappling. Tournament. Part 2. June, 2010</NavLink></td>
         </tr>
         <tr>
-          <td><NavLink to="/universe/video/6">VIDEO 6. Maria Rylyova vs Tais. March, 2011</NavLink></td>
+          <td><NavLink to="/video/6">VIDEO 6. Maria Rylyova vs Tais. March, 2011</NavLink></td>
         </tr>
         </tbody>
       </Table>
@@ -115,11 +115,11 @@ export const Tais2011 = () => {
           <th>Tais vs. Vlasta</th>
         </tr>
         <tr>
-          <td><NavLink to="/universe/video/8">VIDEO 8. Beach Tournament. Submission grappling. June, 2011</NavLink></td>
-          <td><NavLink to="/universe/video/8">VIDEO 8. Beach Tournament. Submission grappling. June, 2011</NavLink></td>
+          <td><NavLink to="/video/8">VIDEO 8. Beach Tournament. Submission grappling. June, 2011</NavLink></td>
+          <td><NavLink to="/video/8">VIDEO 8. Beach Tournament. Submission grappling. June, 2011</NavLink></td>
         </tr>
         <tr>
-          <td><NavLink to="/universe/video/16">VIDEO 16. Youth vs Experience. Submission grappling. June, 2011</NavLink></td>
+          <td><NavLink to="/video/16">VIDEO 16. Youth vs Experience. Submission grappling. June, 2011</NavLink></td>
         </tr>
         </tbody>
       </Table>

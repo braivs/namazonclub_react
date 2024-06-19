@@ -22,7 +22,7 @@ export const Video39 = () => {
       <h3>VIDEO {videoNumber}</h3>
       <h4>Mixed wrestling. Villian vs Tais. Part 1. 2014</h4>
       <p>
-        In comparison with Alexandr, whom you can see in our <NavLink to="/universe/video/38">VIDEO
+        In comparison with Alexandr, whom you can see in our <NavLink to="/video/38">VIDEO
         38</NavLink>, <b>Villian</b> doesn’t appear as big and strong, weighing only 180 pounds. However, he compensates
         with speed, experience, and wrestling skill. In their personal matches, Villian usually emerges as the victor.
         Interestingly, despite being 44 pounds lighter than Villian, <b>Tais</b> finds it easier to fight Villian than

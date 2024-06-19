@@ -38,7 +38,7 @@ export const Tournament2014 = () => {
         lb), <b>Daria Uvarova</b> (66.5 kg / 146.6 lb), <b>Irina Dzhanaeva</b> (70.7 kg / 155.9 lb), <b>Nina
         Trofimova</b> (61.1 kg / 134.7 lb), and <b>Victoria Vardugina</b> (70.7 kg / 155.9 lb).<br/>
         For all the girls, except Victoria, this was their first experience in this type of competition. Victoria,
-        unlike them, had previously won <NavLink to="/universe/competition/2013_2014/tournament-2013">a female
+        unlike them, had previously won <NavLink to="/competition/2013_2014/tournament-2013">a female
         single combat tournament in October
         2013</NavLink> by submitting the young ambitious wrestler Lidiya Oslopovskih in the final submission grappling
         match.<br/>

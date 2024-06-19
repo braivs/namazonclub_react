@@ -21,13 +21,13 @@ export const SportHoliday2012 = () => {
         minutes. The participants in the fights:
       </p>
       <ul>
-        <li><NavLink to="/universe/girl/2012_2013/tais2012-2013"> Tais</NavLink> (St. Petersburg, 5'7" / 132 lb) – the
+        <li><NavLink to="/girl/2012_2013/tais2012-2013"> Tais</NavLink> (St. Petersburg, 5'7" / 132 lb) – the
           best fighter of the club, she had never lost before;
         </li>
-        <li><NavLink to="/universe/girl/2012_2013/kara-teller"> Kara Teller</NavLink> (Moscow, 5'7" / 119 lb) – a young
+        <li><NavLink to="/girl/2012_2013/kara-teller"> Kara Teller</NavLink> (Moscow, 5'7" / 119 lb) – a young
           promising fighter who has by now gained a victory over two girls from the Namazon Club;
         </li>
-        <li><NavLink to="/universe/girl/2012_2013/darya-balina"> Darya Balina</NavLink> (St. Petersburg, 5'4" / 124 lb)
+        <li><NavLink to="/girl/2012_2013/darya-balina"> Darya Balina</NavLink> (St. Petersburg, 5'4" / 124 lb)
           – a newcomer in our competitions, going in hard for ultimate fightings lately.
         </li>
       </ul>

@@ -32,7 +32,7 @@ export const Video44 = () => {
       <h3>VIDEO 44</h3>
       <h4>The Female Power Competition for the Maslenitsa Festival, 2016. Wrestling</h4>
       <p>You can read the report on the competitions, the main part of which was these fights, <NavLink
-        to={'/universe/competition/2015-2017/maslenitsa-2016'}>here</NavLink>. There you will find a short report on
+        to={'/competition/2015-2017/maslenitsa-2016'}>here</NavLink>. There you will find a short report on
         the fights, as well as many photos. For extra beauty, we have added a couple of photos from each fight here.
       </p>
       <Row>

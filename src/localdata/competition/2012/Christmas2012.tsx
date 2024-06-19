@@ -18,10 +18,10 @@ export const Christmas2012 = () => {
       <h4>MMA Fights. Tournament "Christmas Cup 2012"</h4>
       <MainImg imgMain={imgMain}/>
       <p>
-        Three fighters participated in the competition: <NavLink to="/universe/girl/2012_2013/elena-vasileva2013">Elena
-        Vasilyeva</NavLink> (St. Petersburg, 5’6” / 132 lb); <NavLink to="/universe/girl/2012_2013/kara-teller">Kara
+        Three fighters participated in the competition: <NavLink to="/girl/2012_2013/elena-vasileva2013">Elena
+        Vasilyeva</NavLink> (St. Petersburg, 5’6” / 132 lb); <NavLink to="/girl/2012_2013/kara-teller">Kara
         Teller</NavLink>, a newcomer from the Namazon Club (Moscow, 5’7” / 119 lb); <NavLink
-        to="/universe/girl/2012_2013/tais2012-2013">Tais</NavLink> (St. Petersburg, 5’7” / 130 lb). The tournament was held
+        to="/girl/2012_2013/tais2012-2013">Tais</NavLink> (St. Petersburg, 5’7” / 130 lb). The tournament was held
         in a single-round format where each fighter competed in two fights. Each fight consisted of three 4-minute rounds
         with a 1-minute rest between rounds.
       </p>

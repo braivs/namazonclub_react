@@ -28,8 +28,8 @@ export const IrinaVlasta = () => {
           <th>Vlasta (Irina) vs. Elena Vasilyeva</th>
         </tr>
         <tr>
-          <td><NavLink to="/universe/video/8">VIDEO 8. Beach Tournament. Submission Grappling. June, 2011</NavLink></td>
-          <td><NavLink to="/universe/video/8">VIDEO 8. Beach Tournament. Submission Grappling. June, 2011</NavLink></td>
+          <td><NavLink to="/video/8">VIDEO 8. Beach Tournament. Submission Grappling. June, 2011</NavLink></td>
+          <td><NavLink to="/video/8">VIDEO 8. Beach Tournament. Submission Grappling. June, 2011</NavLink></td>
         </tr>
       </Table>
     </>

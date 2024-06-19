@@ -41,8 +41,8 @@ export const MariyaRyljova = () => {
           <th>Maria Rylyova vs. Natalia Mysik</th>
         </tr>
         <tr>
-          <td><NavLink to="/universe/video/12">VIDEO 12. Submission grappling. Tournament. April, 2010</NavLink></td>
-          <td><NavLink to="/universe/video/12">VIDEO 12. Submission grappling. Tournament. April, 2010</NavLink></td>
+          <td><NavLink to="/video/12">VIDEO 12. Submission grappling. Tournament. April, 2010</NavLink></td>
+          <td><NavLink to="/video/12">VIDEO 12. Submission grappling. Tournament. April, 2010</NavLink></td>
         </tr>
         </tbody>
       </Table>
@@ -53,19 +53,19 @@ export const MariyaRyljova = () => {
           <th>Maria Rylyova vs. Nadezhda Akhmerova</th>
         </tr>
         <tr>
-          <td><NavLink to="/universe/video/1">VIDEO 1. Submission grappling. Tournament. Part 1. June, 2010</NavLink>
+          <td><NavLink to="/video/1">VIDEO 1. Submission grappling. Tournament. Part 1. June, 2010</NavLink>
           </td>
-          <td><NavLink to="/universe/video/1">VIDEO 1. Submission grappling. Tournament. Part 1. June, 2010</NavLink>
-          </td>
-        </tr>
-        <tr>
-          <td><NavLink to="/universe/video/2">VIDEO 2. Submission grappling. Tournament. Part 2. June, 2010</NavLink>
-          </td>
-          <td><NavLink to="/universe/video/2">VIDEO 2. Submission grappling. Tournament. Part 2. June, 2010</NavLink>
+          <td><NavLink to="/video/1">VIDEO 1. Submission grappling. Tournament. Part 1. June, 2010</NavLink>
           </td>
         </tr>
         <tr>
-          <td><NavLink to="/universe/video/6">VIDEO 6. Maria Rylyova vs. Tais. March, 2011</NavLink></td>
+          <td><NavLink to="/video/2">VIDEO 2. Submission grappling. Tournament. Part 2. June, 2010</NavLink>
+          </td>
+          <td><NavLink to="/video/2">VIDEO 2. Submission grappling. Tournament. Part 2. June, 2010</NavLink>
+          </td>
+        </tr>
+        <tr>
+          <td><NavLink to="/video/6">VIDEO 6. Maria Rylyova vs. Tais. March, 2011</NavLink></td>
         </tr>
         </tbody>
       </Table>
