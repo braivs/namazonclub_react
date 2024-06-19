@@ -14,24 +14,23 @@ export const MMA2012 = () => {
 
   return (
     <>
-      <h4>MMA and submission grappling. Kara against Svetlana and Tais</h4>
+      <h4>MMA and Submission Grappling: Kara against Svetlana and Tais</h4>
       <MainImg imgMain={imgMain}/>
       <p>
-        The participants in the fights: <NavLink to="/universe/girl/2012_2013/kara-teller"> Kara
-        Teller</NavLink> (Moscow, 5’7” / 121
-        lb) and Svetlana Solovyova (St. Petersburg, 5’7” / 124 lb). There is no need to specially introduce Kara
-        anymore. It is not for the first time that she is taking part in the competitions in St. Petersburg. You could
-        call her fighting style “street fight”. Svetlana is very strong physically. She prefers striking combat sports,
-        such as boxing or kickboxing.<br/>
-        Quite obviously, Svetlana Solovyova (St. Petersburg; 5’7” / 124 lb) was superior to Kara in physical power. For
-        example, dynamometric measures of her hand grip strength were 56.3 kg (124 lb), which was more than her own
-        weight! But on Kara’s side was her fighting experience that made up for the lack of her strength during their
-        fight.
+        The participants in the fights were <NavLink to="/universe/girl/2012_2013/kara-teller">Kara
+        Teller</NavLink> (Moscow, 5’7” / 121 lb) and Svetlana Solovyova (St. Petersburg, 5’7” / 124 lb). Kara is a
+        familiar
+        face in competitions in St. Petersburg, known for her "street fight" style. Svetlana, on the other hand, excels
+        in
+        striking combat sports like boxing and kickboxing, showcasing impressive physical strength with a hand grip
+        measure
+        exceeding her own body weight.
       </p>
       <p>
-        In the beginning, when the girls were exchanging blows and kicks in stand up, Svetlana was still able to somehow
-        withstand Kara’s attacks, but when the fight was brought to the ground, Kara’s advantage became more evident.
-        Kara won by a choke hold in 1:13.
+        Initially, during the stand-up exchanges where blows and kicks were traded, Svetlana managed to hold her own
+        against
+        Kara. However, once the fight transitioned to the ground, Kara's experience and technique became apparent. Kara
+        secured victory with a choke hold at 1:13.
       </p>
       <ButtonGallery
         index={gallery1.index}
@@ -43,17 +42,17 @@ export const MMA2012 = () => {
         buttonName={buttonText}
       />
       <p>
-        Since Kara’s fight against Svetlana was not long enough and did not exhaust the girls too much, we decided to
-        continue our sporting entertainment with an additional (not scheduled) fight in MMA
-        between <b>Kara</b> and <b>Tais</b> (St. Petersburg, 5’7” / 132 lb).
+        Since Kara's bout with Svetlana was relatively short and not too taxing for the fighters, an additional,
+        unscheduled
+        MMA fight between <b>Kara</b> and <b>Tais</b> (St. Petersburg, 5’7” / 132 lb) was arranged.
       </p>
       <p>
-        Note that this was the second time they met each other on a wrestling mat. In their previous fight, as you
-        remember, Tais defeated Kara.<br/>
-        This time the fight between them was even more aggressive and strenuous and lasted two and a half times longer.
-        Kara was even able to take over for a short while from time to time. However, this was not enough to hold out
-        too long against powerful Tais who again, as in their first fight, showed her ability to dominate and, after a
-        few minutes of struggling, finished Kara off with a choke.
+        This was their second encounter on the mat. In their previous match, Tais had emerged victorious over Kara. The
+        rematch proved even more intense and enduring, lasting significantly longer. While Kara managed to gain moments
+        of
+        control intermittently, she ultimately couldn't withstand Tais's formidable strength and grappling ability.
+        After a
+        few minutes of fierce struggle, Tais secured another victory over Kara with a choke hold.
       </p>
       <ButtonGallery
         index={gallery2.index}
@@ -65,8 +64,8 @@ export const MMA2012 = () => {
         buttonName={buttonText}
       />
       <p>
-        By the end of our sporting event, <b>Kara Teller</b> and <b>Svetlana Solovyova</b> tested their strengths in a
-        submission grappling fight with each other.
+        To conclude the event, <b>Kara Teller</b> and <b>Svetlana Solovyova</b> faced off in a submission grappling
+        match.
       </p>
       <ButtonGallery
         index={gallery3.index}
@@ -78,16 +77,21 @@ export const MMA2012 = () => {
         buttonName={buttonText}
       />
       <p>
-        The fight ended in a draw. Unfortunately, the physically more powerful Svetlana didn't have enough skill to
-        defeat Kara, while the more skillful Kara wasn’t strong enough to handle Svetlana. Though who knows, maybe if
-        the girls had not grown so tired, the outcome of their fight could have been different.
+        The match ended in a draw. Despite Svetlana's superior physical strength, Kara's skill prevented her from
+        securing
+        a victory, and Kara's technical ability was insufficient to overcome Svetlana's power. Perhaps with less
+        fatigue,
+        the outcome could have been different.
       </p>
       <hr/>
       <p>
-        In our online store on <a href="https://gumroad.com/namazonclub">Gumroad</a>, you can purchase a video that
-        includes Kara’s fights in MMA against Svetlana and Tais, and also her submission grappling fight against
-        Svetlana (<b><u>VIDEO 17.</u></b> MMA and Submission Grappling).
+        You can purchase a video featuring Kara's MMA fights against Svetlana and Tais, as well as her submission
+        grappling
+        bout with Svetlana, from our online store on <a href="https://gumroad.com/namazonclub">Gumroad</a> (<b><u>VIDEO
+        17.</u></b>
+        MMA and Submission Grappling).
       </p>
     </>
+
   )
 }

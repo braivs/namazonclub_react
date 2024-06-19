@@ -12,17 +12,17 @@ export const Christmas2011 = () => {
 
   return (
     <>
-      <h4>Submission Grappling tournament "Christmas Cup 2011"</h4>
+      <h4>Submission Grappling Tournament "Christmas Cup 2011"</h4>
       <MainImg imgMain={mainImg}/>
       <p>
-        The Submission Grappling tournament <b>"Christmas Cup 2011"</b>, organized by the Namazon Club and Kempo-Kan
-        School of Martial Arts, was held on 6 January 2011 in the sport hall of a school. It was fought in two rounds.
-        In the tournament participated: <b>Natalia Mysik</b> (5'11" / 154 lb), <b>Ksenia Voloshina</b> (5'3" / 141 lb)
+        The Submission Grappling tournament <b>"Christmas Cup 2011"</b>, organized by the Namazon Club and Kempo-Kan School
+        of Martial Arts, took place on January 6, 2011, in a school sports hall. The tournament featured two rounds and
+        included the following participants: <b>Natalia Mysik</b> (5'11" / 154 lb), <b>Ksenia Voloshina</b> (5'3" / 141 lb),
         and <b>Valentina Perfilyeva</b> (5'8" / 139 lb).<br/>
-        A feature of the competition was a big disparity in weight and height between the wrestlers. One of them
-        (Natalia) was much heavier and taller than the others. Using this advantage, she frequently put her opponents in
-        pinning holds, especially School Girl Pins, which she would then easily turn into armlocks or chokes. One of
-        these chokes even resulted in her opponent’s knockout.
+        One notable feature of the competition was the significant disparity in weight and height among the wrestlers. Natalia,
+        being much heavier and taller than her opponents, frequently utilized her size advantage to secure pinning holds,
+        especially School Girl Pins, which she would then convert into armlocks or chokes. One of these chokes even resulted
+        in her opponent being knocked out.
       </p>
       <ButtonGallery
         index={gallery1.index}
@@ -34,11 +34,10 @@ export const Christmas2011 = () => {
         buttonName={COMPETITIONS_BUTTON_TEXT}
       />
       <p>
-        Finally, Natalia became a winner. Ksenia and Valentina took 2nd and 3rd places respectively.
+        Natalia emerged victorious in the tournament, with Ksenia and Valentina taking 2nd and 3rd places respectively.
       </p>
       <p>
-        Beyond the tournament, there was a prize fight between <b>Tais</b> (5'7" / 127 lb) and <b>Natalia
-        Mysik</b> (5'11" / 154 lb).
+        Additionally, there was a prize fight between <b>Tais</b> (5'7" / 127 lb) and <b>Natalia Mysik</b> (5'11" / 154 lb).
       </p>
       <ButtonGallery
         index={gallery2.index}
@@ -50,15 +49,14 @@ export const Christmas2011 = () => {
         buttonName={COMPETITIONS_BUTTON_TEXT}
       />
       <p>
-        The tournament she had won exhausted Natalia. That helped Tais afterwards to gain a convincing victory over her.
+        Natalia, having been exhausted from her tournament victory, was convincingly defeated by Tais in their subsequent fight.
       </p>
       <hr/>
       <p>
-        If you like long pinning holds, head scissors and chokes in women’s fights, you will love the video record of
-        this tournament.<br/>
-        Do you want to know how all this was happening? Buy now on <a
-        href="https://gumroad.com/namazonclub">Gumroad</a> (<b><u>VIDEO 4.</u></b> "Christmas Cup 2011". Tournament on
-        Submission Grappling) and find out.
+        If you enjoy watching long pinning holds, head scissors, and chokes in women’s fights, you will appreciate the video
+        recording of this tournament.<br/>
+        Want to witness all the action? Purchase now on <a href="https://gumroad.com/namazonclub">Gumroad</a> (<b><u>VIDEO 4.</u></b>
+        "Christmas Cup 2011". Tournament on Submission Grappling) and experience it for yourself.
       </p>
     </>
   )

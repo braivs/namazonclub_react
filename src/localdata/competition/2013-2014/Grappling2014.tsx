@@ -18,36 +18,41 @@ export const Grappling2014 = () => {
 
   return (
     <>
-      <h4>Submission Grappling tournament for the prize of the Namazon Club. October, 2014</h4>
+      <h4>Submission Grappling Tournament for the prize of the Namazon Club. October, 2014</h4>
       <p>
-        In this October Grappling tournament participated three girls. Two of them had competed with each other
-        at <NavLink to="/universe/competition/2013_2014/tournament-2014">the grappling tournament between
-        beginners</NavLink> that took place on the 9th of May 2014 at the Club. And now, just as then, Victoria
-        Vardugina (144 lb) came out a winner. Christina Shvets (152
-        lb) now took the 2nd place (a little better than in May); and the newcomer of our competitions Zoya Doroeeva
-        (124 lb) remained on the 3rd place.
+        Three girls participated in this October grappling tournament. Two of them had previously competed against each
+        other in <NavLink to="/universe/competition/2013_2014/tournament-2014">the grappling tournament for
+        beginners</NavLink>
+        held on May 9, 2014, at the club. Once again, Victoria Vardugina (144 lb) emerged as the winner. Christina
+        Shvets
+        (152 lb) secured the 2nd place, an improvement from her previous performance in May. The newcomer to our
+        competitions,
+        Zoya Dorofeeva (124 lb), claimed the 3rd place.
       </p>
       <MainImg imgMain={imgMain}/>
       <p>
-        The fights were generally conducted under Submission Grappling rules; however, a win could be also secured by
-        pinning an opponent’s back to the mat for a 5 count pin.<br/>
-        The tournament was held in two rounds. The fights of the first round lasted for 4 minutes each. If there was no
-        winner within the regular full time, the fight was interrupted for a rest break of 2 mins, then the opponents
-        wrestled on for another two minutes.<br/>
-        In the 2nd round, after the four minutes of the regular time and two minutes of rest, the girls continued to
-        fight hard for 10 minutes of overtime!
+        The fights were conducted under Submission Grappling rules, with victories also attainable by pinning an
+        opponent's
+        back to the mat for a 5-count pin.<br/>
+        The tournament consisted of two rounds. Each fight in the first round lasted for 4 minutes. If no winner emerged
+        during the regular time, a 2-minute rest break followed, after which the fight continued for an additional two
+        minutes.<br/>
+        In the second round, after the initial four minutes and another two minutes of rest, the girls battled intensely
+        for an additional 10 minutes of overtime!
       </p>
-      <p>Below you may view some snapshots from our hot October tournament.</p>
+      <p>Below, you can view some snapshots from our intense October tournament.</p>
       <h5><u>Christina Shvets vs Zoya Dorofeeva</u></h5>
       <p>
-        Even though Zoya was a newcomer in our competitions, she was not a total beginner in combat sports. Her
-        experience included several years of training in the Russian martial arts. Hence, despite the great disparity in
-        weight (Christina - 152 lb, Zoya - 124 lb), both fights between the girls were almost evenly matched and very
-        strenuous. Suffice it to say that in the first round of their contest, during the four minutes of the regular
-        time plus two extra minutes the two opponents were not able to decide between them who would win the fight.
-        After the six mins of struggle there was still a draw.<br/>
-        However, in the 2nd round, the stronger Christina defeated Zoya by pinning her down before the end of the
-        regular time.
+        Despite being a newcomer to our competitions, Zoya was not inexperienced in combat sports. She had several years
+        of
+        training in Russian martial arts. Despite the significant weight difference (Christina - 152 lb, Zoya - 124 lb),
+        both fights between these girls were evenly matched and highly strenuous. In their first-round contest, after
+        the
+        regular four minutes plus two additional minutes, neither opponent could decide the winner, resulting in a draw
+        after six minutes of intense struggle.<br/>
+        However, in the second round, the stronger Christina secured victory over Zoya by pinning her down before the
+        end
+        of the regular time.
       </p>
       <ButtonGallery
         index={gallery1.index}
@@ -60,9 +65,11 @@ export const Grappling2014 = () => {
       />
       <h5><u>Victoria Vardugina vs Zoya Dorofeeva</u></h5>
       <p>
-        Victoria beat Zoya easily enough, choking her to submission in both rounds within the regular time. It should be
-        pointed out, though, that there were a few moments when Zoya could take over the initiative and even submit
-        Victoria, but she just wasn’t able to materialize those opportunities.
+        Victoria easily defeated Zoya, submitting her in both rounds within the regular time. It's worth noting that
+        there
+        were moments when Zoya could have taken the initiative and even submitted Victoria, but she couldn't capitalize
+        on
+        those opportunities.
       </p>
       <ButtonGallery
         index={gallery2.index}
@@ -75,18 +82,20 @@ export const Grappling2014 = () => {
       />
       <h5><u>Victoria Vardugina vs Christina Shvets</u></h5>
       <p>
-        Christina and Victoria had met each other five months ago at the <NavLink
-        to="/universe/competition/2013_2014/tournament-2014">the grappling tournament between
-        beginners</NavLink>. That time Victoria had celebrated victory in a very hard-fought match.
-        Christina had trained a lot since then, doing her best to improve in wrestling. She had gained weight, strength
-        and experience, which made her a real fighter and dangerous opponent for other girls on the wrestling mat. Vika,
-        by contrast, had reduced her weight, so by the time of their October encounter she had been outweighed by 8
-        pounds. We wondered whether Christina would be able to take advantage of it and avenge her last loss to
-        Victoria. Anyway, the fight between these two rivals promised to be an interesting one. And so it turned out to
-        be. In the first round, neither regular time nor overtime revealed the winner. It was a draw. In the 2nd round,
-        only on the 10th minute of the extra time Victoria managed to submit Christina with a choke hold.<br/>
-        By the end, both wrestlers were exhausted. The girls’ physical fitness and wrestling endurance appeared to be
-        the decisive factors here, which just added even more to this intense and exciting final bout.
+        Christina and Victoria had faced each other five months earlier in <NavLink
+        to="/universe/competition/2013_2014/tournament-2014">the grappling tournament for beginners</NavLink>, where
+        Victoria emerged victorious after a hard-fought match. Since then, Christina had dedicated herself to training,
+        improving her wrestling skills, strength, and experience, transforming herself into a formidable fighter and a
+        dangerous opponent for others on the mat. Meanwhile, Victoria had reduced her weight, leading to an 8-pound
+        difference by the time of their October rematch. We wondered if Christina could capitalize on this and avenge
+        her
+        previous loss to Victoria. The fight between these two rivals promised to be intriguing, and it lived up to
+        expectations. In the first round, neither regular time nor overtime produced a winner, resulting in a draw. In
+        the
+        second round, Victoria managed to submit Christina with a choke hold on the 10th minute of extra time.<br/>
+        By the end, both wrestlers were exhausted. Their physical conditioning and wrestling endurance were decisive
+        factors
+        in this intense and thrilling final bout.
       </p>
       <ButtonGallery
         index={gallery3.index}
@@ -98,7 +107,7 @@ export const Grappling2014 = () => {
         buttonName={buttonText}
       />
       <p>
-        As a result, <b>Victoria Vardugina</b>, <b>Christina Shvets</b> and <b>Zoya Dorofeeva</b> took the 1st, 2nd,
+        As a result, <b>Victoria Vardugina</b>, <b>Christina Shvets</b>, and <b>Zoya Dorofeeva</b> took the 1st, 2nd,
         and 3rd places respectively.
       </p>
       <ButtonGallery
@@ -111,13 +120,14 @@ export const Grappling2014 = () => {
         buttonName={'Awards photos'}
       />
       <MainImg imgMain={imgMain2}/>
-      <p>From left to right: Zoya, Christina and Victoria.</p>
+      <p>From left to right: Zoya, Christina, and Victoria.</p>
       <hr/>
       <p>
-        Watch the fights <b>Zoya</b> vs <b>Christina</b> and <b>Zoya</b> vs Vika in the <b>VIDEO 41</b>, and the fight
-        of Vika vs Christina in the <b>VIDEO 42</b>. The both videos are available at <a
+        Watch the fights <b>Zoya vs Christina</b> and <b>Zoya vs Vika</b> in <b>VIDEO 41</b>, and the fight
+        between Vika and Christina in <b>VIDEO 42</b>. Both videos are available on <a
         href="https://gumroad.com/namazonclub">Gumroad</a>.
       </p>
     </>
+
   )
 }

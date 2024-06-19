@@ -13,36 +13,37 @@ export const NevskayaArena2012 = () => {
 
   return (
     <>
-      <h4>The first Nevsky Arena. MMA tournament. July, 2012</h4>
+      <h4>The First Nevsky Arena: MMA Tournament, July 2012</h4>
       <MainImg imgMain={mainImg}/>
       <p>
-        <b>Nevsky Arena</b> is a women's MMA tournament held in the open air. Our competitions are similar in rules to
-        the well-known street fighting events, called Strelka - the ultimate fights among men in Russia. The Strelka has
-        been held in St. Petersburg already since two years. It has been distinguished by its democratic character and
-        has already obtained an international fame.
+        <b>Nevsky Arena</b> is an open-air women's MMA tournament inspired by the well-known Strelka street fighting
+        events
+        in Russia. The Strelka has gained international fame for its democratic nature and tough competition.
       </p>
       <p>
-        The first Nevsky Arena took place in the Park Sosnovka on the 1st of July 2012. In the tournament
-        participated: <NavLink to="/universe/girl/2012_2013/kara-teller"> Kara Teller</NavLink> (the Vityaz Club,
-        Moscow, 5'7" / 123
-        lb), <NavLink to="/universe/girl/2012_2013/darya-balina"> Darya Balina</NavLink> (the female self-defense Club
-        "Panther", St.
-        Petersburg, 5'4" / 124 lb), <b>Yulia Fedutenko</b> (the mixed marshal arts Club "Tibron", St. Petersburg, 5'8" /
-        130 lb) and the MMA tournament newcomer <b>Olga</b> (St. Petersburg, 5'7" / 139 lb).<br/>
-        Each fight consisted of 3 rounds of 4 minutes fighting with 2 minute breaks.
+        The inaugural Nevsky Arena took place in Park Sosnovka on July 1, 2012. Participants included: <NavLink
+        to="/universe/girl/2012_2013/kara-teller">Kara Teller</NavLink> (Vityaz Club, Moscow, 5'7" / 123 lb), <NavLink
+        to="/universe/girl/2012_2013/darya-balina">Darya Balina</NavLink> (Panther Female Self-Defense Club, St.
+        Petersburg,
+        5'4" / 124 lb), <b>Yulia Fedutenko</b> (Tibron Mixed Martial Arts Club, St. Petersburg, 5'8" / 130 lb), and
+        newcomer
+        <b>Olga</b> (St. Petersburg, 5'7" / 139 lb). Each fight consisted of 3 rounds lasting 4 minutes each, with
+        2-minute
+        breaks in between.
       </p>
-      <h5><u>The first fight</u> Kara Teller (Moscow) vs Yulia Fedutenko (St. Petersburg)</h5>
+      <h5><u>The First Fight:</u> Kara Teller (Moscow) vs Yulia Fedutenko (St. Petersburg)</h5>
       <p>
-        <b>Yulia</b> is more of a puncher, who doesn't feel confident enough yet to wrestle. <b>Kara</b> has already
-        proved herself as a staunch and universal fighter. Her previous fights she usually won with choke holds on the
-        ground.
+        <b>Yulia</b> relies more on striking and is less confident in wrestling, while <b>Kara</b> has established
+        herself
+        as a versatile fighter, often winning her fights with choke holds on the ground.
       </p>
       <p>
-        Throughout the three rounds there was a hard and uncompromising struggle going on. Yulia tried to fight standing
-        up, throwing punches and kicks, while Kara sought actively to bring the fight to the ground and get a submission
-        by a choke hold. In the ground fight Kara was more active and tried to attack, but Yulia proved herself a very
-        tough opponent and was good in defense. Several times during the fight she managed to gain a better position and
-        deliver a number of punches to Kara.
+        The three-round fight was a hard and uncompromising struggle. Yulia focused on striking, throwing punches and
+        kicks,
+        while Kara actively worked to bring the fight to the ground and secure a submission with a choke hold. Kara was
+        more aggressive in ground fighting, but Yulia proved to be a resilient opponent, effectively defending herself
+        and
+        delivering punches whenever she gained advantageous positions.
       </p>
       <ButtonGallery
         index={gallery1.index}
@@ -54,15 +55,17 @@ export const NevskayaArena2012 = () => {
         buttonName={COMPETITIONS_BUTTON_TEXT}
       />
       <p>
-        The twelve-minute fight didn't determine a clear winner. After the three rounds, Yulia won some advantage in the
-        score. Kara would prefer to settle it in the fourth additional round.
+        After the twelve-minute fight, no clear winner emerged. Yulia gained an advantage in the score, but Kara was
+        eager
+        to settle it in an additional fourth round.
       </p>
       <h5>
-        <u>The second fight</u> Darya Balina (St. Petersburg) vs Olga (St. Petersburg)
+        <u>The Second Fight:</u> Darya Balina (St. Petersburg) vs Olga (St. Petersburg)
       </h5>
       <p>
-        This fight turned out to be as interesting as the previous one. There was everything here - exchange of punches
-        in standing, ground wrestling and attempts of finishing off.
+        This fight proved to be just as intense as the first, featuring exchanges of punches standing up, ground
+        wrestling,
+        and attempts to finish off.
       </p>
       <ButtonGallery
         index={gallery2.index}
@@ -74,13 +77,16 @@ export const NevskayaArena2012 = () => {
         buttonName={COMPETITIONS_BUTTON_TEXT}
       />
       <p>
-        And again, after the three rounds it was difficult to determine a winner. The fight was quite even. Draw.
+        Once again, after three rounds, determining a winner was difficult as the fight remained evenly matched. It
+        ended in
+        a draw.
       </p>
       <hr/>
       <p>
-        In our store on <a href="https://gumroad.com/namazonclub">Gumroad</a>, you can purchase the videos of the both
-        MMA fights: Kara Teller vs Yulia Fedutenko (<b><u>VIDEO 20</u></b>) and Darya Balina vs Olga (<b><u>VIDEO 21</u></b>).
+        Visit our store on <a href="https://gumroad.com/namazonclub">Gumroad</a> to purchase videos of both MMA fights:
+        Kara Teller vs Yulia Fedutenko (<b><u>VIDEO 20</u></b>) and Darya Balina vs Olga (<b><u>VIDEO 21</u></b>).
       </p>
     </>
+
   )
 }

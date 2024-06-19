@@ -15,22 +15,21 @@ export const Christmas2012 = () => {
 
   return (
     <>
-      <h4>MMA fights. Tournament "Christmas Cup 2012"</h4>
+      <h4>MMA Fights. Tournament "Christmas Cup 2012"</h4>
       <MainImg imgMain={imgMain}/>
       <p>
-        In the competition participated three fighters: <NavLink to="/universe/girl/2012_2013/elena-vasileva2013"> Elena
-        Vasilyeva</NavLink> (St. Petersburg, 5’6” / 132
-        lb); <NavLink to="/universe/girl/2012_2013/kara-teller"> Kara Teller</NavLink>, Namazon Club’s newcomer (Moscow,
-        5’7”
-        / 119 lb); <NavLink to="/universe/girl/2012_2013/tais2012-2013"> Tais</NavLink> (St. Petersburg, 5’7” / 130 lb).
-        The tournament was held in a single round format. The girls eventually had
-        to have two fights each. Each fight consisted of three 4 min rounds with 1 min rest between each round.
+        Three fighters participated in the competition: <NavLink to="/universe/girl/2012_2013/elena-vasileva2013">Elena
+        Vasilyeva</NavLink> (St. Petersburg, 5’6” / 132 lb); <NavLink to="/universe/girl/2012_2013/kara-teller">Kara
+        Teller</NavLink>, a newcomer from the Namazon Club (Moscow, 5’7” / 119 lb); <NavLink
+        to="/universe/girl/2012_2013/tais2012-2013">Tais</NavLink> (St. Petersburg, 5’7” / 130 lb). The tournament was held
+        in a single-round format where each fighter competed in two fights. Each fight consisted of three 4-minute rounds
+        with a 1-minute rest between rounds.
       </p>
-      <h5><u>The first fight</u> Elena Vasilyeva vs Kara Teller</h5>
+      <h5><u>The First Fight</u> Elena Vasilyeva vs Kara Teller</h5>
       <p>
-        In the first two rounds the advantage was on the side of Elena, who was able to throw down Kara several times on
-        the mat and had a lot of chances to finish her on the ground. Notice that Kara at the same time defended herself
-        skillfully.
+        In the first two rounds, Elena had the advantage, managing to take Kara down to the mat several times and
+        presenting numerous opportunities to finish the fight on the ground. However, Kara skillfully defended herself
+        throughout.
       </p>
       <ButtonGallery
         index={gallery1.index}
@@ -42,9 +41,9 @@ export const Christmas2012 = () => {
         buttonName={buttonText}
       />
       <p>
-        In the 3rd round the advantage gradually shifted to Kara. She managed to get a full-mount on Elena, forcing her
-        to defend herself. During one of the Elena’s attempts to throw her opponent off, our guest from Moscow took
-        advantage of Elena when the latter left her neck unprotected and flawlessly performed a choke.
+        In the 3rd round, the advantage gradually shifted to Kara. She achieved full-mount on Elena, forcing her to defend
+        herself. During one of Elena’s attempts to dislodge Kara, the Moscow guest capitalized on Elena’s unprotected neck
+        and executed a flawless choke.
       </p>
       <ButtonGallery
         index={gallery2.index}
@@ -55,13 +54,12 @@ export const Christmas2012 = () => {
         slides={gallery2.slides}
         buttonName={buttonText}
       />
-      <h5><u>The second fight</u> Kara vs Tais</h5>
+      <h5><u>The Second Fight</u> Kara Teller vs Tais</h5>
       <p>
-        Tais defeated Kara in the first round. Her aggressive attack, consisting mainly of strikes with kicks, the
-        majority of which missed the target by some way, resulted in bringing the fight into the ground, where Tais
-        managed to get the top position.<br/>
-        Continuing to wrestle on top Tais tried to armlock Kara. The young girl wrenched herself free but while doing
-        so, she got her neck caught in the grip of Tais, who won by a choke as a result.
+        Tais defeated Kara in the first round with an aggressive attack primarily consisting of kicks, many of which missed
+        their mark. The fight went to the ground, where Tais secured the dominant position.<br/>
+        While wrestling on top, Tais attempted an armlock. Although Kara managed to free herself, she exposed her neck to
+        Tais, who capitalized on the opportunity and won by chokehold.
       </p>
       <ButtonGallery
         index={gallery3.index}
@@ -72,10 +70,10 @@ export const Christmas2012 = () => {
         slides={gallery3.slides}
         buttonName={buttonText}
       />
-      <h5><u>The third fight</u> Elena vs Tais</h5>
+      <h5><u>The Third Fight</u> Elena Vasilyeva vs Tais</h5>
       <p>
-        The third fight was as brief as the second one. Elena had already been defeated by Tais in the first round.
-        After bringing the fight to the ground, Tais was able to apply her favorite armlock that forced Elena to submit.
+        The third fight was as brief as the second. Tais had previously defeated Elena in the first round. After taking the
+        fight to the ground, Tais executed her favorite armlock, forcing Elena to submit.
       </p>
       <ButtonGallery
         index={gallery4.index}
@@ -87,14 +85,15 @@ export const Christmas2012 = () => {
         buttonName={buttonText}
       />
       <p>
-        As a result, <b>Tais</b> took the 1st place, <b>Kara Teller</b> won the 2nd, and <b>Elena Vasilyeva</b> the 3rd.
+        As a result, <b>Tais</b> took 1st place, <b>Kara Teller</b> secured 2nd, and <b>Elena Vasilyeva</b> took 3rd place.
       </p>
       <hr/>
       <p>
-        The girls fought hard and uncompromisingly in all these three fights. If you like such fights, buy our film (<b><u>VIDEO
-        9</u></b>. MMA tournament "Christmas Cup 2012") on <a href="https://gumroad.com/namazonclub">Gumroad</a> and you
-        will be able to see everything yourself.
+        The girls fought fiercely and without compromise in all three fights. If you enjoy such competitions, purchase our
+        film (<b><u>VIDEO 9</u></b>. MMA Tournament "Christmas Cup 2012") on <a
+        href="https://gumroad.com/namazonclub">Gumroad</a> to witness it all for yourself.
       </p>
     </>
+
   )
 }

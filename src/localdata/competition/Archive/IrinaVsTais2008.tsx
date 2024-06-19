@@ -9,23 +9,26 @@ export const IrinaVsTais2008 = () => {
       <h4>Beach wrestling. Irina vs Tais. 2009</h4>
       <MainImg imgMain={mainImg}/>
       <p>
-        <b>Irina</b> (5’9” / 150 lb) and <b>Tais</b> (5’7” / 132 lb), the two strongest women of the Namazon Club, came
-        out to the beach to find out which one of them is the better wrestler on a sand surface. This type of wrestling
-        is usually called "beach wrestling", but here, unlike in the case of standard beach competitions, they had to
-        compete according the rules of submission grappling.<br/>
-        Irina wrestled in her usual aggressive manner, while Tais did it more intelligently and skillfully, moving with
-        ease from defense to attack. For some while they wrestled standing up and then both tumbled down on to the sand
-        and kept grappling there, trying to gain upper body control.<br/>
-        As you can imagine, wrestling on sand is not the same as wrestling on a mat. The soft, uneven surface of the
-        sand, unlike a mat, does not afford a secure foothold, which is especially felt in stand-up wrestling. And when
-        you grapple on the ground, the sand tends to stick in your hair and to get in your mouth. This can make the
-        trouble worse for those who struggle in the bottom position.
+        <b>Irina</b> (5’9” / 150 lb) and <b>Tais</b> (5’7” / 132 lb), the two strongest women of the Namazon Club, took
+        to the beach to determine who was the superior wrestler on sand. While this type of wrestling is typically known
+        as "beach wrestling," they competed according to the rules of submission grappling, unlike standard beach
+        competitions.
       </p>
       <p>
-        Irina and Tais have wrestled each other many times as they have trained together in the same gym. Tais usually
-        won the fights between them. But today, after the years have gone by, it does seem to us that the outcomes of
-        those fights could have been different if the girls had fought under rules allowing grabbing and pulling hair.
-        Irina’s ability to endure pain and to persevere in tough fights could have made her a very good catfighter.
+        Irina wrestled aggressively as usual, while Tais employed a more strategic and skillful approach, transitioning
+        smoothly from defense to offense. Initially grappling standing up, they eventually tumbled onto the sand,
+        continuing their struggle to gain upper body control.
+      </p>
+      <p>
+        Wrestling on sand poses unique challenges compared to mats. The soft and uneven surface does not provide secure
+        footing, especially in stand-up wrestling. Additionally, grappling on the ground results in sand getting in hair
+        and mouths, complicating matters further, especially for those on the bottom position.
+      </p>
+      <p>
+        Irina and Tais have wrestled each other numerous times, having trained together in the same gym. Historically,
+        Tais has often emerged victorious. However, looking back over the years, it's possible that different rules,
+        such as allowing hair grabbing and pulling, might have altered the outcomes. Irina’s resilience in enduring pain
+        and persevering in tough fights could have made her a formidable catfighter.
       </p>
     </>
   )

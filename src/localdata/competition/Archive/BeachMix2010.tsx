@@ -14,22 +14,13 @@ export const BeachMix2010 = () => {
   return (
     <>
       <h4>Two girls vs one man. 2010</h4>
-      <MainImg imgMain={mainImg}/>
+      <MainImg imgMain={mainImg} />
       <p>
-        <b>Alex</b> (5’9” / 150 lb) and two regular Namazon Club’s members <b>Natalia Mysik</b> (5’11” / 154 lb)
-        and <b>Tais</b> (5’7” / 132 lb). The competition was held in two rounds, with no specific time limit set for any
-        individual fight. Each fight went on until one of the opponents was unable to continue and admitted defeat. The
-        submissions were either joint locks or chokes.
+        <b>Alex</b> (5’9” / 150 lb) faced off against two regular members of the Namazon Club: <b>Natalia Mysik</b> (5’11” / 154 lb) and <b>Tais</b> (5’7” / 132 lb). The competition unfolded in two rounds without a specific time limit for each fight. Matches continued until one opponent could no longer continue and admitted defeat, typically through joint locks or chokes.
       </p>
       <h5>Alex vs Natalia Mysik</h5>
       <p>
-        The first who stepped forward on the slightly wet sand were Natasha and Alex. The fight began with Alex getting
-        the upper hand. At first he was able to drop his opponent down on the sand and then to submit her. That seemed
-        quite irritating to ambitious Namazonian woman who had apparently thought she would easily win. She got pretty
-        angry about her unexpected defeat, so in the next two rounds she fought with Alex more aggressively and gained
-        two convincing victories, both times pinning Alex down with her strong body in the sand and immobilizing him in
-        this position.<br/>
-        The final score in the match was 2-1 for Natalia Mysik.
+        Natalia Mysik initially underestimated Alex, who quickly gained the upper hand by bringing her down on the sand and submitting her. This unexpected defeat spurred Natalia into a more aggressive approach in the next two rounds. She decisively pinned Alex down with her superior strength and immobilized him on the sand, securing two consecutive victories.
       </p>
       <ButtonGallery
         index={gallery1.index}
@@ -42,10 +33,7 @@ export const BeachMix2010 = () => {
       />
       <h5>Alex vs Tais</h5>
       <p>
-        The second Namazonian wrestler Tais gave our guest from Moscow no chance at all to win. She completely dominated
-        over poor Alex, forcing him to submit again and again. Each fight ended with Alex getting stuck in a choke hold
-        or an armlock.<br/>
-        In the end, Tais defeated him by the score of 3-0.
+        Tais, on the other hand, dominated Alex completely. She consistently forced him into submission with effective choke holds and armlocks, winning all three fights decisively.
       </p>
       <ButtonGallery
         index={gallery2.index}
@@ -58,17 +46,7 @@ export const BeachMix2010 = () => {
       />
       <h5>Natalia Mysik vs Tais</h5>
       <p>
-        The first two fights between Natalia Mysik and Tais developed in a dramatic way. The advantage shifted from one
-        wrestler to the other almost every few seconds. Funny enough, but experienced Tais made mistakes one after the
-        other! On one occasion, for example, when trying to execute a throw, she lost her footing on the loose sand and
-        fell down finding herself an instant later in a danger position. The other blunders she made were even worse
-        than this one. In a word, Natasha had real chances to win the ground fights – at least in the first two rounds.
-        However, even though she tried hard, she wasn't able to take advantage of these favorable positions, and
-        suffered defeats in each round.<br/>
-        By the end of the tournament, fatigue began to tell upon Natalia. In the final round she did not fight as
-        aggressively as she did earlier, and Tais gained a quick submission victory, finishing Natalia with a pin
-        combined with an armbar.<br/>
-        Thus, there were no particular surprises. Tais won over Natalia Mysik with the total score of 3-0.
+        The matches between Natalia Mysik and Tais were intense and dramatic. Both fighters had moments of advantage, with the momentum swinging back and forth. Despite Tais making occasional mistakes, Natalia couldn't capitalize on them in the first two rounds. However, as fatigue set in, Tais secured a quick submission victory in the final round with a pin combined with an armbar.
       </p>
       <ButtonGallery
         index={gallery3.index}
@@ -80,13 +58,11 @@ export const BeachMix2010 = () => {
         buttonName={COMPETITIONS_BUTTON_TEXT}
       />
       <p>
-        Eventually, Tais was the winner of the tournament, Natalia Mysik took the 2nd place, and Alex was on the 3rd.
+        Ultimately, Tais emerged as the tournament winner, with Natalia Mysik taking second place and Alex finishing third.
       </p>
-      <hr/>
+      <hr />
       <p>
-        The full video of the beach mixed wrestling round-robin tournament with participation of Natalia Mysik, Tais and
-        Alex (<b>VIDEO 3.</b> Beach Submission Grappling. Two girls vs one man), is available for purchasing in our
-        online store on <a href="https://gumroad.com/namazonclub">Gumroad</a>.
+        The full video of the beach mixed wrestling round-robin tournament featuring Natalia Mysik, Tais, and Alex (<b>VIDEO 3.</b> Beach Submission Grappling. Two girls vs one man) is available for purchase on our online store at <a href="https://gumroad.com/namazonclub">Gumroad</a>.
       </p>
     </>
   )

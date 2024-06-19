@@ -23,17 +23,19 @@ export const BeachMix2011 = () => {
 
   return (
     <>
-      <h4>Mixed beach tournament. Submission Grappling. July, 2011</h4>
+      <h4>Mixed Beach Tournament. Submission Grappling. July, 2011</h4>
       <MainImg imgMain={mainImg}/>
       <p>
-        The tournament was held in two rounds on a beach, with each fight fought without time limit. There were 4
-        fighters contesting in the official part of the tournament. Two Namazonian girls: <b>Tais</b> (5’7” / 130 lb) -
-        repeated winner of the club tournaments on submission grappling; champion and prizewinner of competitions of
-        different ranks on kickboxing, karate and sanda and <b>Elena Vasilyeva</b> (5’6” / 135 lb) - a young, promising
-        girl. And two male wrestlers: <b>Alex</b> (5’9” / 154 lb) and <b>Villian</b> (5’8” / 177 lb). Both men
-        participated repeatedly in competitions on submission grappling.<br/>
-        <b>Villian</b> and <b>Tais</b> were the favorites in the tournament. They both handled their opponents without
-        much difficulty. Villian defeated Alex in both fights.
+        The tournament was held in two rounds on a beach, with each fight having no time limit. Four fighters
+        participated
+        in the official part of the tournament:
+        <b> Tais</b> (5’7” / 130 lb) - a repeated winner of club tournaments in submission grappling and champion in
+        kickboxing,
+        karate, and sanda competitions,
+        <b> Elena Vasilyeva</b> (5’6” / 135 lb) - a young and promising fighter from Namazon,
+        <b> Alex</b> (5’9” / 154 lb), and
+        <b> </b> (5’8” / 177 lb), both experienced male wrestlers in submission grappling competitions.
+        Villian defeated Alex in both of their fights.
       </p>
       <h5>Villian vs Alex</h5>
       <ButtonGallery
@@ -45,7 +47,7 @@ export const BeachMix2011 = () => {
         slides={gallery1.slides}
         buttonName={COMPETITIONS_BUTTON_TEXT}
       />
-      <p>Villian wrestled Elena a little soft, giving her the opportunity to prove herself in attack.</p>
+      <p>Villian wrestled Elena with some leniency, allowing her to showcase her attacking prowess.</p>
       <h5>Villian vs Elena Vasilyeva</h5>
       <ButtonGallery
         index={gallery2.index}
@@ -57,12 +59,11 @@ export const BeachMix2011 = () => {
         buttonName={COMPETITIONS_BUTTON_TEXT}
       />
       <p>
-        And here also ... Villian won in the end - 2:0.
+        Nevertheless, Villian ultimately won 2-0.
       </p>
       <p>
-        Tais also held two victories over both Elena Vasilyeva and Alex. And at that, while Villian won all his fights
-        by choking his opponents, Tais used various techniques including chokes, body scissors, neck scissors and
-        different pain holds.
+        Tais also secured victories over both Elena Vasilyeva and Alex. While Villian won all his fights by chokes, Tais
+        utilized a variety of techniques including chokes, body scissors, neck scissors, and other joint locks.
       </p>
       <h5>Tais vs Elena Vasilyeva</h5>
       <ButtonGallery
@@ -85,8 +86,8 @@ export const BeachMix2011 = () => {
         buttonName={COMPETITIONS_BUTTON_TEXT}
       />
       <p>
-        The two fights between Villian and Tais decided the fate of the first place in the tournament. Villian won their
-        first fight, Tais the second. So it was a draw in the end. Our favorites shared the 1st and 2nd place.
+        The outcome of the tournament was decided by the two matches between Villian and Tais. Villian won the first,
+        Tais won the second, resulting in a draw for the top positions.
       </p>
       <h5>Tais vs Villian</h5>
       <ButtonGallery
@@ -99,9 +100,9 @@ export const BeachMix2011 = () => {
         buttonName={COMPETITIONS_BUTTON_TEXT}
       />
       <p>
-        The struggle for the 3rd place between Elena Vasilyeva and Alex was especially tough. Let it suffice to say that
-        their first fight lasted more than 12 minutes and the organizers of the tournament regretted that they hadn’t
-        provided the division of the fights into rounds. In the end Elena won by a choke hold.
+        The battle for the 3rd place between Elena Vasilyeva and Alex was particularly fierce. Their first fight lasted
+        over 12 minutes, and the organizers regretted not dividing the fights into rounds. In the end, Elena won by a
+        choke hold.
       </p>
       <h5>Elena Vasilyeva vs Alex</h5>
       <ButtonGallery
@@ -114,15 +115,18 @@ export const BeachMix2011 = () => {
         buttonName={COMPETITIONS_BUTTON_TEXT}
       />
       <p>
-        The second fight was also won by Elene Vasilyeva. As a result 2:0. The 3rd place went to Elena!
+        Elena also won the second fight, securing the 3rd place with a 2-0 result.
       </p>
       <hr/>
       <p>
-        In our store on <a href="https://gumroad.com/namazonclub">Gumroad</a> you can purchase the full video of a
-        wrestling match of Elena Vasilyeva against Alex (<b>VIDEO 11.</b> Alex vs. Elena Vasilyeva. Mixed Beach
-        Wrestling. July, 2011) and also the full videos of three wrestling matches of Tais against men (<b>VIDEO
-        14.</b> Two men against one woman. Mixed Wrestling. Part 1. 2011).
+        Visit our store on <a href="https://gumroad.com/namazonclub">Gumroad</a> to purchase the full video of Elena
+        Vasilyeva's
+        match against Alex (<b>VIDEO 11.</b> Alex vs. Elena Vasilyeva. Mixed Beach Wrestling. July, 2011), and also the
+        full
+        videos of three matches featuring Tais against men (<b>VIDEO 14.</b> Two Men Against One Woman. Mixed Wrestling.
+        Part 1. 2011).
       </p>
     </>
+
   )
 }

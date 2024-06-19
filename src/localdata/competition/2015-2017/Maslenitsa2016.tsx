@@ -25,36 +25,36 @@ export const Maslenitsa2016 = () => {
     <>
       <h4>Female power competitions for the Maslenitsa Festival, 2016</h4>
       <img className={sC.videosMainImg} src={img1} alt=""/>
-      <p>The female power competition for this year's Maslenitsa Festival took place at the Namazon Club on Thursday,
-        March 10th. The event featured three categories: arm wrestling, leg wrestling, and pins-and-submissions
-        wrestling, where a wrestler could win by either submission or pin. There were three participants, all
-        competing in the same weight category - up to 60 kg:</p>
+      <p>The female power competition for this year's Maslenitsa Festival took place at Namazon Club on Thursday, March
+        10th. The event featured three categories: arm wrestling, leg wrestling, and pins-and-submissions wrestling,
+        where a wrestler could win by either submission or pin. There were three participants, all competing in the same
+        weight category - up to 60 kg:</p>
       <ul>
         <li>Viktoria Vardugina - a well-known arm wrestler with numerous victories in combative sports competitions at
-          the Namazon Club;
+          Namazon Club;
         </li>
         <li>Viktoria Smorodina - an ambitious fighter specializing in Wushu, boxing, and powerlifting;</li>
-        <li>Oxana Grigorenko - the Namazon Club representative.</li>
+        <li>Oxana Grigorenko - the representative of Namazon Club.</li>
       </ul>
-      <p>Viktoria Vardugina emerged as the winner in the arm wrestling category, confidently defeating both opponents
-        in left and right-hand matches.</p>
+      <p>Viktoria Vardugina emerged as the winner in the arm wrestling category, confidently defeating both opponents in
+        left and right-hand matches.</p>
       <Button variant="primary" onClick={() => setOpen(!open)}>Arm wrestling photos</Button>
       <Collapse in={open}>
         <PhotoAlbumMy photos={photos} openCallback={setIndex}/>
         <LightboxMy slides={slides} index={index} closeCallback={setIndex}/>
       </Collapse>
-      <p>In the leg-wrestling contest, Viktoria Vardugina and Oxana Grigorenko shared the 1st and 2nd places.</p>
+      <p>In the leg-wrestling contest, Viktoria Vardugina and Oxana Grigorenko shared 1st and 2nd places.</p>
       <p>The pins-and-submission matches were the most thrilling part of the competition. Each participant wrestled
-        against each other, with victories achieved by holding an opponent in a pin for a count of 7 or forcing her
-        into submission. The time limit for each match was 5 minutes. Oxana Grigorenko was the absolute winner of this
-        category. Viktoria Smorodina, who proved to be a strong competitor, secured the 2nd place.</p>
+        against each other, with victories achieved by holding an opponent in a pin for a count of 7 or forcing her into
+        submission. The time limit for each match was 5 minutes. Oxana Grigorenko was the absolute winner of this
+        category. Viktoria Smorodina, who proved to be a strong competitor, secured 2nd place.</p>
       <Button variant="primary" onClick={() => setOpen2(!open2)}>Wrestling photos</Button>
       <Collapse in={open2}>
         <PhotoAlbumMy photos={photos2} openCallback={setIndex2}/>
         <LightboxMy slides={slides2} index={index2} closeCallback={setIndex2}/>
       </Collapse>
-      <p>Overall, it was an interesting sporting event. Despite the small number of participants, their high fitness
-        and wrestling skills made up for it.</p>
+      <p>Overall, it was an interesting sporting event. Despite the small number of participants, their high fitness and
+        wrestling skills made up for it.</p>
     </>
   )
 }
