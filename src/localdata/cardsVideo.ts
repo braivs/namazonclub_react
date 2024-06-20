@@ -176,7 +176,7 @@ export const cardsWrestling: Array<CardType> = [
 
 export const cardsMMA: Array<CardType> = [
     {
-        id: 'NC9',
+        id: 'NC09',
         title: 'MMA tournament\n“Christmas Cup 2012”',
         imgRef: video9,
     },
