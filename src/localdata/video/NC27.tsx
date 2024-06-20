@@ -4,12 +4,13 @@ import {MyYouTube} from "../../common/common"
 import {Col, Row} from "react-bootstrap"
 import cn from "classnames"
 import {ButtonGallery} from "../../common/ButtonGallery/ButtonGallery"
+import {useExtractVideoID} from "../../common/hooks"
 
 
 const images = require.context('src/img/video/27', false)
 
 export const NC27 = () => {
-  const videoNumber = 27
+  const videoNumber = useExtractVideoID()
   const youtubeID = 'kTj_2JJAFoM'
 
   const [open, setOpen] = useState(false)
@@ -20,7 +21,7 @@ export const NC27 = () => {
   return (
     <>
 
-      <h3>VIDEO {videoNumber}</h3>
+      <h3>{videoNumber}</h3>
       <h4>Female Beach Wrestling. Part 2. June, 2011</h4>
       <p>
         This is a continuation of the multi-round sand-wrestling contest between <b>Tais</b> (5'7" / 130 lb) and <b>Elena

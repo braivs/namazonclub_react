@@ -4,11 +4,12 @@ import {getGalleryPhotosFromRequire, getSlides} from "../../common/helpers"
 import mainImg from 'src/img/video/main/23main.jpg'
 
 import {ButtonGallery} from "../../common/ButtonGallery/ButtonGallery"
+import {useExtractVideoID} from "../../common/hooks"
 
 const images = require.context('src/img/video/06', false)
 
 export const NC06 = () => {
-  const videoNumber = 6
+  const videoNumber = useExtractVideoID()
 
   const [open, setOpen] = useState(false)
   const [index, setIndex] = useState(-1)
@@ -16,7 +17,7 @@ export const NC06 = () => {
   const slides = getSlides(photos)
   return (
     <>
-      <h3>VIDEO {videoNumber}</h3>
+      <h3>{videoNumber}</h3>
       <h4>Maria Rylyova vs Tais. Submission Grappling + Armwrestling. March, 2011</h4>
       <img className={sC.videosMainImg} src={mainImg} alt="imgMain"/>
       <p>

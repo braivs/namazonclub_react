@@ -4,11 +4,12 @@ import {MyYouTube} from "../../common/common"
 import {Col, Row} from "react-bootstrap"
 import cn from "classnames"
 import {ButtonGallery} from "../../common/ButtonGallery/ButtonGallery"
+import {useExtractVideoID} from "../../common/hooks"
 
 const images = require.context('src/img/video/12', false)
 
 export const NC12 = () => {
-  const videoNumber = 12
+  const videoNumber = useExtractVideoID()
   const youtubeID = 'tB47JzDQ-mc'
 
   const [open, setOpen] = useState(false)
@@ -17,7 +18,7 @@ export const NC12 = () => {
   const slides = getSlides(photos)
   return (
     <>
-      <h3>VIDEO {videoNumber}</h3>
+      <h3>{videoNumber}</h3>
       <h4>Submission Grappling Tournament. April, 2010</h4>
       <p>
         This film documents the Submission Grappling tournament held in April 2010, featuring <b>Natalia

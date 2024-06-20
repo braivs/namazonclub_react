@@ -5,11 +5,12 @@ import {NavLink} from "react-router-dom"
 import {Col, Row} from "react-bootstrap"
 import cn from "classnames"
 import {ButtonGallery} from "../../common/ButtonGallery/ButtonGallery"
+import {useExtractVideoID} from "../../common/hooks"
 
 const images = require.context('src/img/video/40', false)
 
 export const NC40 = () => {
-  const videoNumber = 40
+  const videoNumber = useExtractVideoID()
   const youtubeID = '_nBXLJXazc0'
 
   const [open, setOpen] = useState(false)
@@ -19,7 +20,7 @@ export const NC40 = () => {
 
   return (
     <>
-      <h3>VIDEO {videoNumber}</h3>
+      <h3>{videoNumber}</h3>
       <h4>Mixed wrestling. Villian vs Tais. Part 2. 2014</h4>
       <p>
         <b>VIDEO {videoNumber}</b> is the continuation of <NavLink to="/video/39">VIDEO 39</NavLink>. Here you

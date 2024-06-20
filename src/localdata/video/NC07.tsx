@@ -4,11 +4,12 @@ import {MyYouTube} from "../../common/common"
 import {Col, Row} from "react-bootstrap"
 import cn from "classnames"
 import {ButtonGallery} from "../../common/ButtonGallery/ButtonGallery"
+import {useExtractVideoID} from "../../common/hooks"
 
 const images = require.context('src/img/video/07', false)
 
 export const NC07 = () => {
-  const videoNumber = 7
+  const videoNumber = useExtractVideoID()
   const youtubeID = 'sKIu0T-a4wE'
 
   const [open, setOpen] = useState(false)
@@ -17,7 +18,7 @@ export const NC07 = () => {
   const slides = getSlides(photos)
   return (
     <>
-      <h3>VIDEO {videoNumber}</h3>
+      <h3>{videoNumber}</h3>
       <h4>Gray Wolf (Alex) vs Red Riding Hood (Tais). Extreme fight in cold weather. April 2011</h4>
       <p><b>Alex</b> (5'7" / 150 lb) hadn’t forgotten the loss to <b>Tais</b> (5'7" / 128 lb) in their previous
         beach wrestling match (<b>Video 3</b>), and now, having a transit stay in St. Petersburg, he tried to

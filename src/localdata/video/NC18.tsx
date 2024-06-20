@@ -3,11 +3,11 @@ import {MyYouTube} from "../../common/common"
 import {Col, Row} from "react-bootstrap"
 import cn from 'classnames'
 import {ButtonGallery} from "../../common/ButtonGallery/ButtonGallery"
-import {useGallery} from "../../common/hooks"
+import {useExtractVideoID, useGallery} from "../../common/hooks"
 import {DIR_MMA_SPORT_HOLIDAY_1, DIR_MMA_SPORT_HOLIDAY_2} from "../../common/ImageContexts"
 
 export const NC18 = () => {
-  const videoNumber = 18
+  const videoNumber = useExtractVideoID()
   const youtubeID = 'fYEVVlzkUsA'
 
   const gallery1 = useGallery(DIR_MMA_SPORT_HOLIDAY_1)
@@ -15,7 +15,7 @@ export const NC18 = () => {
 
   return (
     <>
-      <h3>VIDEO {videoNumber}</h3>
+      <h3>{videoNumber}</h3>
       <h4>MMA. Kara Teller vs Darya Balina and Tais. May, 2012</h4>
       <p>
         The first match is between the experienced fighter <b>Kara Teller</b> (Moscow, 5’7” / 119 lb) and the

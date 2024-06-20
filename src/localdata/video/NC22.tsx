@@ -4,11 +4,12 @@ import {MyYouTube} from "../../common/common"
 import {Col, Row} from "react-bootstrap"
 import cn from "classnames"
 import {ButtonGallery} from "../../common/ButtonGallery/ButtonGallery"
+import {useExtractVideoID} from "../../common/hooks"
 
 const images = require.context('src/img/video/22', false)
 
 export const NC22 = () => {
-  const videoNumber = 22
+  const videoNumber = useExtractVideoID()
   const youtubeID = 'FTCeUYW5O2g'
 
   const [open, setOpen] = useState(false)
@@ -18,7 +19,7 @@ export const NC22 = () => {
 
   return (
     <>
-      <h3>VIDEO {videoNumber}</h3>
+      <h3>{videoNumber}</h3>
       <h4>Irina and Elena Vasilyeva vs Villian. Mixed Wrestling. 2011</h4>
       <p>
         In these wrestling matches, <b>Villian</b> (5’8” / 177 lb) takes on two experienced women (though not

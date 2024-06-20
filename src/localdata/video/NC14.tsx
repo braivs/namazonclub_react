@@ -3,11 +3,11 @@ import {MyYouTube} from "../../common/common"
 import {Col, Row} from "react-bootstrap"
 import cn from "classnames"
 import {ButtonGallery} from "../../common/ButtonGallery/ButtonGallery"
-import {useGallery} from "../../common/hooks"
+import {useExtractVideoID, useGallery} from "../../common/hooks"
 import {DIR14_1, DIR14_2} from "../../common/ImageContexts"
 
 export const NC14 = () => {
-  const videoNumber = 14
+  const videoNumber = useExtractVideoID()
   const youtubeID1 = 'mXLIzt6ZBFk'
   const youtubeID2 = 'dQjBmmyLnC0'
 
@@ -16,7 +16,7 @@ export const NC14 = () => {
 
   return (
     <>
-      <h3>VIDEO {videoNumber}</h3>
+      <h3>{videoNumber}</h3>
       <h4>Two men against one woman. Mixed wrestling on a beach. Part 1. 2011</h4>
       <p>
         Two men against one woman. Mixed wrestling. Part 1. 2011<br/>

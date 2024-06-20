@@ -6,11 +6,12 @@ import {MyYouTube} from "../../common/common"
 import {Col, Row} from "react-bootstrap"
 import cn from "classnames"
 import {ButtonGallery} from "../../common/ButtonGallery/ButtonGallery"
+import {useExtractVideoID} from "../../common/hooks"
 
 const images = require.context('src/img/video/19', false)
 
 export const NC19 = () => {
-    const videoNumber = 19
+    const videoNumber = useExtractVideoID()
     const youtubeID = 'lJwlQIrfGww'
 
     const [open, setOpen] = useState(false)
@@ -20,7 +21,7 @@ export const NC19 = () => {
 
     return (
       <>
-        <h3>VIDEO {videoNumber}</h3>
+        <h3>{videoNumber}</h3>
         <h4>Varvara Akulova vs Tais. Submission Grappling. May, 2012</h4>
         <p>
           <b>Varvara Akulova</b> is a great athlete. As a child and teenager, she was several times recognized as the

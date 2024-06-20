@@ -4,11 +4,12 @@ import {MyYouTube} from "../../common/common"
 import {Col, Row} from "react-bootstrap"
 import cn from "classnames"
 import {ButtonGallery} from "../../common/ButtonGallery/ButtonGallery"
+import {useExtractVideoID} from "../../common/hooks"
 
 const images = require.context('src/img/video/15', false)
 
 export const NC15 = () => {
-  const videoNumber = 15
+  const videoNumber = useExtractVideoID()
   const youtubeID = 'piZ5J6Rierc'
 
   const [open, setOpen] = useState(false)
@@ -17,7 +18,7 @@ export const NC15 = () => {
   const slides = getSlides(photos)
   return (
     <>
-      <h3>VIDEO {videoNumber}</h3>
+      <h3>{videoNumber}</h3>
       <h4>Two men against one woman. Mixed wrestling on a beach. Part 2. 2011</h4>
       <p>
         In this video, you can see what happened a few days after the 1st part of the mixed beach tournament (<b>Video

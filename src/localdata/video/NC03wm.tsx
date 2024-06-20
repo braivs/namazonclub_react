@@ -3,11 +3,11 @@ import {MyYouTube} from "../../common/common"
 import {Col, Row} from "react-bootstrap"
 import cn from "classnames"
 import {ButtonGallery} from "../../common/ButtonGallery/ButtonGallery"
-import {useGallery} from "../../common/hooks"
+import {useExtractVideoID, useGallery} from "../../common/hooks"
 import {DIR03_1, DIR03_2} from "../../common/ImageContexts"
 
 export const NC03wm = () => {
-  const videoNumber = '3wm'
+  const videoNumber = useExtractVideoID()
   const youtubeID = 'sddvDSjafEY'
 
   const gallery1 = useGallery(DIR03_1) // Natalia Mysik  vs  Alex
@@ -15,7 +15,7 @@ export const NC03wm = () => {
 
   return (
     <>
-      <h3>VIDEO 3wm</h3>
+      <h3>{videoNumber}</h3>
       <h4>Beach Wrestling. Mixed Tournament. Two girls vs one man. September, 2010</h4>
       <p>
         <b>Alex</b> came to St. Petersburg at the weekend and offered Tais (5'7" / 132 lb) and <b>Natalia

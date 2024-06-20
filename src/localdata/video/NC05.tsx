@@ -4,11 +4,12 @@ import {MyYouTube} from "../../common/common"
 import {Col, Row} from "react-bootstrap"
 import cn from "classnames"
 import {ButtonGallery} from "../../common/ButtonGallery/ButtonGallery"
+import {useExtractVideoID} from "../../common/hooks"
 
 const images = require.context('src/img/video/05', false)
 
 export const NC05 = () => {
-  const videoNumber = 5
+  const videoNumber = useExtractVideoID()
   const youtubeID1 = 'hGAZo2Ffrz4'
   const youtubeID2 = '4tJDir4UPXU'
 
@@ -18,7 +19,7 @@ export const NC05 = () => {
   const slides = getSlides(photos)
   return (
     <>
-      <h3>VIDEO {videoNumber}</h3>
+      <h3>{videoNumber}</h3>
       <h4>Villian vs Tais. Mixed Wrestling. 2011</h4>
       <p>This film features a completely new wrestling encounter between <b>Villian</b> and <b>Tais</b>, spanning 9
         rounds of long and arduous wrestling, presented in HD quality with an optimized file size! <b>Villian</b>

@@ -3,19 +3,19 @@ import {Col, Row} from "react-bootstrap"
 import {MyYouTube} from "../../common/common"
 import cn from 'classnames'
 import {ButtonGallery} from "../../common/ButtonGallery/ButtonGallery"
-import {useGallery} from "../../common/hooks"
+import {useExtractVideoID, useGallery} from "../../common/hooks"
 import {DIR_NEVSKAYA_ARENA_2} from "../../common/ImageContexts"
 import {COMPETITIONS_BUTTON_TEXT} from "../../common/constants"
 
 export const NC21 = () => {
-  const videoNumber = 21
+  const videoNumber = useExtractVideoID()
   const youtubeID = 'WO77phk8NWk'
 
   const gallery1 = useGallery(DIR_NEVSKAYA_ARENA_2)
 
   return (
     <>
-      <h3>VIDEO {videoNumber}</h3>
+      <h3>{videoNumber}</h3>
       <h4>MMA. Darya Balina vs Olga. July, 2012</h4>
       <p>This is the second MMA fight at the <b>"First Nevsky Arena Tournament"</b>. <b>Darya Balina</b> (5'4" /
         124 lb) and <b>Olga</b> (5'7" / 139 lb) are young participants who don't yet have enough experience in

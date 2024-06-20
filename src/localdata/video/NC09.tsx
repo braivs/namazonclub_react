@@ -3,7 +3,7 @@ import {MyYouTube} from "../../common/common"
 import {Col, Row} from "react-bootstrap"
 import cn from 'classnames'
 import {ButtonGallery} from "../../common/ButtonGallery/ButtonGallery"
-import {useGallery} from "../../common/hooks"
+import {useExtractVideoID, useGallery} from "../../common/hooks"
 import {DIR09_1, DIR09_2, DIR09_3} from "../../common/ImageContexts"
 
 export const NC09 = () => {
@@ -12,12 +12,12 @@ export const NC09 = () => {
   const gallery3 = useGallery(DIR09_3)
   const buttonText = 'See photos'
 
-  const videoNumber = 9
+  const videoNumber = useExtractVideoID()
   const youtubeID = '8NnbhTgPKXE'
 
   return (
     <>
-      <h3>VIDEO {videoNumber}</h3>
+      <h3>{videoNumber}</h3>
       <h4>MMA tournament "Christmas Cup 2012"</h4>
       <p>
         Three fighters participated in this tournament: <b>Elena Vasilyeva</b> (St. Petersburg, 5’6” / 132 lb),

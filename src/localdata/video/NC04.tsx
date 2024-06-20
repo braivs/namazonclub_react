@@ -4,11 +4,12 @@ import {MyYouTube} from "../../common/common"
 import {Col, Row} from "react-bootstrap"
 import cn from "classnames"
 import {ButtonGallery} from "../../common/ButtonGallery/ButtonGallery"
+import {useExtractVideoID} from "../../common/hooks"
 
 const images = require.context('src/img/video/04', false)
 
 export const NC04 = () => {
-    const videoNumber = 4
+    const videoNumber = useExtractVideoID()
     const youtubeID = 'QAgCAy7XJiQ'
 
     const [open, setOpen] = useState(false)
@@ -17,7 +18,7 @@ export const NC04 = () => {
     const slides = getSlides(photos)
     return (
       <>
-        <h3>VIDEO {videoNumber}</h3>
+        <h3>{videoNumber}</h3>
         <h4>"Christmas Cup 2011". Tournament on Submission Grappling</h4>
         <Row>
           <Col className={cn('d-flex', 'justify-content-center')}>

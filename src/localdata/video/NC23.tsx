@@ -4,11 +4,12 @@ import {MyYouTube} from "../../common/common"
 import {Col, Row} from "react-bootstrap"
 import cn from "classnames"
 import {ButtonGallery} from "../../common/ButtonGallery/ButtonGallery"
+import {useExtractVideoID} from "../../common/hooks"
 
 const images = require.context('src/img/video/23', false)
 
 export const NC23 = () => {
-  const videoNumber = 23
+  const videoNumber = useExtractVideoID()
   const youtubeID = 'fbESZrys6fc'
 
   const [open, setOpen] = useState(false)
@@ -18,7 +19,7 @@ export const NC23 = () => {
 
   return (
     <>
-      <h3>VIDEO {videoNumber}</h3>
+      <h3>{videoNumber}</h3>
       <h4>Irina (Vlasta) vs Tais. Submission Grappling. May, 2011</h4>
       <p>
         <b>Irina</b> (5’9” / 154 lb) is a strong young athlete engaged in Muay Thai and pole dancing, but she is still a

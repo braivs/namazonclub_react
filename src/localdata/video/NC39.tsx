@@ -5,11 +5,12 @@ import {NavLink} from "react-router-dom"
 import {Col, Row} from "react-bootstrap"
 import cn from "classnames"
 import {ButtonGallery} from "../../common/ButtonGallery/ButtonGallery"
+import {useExtractVideoID} from "../../common/hooks"
 
 const images = require.context('src/img/video/39', false)
 
 export const NC39 = () => {
-  const videoNumber = 39
+  const videoNumber = useExtractVideoID()
   const youtubeID = 'kpBVV_5iaYQ'
 
   const [open, setOpen] = useState(false)
@@ -19,7 +20,7 @@ export const NC39 = () => {
 
   return (
     <>
-      <h3>VIDEO {videoNumber}</h3>
+      <h3>{videoNumber}</h3>
       <h4>Mixed wrestling. Villian vs Tais. Part 1. 2014</h4>
       <p>
         In comparison with Alexandr, whom you can see in our <NavLink to="/video/38">VIDEO

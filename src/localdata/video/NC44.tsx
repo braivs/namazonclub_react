@@ -11,9 +11,12 @@ import {getGalleryPhotosFromRequireFromArray, getSlides} from "../../common/help
 import {NavLink} from "react-router-dom"
 import {LightboxMy, PhotoAlbumMy} from "../../common/ModdedComponents/ModdedComponents"
 import {MyYouTube} from "../../common/common"
+import {useExtractVideoID} from "../../common/hooks"
 
 export const NC44 = () => {
   const youtubeID = 'bc9RU5hP4k4'
+
+  const videoID = useExtractVideoID()
 
   const [index, setIndex] = useState(-1)
   const photos1 = getGalleryPhotosFromRequireFromArray([VSmorodina_vs_VVardugina1, VSmorodina_vs_VVardugina2])
@@ -29,7 +32,7 @@ export const NC44 = () => {
 
   return (
     <>
-      <h3>VIDEO 44</h3>
+      <h3>{videoID}</h3>
       <h4>The Female Power Competition for the Maslenitsa Festival, 2016. Wrestling</h4>
       <p>You can read the report on the competitions, the main part of which was these fights, <NavLink
         to={'/competition/2015-2017/maslenitsa-2016'}>here</NavLink>. There you will find a short report on
@@ -63,7 +66,7 @@ export const NC44 = () => {
       </Row>
       <Row>
         <hr/>
-        <p>You can buy VIDEO 44 at <a href="https://gumroad.com/namazonclub">Gumroad</a></p>
+        <p>You can buy VIDEO {videoID} at <a href="https://gumroad.com/namazonclub">Gumroad</a></p>
       </Row>
     </>
   )

@@ -4,11 +4,12 @@ import {MyYouTube} from "../../common/common"
 import {Col, Row} from "react-bootstrap"
 import cn from "classnames"
 import {ButtonGallery} from "../../common/ButtonGallery/ButtonGallery"
+import {useExtractVideoID} from "../../common/hooks"
 
 const images = require.context('src/img/video/32', false)
 
 export const NC32 = () => {
-  const videoNumber = '32'
+  const videoNumber = useExtractVideoID()
   const youtubeID = 'hOdvtSS6Nbw'
 
   const [open, setOpen] = useState(false)
@@ -18,7 +19,7 @@ export const NC32 = () => {
 
   return (
     <>
-      <h3>VIDEO {videoNumber}</h3>
+      <h3>{videoNumber}</h3>
       <h4>Mixed Wrestling. Artem vs Tais. 2013</h4>
       <p>
         This unique wrestling match took place during Tais's (5'7" / 135 lb) summer vacation in the south of Ukraine in

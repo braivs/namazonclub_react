@@ -3,20 +3,20 @@ import {Col, Row} from "react-bootstrap"
 import {MyYouTube} from "../../common/common"
 import cn from 'classnames'
 import {ButtonGallery} from "../../common/ButtonGallery/ButtonGallery"
-import {useGallery} from "../../common/hooks"
+import {useExtractVideoID, useGallery} from "../../common/hooks"
 import {DIR_NEVSKAYA_ARENA_1} from "../../common/ImageContexts"
 import {COMPETITIONS_BUTTON_TEXT} from "../../common/constants"
 
 
 export const NC20 = () => {
-  const videoNumber = 20
+  const videoNumber = useExtractVideoID()
   const youtubeID = 'qo9DmpAXT5w'
 
   const gallery1 = useGallery(DIR_NEVSKAYA_ARENA_1)
 
   return (
     <>
-      <h3>VIDEO {videoNumber}</h3>
+      <h3>{videoNumber}</h3>
       <h4>MMA. Yulia Fedutenko vs Kara Teller. July, 2012</h4>
       <p><b>Yulia Fedutenko</b> (5'8" / 130 lb) - from the mixed martial arts Club "Tibron" in St. Petersburg. <b>Kara
         Teller</b> (5'7" / 123 lb) - representing the Vityaz Club in Moscow. This bout took place at the "<b>First

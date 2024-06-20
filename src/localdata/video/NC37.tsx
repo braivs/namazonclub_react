@@ -5,18 +5,18 @@ import {NavLink} from "react-router-dom"
 import {Col, Row} from "react-bootstrap"
 import cn from 'classnames'
 import {ButtonGallery} from "../../common/ButtonGallery/ButtonGallery"
-import {useGallery} from "../../common/hooks"
+import {useExtractVideoID, useGallery} from "../../common/hooks"
 import {DIR37} from "../../common/ImageContexts"
 
 export const NC37 = () => {
-  const videoNumber = 37
+  const videoNumber = useExtractVideoID()
   const youtubeID = 'oxAzT_GWSJA'
 
   const gallery1 = useGallery(DIR37)
 
   return (
     <div className={sC.compArticlesVideoGirl}>
-      <h3>VIDEO {videoNumber}</h3>
+      <h3>{videoNumber}</h3>
       <h4>Female submission grappling tournament between beginners. <u>Final fights</u>.<br/>
         Weight class: 145 to 160 lb. May, 2014</h4>
       <p>

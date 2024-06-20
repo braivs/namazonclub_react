@@ -3,11 +3,11 @@ import {MyYouTube} from "../../common/common"
 import {Col, Row} from "react-bootstrap"
 import cn from 'classnames'
 import {ButtonGallery} from "../../common/ButtonGallery/ButtonGallery"
-import {useGallery} from "../../common/hooks"
+import {useExtractVideoID, useGallery} from "../../common/hooks"
 import {DIR17_1, DIR17_2, DIR17_3} from "../../common/ImageContexts"
 
 export const NC17 = () => {
-  const videoNumber = 17
+  const videoNumber = useExtractVideoID()
   const youtubeID = '93iT7iBJVik'
 
   const gallery1 = useGallery(DIR17_1)
@@ -16,7 +16,7 @@ export const NC17 = () => {
 
   return (
     <>
-      <h3>VIDEO {videoNumber}</h3>
+      <h3>{videoNumber}</h3>
       <h4>MMA and Submission Grappling. February, 2012</h4>
       <p>
         Our video features two MMA fights: <b>Kara Teller</b> (Moscow, 5’7” / 123 lb) vs <b>Tais</b> (St.

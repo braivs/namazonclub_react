@@ -3,18 +3,18 @@ import {MyYouTube} from "../../common/common"
 import cn from "classnames"
 import {Col, Row} from "react-bootstrap"
 import {ButtonGallery} from "../../common/ButtonGallery/ButtonGallery"
-import {useGallery} from "../../common/hooks"
+import {useExtractVideoID, useGallery} from "../../common/hooks"
 import {DIR11} from "../../common/ImageContexts"
 
 export const NC11 = () => {
-  const videoNumber = 11
+  const videoNumber = useExtractVideoID()
   const youtubeID = '_T6qzHq5H60'
 
   const gallery1 = useGallery(DIR11)
 
   return (
     <>
-      <h3>VIDEO {videoNumber}</h3>
+      <h3>{videoNumber}</h3>
       <h4>Alex vs Elena Vasilyeva (Gladiatriks), Mixed Beach Wrestling. July, 2011</h4>
       <p>
         Alex vs Elena Vasilyeva. Mixed Beach Wrestling. July, 2011<br/>

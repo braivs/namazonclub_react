@@ -4,11 +4,12 @@ import {getGalleryPhotosFromRequire, getSlides} from "../../common/helpers"
 import {MyYouTube} from "../../common/common"
 import cn from "classnames"
 import {ButtonGallery} from "../../common/ButtonGallery/ButtonGallery"
+import {useExtractVideoID} from "../../common/hooks"
 
 const images = require.context('src/img/video/13', false)
 
 export const NC13 = () => {
-  const videoNumber = 13
+  const videoNumber = useExtractVideoID()
   const youtubeID = '0-6S3nnMNYk'
 
   const [index, setIndex] = useState(-1)
@@ -17,7 +18,7 @@ export const NC13 = () => {
   const slides = getSlides(photos)
   return (
     <>
-      <h3>VIDEO {videoNumber}</h3>
+      <h3>{videoNumber}</h3>
       <h4>Valentina Perfilyeva vs Nadezhda Akhmerova. Kickboxing. 2011</h4>
       <p>In this video, you will witness two kickboxing matches where low kicks are allowed. <b>Valentina
         Perfilyeva</b> (5'8" / 132 lb) specializes in karate (kumite), while <b>Nadezhda Akhmerova</b> (5'6"

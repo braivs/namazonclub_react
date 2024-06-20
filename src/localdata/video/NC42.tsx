@@ -4,18 +4,18 @@ import cn from 'classnames'
 import {MyYouTube} from "../../common/common"
 import {NavLink} from "react-router-dom"
 import {ButtonGallery} from "../../common/ButtonGallery/ButtonGallery"
-import {useGallery} from "../../common/hooks"
+import {useExtractVideoID, useGallery} from "../../common/hooks"
 import {DIR42} from "../../common/ImageContexts"
 
 export const NC42 = () => {
-  const videoNumber = 42
+  const videoNumber = useExtractVideoID()
   const youtubeID = 'e8fADPtHm7w'
 
   const gallery1 = useGallery(DIR42)
 
   return (
     <>
-      <h3>VIDEO {videoNumber}</h3>
+      <h3>{videoNumber}</h3>
       <h4>Submission grappling tournament. Part 2. October 2014</h4>
       <p><b>VIDEO {videoNumber}</b> is the second part of our HD video featuring the submission grappling
         mini-tournament

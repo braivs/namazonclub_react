@@ -4,11 +4,12 @@ import {MyYouTube} from "../../common/common"
 import {Col, Row} from "react-bootstrap"
 import cn from "classnames"
 import {ButtonGallery} from "../../common/ButtonGallery/ButtonGallery"
+import {useExtractVideoID} from "../../common/hooks"
 
 const images = require.context('src/img/video/01', false)
 
 export const NC01 = () => {
-    const videoNumber = 1
+    const videoNumber = useExtractVideoID()
     const youtubeID = 'G7RTYfRO4B4'
 
     const [open, setOpen] = useState(false)
@@ -17,7 +18,7 @@ export const NC01 = () => {
     const slides = getSlides(photos)
     return (
         <>
-            <h3>VIDEO {videoNumber}</h3>
+            <h3>{videoNumber}</h3>
             <h4>Submission Grappling. Tournament. Part 1. June, 2010</h4>
             <p>
                 In this tournament participated three fighters: <b>Tais</b> (5'7" / 128 lb), <b>Maria Rylyova</b> (5'7"

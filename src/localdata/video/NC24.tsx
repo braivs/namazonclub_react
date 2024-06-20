@@ -4,11 +4,12 @@ import {MyYouTube} from "../../common/common"
 import {Col, Row} from "react-bootstrap"
 import cn from "classnames"
 import {ButtonGallery} from "../../common/ButtonGallery/ButtonGallery"
+import {useExtractVideoID} from "../../common/hooks"
 
 const images = require.context('src/img/video/24', false)
 
 export const NC24 = () => {
-  const videoNumber = 24
+  const videoNumber = useExtractVideoID()
   const youtubeID = 'NctqeFj1TG8'
 
   const [open, setOpen] = useState(false)
@@ -18,7 +19,7 @@ export const NC24 = () => {
 
   return (
     <>
-      <h3>VIDEO {videoNumber}</h3>
+      <h3>{videoNumber}</h3>
       <h4>Lyudmila vs Tais. Submission Grappling. October, 2011</h4>
       <p>
         <b>Lyudmila</b> (5’11” / 154 lb) is a strong sportswoman engaged in Muay Thai, but she is a newcomer in our

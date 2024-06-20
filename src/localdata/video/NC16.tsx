@@ -4,11 +4,12 @@ import {MyYouTube} from "../../common/common"
 import {Col, Row} from "react-bootstrap"
 import cn from "classnames"
 import {ButtonGallery} from "../../common/ButtonGallery/ButtonGallery"
+import {useExtractVideoID} from "../../common/hooks"
 
 const images = require.context('src/img/video/16', false)
 
 export const NC16 = () => {
-  const videoNumber = 16
+  const videoNumber = useExtractVideoID()
   const youtubeID = '-uNa-IIOOQk'
 
   const [open, setOpen] = useState(false)
@@ -18,7 +19,7 @@ export const NC16 = () => {
 
   return (
     <>
-      <h3>VIDEO {videoNumber}</h3>
+      <h3>{videoNumber}</h3>
       <h4>Elena Vasilyeva vs Tais. Submission Grappling. Youth vs Experience. June, 2011</h4>
       <p>
         <b>Elena Vasilyeva (Gladiatriks)</b> (5'6" / 135 lb) specializes in submission grappling, MMA, judo, and arm

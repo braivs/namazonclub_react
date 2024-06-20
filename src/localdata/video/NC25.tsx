@@ -4,13 +4,14 @@ import {MyYouTube} from "../../common/common"
 import {Col, Row} from "react-bootstrap"
 import cn from "classnames"
 import {ButtonGallery} from "../../common/ButtonGallery/ButtonGallery"
+import {useExtractVideoID} from "../../common/hooks"
 
 const images = require.context('src/img/video/25/villian-elena', false)
 const images2 = require.context('src/img/video/25/villian-lyudmila', false)
 const images3 = require.context('src/img/video/25/villian-tais', false)
 
 export const NC25 = () => {
-  const videoNumber = 25
+  const videoNumber = useExtractVideoID()
   const youtubeID = '29EMwdnOvJk'
 
   const [open, setOpen] = useState(false)
@@ -30,7 +31,7 @@ export const NC25 = () => {
 
   return (
     <>
-      <h3>VIDEO {videoNumber}</h3>
+      <h3>{videoNumber}</h3>
       <h4>Mixed Wrestling - the Best Fights. Part 2. 2011</h4>
       <p>
         This is the second video of the series titled "<b>Mixed wrestling - the best fights</b>". Here you can

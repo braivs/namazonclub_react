@@ -2,12 +2,12 @@ import React from 'react'
 import {Col, Row} from "react-bootstrap"
 import cn from 'classnames'
 import {MyYouTube} from "../../common/common"
-import {useGallery} from "../../common/hooks"
+import {useExtractVideoID, useGallery} from "../../common/hooks"
 import {DIR_NC46} from "../../common/ImageContexts"
 import {ButtonGallery} from "../../common/ButtonGallery/ButtonGallery"
 
 export const NC46 = () => {
-  const videoNumber = 'NC46'
+  const videoNumber = useExtractVideoID()
   const youtubeID = 'lDgKoh-9KG4'
 
   const gallery1 = useGallery(DIR_NC46)

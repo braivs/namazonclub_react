@@ -4,11 +4,12 @@ import {MyYouTube} from "../../common/common"
 import {Col, Row} from "react-bootstrap"
 import cn from "classnames"
 import {ButtonGallery} from "../../common/ButtonGallery/ButtonGallery"
+import {useExtractVideoID} from "../../common/hooks"
 
 const images = require.context('src/img/video/35', false)
 
 export const NC35 = () => {
-    const videoNumber = 35
+    const videoNumber = useExtractVideoID()
     const youtubeID = 'tYIIf2sPt4c'
 
     const [open, setOpen] = useState(false)
@@ -19,7 +20,7 @@ export const NC35 = () => {
 
     return (
       <>
-        <h3>VIDEO {videoNumber}</h3>
+        <h3>{videoNumber}</h3>
         <h4>Pins matches. Lidiya Oslopovskih, a newcomer in the Namazon Club's wrestling competitions. 2013</h4>
         <p>
           Lovely young lady, <b>Lidiya Oslopovskih</b> (53 kg / 117 lbs), is a newcomer to the Namazon wrestling

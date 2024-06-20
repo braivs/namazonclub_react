@@ -3,19 +3,19 @@ import {Col, Row} from "react-bootstrap"
 import {MyYouTube} from "../../common/common"
 import cn from 'classnames'
 import {ButtonGallery} from "../../common/ButtonGallery/ButtonGallery"
-import {useGallery} from "../../common/hooks"
+import {useExtractVideoID, useGallery} from "../../common/hooks"
 import {DIR41_KZ, DIR41_VZ} from "../../common/ImageContexts"
 
 export const NC41 = () => {
   const gallery1 = useGallery(DIR41_KZ)
   const gallery2 = useGallery(DIR41_VZ)
 
-  const videoNumber = 41
+  const videoNumber = useExtractVideoID()
   const youtubeID = 'vE6uc_UXaWc'
 
   return (
     <>
-      <h3>VIDEO {videoNumber}</h3>
+      <h3>{videoNumber}</h3>
       <h4>Submission grappling tournament. Part 1. October 2014</h4>
       <p>Our HD video featuring the submission grappling mini-tournament that was held on October 13, 2014, has been
         divided into two parts: <b>VIDEO 41</b> and <b>VIDEO 42</b>. The first part includes four fights featuring <b>Zoya

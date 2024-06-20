@@ -3,12 +3,12 @@ import mainImg from 'src/img/video/main/08main.jpg'
 
 import {ButtonGallery} from "../../common/ButtonGallery/ButtonGallery"
 import {MainImg} from "../../common/MainImg"
-import {useGallery} from "../../common/hooks"
+import {useExtractVideoID, useGallery} from "../../common/hooks"
 import {DIR08_1, DIR08_2, DIR08_3} from "../../common/ImageContexts"
 import {COMPETITIONS_BUTTON_TEXT} from "../../common/constants"
 
 export const NC08 = () => {
-  const videoNumber = 8
+  const videoNumber = useExtractVideoID()
 
   const gallery1 = useGallery(DIR08_1)
   const gallery2 = useGallery(DIR08_2)
@@ -16,7 +16,7 @@ export const NC08 = () => {
 
   return (
     <>
-      <h3>VIDEO {videoNumber}</h3>
+      <h3>{videoNumber}</h3>
       <h4>Beach Tournament. Submission Grappling. June, 2011</h4>
       <p>
         Two new competitors - <b>Elena Vasilyeva</b> (5'6" / 135 lb) and <b>Irina (Vlasta)</b> (5’9’’ / 154 lb) -

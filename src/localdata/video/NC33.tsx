@@ -5,9 +5,10 @@ import {Col, Row} from "react-bootstrap"
 import cn from "classnames"
 import {DIR_LIDA_VIKA, DIR_TAIS_YULIA} from "../../common/ImageContexts"
 import {ButtonGallery} from "../../common/ButtonGallery/ButtonGallery"
+import {useExtractVideoID} from "../../common/hooks"
 
 export const NC33 = () => {
-    const videoNumber = 33
+    const videoNumber = useExtractVideoID()
     const youtubeID = 'UdxhMrIku4A'
 
     const [open, setOpen] = useState(false)
@@ -23,7 +24,7 @@ export const NC33 = () => {
     return (
       <>
         <>
-          <h3>VIDEO {videoNumber}</h3>
+          <h3>{videoNumber}</h3>
           <h4>Crossfit tournament: Submission grappling. October 2013</h4>
           <p>
             This video features two submission grappling matches held as the final part of a Crossfit tournament organized by the St. Petersburg Athletic Center in cooperation with the Namazon Club.<br/>

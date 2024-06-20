@@ -4,11 +4,12 @@ import {MyYouTube} from "../../common/common"
 import {Col, Row} from "react-bootstrap"
 import cn from "classnames"
 import {ButtonGallery} from "../../common/ButtonGallery/ButtonGallery"
+import {useExtractVideoID} from "../../common/hooks"
 
 const images = require.context('src/img/video/34', false)
 
 export const NC34 = () => {
-  const videoNumber = '34'
+  const videoNumber = useExtractVideoID()
   const youtubeID = 'U0Eu-u52FQs'
 
   const [open, setOpen] = useState(false)
@@ -18,7 +19,7 @@ export const NC34 = () => {
 
   return (
     <>
-      <h3>VIDEO {videoNumber}</h3>
+      <h3>{videoNumber}</h3>
       <h4>Mixed Wrestling. Alexander and Villian against Tais. 2013</h4>
       <p>
         This video features several competitive wrestling matches of <b>Tais</b> (5’7” / 133 lb) against two male

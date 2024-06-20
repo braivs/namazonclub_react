@@ -4,18 +4,18 @@ import {ButtonGallery} from "../../common/ButtonGallery/ButtonGallery"
 import {Col, Row} from "react-bootstrap"
 import cn from "classnames"
 import {MyYouTube} from "../../common/common"
-import {useGallery} from "../../common/hooks"
+import {useExtractVideoID, useGallery} from "../../common/hooks"
 import {DIR03_3} from "../../common/ImageContexts"
 
 export const NC03 = () => {
-  const videoNumber = 3
+  const videoNumber = useExtractVideoID()
   const youtubeID = 'sddvDSjafEY'
 
   const gallery1 = useGallery(DIR03_3) // Natalia Mysik vs Tais
 
   return (
     <>
-      <h3>VIDEO {videoNumber}</h3>
+      <h3>{videoNumber}</h3>
       <h4>Beach Wrestling. Mixed Tournament. September, 2010</h4>
       <Row>
         <Col className={cn('d-flex', 'justify-content-center')}>

@@ -4,11 +4,12 @@ import {MyYouTube} from "../../common/common"
 import cn from "classnames"
 import {Col, Row} from "react-bootstrap"
 import {ButtonGallery} from "../../common/ButtonGallery/ButtonGallery"
+import {useExtractVideoID} from "../../common/hooks"
 
 const images = require.context('src/img/video/10', false)
 
 export const NC10 = () => {
-  const videoNumber = 10
+  const videoNumber = useExtractVideoID()
   const youtubeID = 'xbguaf9YTGo'
 
   const [open, setOpen] = useState(false)
@@ -18,7 +19,7 @@ export const NC10 = () => {
   return (
 
     <>
-      <h3>VIDEO {videoNumber}</h3>
+      <h3>{videoNumber}</h3>
       <h4>Mixed Wrestling - the Best Fights. Part 1. 2011</h4>
       <p>We are starting a new series titled "Mixed wrestling - the best fights". In the first part of our film,
         two guys confront <b>Tais</b> (5'7" / 128 lb). One of them - <b>Pasha</b> (5'9" / 143 lb) - is relatively light

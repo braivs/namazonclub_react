@@ -2,9 +2,10 @@ import React from "react"
 import {Col, Row} from "react-bootstrap"
 import cn from "classnames"
 import {MyYouTube} from "../../common/common"
+import {useExtractVideoID} from "../../common/hooks"
 
 export const NC50 = () => {
-  const videoNumber = 'NC50'
+  const videoNumber = useExtractVideoID()
   const youtubeID = 'W8TqBxzEMaI'
   return (
     <>
