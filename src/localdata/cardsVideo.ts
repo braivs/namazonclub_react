@@ -50,8 +50,14 @@ import nc47 from 'src/img/videos/wrestThumb/nc47cover_small.jpg'
 import nc48 from 'src/img/videos/wrestThumb/nc48.jpg'
 import nc49 from 'src/img/videos/mixWrestThumb/nc49_preview.jpg'
 import nc50 from 'src/img/videos/mixWrestThumb/NC50.jpg'
+import nc51 from 'src/img/videos/wrestThumb/nc51.jpg'
 
 export const cardsWrestling: Array<CardType> = [
+    {
+        id: 'NC51',
+        title: 'Kara, Darya, Tais. 08.05.2012',
+        imgRef: nc51,
+    },
     {
         id: 'NC48',
         title: 'Competitions Spring 2017',
