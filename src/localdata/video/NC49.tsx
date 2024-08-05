@@ -3,6 +3,7 @@ import {Col, Row} from "react-bootstrap"
 import cn from "classnames"
 import {MyYouTube} from "../../common/common"
 import {useExtractVideoID} from "../../common/hooks"
+import {LINKS_NC_CLIPS} from "../../common/constants/shopLinks"
 
 export const NC49 = () => {
   const videoNumber = useExtractVideoID()
@@ -23,7 +24,7 @@ export const NC49 = () => {
       </p>
       <Row>
         <hr/>
-        <p>You can purchase <b>VIDEO {videoNumber}</b> on <a href="https://namazonclub.gumroad.com/l/nc49">Patreon</a>.
+        <p>You can purchase <b>VIDEO {videoNumber}</b> on {videoNumber && <a href={LINKS_NC_CLIPS[videoNumber]}>Patreon</a>}.
         </p>
       </Row>
     </>

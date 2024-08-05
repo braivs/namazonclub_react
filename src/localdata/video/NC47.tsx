@@ -5,6 +5,7 @@ import {MyYouTube} from "../../common/common"
 import {useExtractVideoID, useGallery} from "../../common/hooks"
 import {DIR_NC47} from "../../common/ImageContexts"
 import {ButtonGallery} from "../../common/ButtonGallery/ButtonGallery"
+import {LINKS_NC_CLIPS} from "../../common/constants/shopLinks"
 
 export const NC47 = () => {
   const videoNumber = useExtractVideoID()
@@ -38,7 +39,7 @@ export const NC47 = () => {
       />
       <Row>
         <hr/>
-        <p>You can buy <b>VIDEO {videoNumber}</b> at <a href="https://namazonclub.gumroad.com/l/nc47"> Patreon </a></p>
+        <p>You can buy <b>VIDEO {videoNumber}</b> at {videoNumber && <a href={LINKS_NC_CLIPS[videoNumber]}>Patreon</a>}</p>
       </Row>
     </>
   )
