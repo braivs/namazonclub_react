@@ -4,7 +4,8 @@ import React from "react"
 import {useGallery} from "../../../common/hooks"
 import {DIR08_1, DIR08_2, DIR08_3} from "../../../common/ImageContexts"
 import {ButtonGallery} from "../../../common/ButtonGallery/ButtonGallery"
-import {COMPETITIONS_BUTTON_TEXT} from "../../../common/constants"
+import {COMPETITIONS_BUTTON_TEXT} from "../../../common/constants/constants"
+import {LINK_SHOP_MAIN} from "../../../common/constants/shopLinks"
 
 export const Beach2011 = () => {
   const gallery1 = useGallery(DIR08_1) // Elena Vasilyeva vs Tais
@@ -77,7 +78,7 @@ export const Beach2011 = () => {
       <hr/>
       <p>
         Curious to see how it all unfolded? Purchase now on <a
-        href="https://gumroad.com/namazonclub">Gumroad</a> (<b><u>VIDEO 8.</u></b>
+        href={LINK_SHOP_MAIN}>Patreon</a> (<b><u>VIDEO 8.</u></b>
         Beach Tournament. Submission Grappling. June, 2011) and witness the action yourself.
       </p>
     </>

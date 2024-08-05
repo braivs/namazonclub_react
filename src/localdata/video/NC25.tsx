@@ -5,6 +5,7 @@ import {Col, Row} from "react-bootstrap"
 import cn from "classnames"
 import {ButtonGallery} from "../../common/ButtonGallery/ButtonGallery"
 import {useExtractVideoID} from "../../common/hooks"
+import {LINK_SHOP_MAIN} from "src/common/constants/shopLinks"
 
 const images = require.context('src/img/video/25/villian-elena', false)
 const images2 = require.context('src/img/video/25/villian-lyudmila', false)
@@ -81,7 +82,7 @@ export const NC25 = () => {
         slides={slides3}
       />
       <hr/>
-      <p>You can buy <b>VIDEO {videoNumber}</b> on <a href="https://gumroad.com/namazonclub">Gumroad</a>.</p>
+      <p>You can buy <b>VIDEO {videoNumber}</b> on <a href={LINK_SHOP_MAIN}>Patreon</a>.</p>
     </>
 
   )

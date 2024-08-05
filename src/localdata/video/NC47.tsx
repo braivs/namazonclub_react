@@ -38,7 +38,7 @@ export const NC47 = () => {
       />
       <Row>
         <hr/>
-        <p>You can buy <b>VIDEO {videoNumber}</b> at <a href="https://namazonclub.gumroad.com/l/nc47"> Gumroad </a></p>
+        <p>You can buy <b>VIDEO {videoNumber}</b> at <a href="https://namazonclub.gumroad.com/l/nc47"> Patreon </a></p>
       </Row>
     </>
   )

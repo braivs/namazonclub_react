@@ -6,6 +6,7 @@ import {NavLink} from "react-router-dom"
 import {getGalleryPhotosFromRequire, getSlides} from "../../common/helpers"
 
 import {ButtonGallery} from "../../common/ButtonGallery/ButtonGallery"
+import {LINK_SHOP_MAIN} from "../../common/constants/shopLinks"
 
 const images = require.context('src/img/video/09/mma-rozhdestvenskij-kubok-2012-1', false)
 
@@ -86,7 +87,7 @@ export const ElenaVasileva2013 = () => {
         <p>
           The video of Elena's MMA fight (Video 9), as well as the video of her submission grappling fight
           (Video 29) 2012-2013, are available for purchase in our online store on <a
-          href="https://gumroad.com/namazonclub">Gumroad</a>.
+          href={LINK_SHOP_MAIN}>Patreon</a>.
         </p>
       </>
 

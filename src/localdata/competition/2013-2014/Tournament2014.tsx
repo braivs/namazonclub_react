@@ -12,6 +12,7 @@ import {
 } from "../../../common/ImageContexts"
 import {ButtonGallery} from "../../../common/ButtonGallery/ButtonGallery"
 import {NavLink} from "react-router-dom"
+import {LINK_SHOP_MAIN} from "src/common/constants/shopLinks"
 
 export const Tournament2014 = () => {
   const gallery1 = useGallery(DIR36_TOURNAMENT2014_1)
@@ -137,7 +138,7 @@ export const Tournament2014 = () => {
         VIDEO 36 of our video collection features the preliminary fights of the tournament, while VIDEO 37 covers the
         final
         fights. Both videos are available for purchase in our online store on <a
-        href="https://gumroad.com/namazonclub">Gumroad</a>.
+        href={LINK_SHOP_MAIN}>Patreon</a>.
       </p>
     </>
   )

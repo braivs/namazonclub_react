@@ -6,6 +6,7 @@ import {NavLink} from "react-router-dom"
 import {ButtonGallery} from "../../common/ButtonGallery/ButtonGallery"
 import {useExtractVideoID, useGallery} from "../../common/hooks"
 import {DIR42} from "../../common/ImageContexts"
+import {LINK_SHOP_MAIN} from "src/common/constants/shopLinks"
 
 export const NC42 = () => {
   const videoNumber = useExtractVideoID()
@@ -17,7 +18,7 @@ export const NC42 = () => {
     <>
       <h3>{videoNumber}</h3>
       <h4>Submission grappling tournament. Part 2. October 2014</h4>
-      <p><b>VIDEO {videoNumber}</b> is the second part of our HD video featuring the submission grappling
+      <p><b>VIDEO {videoNumber}</b> is the second part of our full HD video featuring the submission grappling
         mini-tournament
         that took place on October 13, 2014. It includes two fights between <b>Christina Shvets</b> (68.9 kg / 151.9 lb)
         and <b>Victoria Vardugina</b> (65.3 kg / 144.0 lb). After defeating Zoya Dorofeeva (see <b>VIDEO 41</b>),
@@ -57,7 +58,7 @@ export const NC42 = () => {
       />
       <Row>
         <hr/>
-        <p>You can purchase <b>VIDEO {videoNumber}</b> at <a href="https://gumroad.com/namazonclub">Gumroad</a></p>
+        <p>You can purchase <b>VIDEO {videoNumber}</b> at <a href={LINK_SHOP_MAIN}>Patreon</a></p>
       </Row>
     </>
   )

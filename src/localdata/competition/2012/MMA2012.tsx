@@ -5,6 +5,7 @@ import {NavLink} from "react-router-dom"
 import {useGallery} from "../../../common/hooks"
 import {DIR17_1, DIR17_2, DIR17_3} from "../../../common/ImageContexts"
 import {ButtonGallery} from "../../../common/ButtonGallery/ButtonGallery"
+import {LINK_SHOP_MAIN} from "../../../common/constants/shopLinks"
 
 export const MMA2012 = () => {
   const gallery1 = useGallery(DIR17_1)
@@ -87,7 +88,7 @@ export const MMA2012 = () => {
       <p>
         You can purchase a video featuring Kara's MMA fights against Svetlana and Tais, as well as her submission
         grappling
-        bout with Svetlana, from our online store on <a href="https://gumroad.com/namazonclub">Gumroad</a> (<b><u>VIDEO
+        bout with Svetlana, from our online store on <a href={LINK_SHOP_MAIN}>Patreon</a> (<b><u>VIDEO
         17.</u></b>
         MMA and Submission Grappling).
       </p>

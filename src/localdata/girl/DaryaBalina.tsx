@@ -5,6 +5,7 @@ import {NavLink} from "react-router-dom"
 import {getGalleryPhotosFromRequire, getSlides} from "../../common/helpers"
 
 import {ButtonGallery} from "../../common/ButtonGallery/ButtonGallery"
+import {LINK_SHOP_MAIN} from "../../common/constants/shopLinks"
 
 const images = require.context('src/img/video/18/mma-sportivnyj-prazdnik-2012-1', false)
 const images2 = require.context('src/img/video/21/mma-pervaya-nevskaya-arena-2012-2', false)
@@ -55,7 +56,7 @@ export const DaryaBalina = () => {
         <p>Win-loss-draw record – 0:1:1 (as of July 1, 2012)</p>
         <hr/>
         <p>
-          In our store on <a href="https://gumroad.com/namazonclub">Gumroad</a>, you can purchase full videos of Darya’s MMA fights held at the Namazon Club (Videos 18 and 21).
+          In our store on <a href={LINK_SHOP_MAIN}>Patreon</a>, you can purchase full videos of Darya’s MMA fights held at the Namazon Club (Videos 18 and 21).
         </p>
       </>
     )

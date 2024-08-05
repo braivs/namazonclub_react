@@ -5,6 +5,7 @@ import cn from 'classnames'
 import {ButtonGallery} from "../../common/ButtonGallery/ButtonGallery"
 import {useExtractVideoID, useGallery} from "../../common/hooks"
 import {DIR09_1, DIR09_2, DIR09_3} from "../../common/ImageContexts"
+import {LINK_SHOP_MAIN} from "../../common/constants/shopLinks"
 
 export const NC09 = () => {
   const gallery1 = useGallery(DIR09_1)
@@ -64,7 +65,7 @@ export const NC09 = () => {
         buttonName={buttonText}
       />
       <hr/>
-      <p>You can buy <b>VIDEO {videoNumber}</b> on <a href="https://gumroad.com/namazonclub">Gumroad</a>.</p>
+      <p>You can buy <b>VIDEO {videoNumber}</b> on <a href={LINK_SHOP_MAIN}>Patreon</a>.</p>
     </>
 
   )

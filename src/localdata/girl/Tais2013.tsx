@@ -8,6 +8,7 @@ import sC from "../../common/styles.module.scss"
 import {getGalleryPhotosFromRequire, getSlides} from "../../common/helpers"
 import {NavLink} from "react-router-dom"
 import {ButtonGallery} from "../../common/ButtonGallery/ButtonGallery"
+import {LINK_SHOP_MAIN} from "src/common/constants/shopLinks"
 
 const images = require.context('src/img/girl/tais2013/main_gallery', false)
 const images2 = require.context('src/img/girl/tais2013/mma-rozhdestvenskij-kubok-2012-4', false)
@@ -119,7 +120,7 @@ export const Tais2013 = () => {
       <p>Win-loss-draw record – 3:1:0 (as of May 8, 2012)</p>
       <hr/>
       <p>
-        In our store on <a href="https://gumroad.com/namazonclub">Gumroad</a>, you can purchase full videos of Tais’s
+        In our store on <a href={LINK_SHOP_MAIN}>Patreon</a>, you can purchase full videos of Tais’s
         fights from 2012-2013 – MMA fights (Videos 9, 17, and 18), submission grappling fights (Videos 19, 29, 33, and
         35), and mixed wrestling fights (Videos 28, 30, 31-1, 31-2, 32, and 34).
       </p>

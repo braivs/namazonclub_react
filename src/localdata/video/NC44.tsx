@@ -12,6 +12,7 @@ import {NavLink} from "react-router-dom"
 import {LightboxMy, PhotoAlbumMy} from "../../common/ModdedComponents/ModdedComponents"
 import {MyYouTube} from "../../common/common"
 import {useExtractVideoID} from "../../common/hooks"
+import {LINK_SHOP_MAIN} from "src/common/constants/shopLinks"
 
 export const NC44 = () => {
   const youtubeID = 'bc9RU5hP4k4'
@@ -66,7 +67,7 @@ export const NC44 = () => {
       </Row>
       <Row>
         <hr/>
-        <p>You can buy VIDEO {videoID} at <a href="https://gumroad.com/namazonclub">Gumroad</a></p>
+        <p>You can buy VIDEO {videoID} at <a href={LINK_SHOP_MAIN}>Patreon</a></p>
       </Row>
     </>
   )

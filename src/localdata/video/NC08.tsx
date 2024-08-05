@@ -5,7 +5,8 @@ import {ButtonGallery} from "../../common/ButtonGallery/ButtonGallery"
 import {MainImg} from "../../common/MainImg"
 import {useExtractVideoID, useGallery} from "../../common/hooks"
 import {DIR08_1, DIR08_2, DIR08_3} from "../../common/ImageContexts"
-import {COMPETITIONS_BUTTON_TEXT} from "../../common/constants"
+import {COMPETITIONS_BUTTON_TEXT} from "../../common/constants/constants"
+import {LINK_SHOP_MAIN} from "../../common/constants/shopLinks"
 
 export const NC08 = () => {
   const videoNumber = useExtractVideoID()
@@ -59,7 +60,7 @@ export const NC08 = () => {
         buttonName={COMPETITIONS_BUTTON_TEXT}
       />
       <hr/>
-      <p>You can buy <b>VIDEO {videoNumber}</b> on <a href="https://gumroad.com/namazonclub">Gumroad</a>.</p>
+      <p>You can buy <b>VIDEO {videoNumber}</b> on <a href={LINK_SHOP_MAIN}>Patreon</a>.</p>
     </>
   )
 }

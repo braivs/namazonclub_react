@@ -4,6 +4,7 @@ import {NavLink} from "react-router-dom"
 import logo from 'src/img/logo.jpg'
 import {Container, Dropdown, Navbar} from "react-bootstrap"
 import {CustomToggle} from "../../../../common/DropdownCustom/DropdownCustom"
+import {LINK_SHOP_MAIN} from "../../../../common/constants/shopLinks"
 
 export function Navigation() {
     return (
@@ -19,7 +20,7 @@ export function Navigation() {
                             <NavLink to="/">HOME</NavLink>
                         </li>
                         <li className="nav-item">
-                            <NavLink to="https://gumroad.com/namazonclub">SHOP</NavLink>
+                            <NavLink to={LINK_SHOP_MAIN}>SHOP</NavLink>
                         </li>
                         <Dropdown>
                             <Dropdown.Toggle id="dropdown-basic" as={CustomToggle}>

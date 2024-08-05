@@ -6,6 +6,7 @@ import cn from "classnames"
 import {DIR_LIDA_VIKA, DIR_TAIS_YULIA} from "../../common/ImageContexts"
 import {ButtonGallery} from "../../common/ButtonGallery/ButtonGallery"
 import {useExtractVideoID} from "../../common/hooks"
+import {LINK_SHOP_MAIN} from "src/common/constants/shopLinks"
 
 export const NC33 = () => {
     const videoNumber = useExtractVideoID()
@@ -57,7 +58,7 @@ export const NC33 = () => {
             slides={slides2}
           />
           <hr/>
-          <p>You can buy <b>VIDEO {videoNumber}</b> on <a href="https://gumroad.com/namazonclub">Gumroad</a>.</p>
+          <p>You can buy <b>VIDEO {videoNumber}</b> on <a href={LINK_SHOP_MAIN}>Patreon</a>.</p>
         </>
 
       </>

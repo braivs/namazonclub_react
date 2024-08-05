@@ -6,6 +6,7 @@ import React from "react"
 import {useGallery} from "../../../common/hooks"
 import {DIR41_KZ, DIR41_VZ, DIR42, DIR_GRAPPLING2014_AWARDS} from "../../../common/ImageContexts"
 import {ButtonGallery} from "../../../common/ButtonGallery/ButtonGallery"
+import {LINK_SHOP_MAIN} from "../../../common/constants/shopLinks"
 
 
 export const Grappling2014 = () => {
@@ -125,7 +126,7 @@ export const Grappling2014 = () => {
       <p>
         Watch the fights <b>Zoya vs Christina</b> and <b>Zoya vs Vika</b> in <b>VIDEO 41</b>, and the fight
         between Vika and Christina in <b>VIDEO 42</b>. Both videos are available on <a
-        href="https://gumroad.com/namazonclub">Gumroad</a>.
+        href={LINK_SHOP_MAIN}>Patreon</a>.
       </p>
     </>
 

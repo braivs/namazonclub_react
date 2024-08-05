@@ -4,6 +4,7 @@ import mainImg3 from 'src/img/video/19/01.jpg'
 import mainImg4 from 'src/img/video/19/05.jpg'
 import {MainImg} from "../../../common/MainImg"
 import {NavLink} from "react-router-dom"
+import {LINK_SHOP_MAIN} from "src/common/constants/shopLinks"
 
 export const VarvaraTais2012 = () => {
   return (
@@ -42,7 +43,7 @@ export const VarvaraTais2012 = () => {
         It is really a hard fight! Clearly a big, strong Varvara does not want to lose to her smaller opponent. In turn,
         Tais would like nothing better than to beat the bigger and stronger athlete to demonstrate her skill and
         competitiveness. Who will prevail? Buy the video (<b><u>VIDEO 19.</u></b> Varvara Akulova vs Tais. Submission
-        Grappling. May, 2012) on <a href="https://gumroad.com/namazonclub">Gumroad</a> and find out.
+        Grappling. May, 2012) on <a href={LINK_SHOP_MAIN}>Patreon</a> and find out.
       </p>
     </>
   )

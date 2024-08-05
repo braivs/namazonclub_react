@@ -4,7 +4,8 @@ import React from "react"
 import {useGallery} from "../../../common/hooks"
 import {DIR03_1, DIR03_2, DIR03_3} from "../../../common/ImageContexts"
 import {ButtonGallery} from "../../../common/ButtonGallery/ButtonGallery"
-import {COMPETITIONS_BUTTON_TEXT} from "../../../common/constants"
+import {COMPETITIONS_BUTTON_TEXT} from "../../../common/constants/constants"
+import {LINK_SHOP_MAIN} from "../../../common/constants/shopLinks"
 
 export const BeachMix2010 = () => {
   const gallery1 = useGallery(DIR03_1) // Natalia Mysik  vs  Alex
@@ -62,7 +63,7 @@ export const BeachMix2010 = () => {
       </p>
       <hr />
       <p>
-        The full video of the beach mixed wrestling round-robin tournament featuring Natalia Mysik, Tais, and Alex (<b>VIDEO 3.</b> Beach Submission Grappling. Two girls vs one man) is available for purchase on our online store at <a href="https://gumroad.com/namazonclub">Gumroad</a>.
+        The full video of the beach mixed wrestling round-robin tournament featuring Natalia Mysik, Tais, and Alex (<b>VIDEO 3.</b> Beach Submission Grappling. Two girls vs one man) is available for purchase on our online store at <a href={LINK_SHOP_MAIN}>Patreon</a>.
       </p>
     </>
   )

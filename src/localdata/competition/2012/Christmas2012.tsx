@@ -5,6 +5,7 @@ import {NavLink} from "react-router-dom"
 import {useGallery} from "src/common/hooks"
 import {DIR09_2, DIR09_3, DIR_CHRISTMAS2012_1, DIR_CHRISTMAS2012_2} from "../../../common/ImageContexts"
 import {ButtonGallery} from "src/common/ButtonGallery/ButtonGallery"
+import {LINK_SHOP_MAIN} from "../../../common/constants/shopLinks"
 
 export const Christmas2012 = () => {
   const gallery1 = useGallery(DIR_CHRISTMAS2012_1)
@@ -91,7 +92,7 @@ export const Christmas2012 = () => {
       <p>
         The girls fought fiercely and without compromise in all three fights. If you enjoy such competitions, purchase our
         film (<b><u>VIDEO 9</u></b>. MMA Tournament "Christmas Cup 2012") on <a
-        href="https://gumroad.com/namazonclub">Gumroad</a> to witness it all for yourself.
+        href={LINK_SHOP_MAIN}>Patreon</a> to witness it all for yourself.
       </p>
     </>
 

@@ -1,0 +1,1 @@
+export const LINK_SHOP_MAIN = 'https://www.patreon.com/namazon/shop'

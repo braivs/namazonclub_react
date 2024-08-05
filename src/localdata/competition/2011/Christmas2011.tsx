@@ -4,7 +4,8 @@ import React from "react"
 import {useGallery} from "../../../common/hooks"
 import {DIR_CHRISTMAS_2011_1, DIR_CHRISTMAS_2011_2} from "../../../common/ImageContexts"
 import {ButtonGallery} from "../../../common/ButtonGallery/ButtonGallery"
-import {COMPETITIONS_BUTTON_TEXT} from "../../../common/constants"
+import {COMPETITIONS_BUTTON_TEXT} from "../../../common/constants/constants"
+import {LINK_SHOP_MAIN} from "../../../common/constants/shopLinks"
 
 export const Christmas2011 = () => {
   const gallery1 = useGallery(DIR_CHRISTMAS_2011_1)
@@ -55,7 +56,7 @@ export const Christmas2011 = () => {
       <p>
         If you enjoy watching long pinning holds, head scissors, and chokes in women’s fights, you will appreciate the video
         recording of this tournament.<br/>
-        Want to witness all the action? Purchase now on <a href="https://gumroad.com/namazonclub">Gumroad</a> (<b><u>VIDEO 4.</u></b>
+        Want to witness all the action? Purchase now on <a href={LINK_SHOP_MAIN}>Patreon</a> (<b><u>VIDEO 4.</u></b>
         "Christmas Cup 2011". Tournament on Submission Grappling) and experience it for yourself.
       </p>
     </>

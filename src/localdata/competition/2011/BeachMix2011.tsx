@@ -11,7 +11,8 @@ import {
   DIR_BEACH_MIX_2011_3
 } from "../../../common/ImageContexts"
 import {ButtonGallery} from "../../../common/ButtonGallery/ButtonGallery"
-import {COMPETITIONS_BUTTON_TEXT} from "../../../common/constants"
+import {COMPETITIONS_BUTTON_TEXT} from "../../../common/constants/constants"
+import {LINK_SHOP_MAIN} from "../../../common/constants/shopLinks"
 
 export const BeachMix2011 = () => {
   const gallery1 = useGallery(DIR_BEACH_MIX_2011)
@@ -119,7 +120,7 @@ export const BeachMix2011 = () => {
       </p>
       <hr/>
       <p>
-        Visit our store on <a href="https://gumroad.com/namazonclub">Gumroad</a> to purchase the full video of Elena
+        Visit our store on <a href={LINK_SHOP_MAIN}>Patreon</a> to purchase the full video of Elena
         Vasilyeva's
         match against Alex (<b>VIDEO 11.</b> Alex vs. Elena Vasilyeva. Mixed Beach Wrestling. July, 2011), and also the
         full

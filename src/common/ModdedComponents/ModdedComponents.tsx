@@ -1,5 +1,5 @@
 import React from 'react'
-import Lightbox, {Callback, Slide} from "yet-another-react-lightbox"
+import Lightbox, {Slide} from "yet-another-react-lightbox"
 import PhotoAlbum, {LayoutType, Photo} from "react-photo-album"
 import s from './ModdedComponents.module.scss'
 
@@ -16,6 +16,7 @@ export const LightboxMy = (props: LightboxPropsType) => {
 }
 
 export const PhotoAlbumMy = (props: PhotoAlbumPropsType) => {
+    console.log(props.photos)
     return (
         <div className={s.photoAlbum}>
             <PhotoAlbum layout={props.layout ? props.layout : 'masonry'}

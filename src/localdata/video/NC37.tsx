@@ -7,6 +7,7 @@ import cn from 'classnames'
 import {ButtonGallery} from "../../common/ButtonGallery/ButtonGallery"
 import {useExtractVideoID, useGallery} from "../../common/hooks"
 import {DIR37} from "../../common/ImageContexts"
+import {LINK_SHOP_MAIN} from "src/common/constants/shopLinks"
 
 export const NC37 = () => {
   const videoNumber = useExtractVideoID()
@@ -49,7 +50,7 @@ export const NC37 = () => {
         which one of the two girls grappling on the mat continuously struggles to pin her opponent down and
         finally succeeds after long hard attempts.</p>
       <hr/>
-      <p>You can buy <b>VIDEO {videoNumber}</b> on <a href="https://gumroad.com/namazonclub">Gumroad</a>.</p>
+      <p>You can buy <b>VIDEO {videoNumber}</b> on <a href={LINK_SHOP_MAIN}>Patreon</a>.</p>
     </div>
 
   )

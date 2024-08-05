@@ -5,6 +5,7 @@ import {Col, Row} from "react-bootstrap"
 import cn from "classnames"
 import {ButtonGallery} from "../../common/ButtonGallery/ButtonGallery"
 import {useExtractVideoID} from "../../common/hooks"
+import {LINK_SHOP_MAIN} from "src/common/constants/shopLinks"
 
 const images = require.context('src/img/video/29', false)
 
@@ -28,7 +29,7 @@ export const NC29 = () => {
         skillful, and confident than ever.
       </p>
       <Row>
-        <Col className={cn('d-flex', 'justify-content-center')}>k
+        <Col className={cn('d-flex', 'justify-content-center')}>
           <MyYouTube videoId={youtubeID}/>
         </Col>
       </Row>
@@ -46,7 +47,7 @@ export const NC29 = () => {
         slides={slides}
       />
       <hr/>
-      <p>You can purchase <b>VIDEO {videoNumber}</b> on <a href="https://gumroad.com/namazonclub">Gumroad</a>.</p>
+      <p>You can purchase <b>VIDEO {videoNumber}</b> on <a href={LINK_SHOP_MAIN}>Patreon</a>.</p>
     </>
 
   )

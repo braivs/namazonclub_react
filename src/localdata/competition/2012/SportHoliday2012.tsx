@@ -5,7 +5,8 @@ import {NavLink} from "react-router-dom"
 import {ButtonGallery} from "../../../common/ButtonGallery/ButtonGallery"
 import {useGallery} from "../../../common/hooks"
 import {DIR_MMA_SPORT_HOLIDAY_1, DIR_MMA_SPORT_HOLIDAY_2, DIR_MMA_SPORT_HOLIDAY_3} from "../../../common/ImageContexts"
-import {COMPETITIONS_BUTTON_TEXT} from "../../../common/constants"
+import {COMPETITIONS_BUTTON_TEXT} from "../../../common/constants/constants"
+import {LINK_SHOP_MAIN} from "src/common/constants/shopLinks"
 
 export const SportHoliday2012 = () => {
   const gallery1 = useGallery(DIR_MMA_SPORT_HOLIDAY_1)
@@ -80,7 +81,7 @@ export const SportHoliday2012 = () => {
       <hr/>
       <p>
         If you like such fights, buy our film (<b><u>VIDEO 18.</u></b> MMA tournament. May, 2012) on <a
-        href="https://gumroad.com/namazonclub">Gumroad</a> and you will be able to see everything yourself.
+        href={LINK_SHOP_MAIN}>Patreon</a> and you will be able to see everything yourself.
       </p>
     </>
   )

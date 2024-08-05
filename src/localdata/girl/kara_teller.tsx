@@ -10,6 +10,7 @@ import {NavLink} from "react-router-dom"
 import {Col} from "react-bootstrap"
 import cn from "classnames"
 import {ButtonGallery} from "../../common/ButtonGallery/ButtonGallery"
+import {LINK_SHOP_MAIN} from "../../common/constants/shopLinks"
 
 const images = require.context('src/img/girl/kara-teller/', false)
 const images2 = require.context('src/img/video/09/mma-rozhdestvenskij-kubok-2012-1', false)
@@ -159,7 +160,7 @@ export const KaraTeller = () => {
       <p>Win-loss-draw record: 4:3:0 (as of July 1, 2012)</p>
       <hr/>
       <p>
-        In our store on <a href="https://gumroad.com/namazonclub">Gumroad</a>, you can purchase full videos of Kara’s
+        In our store on <a href={LINK_SHOP_MAIN}>Patreon</a>, you can purchase full videos of Kara’s
         MMA fights held at the Namazon Club (Videos 9, 17, 18, and 20).
       </p>
     </>

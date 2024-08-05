@@ -4,6 +4,7 @@ import {useGallery} from "../../../../common/hooks"
 import {DIR_LIDA_VIKA, DIR_TAIS_YULIA, DIR_YAROSLAVA_VIKA} from "../../../../common/ImageContexts"
 import React from "react"
 import {ButtonGallery} from "../../../../common/ButtonGallery/ButtonGallery"
+import {LINK_SHOP_MAIN} from "src/common/constants/shopLinks"
 
 export const Tournament2013_3 = () => {
   const gallery1 = useGallery(DIR_YAROSLAVA_VIKA)
@@ -174,7 +175,7 @@ export const Tournament2013_3 = () => {
       <p>
         You can see both final wrestling matches, <b>Victoriya Vardugina</b> vs <b>Lidiya
         Oslopovskih</b> and <b>Tais</b> vs <b>Yulia Borovik</b>, in our movie (VIDEO 33) which is available for
-        purchasing in our online store on <a href="https://gumroad.com/namazonclub">Gumroad</a>.
+        purchasing in our online store on <a href={LINK_SHOP_MAIN}>Patreon</a>.
       </p>
     </>
   )
