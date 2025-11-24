@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/namazonclub_react/static/css/main.edc8abff.css",
-    "main.js": "/namazonclub_react/static/js/main.16c7c906.js",
+    "main.js": "/namazonclub_react/static/js/main.c6a441d3.js",
     "static/js/453.8c9e65cb.chunk.js": "/namazonclub_react/static/js/453.8c9e65cb.chunk.js",
     "static/media/11.jpg": "/namazonclub_react/static/media/11.db4077af493ca07457d5.jpg",
     "static/media/tais-04.jpg": "/namazonclub_react/static/media/tais-04.ccbefd7ec7b7ad1c6d54.jpg",
@@ -194,11 +194,11 @@
     "static/media/nc48.jpg": "/namazonclub_react/static/media/nc48.9e4d763ed8e33b6474f2.jpg",
     "index.html": "/namazonclub_react/index.html",
     "main.edc8abff.css.map": "/namazonclub_react/static/css/main.edc8abff.css.map",
-    "main.16c7c906.js.map": "/namazonclub_react/static/js/main.16c7c906.js.map",
+    "main.c6a441d3.js.map": "/namazonclub_react/static/js/main.c6a441d3.js.map",
     "453.8c9e65cb.chunk.js.map": "/namazonclub_react/static/js/453.8c9e65cb.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.edc8abff.css",
-    "static/js/main.16c7c906.js"
+    "static/js/main.c6a441d3.js"
   ]
 }
