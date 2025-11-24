@@ -1,1 +1,1 @@
-https://brightwiths.github.io/namazonclub_react
+https://braivs.github.io/namazonclub_react
